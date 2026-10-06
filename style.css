@@ -1,11 +1,11 @@
 
 :root{
   --bg:#faf9f6; --fg:#28261f; --dim:#7a756a; --line:#e5e2da;
-  --accent:#8a5a2b; --card:#f0eee9; --hl:#fff6d8; --mark:#f3d97a;
+  --accent:#8a5a2b; --accent2:#b4441c; --card:#f0eee9; --hl:#fff6d8; --mark:#f3d97a;
 }
 html.dark{
   --bg:#191817; --fg:#d8d4cb; --dim:#8f8a80; --line:#2e2c29;
-  --accent:#c98a4b; --card:#201f1d; --hl:#2b2617; --mark:#6a5520;
+  --accent:#c98a4b; --accent2:#e8823a; --card:#201f1d; --hl:#2b2617; --mark:#6a5520;
 }
 *{box-sizing:border-box}
 body{
@@ -60,8 +60,8 @@ footer.site a{color:var(--dim)}
 
 article{max-width:720px; margin:0 auto; padding:.2rem 1.2rem 1rem}
 article h2{
-  font:600 .88rem system-ui,sans-serif; letter-spacing:.07em;
-  text-transform:uppercase; color:var(--accent);
+  font:700 1.15rem system-ui,sans-serif; letter-spacing:.04em;
+  text-transform:uppercase; color:var(--accent2);
   margin:2.4rem 0 .9rem; padding-bottom:.3rem; border-bottom:1px solid var(--line);
 }
 article h3{font-size:1.08rem; line-height:1.45; margin:1.5rem 0 .25rem}
