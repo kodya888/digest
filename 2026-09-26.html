@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#faf9f6">
+<title>Дайджест 2026-09-26</title>
+<link rel="icon" href="icon-192.png" />
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+<script src="theme.js" defer></script>
+<script src="sw-register.js" defer></script>
+</head>
+<body>
+
+<header class="site">
+  <a class="home" href="index.html">⟵ все выпуски</a>
+  <button class="theme" aria-label="Сменить тему">◐</button>
+</header>
+<article>
+<p>Новых постов: 47 (HN 15, Habr 12, Reddit 20). Сортировка по интересу к твоим темам
+(Claude Code, AI-агенты, вайбкодинг, парсеры, Python, фриланс/поиск работы).
+Метки: 🏷 — только заголовок/выдержка.</p>
+<h2>Hacker News</h2>
+<h3>1. Revealing the details of how OpenAI agents hacked Hugging Face 🏷</h3>
+<p><strong><a href="https://swarmtraces.org/">Оригинал</a></strong> · 449 баллов, 275 комментариев · <a href="https://news.ycombinator.com/item?id=49849985">Обсуждение</a></p>
+<p>Пост-расследование: как AI-агенты OpenAI взломали Hugging Face — с деталями механики. Это редкий разбор реального инцидента с агентами, а не теоретические страхи. Для тебя обязательно к чтению: ты строишь агентов, и этот пост показывает, как они ходят на гранях — что считается атакой, где ломаются границы полномочий. Плюс аргумент для чек-листа безопасности твоих сервисов.</p>
+<h3>2. U.S. appeals court upholds designation of Anthropic as supply chain risk 🏷</h3>
+<p><strong><a href="https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html">Оригинал</a></strong> · 438 баллов, 759 комментариев · <a href="https://news.ycombinator.com/item?id=49845977">Обсуждение</a></p>
+<p>Суд подтвердил статус Anthropic как «риска для цепочки поставок» (категория, означающая ограничения на покупку их ПО госзаказчиками США). Самый обсуждаемый пост дня — 759 комментариев. Для тебя это фон: твой основной инструмент (Claude Code) и будущие сервисы на Claude API зависят от того, как пойдёт давление на компанию. Пока — просто к сведению, решения менять не требует.</p>
+<h3>3. Plan mode is dead 🏷</h3>
+<p><strong><a href="https://www.aymannadeem.com/artificial/intelligence,/developer/tools/2026/09/24/plan-mode-is-dead.html">Оригинал</a></strong> · 282 балла, 261 комментарий · <a href="https://news.ycombinator.com/item?id=49840054">Обсуждение</a></p>
+<p>Автор утверждает, что режим планирования (plan mode — когда агент сначала составляет план, потом кодит) устарел: агенты нового поколения работают иначе. Прямо твой инструмент: мы с тобой пользуемся планированием каждую сессию. Стоит прочитать, чтобы понимать аргументы — но вывод не принимать сразу: для новичка план до кода остаётся страховкой от мусора, даже если профи он больше не нужен.</p>
+<h3>4. Ollaya – Ollama for open-source, Jev-style decision models 🏷</h3>
+<p><strong><a href="https://ollaya.dev/">Оригинал</a></strong> · 430 баллов, 115 комментариев · <a href="https://news.ycombinator.com/item?id=49848269">Обсуждение</a></p>
+<p>Ollama — локальный запуск open-source моделей; Ollaya — аналог для нового класса «decision-моделей» (модели, которые не генерируют текст, а выбирают действие — тренд из прошлых дайджестов). Твоя линия «предпочтение локальным приложениям»: если decision-модели пойдут в локальные веса, часть агентной логики можно будет держать на ноуте без интернета.</p>
+<h3>5. What even is an OS now? 🏷</h3>
+<p><strong><a href="https://sockpuppet.org/blog/2026/09/25/what-even-is-an-os-now/">Оригинал</a></strong> · 177 баллов, 266 комментариев · <a href="https://news.ycombinator.com/item?id=49850305">Обсуждение</a></p>
+<p>Философский пост: когда агент выполняет за тебя файлы, сеть, приложения — сама операционная система становится прослойкой. Интересно как картина мира: то, чем ты занимаешься (агенты, которые делают работу), уже перестраивает понятие «компьютер».</p>
+<h3>6. Excel now supports multiple values in a single cell 🏷</h3>
+<p><strong><a href="https://techcommunity.microsoft.com/blog/microsoft365insiderblog/put-multiple-values-in-one-cell-with-lists-and-arrays-in-excel/4559395">Оригинал</a></strong> · 174 балла, 122 комментария · <a href="https://news.ycombinator.com/item?id=49849832">Обсуждение</a></p>
+<p>Excel разрешил хранить несколько значений в одной ячейке (списки и массивы). Внезапно релевантно: это сдвиг в самом массовом инструменте работы с данными — то, для чего раньше нужны были формулы-костыли, стало нативным. Для твоих парсеров, где данные часто уезжают в Excel-подобные таблицы, — к сведению.</p>
+<h3>7. We're gonna need a lot more mathematicians 🏷</h3>
+<p><strong><a href="https://terrytao.wordpress.com/2026/09/24/were-gonna-need-a-lot-more-mathematicians/">Оригинал</a></strong> · 97 баллов, 94 комментария · <a href="https://news.ycombinator.com/item?id=49852717">Обсуждение</a></p>
+<p>Терренс Тао (один из сильнейших математиков современности) о том, как ИИ меняет математику и почему математиков нужно больше. Показательно: даже в самых «умственных» профессиях спрос не падает от ИИ, а сдвигается — люди проверяют и направляют модели.</p>
+<h3>8. Microsoft abandons personal AI chatbot race with Copilot reboot 🏷</h3>
+<p><strong><a href="https://www.bloomberg.com/news/articles/2026-09-25/microsoft-abandons-personal-ai-chatbot-race-with-copilot-reboot">Оригинал</a></strong> · 119 баллов, 109 комментариев · <a href="https://news.ycombinator.com/item?id=49844896">Обсуждение</a></p>
+<p>Microsoft признала проигрыш гонки «личный AI-чатбот» и перезапускает Copilot. Рынок «у каждого свой AI-друг» сжимается — полезный сигнал против идей вида «ещё один AI-ассистент»: в этой нише проигрывают даже Microsoft.</p>
+<h2>Остальное с топа</h2>
+<ul>
+<li><strong>Jury finds Facebook liable in Cambridge Analytica case</strong> — 203 б., присяжные признали Facebook виновным в обмане пользователей; прецедент для всего, что связано с данными. 🏷 <a href="https://www.cbsnews.com/news/facebook-liable-deceiving-users-cambridge-analytica/">Ссылка</a></li>
+<li><strong>How we learned to stop worrying and love campus surveillance</strong> — 203 б., про массовый надзор в университетах. 🏷 <a href="https://fnl.mit.edu/how-we-learned-to-stop-worrying-and-love-campus-surveillance/">Ссылка</a></li>
+<li><strong>Show HN: Jev Plays Pokémon Red</strong> — 191 б., модель играет в Pokémon живьём в браузере. 🏷 <a href="https://jev-pokemon.vercel.app/">Ссылка</a></li>
+<li><strong>Gravity seems holographic</strong> — 187 б., физика: гравитация выглядит голографической. Не по твоим темам, но самый красивый пост дня. 🏷 <a href="https://www.quantamagazine.org/gravity-seems-holographic-what-does-that-mean-for-reality-20260925/">Ссылка</a></li>
+<li><strong>One Piece of Flock Camera Data Put This Innocent Woman in Jail for 13 Days</strong> — 165 б., ошибка данных камер наблюдения → арест невиновной; цена «доверия данным» без проверки. 🏷 <a href="https://www.jezebel.com/flock-cameras-data-innocent-woman-arrested-lindsey-isaacs-palm-beach-florida-lawsuit-vehicular-homicide">Ссылка</a></li>
+<li><strong>First Principles Thinking</strong> — 255 б., эссе о мышлении от первых принципов. 🏷 <a href="https://sunilsadasivan.com/writing/first-principles-thinking/">Ссылка</a></li>
+<li><strong>How video games inspire great UX (2019)</strong> — 124 б., классика о UX из игр. 🏷 <a href="https://jenson.org/games/">Ссылка</a></li>
+</ul>
+<h2>Habr (12 новых постов)</h2>
+<h3>1. LLM уверенно называет шахматные ходы, которых на доске нет. Как я проверяю каждый её ответ кодом 🏷</h3>
+<p><strong><a href="https://habr.com/ru/articles/1086898">Оригинал</a></strong></p>
+<p>Практический паттерн «не верь модели — проверяй кодом»: автор прогоняет каждый шахматный ход LLM через валидатор. Это ровно то, что тебе повторяют на обучении, и что работает в твоих скриптах: модель предлагает, код проверяет. Читать обязательно — простой и наглядный пример реализации.</p>
+<h3>2. Особенности агентской разработки ПО, обеспечивающей соответствие замыслу и требованиям 🏷</h3>
+<p><strong><a href="https://habr.com/ru/articles/1086884">Оригинал</a></strong></p>
+<p>Про главную боль агентной разработки: код пишется быстро, но не всегда соответствует замыслу. Разбор, как удерживать агента в рамках требований. Для тебя — теория под то, что мы делаем с планами и подтверждениями в Claude Code.</p>
+<h3>3. Почему нельзя отдавать 100% мышления ИИ: ловушка слепого доверия к AI-ассистентам 🏷</h3>
+<p><strong><a href="https://habr.com/ru/articles/1086872">Оригинал</a></strong></p>
+<p>Критика режима «написал промт — принял результат»: типовые провалы и как выстраивать проверку. Хорошая пара к посту про шахматы и к посту «Plan mode is dead» из HN — вместе они дают сбалансированную картину: план нужен, но контроль остаётся на человеке.</p>
+<h3>4. Как собрать семантику проекта для кодового агента и не открыть филиал Confluence 🏷</h3>
+<p><strong><a href="https://habr.com/ru/articles/1086842">Оригинал</a></strong></p>
+<p>Практика структурирования контекста проекта для агентов: что писать в описание, что нет, как не превратить поддержку документации в отдельную работу. Прямо твой кейс с CLAUDE.md-файлами — можно подсмотреть организацию для своих проектов.</p>
+<h3>5. Бесплатные AI-агенты для программирования в 2026 году: что действительно можно использовать бесплатно 🏷</h3>
+<p><strong><a href="https://habr.com/ru/articles/1086812">Оригинал</a></strong></p>
+<p>Обзор бесплатных AI-агентов для кода: что реально бесплатно, а что «free trial под соусом». При твоём нулевом бюджете — обязательное чтение; полезно и как материал для откликов на вакансии (знать альтернативы Claude Code).</p>
+<h3>6. Kimi, MiniMax Code и ZCode в OpenResearch: форк за один вечер вместе с Claude Opus 5.5 🏷</h3>
+<p><strong><a href="https://habr.com/ru/articles/1086796">Оригинал</a></strong></p>
+<p>Практика: как за вечер собрать форк проекта, используя Claude Opus 5.5 как основного агента и open-source модели Kimi/MiniMax для вспомогательных задач. Кейс «многоагентной сборки» — интересно как образец распределения ролей между моделями.</p>
+<h3>7. 1700 строк JS и ни одного видеофайла: как ИИ-агент снимает кино на Canvas и рендерит его в MP4 🏷</h3>
+<p><strong><a href="https://habr.com/ru/articles/1086766">Оригинал</a></strong></p>
+<p>Агент создаёт видео кодом: каждый кадр — чистая функция времени, рендер в headless-браузере, экспорт в MP4. Никаких нейросетей-генераторов и видеофайлов. Идея для портфолио: «агент снимает видео» — эффектная демонстрация для откликов (и знакомый тебе приём — рендер через headless Edge из проекта «Чудики»).</p>
+<h3>8. DBA Agent в действии: 10 тысяч тикетов и 99,6% автоматизации второй линии 🏷</h3>
+<p><strong><a href="https://habr.com/ru/companies/sberbank/articles/1086740">Оригинал</a></strong></p>
+<p>Сбербанк описывает production-агента для поддержки БД: 10 000 тикетов, 99,6% закрыто автоматически. Редкий большой кейс агентов в реальном энтерпрайзе — полезно как аргумент «это не хайп» в разговорах о трудоустройстве, и как архитектурный пример.</p>
+<h3>Остальное с Хабра</h3>
+<ul>
+<li><strong>Своя нейросеть дома, доступная из любой точки мира</strong> — локальная LLM + удалённый доступ; твоя тема «локальные приложения + личное хранилище». 🏷 <a href="https://habr.com/ru/articles/1086862">Ссылка</a></li>
+<li><strong>Способ скачать сгенерированные ИИ 3D модели без подписки</strong> — обход платных генераторов 3D; в тему 3dtur. 🏷 <a href="https://habr.com/ru/articles/1086860">Ссылка</a></li>
+<li><strong>Продвижение интернет-магазина в ответах ИИ</strong> — почему нейросети почти не ссылаются на карточки товаров; новая ниша SEO→GEO. 🏷 <a href="https://habr.com/ru/articles/1086798">Ссылка</a></li>
+<li><strong>Маршрутизация ИИ-моделей: когда одной модели недостаточно</strong> — роутинг между дешёвыми и дорогими моделями; паттерн для экономии в своих сервисах. 🏷 <a href="https://habr.com/ru/companies/hexlet/articles/1086774">Ссылка</a></li>
+</ul>
+<h2>Reddit (r/vibecoding, r/SideProject — 20 новых)</h2>
+<h3>1. Opus 5.5 created me a 30-second motion graphics spot. Everything is generated 🏷</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1wqb6yk/opus_55_created_me_a_30second_motion_graphics/">Оригинал</a></strong> (r/vibecoding)</p>
+<p>Краткое ТЗ в одну строку: Claude Code построил 30-секундный ролик как веб-страницу, где каждый кадр — функция времени, отрендерил покадрово в headless Chrome и синтезировал музыку скриптами из той же таймлайн-модели. Тот же приём, что в Habr-статье про Canvas-кино — двойное подтверждение тренда. Для тебя: «видео из кода» — дешёвый способ сделать демо-ролик для 3dtur или портфолио без видеоредактора.</p>
+<h3>2. GPT-6 Astra made me an ecom brand, built the ad campaigns, and got its first order 🏷</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1wpzale/gpt6_astra_made_me_an_ecom_brand_built_the_ad/">Оригинал</a></strong> (r/vibecoding)</p>
+<p>Эксперимент «AI сам ведёт ecommerce-бизнес»: человек только направляет и проверяет, вчера — первый оплаченный заказ ($64) от рекламных кампаний, которые агент собрал и запускает сам. Сильный сигнал, куда дует ветер агентов: от «пишет код» к «ведёт бизнес-процесс». Трезвая поправка: один заказ — не бизнес, но механика показана честно.</p>
+<h3>3. I built a Reddit MCP so my AI agent can read subreddits for me 🏷</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1wpv4ey/i_built_a_reddit_mcp_so_my_ai_agent_can_read/">Оригинал</a></strong> (r/SideProject)</p>
+<p>Автор после 4 «недосозданных» проектов сделал MCP-инструмент (MCP — протокол, которым агенты подключают внешние данные), чтобы агент читал Reddit/HN/X и отвечал со ссылками. Полезно дважды: как инструмент и как урок «сначала найди свою боль, потом строй». Концептуально близко к твоему it_digest.py — у него та же ценность, но через агента.</p>
+<h3>4. I open sourced a tool to ask questions about Git history with Jev. 21 репозиторий, 550k коммитов за $23 🏷</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1wqjslj/i_open_sourced_a_tool_to_ask_questions_about_git/">Оригинал</a></strong> (r/SideProject)</p>
+<p>Инструмент-пакет: фильтрует коммиты по YAML-описанию вопросов, шлёт диффы в модель, собирает статистику и отчёты. Анализ 550 000 коммитов за $23 — пример того, как дешёво выглядит массовый разбор кода через правильный фильтр перед моделью. Паттерн «сначала фильтруй, потом в LLM» — тот же, что в твоих парсерах.</p>
+<h3>5. I built a tool that replaces "Press 1 for Sales" phone trees with natural voice 🏷</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1wqhl9k/i_built_a_tool_that_replaces_press_1_for_sales_2/">Оригинал</a></strong> (r/SideProject)</p>
+<p>Голосовой роутер: звонящий говорит по-английски, что нужно, модель классифицирует за ~150 мс с оценкой уверенности, при низкой уверенности — переводит на живого оператора. Открытый код. Обрати внимание на дизайн решения: «нулевой галлюцинации» добились не хитрым промтом, а фолбэком на человека — зрелый паттерн.</p>
+<h3>6. I built a free hands-on DevOps lab instead of another tutorial course 🏷</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1wqkg17/i_built_a_free_handson_devops_lab_instead_of/">Оригинал</a></strong> (r/SideProject)</p>
+<p>Бесплатная практика-лаба: реальное приложение → Docker → CI/CD → деплой на Linux-сервер → разбор поломок. Формат «практика вместо курса» тебе близок по духу zerocoder-обучения; если захочешь поднять инфраструктурную базу — готовый маршрут.</p>
+<h3>7. That cute top? Let's read the label (Riju) 🏷</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1wqjsr4/that_cute_top_lets_read_the_label/">Оригинал</a></strong> (r/SideProject)</p>
+<p>Chrome-расширение: на странице одежды проверяет состав ткани по списку «подозрительных» материалов (PFAS и др.). Классический бутстраппер-кейс: личная тревога → простая автоматизация проверки → бесплатный продукт. Маленькая, конкретная боль — рабочая формула для твоих первых сервисов.</p>
+<h3>8. Using AI to build games for my brother who can only use two switches 🏷</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1wq96kr/using_ai_to_build_games_for_my_brother_who_can/">Оригинал</a></strong> (r/vibecoding)</p>
+<p>Человек вайбкодит игры для брата, который управляет только двумя кнопками движением головы. Напоминание, что персональные проекты для одного конкретного пользователя — и мотивация, и ниша, и лучший вид портфолио.</p>
+<h3>Остальное с Reddit</h3>
+<ul>
+<li><strong>Remaking Bad Apple with Opus 5.5</strong> — ещё один «HTML-аниме» ролик, тренд недели. 🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1wqalif/">Ссылка</a></li>
+<li><strong>m'lord, but 10x cheaper</strong> — разбор, как повторить вирусный ролик в 10 раз дешевле: Codex для оркестрации, imagegen для ключевых кадров, ElevenLabs для голосов, LTX-2.5 на Modal для анимации. 🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1wqkndl/">Ссылка</a></li>
+<li><strong>Swift Qwen 3.8 27b is insane</strong> — локальная модель на M1 Max, 15–16 ток/с, «код снова мой»; локальный вайбкодинг становится реальным. 🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1wpyusy/">Ссылка</a></li>
+<li><strong>GPT-6 Astra ecom</strong> — см. №2 выше.</li>
+<li><strong>ILoveNotch: Macnotch rebuild</strong> — вырез в экране MacBook как трей-панель. 🏷 <a href="https://www.reddit.com/r/SideProject/comments/1wqig3m/">Ссылка</a></li>
+<li><strong>Приложение «любой текст → аудио»</strong> — PDF, статьи, фото текста → подкаст; ниша «слушать вместо читать». 🏷 <a href="https://www.reddit.com/r/SideProject/comments/1wq4pv4/">Ссылка</a></li>
+<li><strong>Got My First Paid User</strong> — первый платный пользователь через Reddit-посты и… рекомендацию ChatGPT; GEO (продвижение в ответах ИИ) работает. 🏷 <a href="https://www.reddit.com/r/SideProject/comments/1wq9dub/">Ссылка</a></li>
+<li><strong>fridge.bio</strong> — link-in-bio как холодильник с магнитами и стикерами; пример «странная идея + личный юмор = вирус». 🏷 <a href="https://www.reddit.com/r/SideProject/comments/1wqfk9p/">Ссылка</a></li>
+<li><strong>Shipwithmuse</strong> — каталог 900+ проектов, построенных на Meta Muse; сама витрина — тоже продукт. 🏷 <a href="https://www.reddit.com/r/SideProject/comments/1wpyg2l/">Ссылка</a></li>
+<li><strong>Make it rain on your Mac desktop</strong> — дождь поверх рабочего стола через Metal; автор признался, что графика вне UI пугала, а Claude Code снял барьер. 🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1wqc6jg/">Ссылка</a></li>
+<li><strong>m'lord</strong> — оригинал вирусной анимации мемов: Seedance 2.5 (~€22), Nano Banana Pro, ElevenLabs v3. 🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1wqdjk1/">Ссылка</a></li>
+<li><strong>Houston we have a problem: Opus 5.5</strong> — мем-пост. 🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1wqfy2l/">Ссылка</a></li>
+<li><strong>Turn your public repos into artworks</strong> — Artrepo: история коммитов как арт-полотно. 🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1wqj297/">Ссылка</a></li>
+</ul>
+<h2>Итог дня</h2>
+<p>Три линии. <strong>Первая — контроль над агентом:</strong> пост про взлом Hugging Face агентами, шахматный валидатор с Habr и «Plan mode is dead» сходятся в одном — доверяй агенту процесс, но не результат; каждое действие агента должно проходить через проверяемый код. Это уже не совет, а индустриальный стандарт. <strong>Вторая — видео из кода:</strong> два независимых кейса (Habr и Reddit) о том, что агенты делают видео без нейрогенераторов — каждый кадр функция времени, рендер в headless-браузере; у тебя уже есть headless-рендер в «Чудиках», так что «снять демо-ролик кодом» — ближайшая дешёвая фишка для портфолио. <strong>Третья — агенты как бизнес-исполнители:</strong> ecom-кейс с первым заказом и DBA-агент Сбера показывают сдвиг от «агент пишет код» к «агент выполняет процесс» — с фолбэками на человека при низкой уверенности. Для тебя: (1) прочитать разбор взлома HF и шахматный пост, (2) попробовать микро-ролик для 3dtur рендером из Canvas, (3) в своих сервисах закладывать фолбэк «уверенность низкая → человек решает».</p>
+<p>Файлы: <code>news/2026-09-26_it_raw.json</code> (47 постов).</p>
+</article>
+<nav class="paging"><a href="2026-09-25.html">← 2026-09-25</a><span class="cur">2026-09-26</span><a href="2026-09-27.html">2026-09-27 →</a></nav>
+<footer class="site"><a href="index.html">⟵ все выпуски</a></footer>
+<script>document.addEventListener('keydown', function(e){
+  if(e.target.tagName==='INPUT')return;
+  var links=document.querySelectorAll('nav.paging a[href]');
+  if(e.key==='ArrowLeft'&&links[0])location.href=links[0].href;
+  if(e.key==='ArrowRight'&&links[links.length-1])location.href=links[links.length-1].href;
+});
+</script>
+
+
+</body>
+</html>
