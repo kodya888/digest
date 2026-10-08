@@ -1,4 +1,4 @@
-var CACHE='digest-v-20261007-0812';
+var CACHE='digest-v-20261008-1359';
 var CORE=['./','./index.html','./style.css','./theme.js','./search.js',
   './sw-register.js','./manifest.json','./icon-192.png','./icon-512.png'];
 self.addEventListener('install', function(e){
