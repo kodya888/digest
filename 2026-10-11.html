@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#faf9f6">
+<title>Дайджест 2026-10-11</title>
+<link rel="icon" href="icon-192.png" />
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+<script src="theme.js" defer></script>
+<script src="sw-register.js" defer></script>
+</head>
+<body>
+
+<header class="site">
+  <a class="home" href="index.html">⟵ все выпуски</a>
+  <button class="theme" aria-label="Сменить тему">◐</button>
+</header>
+<article>
+<p>Новых постов: 44 (HN 15, Habr 9, Reddit 20; r/vibecoding 10 + r/SideProject 10). Сбор утренним автозапуском, дайджест достроен утренней сессией.
+Сортировка по интересу к твоим темам (Claude Code, AI-агенты, вайбкодинг, парсеры, Python,
+фриланс/поиск работы). Метка 🏷 — только заголовок/выдержка.</p>
+<h2>Hacker News</h2>
+<h3>1. Talorys – A self-hosted personal AI agent on Cloudflare's free tier</h3>
+<p><strong><a href="https://github.com/rociiu/talorys">Оригинал</a></strong> · 275 баллов, 128 комментариев · <a href="https://news.ycombinator.com/item?id=50031614">Обсуждение</a>
+<em>«Talorys — самохостинговый персональный ИИ-агент на бесплатном тарифе Cloudflare»</em></p>
+<p>Show HN: агент (агент — программа, которая сама выполняет цепочку задач по инструкции) крутится на бесплатном тарифе Cloudflare Workers — то есть персональный ассистент почти без денег на хостинг. Для тебя это двухслойно: во-первых, прямой образец архитектуры «агент на дешёвой обвязке» (твоя утренняя цепочка — то же самое, только на Windows-планировщике); во-вторых, идея «свой сервис на бесплатном тарифе» — рабочий паттерн для будущих PWA и ботов, у тебя и так предпочтение автономным вещам. 128 комментариев: там спорят, надёжно ли это — полезно почитать перед тем, как что-то такое повторять.</p>
+<h3>2. Mxc: Microsoft Execution Containers version 1.0.0</h3>
+<p><strong><a href="https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/">Оригинал</a></strong> · 182 балла, 41 комментарий · <a href="https://news.ycombinator.com/item?id=50016956">Обсуждение</a>
+<em>«Microsoft Execution Containers v1.0.0 — изоляция для ИИ-агентов, управляемая политиками»</em></p>
+<p>Microsoft выпустила 1.0.0 «контейнеров исполнения» (container — изолированная песочница, где запуск кода не трогает систему вокруг): концепция — запускать ИИ-агентов в жёстко ограниченных контейнерах по политикам. Это индустрия начинает стандартизировать ровно ту проблему, которую ты решаешь в миниатюре правилом «не выходить за пределы рабочей папки» и разрешениями Claude Code. Для твоих планов на агентов: когда будешь делать что-то autonomное для клиентов, «запускается в песочнице» — уже ожидаемый уровень зрелости. Windows-специфично, тебе в тему по среде.</p>
+<h3>3. Nvidia in talks to acquire US 'open' model startup Reflection AI</h3>
+<p><strong><a href="https://www.ft.com/content/052610c5-22b4-4dd4-932e-b7f9f0628b6a">Оригинал</a></strong> · 152 балла, 97 комментариев · <a href="https://news.ycombinator.com/item?id=50035886">Обсуждение</a>
+<em>«Nvidia ведёт переговоры о покупке стартапа «открытых» моделей Reflection AI»</em></p>
+<p>Nvidia (видеокарты и чипы, на которых крутится весь ИИ) по данным FT присматривается к Reflection AI — стартапу открытых моделей. Если купят, «открытые модели» получат чип-финансирование, а рынок ещё сильнее консолидируется. Для тебя фон, но практичный: твои планы на локальные модели (Ollama) и на прод-сервисы через роутеры зависят от того, куда движется рынок открытых весов. Если открытые модели получат мощного спонсора, локальный стек со временем станет доступнее.</p>
+<h3>4. Why DuckDB 2.0 is faster</h3>
+<p><strong><a href="https://motherduck.com/blog/why-duckdb-20-is-faster/">Оригинал</a></strong> · 191 балл, 60 комментариев · <a href="https://news.ycombinator.com/item?id=50035530">Обсуждение</a>
+<em>«Почему DuckDB 2.0 быстрее»</em></p>
+<p>DuckDB (DuckDB — это «SQLite, но для аналитики»: один файл-база, к которой ты делаешь SQL-запросы без сервера) объясняет свои ускорения в 2.0. Тебе это знакомо по жанру «движок, который живёт одним файлом и не требует интернета» — твоя ценность локальных приложений. Практический заход: когда твои парсеры начнут накапливать историю (заказы, вакансии, дайджесты), разбор через DuckDB — куда удобнее джейсона на 10 мегабайт. Статья ещё и образец технического письма: инженеры объясняют оптимизацию простыми картинками.</p>
+<h3>5. Build your own decision model</h3>
+<p><strong><a href="https://nishtahir.com/build-your-own-decision-model/">Оригинал</a></strong> · 216 баллов, 51 комментарий · <a href="https://news.ycombinator.com/item?id=50037949">Обсуждение</a>
+<em>«Собери свою модель принятия решений»</em></p>
+<p>Автор показывает, как построить маленькую систему принятия решений своими руками — без больших моделей, на простых правилах и данных. Идея резонирует с текущей модой «decision models» (на Reddit сегодня тоже про них арена — см. ниже). Для тебя полезно как мышечный тренажёр: твоя утренняя цепочка — это и есть маленькая decision model («есть маркер → не делать», «0 новостей → скип ВК»). Статья помогает осознать это как паттерн, который можно продавать клиентам как мини-автоматизации.</p>
+<h3>6. WallHop – 12ft.io is gone, so I built a replacement</h3>
+<p><strong><a href="https://wallhop.io/">Оригинал</a></strong> · 233 балла, 95 комментариев · <a href="https://news.ycombinator.com/item?id=50038634">Обсуждение</a>
+<em>«WallHop — 12ft.io закрылся, поэтому я собрал замену»</em></p>
+<p>12ft.io был инструментом обхода пейволлов (paywall — «стена оплаты», когда статью можно читать только по подписке), он умер, автор собрал преемника. В обсуждении закономерно спорят об этике. Твоя ссылка на это — не «обходить пейволлы», а другое: классический паттерн сайд-проекта «существующий сервис умер → аудитория осталась → простой клон собирает трафик». Так рождаются сотни независимых малых продуктов. И напоминание про парсеры: данные, которые лежат за пейволлом, — чужая коммерческая ценность, тут нужна аккуратность, которую мы и так практикуем.</p>
+<h3>7. Unikernels were hard. key word: were</h3>
+<p><strong><a href="https://ghuntley.com/unikernels/">Оригинал</a></strong> · 140 баллов, 59 комментариев · <a href="https://news.ycombinator.com/item?id=50033357">Обсуждение</a>
+<em>«Юникернелы были сложными. Ключевое слово: были»</em></p>
+<p>Уникернел (unikernel — минимальная сборка «приложение + микро-ядро» без обычной ОС) — автор (Ghuntley, известный по WASM-сообществу) утверждает, что с современными инструментами и ИИ это стало по силам одному человеку. Тезис твоего жанра: «сложное стало доступным одиночке» — то же, что вайбкодинг делает с разработкой приложений. Читается как мотивация: границы « solo-разработчик vs индустрия» двигаются. Для тебя — ещё одно подтверждение, что ставка на одного человека с агентами не маргинальна.</p>
+<h3>8. Knuth reward check</h3>
+<p><strong><a href="https://www.thomas-huehn.com/knuth-reward-check/">Оригинал</a></strong> · 182 балла, 66 комментариев · <a href="https://news.ycombinator.com/item?id=50034081">Обсуждение</a>
+<em>«Чек вознаграждения Кнута»</em></p>
+<p>Дональд Кнут (автор «Искусства программирования») десятилетиями высылал чеки на $2.56 за найденные ошибки в своих книгах и программах — разбор истории и механики этих чеков. Итог дня с человеческим лицом: культура «найденный баг — вознаграждён» живёт десятилетиями. У тебя похожая мелочь в парсерах и цепочках: каждая найденная причина сбоя уходит в лог и заметку — это и есть тот же навык в миниатюре. Лёгкое чтение в конце списка.</p>
+<h2>Остальное с топа</h2>
+<p>🏷 <a href="https://patkerr.co.uk/2d-vehicles/">2D Vehicles</a> — 426 баллов, 93 комментария — <em>[«2D-транспортные средства»: интерактивный разбор физики машинок в 2D]</em> · <a href="https://news.ycombinator.com/item?id=49991852">Обсуждение</a>
+🏷 <a href="https://purplesyringa.moe/blog/grieving-the-loss-of-details/">Grieving the loss of details</a> — 404 балла, 320 комментариев — <em>[«Оплакивая утрату деталей»: эссе о том, как софт теряет мелочи и тонкости]</em> · <a href="https://news.ycombinator.com/item?id=49980880">Обсуждение</a>
+🏷 <a href="https://lightbulbcomputer.com/">The Lightbulb Computer</a> — 349 баллов, 56 комментариев — <em>[«Компьютер-лампочка»: самодельный компьютер в корпусе лампочки]</em> · <a href="https://news.ycombinator.com/item?id=50029487">Обсуждение</a>
+🏷 <a href="https://housing.over.pizza/">A city-building game in which the city would prefer you didn't</a> — 277 баллов, 95 комментариев — <em>[Градостроительная игра, где город предпочитает, чтобы ты не строил]</em> · <a href="https://news.ycombinator.com/item?id=50036864">Обсуждение</a>
+🏷 <a href="https://fzakaria.com/2026/10/07/nix-wrote-half-of-my-debugger">Nix wrote half of my debugger</a> — 171 балл, 37 комментариев — <em>[«Nix написала половину моего отладчика»]</em> · <a href="https://news.ycombinator.com/item?id=50017247">Обсуждение</a>
+🏷 <a href="https://phys.org/news/2026-10-chernobyl-particles-reveal-unexpectedly-stable.html">Chernobyl particles reveal unexpectedly stable nuclear fuel after 40 years</a> — 149 баллов, 63 комментария — <em>[Частицы из Чернобыля показали неожиданно стабильное ядерное топливо спустя 40 лет]</em>
+🏷 <a href="https://news.vt.edu/articles/2026/10/research_fralinbiomed_upfhutelin.html">Food processing influences metabolism and brain activity</a> — 135 баллов, 102 комментария — <em>[Обработка еды влияет на метаболизм и активность мозга]</em></p>
+<h2>Habr</h2>
+<h3>1. Поэзия агентной разработки или как теперь писать код</h3>
+<p><strong><a href="https://habr.com/ru/articles/1092802">Оригинал</a></strong></p>
+<p>Главная статья дня по твоей теме: автор разбирает, как изменилось написание кода в эпоху агентной разработки (агентная разработка — когда не пишешь строки сам, а направляешь ИИ-агентов). Это ровно твой профиль обучения «вайбкодер»: ожидания, ограничения, что реально работает. Прямо в тему твоей подготовки к откликам на вайбкодер-вакансии — можно брать аргументы и формулировки для портфолио.</p>
+<h3>2. [Перевод] Джеффри Хантли: агенту хватит --help, если CLI сделана хорошо</h3>
+<p><strong><a href="https://habr.com/ru/articles/1092348">Оригинал</a></strong></p>
+<p>Перевод эссе хорошо известного тебе жанра: агенту (агент — ИИ-программа, сама выполняющая многошаговые задачи) достаточно интерфейса командной строки <code>--help</code>, если этот CLI спроектирован честно. Мощный практический урок для твоих скриптов: it_digest.py, vk_post.py, gdrive_upload.py — делай их CLI-дружелюбными (понятные флаги, внятный вывод), и любой агент с ними разберётся без тебя. Это и есть «готовность скрипта к работе с агентом».</p>
+<h3>3. [Перевод] Qwen3.8 27B обошла GPT-5.6 в SQL-бенчмарке. И всё это — локально на ноутбуке</h3>
+<p><strong><a href="https://habr.com/ru/companies/otus/articles/1092466">Оригинал</a></strong></p>
+<p>Открытая модель Qwen3.8 (Qwen — линейка открытых моделей от Alibaba) на 27 миллиардов параметров на SQL-задачах обогнала флагман, и всё локально. Для тебя: прямая поддержка твоей ставки на локальные приложения и Ollama. Осторожно с формулировкой «обошла GPT-5.6» — это один бенчмарк, а не универсальность. Но направление «локальная модель тянет рабочий класс задач» подтверждается.</p>
+<h3>4. Контент-завод в Telegram: как ИИ-агенты ведут шесть площадок за одного человека</h3>
+<p><strong><a href="https://habr.com/ru/articles/1092714">Оригинал</a></strong></p>
+<p>Прямо твой проект: человек с ИИ-агентами ведёт шесть контент-площадок одновременно — то, что ты строишь вокруг VK (дайджест → пост → скип по маркеру → публикация). Полезно подсмотреть механику: как он разводит площадки, какие скрипты и маркеры использует. Твоё отличие в том, что у тебя контент из живого конвейера новостей, а не «пост ради поста» — это сильнее.</p>
+<h3>5. «Грет британ блть»: сделал тренажёр английского со своими PDF, карточками и конечно же ИИ</h3>
+<p><strong><a href="https://habr.com/ru/articles/1092708">Оригинал</a></strong></p>
+<p>Человек собрал тренажёр английского из своих PDF и карточек с ИИ-обработкой. Тебе это близко дважды: ты учишь английский по заголовкам дайджеста, а формат «свой материал → карточки → ИИ» — классический сайд-проект без рисков. Идея «нашёл личную боль → сделал утилиту → показал на Habr» — воспроизводимый путь первого продукта.</p>
+<h3>6. Хотел обучить нейросеть без backprop, а получил k-means</h3>
+<p><strong><a href="https://habr.com/ru/articles/1092720">Оригинал</a></strong></p>
+<p>Весёлая исследовательская история: автор пытался обучить нейросеть без backprop (backprop — стандартный алгоритм обучения сетей, «подкручивание весов по ошибке»), в итоге заново изобрёл k-means (классический алгоритм кластеризации, «разложить точки на группы»). Полезна тебе как прививка: при самостоятельных экспериментах с ИИ часто «открытие» оказывается давно известным — и это нормально, поиск и есть работа. Хорошее чтение для понимания, что у нейросетей под капотом.</p>
+<h3>7. Локальный ассистент для зумов, часть 10: NLI — три места, куда я его примерял, и два, откуда ушёл</h3>
+<p><strong><a href="https://habr.com/ru/articles/1092752">Оригинал</a></strong></p>
+<p>Долгая серия про локальный ассистент для созвонов: очередная часть — честный разбор, где ассистент оказался полезен, а где его пришлось выкинуть. Редкий жанр «где не сработало» — обычно пишут только успехи. Тебе как учебник: любой твой проект стоит вести с такой же честной метрикой «прижилось/не прижилось».</p>
+<h3>8. Нейросеть по рецепту: вычисляем веса вместо хранения матриц</h3>
+<p><strong><a href="https://habr.com/ru/articles/1092220">Оригинал</a></strong></p>
+<p>Идея-экзотика: не хранить веса сети (веса — миллионы чисел, «знаний» сети), а вычислять их на лету по формуле. Пока это скорее исследовательская забава, чем практика, но хорошо расширяет понимание, что сетевые веса — не магия, а просто функция. Читается тяжеловато, бери в очередь «вечером», не первым.</p>
+<h2>Остальное с топа</h2>
+<p>🏷 <a href="https://habr.com/ru/articles/1092812">Как Google научил крошечную модель понимать текст, картинки, видео и звук: разбираем EmbeddingGemma 2</a> — разбор малой мультимодальной модели от Google
+🏷 <a href="https://habr.com/ru/articles/1092810">Odyssey-3: мировая модель, которая учит роботов физике по видео</a> — мировая модель (world model — ИИ, который «представляет» физику мира) для роботов
+🏷 <a href="https://habr.com/ru/companies/polzaai/articles/1092706">8 ИИ-сервисов для Reels и Shorts: что работает в 2026 году</a> — обзорный список генераторов коротких видео</p>
+<h2>Reddit</h2>
+<h3>r/vibecoding</h3>
+<h3>1. I Used Claude Opus 5.5 to Turn Today's News Into Finished Short Videos</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x2yi6h/i_used_claude_opus_55_to_turn_todays_news_into/">Обсуждение</a></strong>
+<em>«Я использовал Claude Opus 5.5, чтобы превращать новости дня в готовые короткие видео»</em></p>
+<p>Самое близкое тебе в потоке: человек отдал Claude Opus всю цепочку — найти новости, спланировать 6 сцен, сделать визуал, титры, проверить звук, собрать финальное видео 33 секунды с озвучкой и субтитрами, и даже подготовить обложки и копирайт для публикации. Это буквально твоя утренняя цепочка (сбор → дайджест → пост), но на выходе видео. Не генерируй вывод «надо повторить завтра» — но как ориентир по эволюции конвейера контента: следующий шаг после текста — видео, и у тебя HyperFrames уже стоит.</p>
+<h3>2. New benchmark dropped / Latest Benchmark shows Gemini 4 Argon Leading The Race.</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x2ihrb/new_benchmark_dropped/">Обсуждение</a></strong> и <strong><a href="https://www.reddit.com/r/vibecoding/comments/1x2golm/latest_benchmark_shows_gemini_4_argon_leading_the/">Обсуждение</a></strong>
+<em>«Вышел новый бенчмарк»</em> / <em>«Свежий бенчмарк: Gemini 4 Argon лидирует в гонке»</em></p>
+<p>Два поста об одном: новый бенчмарк кодинг-моделей, впереди Gemini 4 Argon. Стандартный ритм гонки моделей: бенчмарк → хайп. Практика для тебя прежняя: выбор модели решается твоими задачами (Claude Code для цепочек, локальные для черновиков), а не рейтингами. Пометка «важно для трезвости»: между постами того же автора один день — типичный раш бенчмарков в r/vibecoding.</p>
+<h3>3. I built an Gladiator Arena for AI to fight (Jev and others)</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x2rfus/i_built_an_gladiator_arena_for_ai_to_fight_jev/">Обсуждение</a></strong>
+<em>«Я построил гладиаторскую арену, где ИИ сражаются»</em></p>
+<p>Развлекательный проект (но показательный): арена в браузере, где «гладиаторы» управляются разными ИИ-моделями, зрители голосуют и ставят золото на лучший ход. Автор собирает всё агентами (упомянут ultracode-мультиагентность в Claude Code). Как пример твоего жанра «фан-проект 1–2 вечера»: простая механика + свежая идея = охват. Отмечу: это ранняя стадия того же паттерна, что в пункте 5 HN (decision models) — ИИ судят по ходу решений, а не по чатам.</p>
+<h3>4. Sparky, yours personal local AI workspace</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x2ymu4/sparky_yours_personal_local_ai_workspace/">Обсуждение</a></strong>
+<em>«Sparky — твоё персональное локальное ИИ-рабочее место»</em></p>
+<p>Анонс локального ИИ-воркспейса (workspace — окружение, где агент видит файлы и работает с ними). Ничего революционного, но в теме твоей ставки на локальность: люди всё активнее ищут «ИИ без облака». Для тебя полезная разведка конкурентов: чем заполнен рынок, тем понятнее, куда идти с чем-то узким своим.</p>
+<h3>5. What is something where you believe you use AI more effectively than others?</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x2h79e/what_is_something_where_you_believe_you_use_ai/">Обсуждение</a></strong>
+<em>«Что у вас получается использовать в ИИ эффективнее, чем у других?»</em></p>
+<p>Тред-копилка: люди делятся мелкими трюками — переиспользование контекста, MCP, контекст-базы, заметки. Это буквально жанр «напарники», твои же приёмы (idempotency-маркеры, seen.json, allow-правила) были бы там к месту. Полезно почерпнуть 2–3 приёма в свой арсенал.</p>
+<h3>r/SideProject</h3>
+<h3>1. built a debugger for people who vibe code and have no idea why their app broke</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x305g7/built_a_debugger_for_people_who_vibe_code_and/">Обсуждение</a></strong>
+<em>«Собрал отладчик для тех, кто вайбкодит и не понимает, почему сломалось приложение»</em></p>
+<p>Проект Shrike: кликаешь на то, что сломалось, инструмент показывает путь запроса через код и базу, останавливается на точной строке, дальше агент (Claude Code) чинит — но только после твоего «ok». Это ровно твоя боль новичка («оно молча не работает»), решённая как продукт. Обрати внимание на два умных решения: человек подтверждает исправление (контроль, как у тебя в цепочках) и open source + бесплатность на старте. Обязательно заглянуть в репозиторий — это пример продукта, который «продаёт себя по одной картинке».</p>
+<h3>2. Old phones aren't dead. I built an offline app no ads to give them a second life.</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x2qgum/old_phones_arent_dead_i_built_an_offline_app_no/">Обсуждение</a></strong>
+<em>«Старые телефоны не мертвы. Я собрал офлайн-приложение без рекламы, чтобы дать им вторую жизнь»</em></p>
+<p>Разработчик с 15-летним стажем сделал офлайн-приложение (работает без Wi-Fi и интернета, режим самолёта) для «оживления» старых телефонов, вайбкодинг на 60%. Прямо твоя тема: предпочтение локальным вещам. Заметь цифры: он открыто пишет «60% ИИ, 40% своё» и что тесты и документацию дорабатывал сам — типичная вайб-смесь для зрелого разработчика. Аргумент в пользу того, что «локальный офлайн-инструмент» — не ниша, а живой спрос.</p>
+<h3>3. I've been working on a golf ball finder. Thoughts?</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x2ff86/ive_been_working_on_a_golf_ball_finder_thoughts/">Обсуждение</a></strong>
+<em>«Долго работаю над искателем гольф-мячей. Мысли?»</em></p>
+<p>ForeAI: наводишь телефон на траву, YOLO-модель (YOLO — быстрый детектор объектов на камере) выискивает труднозаметные мячи. Классика «узкая модель под одну смешную задачу» — детектор работает офлайн. Тебе как подтверждение твоего плана «Чудики»/генераторов: одна узкая, слегка смешная, но реально нужная задача приносит больше внимания, чем универсальный инструмент.</p>
+<h3>4. I built a Flightradar-style map for the Paris metro</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x2qxg3/i_built_a_flightradarstyle_map_for_the_paris_metro/">Обсуждение</a></strong>
+<em>«Я собрал карту парижского метро в стиле Flightradar»</em></p>
+<p>Lineapolis: карта метро Парижа с движущимися поездками, как Flightradar для самолётов. Важно технически: автор честно пишет, что поездки не по GPS — позиции восстанавливаются из предсказаний прибытия публичного API (инференс из косвенных данных — приём, который ты уже видел при парсингах). Тебе как шаблон «есть открытые данные → красивая живая карта» — в РФ такие данные у метро и автобусов тоже частично открыты.</p>
+<h3>5. Widgetscape - Rainmeter-style desktop widgets for the Mac, no skins to write</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x2zimy/widgetscape_rainmeterstyle_desktop_widgets_for/">Обсуждение</a></strong>
+<em>«Widgetscope — виджеты на рабочий стол Mac, как Rainmeter, без написания скинов»</em></p>
+<p>Годовой проект одного человека: 31 виджет (часы, календарь, погода, статистика системы, монитор git-репо, график расхода токенов ИИ-инструментов — забавно, сколько об ИИ-инструментах теперь смотрят как о «системной метрике»). Тебе тут два посыла: во-первых, год на сайд-проект — норма; во-вторых, что «Rainmeter-подход» (Rainmeter — легендарные виджеты на Windows) востребован и на Mac. Твой пиксельный Бегунок, который живёт у терминала, — из той же песочницы «живой рабочий стол».</p>
+<h2>Остальное с топа</h2>
+<p>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1x2xzrz/i_made_an_ai_production_studio_where_claude/">I made an AI production studio where Claude writes, casts, directs and performs a sketch comedy show</a> — <em>[«Сделал ИИ-студию, где Claude пишет, кастингует, режиссирует и играет в скетч-шоу»]</em>
+🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1x2fwec/i_built_the_computer_from_courage_the_cowardly/">I built The Computer from Courage the Cowardly Dog that talks to you 📺</a> — <em>[«Собрал Компьютер из мультсериала „Трус, который говорил с собакой“ — он разговаривает»]</em>
+🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1x2kxuq/using_chatgpt_image_gen_and_kling_video_to_create/">Using ChatGPT image gen and Kling video to create seamless motion loops</a> — <em>[«ChatGPT-генерация картинок + Kling-видео = бесшовные петли движения»]</em>
+🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1x2qfvs/could_you_help_me_understand_architecturescoding/">Could you help me understand architectures/coding better? What's your preferred workflow?</a> — <em>[«Помогите разобраться в архитектурах: какой у вас workflow»]</em> — честный вопрос новичка про кроссплатформенный редактор
+🏷 <a href="https://www.reddit.com/r/SideProject/comments/1x2yehx/i_built_a_tool_that_tells_you_how_much_propane_is/">I built a tool that tells you how much propane is left in you tank by the sound it makes when you slap it!</a> — <em>[«Инструмент определяет остаток газа в баллоне по звуку от шлепка!»]</em> — 4 месяца сбора аудио + ИИ
+🏷 <a href="https://www.reddit.com/r/SideProject/comments/1x2omoz/built_a_website_where_you_can_plot_formulas_with/">built a website where you can plot formulas with sound</a> — <em>[«Сайт, где формулы рисуются и звучат»]</em>
+🏷 <a href="https://www.reddit.com/r/SideProject/comments/1x2zvnk/time_capsule_compare_your_world_at_18_with_your/">Time Capsule - compare your world at 18 with your parents' world at 18</a> — <em>[«Капсула времени: сравни свой мир в 18 с миром родителей в 18»]</em>
+🏷 <a href="https://www.reddit.com/r/SideProject/comments/1x2xxq2/i_built_a_windows_app_to_play_my_ps5_with/">I built a Windows app to play my PS5 with keyboard and mouse, mostly to learn</a> — <em>[«Сделал Windows-приложение, чтобы играть на PS5 с клавиатурой и мышью — в основном учился»]</em></p>
+<h2>Итог дня</h2>
+<p>Три нити в тему твоих дней: 1) «отладчик для вайбкодеров» на r/SideProject — прямое попадание в твою боль и одновременно образец того, как «своя боль новичка» превращается в продукт; 2) Habr-статьи об агентной разработке и «агенту хватит --help» дают материал для портфолио и для того, чтобы твои скрипты были агент-дружелюбными; 3) тренд на локальность усиливается — офлайн-приложения, локальные воркспейсы, DuckDB — всё это подтверждает твою ставку на инструменты без интернета. Видеоконвейер от новостей (Reddit, Opus 5.5) показывает следующий шаг после текстового контента — у тебя HyperFrames для этого уже установлен.</p>
+</article>
+<nav class="paging"><a href="2026-10-10.html">← 2026-10-10</a><span class="cur">2026-10-11</span><span class="empty">→</span></nav>
+<footer class="site"><a href="index.html">⟵ все выпуски</a></footer>
+<script>document.addEventListener('keydown', function(e){
+  if(e.target.tagName==='INPUT')return;
+  var links=document.querySelectorAll('nav.paging a[href]');
+  if(e.key==='ArrowLeft'&&links[0])location.href=links[0].href;
+  if(e.key==='ArrowRight'&&links[links.length-1])location.href=links[links.length-1].href;
+});
+</script>
+
+
+</body>
+</html>
