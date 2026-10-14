@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#faf9f6">
+<title>Дайджест 2026-10-14</title>
+<link rel="icon" href="icon-192.png" />
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+<script src="theme.js" defer></script>
+<script src="sw-register.js" defer></script>
+</head>
+<body>
+
+<header class="site">
+  <a class="home" href="index.html">⟵ все выпуски</a>
+  <button class="theme" aria-label="Сменить тему">◐</button>
+</header>
+<article>
+<p>Новых постов: 50 (HN 15, Habr 15, Reddit 20; r/vibecoding 10 + r/SideProject 10). Сбор утренним автозапуском, дайджест достроен дневной сессией.
+Сортировка по интересу к твоим темам (Claude Code, AI-агенты, вайбкодинг, парсеры, Python,
+фриланс/поиск работы). Метка 🏷 — только заголовок/выдержка.</p>
+<h2>Hacker News</h2>
+<h3>1. Redesigning source control at Anthropic</h3>
+<p><strong><a href="https://www.anthropic.com/engineering/redesigning-source-control">Оригинал</a></strong> · 802 балла, 850 комментариев · <a href="https://news.ycombinator.com/item?id=50073633">Обсуждение</a>
+<em>«Перестройка контроля версий в Anthropic»</em></p>
+<p>Инженерная статья Anthropic о том, как они переделали работу с git под AI-агентов: агенты генерируют так много изменений, что классический «человек коммитит в ветку» перестал справляться. Тебе это самое близкое из всей подборки: ты работаешь в Claude Code каждый день, и то, как устроены ветки/ревью вокруг агентов, — это твой рабочий процесс завтра. 850 комментариев — живое обсуждение среди разработчиков, полезно для понимания, куда дрейфует профессия.</p>
+<h3>2. Gemini 4 Argon</h3>
+<p><strong><a href="https://deepmind.google/models/gemini/">Оригинал</a></strong> · 1347 баллов, 939 комментариев · <a href="https://news.ycombinator.com/item?id=50073879">Обсуждение</a>
+<em>«Gemini 4 Argon»</em></p>
+<p>Google выкатил новую топ-модель Gemini 4 (кодовое имя Argon). Для тебя суть не в маркетинге, а в простом факте: гонка флагманов продолжается, и модели, которые ты гоняешь через агентов, дешевеют и дуреют в хорошем смысле — старшие версии прошлого поколения падают в цене. Держи в голове: твой конвейер построен на заменяемости моделей (адаптер), и это правильная ставка — такие релизы происходят каждые пару месяцев.</p>
+<h3>3. Ledger confirms spy chip implant behind wallet crypto thefts</h3>
+<p><strong><a href="https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/">Оригинал</a></strong> · 735 баллов, 460 комментариев · <a href="https://news.ycombinator.com/item?id=50054092">Обсуждение</a>
+<em>«Ledger подтвердил: кражи крипты из кошельков через шпионский чип»</em></p>
+<p>Производитель аппаратных криптокошельков подтвердил: у части устройств стоял вживлённый шпионский чип, сливавший данные. История о физическом компромиссе железа — хорошая закалка против наивности «раз офлайн, значит безопасно». Практического применения для тебя нет, но для постов/контента по безопасности — готовый кейс.</p>
+<h3>4. Show HN: Guitoro, a virtual guitar you strum with your keyboard</h3>
+<p><strong><a href="https://guitoro.com/">Оригинал</a></strong> · 470 баллов, 121 комментарий · <a href="https://news.ycombinator.com/item?id=50077020">Обсуждение</a>
+<em>«Show HN: Guitoro — виртуальная гитара, лады дергаются клавиатурой»</em></p>
+<p>Solo-проект: веб-гитара, играемая с клавиатуры, полностью в браузере. Пример того, что «странная узкая штука, сделанная на чистом энтузиазме» взлетает на 470 баллов. Прямо твой жанр: маленький инструмент в браузере, ноль установки. Ориентир для твоих фан-проектов на 1–2 часа в неделю — простая идея + полировка = попадание.</p>
+<h3>5. AOSP Source Releases Are So Late Developers Disassemble Libraries to Report Bugs</h3>
+<p><strong><a href="https://github.com/android/ndk/issues/2260">Оригинал</a></strong> · 324 балла, 146 комментариев · <a href="https://news.ycombinator.com/item?id=50083130">Обсуждение</a>
+<em>«Релизы исходников AOSP так запаздывают, что разработчики дизассемблируют библиотеки, чтобы сообщать о багах»</em></p>
+<p>Google публикует исходники Android с таким опозданием, что разработчики реверсят бинарники. Интересно как симптом: даже у корпораций «открытость» проседает, когда приоритеты сдвигаются. Для постов в ВК — занимательная вилка «бинарник против исходника».</p>
+<h3>6. Recreational Programming</h3>
+<p><strong><a href="https://www.cphiri.dev/presentations/recreational-programming">Оригинал</a></strong> · 223 балла, 94 комментария · <a href="https://news.ycombinator.com/item?id=50079865">Обсуждение</a>
+<em>«Программирование для удовольствия»</em></p>
+<p>Презентация о том, что писать код «просто потому что интересно» — легитимный режим, отдельный от работы. Тебе как мотивационный фон: твои фан-проекты и полигон VK — это ровно recreational programming, и судят такие штуки по сделанности, а не по сложности.</p>
+<h3>7. The United Kingdom generates less electricity per person than in the 1970s</h3>
+<p><strong><a href="https://ourworldindata.org/data-insights/electricity-generation-per-person-in-the-united-kingdom-has-fallen-by-a-third-from-its-early-2000s-peak">Оригинал</a></strong> · 341 балл, 548 комментариев · <a href="https://news.ycombinator.com/item?id=50072994">Обсуждение</a>
+<em>«Великобритания генерирует меньше электричества на человека, чем в 1970-е»</em></p>
+<p>Our World in Data показывает: ВБ ушла вниз на треть с пика 2000-х. Не IT-тема, но дискуссия в 548 комментариев — про энергосистемы и ИИ-датацентры, которые жрут ток. Контекст для понимания, почему ИИ-компании строят собственные электростанции.</p>
+<h3>8. Iosevka is an open-source, sans-serif and slab-serif, monospace font</h3>
+<p><strong><a href="https://typeof.net/Iosevka/">Оригинал</a></strong> · 234 балла, 85 комментариев · <a href="https://news.ycombinator.com/item?id=50084240">Обсуждение</a>
+<em>«Iosevka — опенсорсный моноширинный шрифт с засечками и без»</em></p>
+<p>Iosevka — любимый шрифт программистов: узкий моноширинный, настраивается почти подо всё. Полезный твик: если глаза устают в терминале и редакторе, это кандидат на смену дефолтному шрифту. Мелочь, а комфорт ежедневный.</p>
+<p><strong>Остальное с HN (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://news.mit.edu/2026/mit-class-project-turns-into-fda-cleared-treatment-for-tremors-1002">MIT class project turns into an FDA-cleared treatment for tremors</a> — классный курс MIT дорос до медтехники с одобрением FDA · <a href="https://news.ycombinator.com/item?id=50061659">Обсуждение</a></li>
+<li>🏷 <a href="https://felixrieseberg.com/">Felix Rieseberg Homepage</a> —Homepage автора Slack/VS Code-инженера · <a href="https://news.ycombinator.com/item?id=50082470">Обсуждение</a></li>
+<li>🏷 <a href="https://www.openculture.com/2026/10/a-900-page-pre-pantone-guide-to-color-from-1692.html">900-Page Pre-Pantone Guide to Color from 1692</a> — 900-страничный атлас цветов 1692 года, скан в высоком разрешении · <a href="https://news.ycombinator.com/item?id=50053487">Обсуждение</a></li>
+<li>🏷 <a href="https://lab.specr.net/rigged-draw/">Show HN: How random are you?</a> — тест «насколько ты случаен» · <a href="https://news.ycombinator.com/item?id=50074909">Обсуждение</a></li>
+<li>🏷 <a href="https://ciechanow.ski/sound/">Sound – Bartosz Ciechanowski (2022)</a> — интерактивный разбор звука (классика жанра) · <a href="https://news.ycombinator.com/item?id=50045147">Обсуждение</a></li>
+<li>🏷 <a href="https://www.not-ship.com/how-amazon-pushes-up-prices-all-across-the-internet/">Amazon pushes up prices across the Internet</a> — как Amazon задирает цены по всему интернету · <a href="https://news.ycombinator.com/item?id=50084757">Обсуждение</a></li>
+<li>🏷 <a href="https://eliasebner.com/blog/guides/arena-allocators-in-c/">Arena Allocators in C</a> — аренные аллокаторы в C (управление памятью пулом) · <a href="https://news.ycombinator.com/item?id=50046022">Обсуждение</a></li>
+</ul>
+<h2>Habr</h2>
+<h3>1. Команда ИИ-агентов в Claude Code для сбора цитат аудитории: разведка, сбор и проверка каждой ссылки</h3>
+<p><strong><a href="https://habr.com/ru/articles/1094336">Читать</a></strong></p>
+<p>Прямо в точку твоих тем: автор собирает команду субагентов в Claude Code (разведка → сбор → проверка ссылок) — ровно та схема, что ты уже видел у себя в Workflow и параллельных задачах. Читай как референс: чужой практический опыт разбиения задачи между агентами, где каждый проверяет работу предыдущего.</p>
+<h3>2. ИИ-агент получил власть над компьютером: что делать разработчику. Разбор ошибок автоматизации: sandbox escape</h3>
+<p><strong><a href="https://habr.com/ru/companies/speshu_ai/articles/1094252">Читать</a></strong></p>
+<p>Разбор рисков, когда агенту дают доступ к машине: «побег из песочницы» (sandbox escape — когда программа вылезает из отведённой ей огороженной зоны и получает больше прав, чем должна) и типовые ошибки автоматизации. Для тебя вторично: ты уже живёшь с permission-режимами и границами «не выходить за папку». Полезно как чек-лист, что ты делаешь правильно.</p>
+<h3>3. Регрессионное тестирование промптов: ИИ-модель в роли читателя пропустила три из четырёх текстов</h3>
+<p><strong><a href="https://habr.com/ru/articles/1094096">Читать</a></strong></p>
+<p>Автор ставит промпты на тесты как код: меняешь промпт — прогоняешь регрессию, ловишь деградацию. Это прямой перенос твоего знания «тесты для кода» на промпты. Когда начнёшь строить пайплайны с LLM-шагами (у тебя их уже три), идея «фиксированные примеры + авто-проверка ответа» сэкономит часы отладки.</p>
+<h3>4. Ваш отклик теперь может сначала разобрать ИИ hh</h3>
+<p><strong><a href="https://habr.com/ru/articles/1094230">Читать</a></strong></p>
+<p>hh.ru вводит ИИ-скрининг откликов. Для тебя это не теория — ты прямо сейчас шлёшь отклики на вайбкодер-вакансии: проверь, из чего «видно» твоё резюме, и не дай бот-фильтру отсечь тебя по формальностям. Практичный чек за 10 минут.</p>
+<h3>5. Выносила за девять месяцев: гайдлайн по вайб-кодингу для девочек (и мальчиков)</h3>
+<p><strong><a href="https://habr.com/ru/articles/1094214">Читать</a></strong></p>
+<p>Вайбкодинг-гайдлайн с хабра — забавный заголовок, но внутри, судя по всему, свод правил «как не родить самоделку». Твоя тема в точку: у тебя есть собственный чек «признаков самоделки» перед показом портфолио. Сравнить списки — полезно, чужие чек-листы часто находят дыры.</p>
+<h3>6. ИИ для руководителя: я отдал ассистенту половину рутины — где он сэкономил часы, а где подставил</h3>
+<p><strong><a href="https://habr.com/ru/companies/aspro/articles/1094330">Читать</a></strong></p>
+<p>Честный опыт делегирования рутины ИИ-ассистенту: где выиграл время, где накосячил. Трезвый тон именно твой: не «ИИ всё сделает», а «вот границы». Хороший материал для формулировок в откликах и постов VK.</p>
+<h3>7. Личный ИИ-ассистент без платной подписки: как устроить прототип и посчитать пользу для бизнеса</h3>
+<p><strong><a href="https://habr.com/ru/articles/1094234">Читать</a></strong></p>
+<p>Как собрать личного ассистента на дешёвых/локальных моделях и посчитать пользу в деньгах. Твоё направление: у тебя Replicate как тестовая площадка и план замены на рублёвые прокси — чужая методика «посчитать пользу» поможет оформлять такие решения в портфолио.</p>
+<h3>8. [Перевод] Нет, ИИ не решил задачу Навье-Стокса</h3>
+<p><strong><a href="https://habr.com/ru/articles/1093452">Читать</a></strong></p>
+<p>Разбор хайпа вокруг заявления «ИИ решил задачу тысячелетия»: по фактам — не решил. Полезный противовес к «AGI is here» из Reddit ниже: тренирует навык не верить заголовкам, что для вайбкодера прямо рабочий навык (проверять заявления моделей и их авторов).</p>
+<p><strong>Остальное с Habr (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://habr.com/ru/articles/1094212">Как ИИ-агенты за три недели собрали архив моей семьи — и что из этого выросло</a></li>
+<li>🏷 <a href="https://habr.com/ru/companies/contentai/articles/1094200">Сначала пилот, потом стратегия: как крупный бизнес внедряет LLM</a></li>
+<li>🏷 <a href="https://habr.com/ru/articles/1094226">Как построить систему безопасности для AI-платформы в эпоху новых вызовов и угроз</a></li>
+<li>🏷 <a href="https://habr.com/ru/companies/selectel/articles/1093970">Набор сервисов для работы с данными и расширение ИИ-платформы: что нового в Selectel в сентябре</a></li>
+<li>🏷 <a href="https://habr.com/ru/companies/infostart/articles/1094306">Как я выступил на INFOSTART TECH EVENT 2026: доклад по API, баттл кодеров и подкаст про ИИ</a></li>
+<li>🏷 <a href="https://habr.com/ru/companies/infostart/articles/1094254">ИИ не отменяет hard skills: что аналитикам предложат на A&amp;PM EVENT 2026</a></li>
+</ul>
+<h2>Reddit</h2>
+<h3>1. [r/vibecoding] If anyone can build software with AI, who are we building products for?</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x5jcmh/if_anyone_can_build_software_with_ai_who_are_we/">Читать</a></strong>
+<em>«Если любой может собрать софт с ИИ — для кого мы вообще делаем продукты?»</em></p>
+<p>Автор замечает: разработчик с ИИ выложил бесплатный опенсорс-клон Adobe-пакета из семи приложений (ArtCraft) — и задаётся вопросом, что остаётся на долю «просто собрать». Точная боль твоего рынка: вайбкодинг обесценивает «умение собрать», ценность переезжает в выбор проблемы и дистрибуцию. Твоя точка зрения совпадает с твоим же правилом «сначала где деньги, потом механика».</p>
+<h3>2. [r/SideProject] Cloudflare is giving bootstrapped startups 10k in free credits, no funding needed</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x5j6qd/cloudflare_is_giving_bootstrapped_startups_10k_in/">Читать</a></strong>
+<em>«Cloudflare даёт бутстрап-стартапам 10 000 долларов кредитов — без привлечённых инвестиций»</em></p>
+<p>Cloudflare в рамках startup-программы даёт $10k кредитов (Workers, D1, R2, KV, Queues и т.д.) если ты бутстрапнул сам или поднял меньше $1M. Держи в голове на будущее: когда дойдёшь до продакшена своих сервисов, это способ год не платить за хостинг. Заявка простая, но сейчас не суетись — кредиты сгорают, а твои проекты ещё локальные/PWA.</p>
+<h3>3. [r/vibecoding] 3D Vampire Survivors style arcane game with Claude Code, Higgsfield 3D and ElevenLabs. Full process and costs inside.</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x55yeh/3d_vampire_survivors_style_arcane_game_with/">Читать</a></strong>
+<em>«3D-игра в стиле Vampire Survivors на Claude Code, Higgsfield 3D и ElevenLabs. Полный процесс и затраты внутри»</em></p>
+<p>Бывший персональный тренер, не пишущий код руками, собрал 3D-игру: Claude пишет, он режиссирует и тестирует. Прозрачно показывает затраты и итерации. Это буквально твоя траектория — «не пишу код, принимаю решения» — только уже с готовым примером дохода до 3D. Полезно посмотреть на их процесс первой итерации: первая попытка (idle-игра) была плохой, и он её выкинул — нормальная практика.</p>
+<h3>4. [r/SideProject] I built a tool that roasts cliché portfolio projects and predicts the trap questions interviewers will ask</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x5m7m2/i_built_a_tool_that_roasts_cliché_portfolio/">Читать</a></strong>
+<em>«Сделал инструмент, который ругает шаблонные портфолио и предсказывает каверзные вопросы на собеседовании»</em></p>
+<p>Инструмент для джунов: проверяет, что в портфолио нет трёх одинаковых клонов, и ждёт вопросов «а что если два юзера одновременно нажмут купить». Тебе прямо сейчас: твой README-портфолио по этому же тесту пройдётся — у тебя живые проекты с реальными данными, а не клоны e-commerce. И сама механика (LLM + рубрикатор) — простой образец сервиса «один запрос — польза».</p>
+<h3>5. [r/SideProject] I built a quiet, free web reader for your own books — EPUB, PDF, comics. No account needed, your files never leave your device</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x5k1o0/i_built_a_quiet_free_web_reader_for_your_own/">Читать</a></strong>
+<em>«Сделал тихий бесплатный веб-читалку для своих книг — EPUB, PDF, комиксы. Без аккаунта, файлы не покидают устройство»</em></p>
+<p>Читалка, работающая локально в браузере (файлы не загружаются на сервер) — ровно твои ценности: «предпочтение локальным приложениям» + «не требует интернета». Технически это PWA-подход, как в твоих проектах. Наглядный пример, что «локально и приватно» — продающая фича, а не ограничение.</p>
+<h3>6. [r/SideProject] I built Anima - turn any biology idea into an interactive scientific visualization</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x4v330/i_built_anima_turn_any_biology_idea_into_an/">Читать</a></strong>
+<em>«Сделал Anima — превращает любую биологическую идею в интерактивную научную визуализацию»</em></p>
+<p>Open-source Claude Code skill, который по теме строит интерактивные схемы (например, сравнение механизмов кокаина и амфетамина на дофаминовом синапсе с переключателями). Интересный подход: не «ещё один ChatGPT-враппер», а скилл для Claude Code в узкую нишу. Тебе как подтверждение твоего же пути: скиллы — реально работающий продукт-формат.</p>
+<h3>7. [r/vibecoding] I made a free city destruction sim called Judgement Day</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x5mien/i_made_a_free_city_destruction_sim_called/">Читать</a></strong>
+<em>«Сделал бесплатный симулятор разрушения городов Judgement Day»</em></p>
+<p>Браузерная игрушка: зум от Земли до любого города, выбор апокалипсиса (ядерка, метеорит, чёрная дыра), здания рассыпаются на частицы. Пример фан-проекта с одной яркой фишкой, который разлетается по соцсетям. Шаблон для твоих 1–2-часовых фан-проектов: одна wow-механика важнее объёма.</p>
+<h3>8. [r/SideProject] What if you could turn a research paper into a podcast in 30 seconds?</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x5ne4w/what_if_you_could_turn_a_research_paper_into_a/">Читать</a></strong>
+<em>«Что если превратить научную статью в подкаст за 30 секунд?»</em></p>
+<p>Конвейер «текст → разговор двух голосов» уже даёт неожиданные сценарии (фантазийная фехтовальная аналитика, конспекты под экзамен). Для тебя: твой дайджест новостей мог бы превращаться в 5-минутный аудиоподкаст тем же способом — мысль на будущее, не задача сейчас.</p>
+<p><strong>Остальное с Reddit (только заголовки):</strong></p>
+<ul>
+<li>🏷 [r/vibecoding] <a href="https://www.reddit.com/r/vibecoding/comments/1x58gyd/the_name_is_half_the_product_distribution/">The name is half the product distribution!</a> — имя = половина дистрибуции</li>
+<li>🏷 [r/vibecoding] <a href="https://www.reddit.com/r/vibecoding/comments/1x4t5nf/guys_i_think_agi_is_here/">Guys, I think AGI is here</a> — «я думаю, AGI здесь» (спор о признаках)</li>
+<li>🏷 [r/vibecoding] <a href="https://www.reddit.com/r/vibecoding/comments/1x5exaa/i_built_a_community_hub_for_my_discord/">I built a community hub for my discord</a> — хаб сообщества для Discord с комнатами</li>
+<li>🏷 [r/vibecoding] <a href="https://www.reddit.com/r/vibecoding/comments/1x4xp1w/what_do_you_guys_think_about_my_first_browser_game/">What do you guys think about my first browser game?</a> — первая браузерная игра, просит фидбек</li>
+<li>🏷 [r/vibecoding] <a href="https://www.reddit.com/r/vibecoding/comments/1x5oqo6/the_agent_prompt_the_human_game/">The Agent prompt The Human Game</a> — игра, где промты вводит ИИ, а не человек</li>
+<li>🏷 [r/SideProject] <a href="https://www.reddit.com/r/SideProject/comments/1x5jc1q/drop_your_project_ill_help_you_get_your_first_10/">Drop your project - I'll help you get your first 10 users through TikTok &amp; YouTube Shorts</a> — помощь с первыми 10 юзерами через шортсы</li>
+<li>🏷 [r/SideProject] <a href="https://www.reddit.com/r/SideProject/comments/1x5m5ex/drop_your_product/">Drop your product 👇</a> — ветка «показывай свои продукты»</li>
+<li>🏷 [r/SideProject] <a href="https://www.reddit.com/r/SideProject/comments/1x5oilu/what_make_you_feel_that_your_project_is_alive/">What make you feel that your project is alive except new users/customers?</a> — что кроме юзеров даёт чувство «проект жив»</li>
+<li>🏷 [r/SideProject] <a href="https://www.reddit.com/r/SideProject/comments/1x5pimb/i_built_a_tool_that_turns_one_photo_of_your_pet/">I built a tool that turns one photo of your pet into a printable cube papercraft</a> — фото питомца → бумажный куб-крафт (прямая родня твоих паков с котиками)</li>
+<li>🏷 [r/SideProject] <a href="https://www.reddit.com/r/SideProject/comments/1x5ntvo/my_icon_set_got_roasted_on_reddit_so_i_spent_the/">My icon set got roasted on Reddit, so I spent the week fixing it</a> — набор иконок покритиковали → неделя правок стало лучше</li>
+</ul>
+<h2>Итог дня</h2>
+<p><strong>Три нити, которые стоит увязать:</strong></p>
+<ol>
+<li>
+<p><strong>Процессы вокруг агентов — новый фронт.</strong> Anthropic переписывает source control под агентов (HN #1), хабр раскладывает команды субагентов с проверкой ссылок (Habr #1) и риски «агенту дали машину» (Habr #2). Твоя позиция тут хорошая: ты уже живёшь в этом мире — скиллы, субагенты, permission-границы. Читай чужие схемы и кради лучшее.</p>
+</li>
+<li>
+<p><strong>Вайбкодинг на Reddit сходится к одному выводу:</strong> «умение собрать» теряет ценность, выигрывает «выбрать проблему и донести до людей» (Reddit #1, #3, #7). Это прямое подтверждение твоего правила «сначала где деньги, потом механика» и ставки на полировку продукта, а не на количество проектов.</p>
+</li>
+<li>
+<p><strong>Практическая мелочь на сегодня:</strong> hh вводит ИИ-скрининг откликов (Habr #4) — стоит 10 минут проверить, как выглядит твоя визитка/резюме в глазах фильтра. Это твой самый горячий приоритет сейчас (отклики на вайбкодер-вакансии).</p>
+</li>
+</ol>
+<p><strong>Пятница-ритм:</strong> сегодня подборка на удивление рабочая — минимум «шумных» постов, четыре текста (HN #1, Habr #1, #2, #4) можно реально применить в текущих задачах.</p>
+</article>
+<nav class="paging"><a href="2026-10-13.html">← 2026-10-13</a><span class="cur">2026-10-14</span><span class="empty">→</span></nav>
+<footer class="site"><a href="index.html">⟵ все выпуски</a></footer>
+<script>document.addEventListener('keydown', function(e){
+  if(e.target.tagName==='INPUT')return;
+  var links=document.querySelectorAll('nav.paging a[href]');
+  if(e.key==='ArrowLeft'&&links[0])location.href=links[0].href;
+  if(e.key==='ArrowRight'&&links[links.length-1])location.href=links[links.length-1].href;
+});
+</script>
+
+
+</body>
+</html>
