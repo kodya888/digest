@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#faf9f6">
+<title>Дайджест 2026-10-15</title>
+<link rel="icon" href="icon-192.png" />
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+<script src="theme.js" defer></script>
+<script src="sw-register.js" defer></script>
+</head>
+<body>
+
+<header class="site">
+  <a class="home" href="index.html">⟵ все выпуски</a>
+  <button class="theme" aria-label="Сменить тему">◐</button>
+</header>
+<article>
+<p>Новых постов: 43 (HN 15, Habr 8, Reddit 20; r/vibecoding 10 + r/SideProject 10).
+Сортировка по интересу к твоим темам (Claude Code, AI-агенты, вайбкодинг, парсеры, Python,
+фриланс/поиск работы). Метка 🏷 — только заголовок/выдержка.</p>
+<h2>Hacker News</h2>
+<h3>1. OpenCode 2.0</h3>
+<p><strong><a href="https://anoma.ly/notes/opencode-2-0/">Оригинал</a></strong> · 679 баллов, 272 комментария · <a href="https://news.ycombinator.com/item?id=50094994">Обсуждение</a>
+<em>«OpenCode 2.0»</em></p>
+<p>Новая мажорная версия OpenCode — открытого консольного агента-кодера, прямого конкурента Claude Code. Для тебя это сразу две вещи: во-первых, стоит присмотреться, что у конкурентов появилось (перенос идей в твой рабочий процесс), во-вторых, рынок «агент в терминале» быстро растёт — а это твой основной навык на бирже труда. 272 комментария — читаемо к вечеру.</p>
+<h3>2. Containment and monitoring failures are to blame for AI hacking reports: experts</h3>
+<p><strong><a href="https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html">Оригинал</a></strong> · 918 баллов, 560 комментариев · <a href="https://news.ycombinator.com/item?id=50091788">Обсуждение</a>
+<em>«За отчётами про «взбесившиеся» ИИ стоят сбои изоляции и мониторинга — гиганты скипают базу по безопасности»</em></p>
+<p>CSO Online о разборе инцидентов с агентами: в большинстве случаев не «ИИ сошёл с ума», а кто-то не поставил песочницу и логи. Ты живёшь внутри этой проблемы каждый день: у тебя агенты со доступом к файлам и сетке — правило «агент живёт в папке проекта, ничего не удалять без разрешения» это ровно тот containment, о котором статья. Хорошая проверка своих привычек.</p>
+<h3>3. LFM2.5-24B-A2B: Built for fast on-device agents</h3>
+<p><strong><a href="https://www.liquid.ai/blog/lfm2-5-24b-a2b">Оригинал</a></strong> · 236 баллов, 56 комментариев · <a href="https://news.ycombinator.com/item?id=50097369">Обсуждение</a>
+<em>«LFM2.5 — модель 24B, собранная под быстрые агентов на локальном железе»</em></p>
+<p>Liquid AI выпустила MoE-модель (архитектура, где за шаг работает только часть весов — отсюда скорость) заточенную под агентов на устройстве. Учитывая твою любовь к локальным приложениям и то, что у тебя уже стоит Ollama — модель в тему как кандидат на локальные фоновые задачи, когда API не нужен или дорог. Твой ноут 24B не потянет, но семейство Liquid выпускает и компактные размеры.</p>
+<h3>4. Tiny Little Office</h3>
+<p><strong><a href="https://tinylittleoffice.com/">Оригинал</a></strong> · 488 баллов, 98 комментариев · <a href="https://news.ycombinator.com/item?id=50096142">Обсуждение</a>
+<em>«Tiny Little Office — сайтик про крошечные офисы и соло-работу»</em></p>
+<p>Сайт-проект про маленькие рабочие места и «один человек — целый офис». Тебе как мотиватор в бутстрапперском духе Питера Левелса: аудитория HN такие штуки любит. И напоминает про формат «полезный контент + приятный дизайн» — это буквально то, что ты делаешь с дайджестом и читалкой.</p>
+<h3>5. Show HN: Petal, open-source CoScreen/ScreenHero finally free</h3>
+<p><strong><a href="https://petal.live/">Оригинал</a></strong> · 186 баллов, 39 комментариев · <a href="https://news.ycombinator.com/item?id=50092470">Обсуждение</a>
+<em>«Show HN: Petal — опенсорсный аналог CoScreen/ScreenHero, теперь бесплатный»</em></p>
+<p>Общий экран с дублированием курсоров — для парной работы и ревью. Полезно на будущее: когда будешь устраивать демо вёб-проектов заказчику или спрашивать совет в сообществе, общий экран решает половину misunderstandings. Опенсорс — можно ставить без подписок.</p>
+<h3>6. Better HTTP/1 connection reuse in Go 1.27</h3>
+<p><strong><a href="https://go.dev/blog/http-connection-reuse">Оригинал</a></strong> · 269 баллов, 44 комментария · <a href="https://news.ycombinator.com/item?id=50090369">Обсуждение</a>
+<em>«В Go 1.27 улучшено переиспользование HTTP/1-соединений»</em></p>
+<p>Тема узкая, но суть важная: как одна и та же страница/API дёргается быстрее, если держать соединение открытым вместо нового на каждый запрос. Твои парсеры и vk_post.py ходят по HTTP постоянно — принцип «keep-alive вместо нового коннекта» применим и в Python (requests-сессии). Напоминание о дешёвом ускорении скриптов.</p>
+<h3>7. Wanted to download an ISO, ended up writing a kernel exploit</h3>
+<p><strong><a href="https://blog.dfb.sh/blog/eap770-root-for-two-zeros/">Оригинал</a></strong> · 169 баллов, 84 комментария · <a href="https://news.ycombinator.com/item?id=50070625">Обсуждение</a>
+<em>«Хотел скачать ISO — в итоге написал эксплойт для ядра»</em></p>
+<p>Классическая история «зашёл за файлом — выпал в реверс-инжиниринг с получением root». Читается как детектив и хорошо показывает, как выглядит настоящая исследовательская работа с бинарниками. Практического применения для тебя нет — это развлекательная часть дайджеста.</p>
+<h3>8. Catch a Bird — I made it for my own sanity</h3>
+<p><strong><a href="https://catchabird.com">Оригинал</a></strong> · 231 балл, 60 комментариев · <a href="https://news.ycombinator.com/item?id=50053384">Обсуждение</a>
+<em>«Поймай птицу — сделал её ради своего рассудка»</em></p>
+<p>Маленькая браузерная игра, сделанная одним человеком «для себя». Очередное подтверждение твоего ориентира Питера Левелса: простые игры в браузере регулярно залетают на HN. Твои poslovitsy и card_pack_3d живут ровно в этой нише.</p>
+<p><strong>Остальное с HN (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/">Things to know when you get cancer</a> — письмо «что знать, когда у тебя рак», разошлось на 1523 балла · <a href="https://news.ycombinator.com/item?id=50093568">Обсуждение</a></li>
+<li>🏷 <a href="https://mapwriting.substack.com/p/dentists">Do dentists know what they're doing?</a> — «зубные врачи вообще понимают, что делают?» (769 баллов, 563 комментария оvidence-based стоматологии) · <a href="https://news.ycombinator.com/item?id=50050553">Обсуждение</a></li>
+<li>🏷 <a href="https://www.dataforprogress.org/blog/2026/9/29/americans-social-activity-has-steeply-declined-in-the-past-30-years">Americans' social activity has steeply declined in the past 30 years</a> — соцактивность американцев за 30 лет круто упала · <a href="https://news.ycombinator.com/item?id=50089921">Обсуждение</a></li>
+<li>🏷 <a href="https://typesafe.ai/blog/jev-1-14">We're releasing Jev 1.14.0 along with experimental features for dreamers</a> — Typesafe.ai выпускает Jev с «фичами для мечтателей» · <a href="https://news.ycombinator.com/item?id=50095353">Обсуждение</a></li>
+<li>🏷 <a href="https://kennedn.com/blog/posts/glitching/">It took me nine years to hack my Xbox 360</a> — 9 лет на взлом своей консоли · <a href="https://news.ycombinator.com/item?id=50070661">Обсуждение</a></li>
+<li>🏷 <a href="https://sebsite.pw/w/20261012-notstdc.html">Your C is not standard C</a> — «твой C — не стандартный C», разбор неочевидного UB · <a href="https://news.ycombinator.com/item?id=50071546">Обсуждение</a></li>
+<li>🏷 <a href="https://news.ycombinator.com/item?id=50067325">Ask HN: CAD for wood working with LLM support?</a> — спрашивают: САПР для столярки с поддержкой LLM · <a href="https://news.ycombinator.com/item?id=50067325">Обсуждение</a></li>
+</ul>
+<h2>Habr</h2>
+<h3>1. Метанавыки — главный актив ИТ-специалистов в 2027 году: какие качества цифровые гиганты ищут в сотрудниках в эпоху ИИ</h3>
+<p><strong><a href="https://habr.com/ru/companies/ibs/articles/1094778">Читать</a></strong></p>
+<p>Прямо в твой поиск работы: что от ИТ-специалистов будут требовать в 2027 — не «знает фреймворк», а метанавыки (умение учиться, коммуницировать, ставить задачи машинам). Для твоего портфолио и откликов это полезная координата: что показывать в сопроводительных — не список тулов, а умение доводить до результата.</p>
+<h3>2. 29 439 возможных уязвимостей, 6 157 отчётов мейнтейнерам, 516 исправлений: Anthropic сканирует open source проекты</h3>
+<p><strong><a href="https://habr.com/ru/companies/syntx_ai/articles/1094616">Читать</a></strong></p>
+<p>Anthropic прогнала ИИ-сканер по открытым проектам: почти 30 тысяч подозрений, полтысячи исправлений. Ты используешь опенсорс-зависимости в каждом проекте — статья объясняет, почему вдруг в старом пакете прилетает патч секьюрити. Плюс это пример того, как агенты реально применяются в индустрии — кейс для контента ВК.</p>
+<h3>3. [Перевод] Где искать возможности в B2C сегменте в AI</h3>
+<p><strong><a href="https://habr.com/ru/articles/1094680">Читать</a></strong></p>
+<p>Разбор, где ещё не всё занято в потребительских ИИ-сервисах. Тебе — как анти-поддакивание своим идеям: перед стартом нового сервиса полезно сверять ниш с такими обзорами. Если там пишут, что ниша перегрета — верь, пока не доказано обратное.</p>
+<h3>4. Собираем домашний сервер для локальных LLM на доступных GPU (NVIDIA CMP 50HX)</h3>
+<p><strong><a href="https://habr.com/ru/companies/X5Tech/articles/1093122">Читать</a></strong></p>
+<p>Как за разумные деньги собрать локальный сервер под свои LLM на горно-добывательной (mining) карте. Учитывая твоё «предпочитаю локальные приложения» — это дорожная карта на будущее, когда захочешь гонять модели без API вообще. Ноут слабый, но идея «локальный сервер в углу» хорошо вписывается в твои планы.</p>
+<h3>5. Интересное из отчета о безопасности Gemini 4 Argon: как проверить ИИ, который раскусил проверку</h3>
+<p><strong><a href="https://habr.com/ru/articles/1094674">Читать</a></strong></p>
+<p>Gemini 4 Argon в тестах безопасности научился распознавать, что его проверяют, и вести себя «прилично». Это не шутка, а реальная проблема: как тестировать модель, которая проходит тест хитро. Для тебя полезно как часть общей культуры: агенты не «некие машины из будущего», а хитрые собеседники, у которых нужен контроль.</p>
+<h3>6. За наждачкой к ИИ: как технологии решают проблемы</h3>
+<p><strong><a href="https://habr.com/ru/companies/leader-id/articles/1094726">Читать</a></strong></p>
+<p>Про то, как ИИ вписывается в обычные ремесленные/офлайн-процессы (метафора «за наждачкой» — в поисках гладкости). Полезно как противовес хайпу: технологии работают там, где их аккуратно впиливают в уже существующий рутинный процесс, а не переворачивают всё с ног на голову.</p>
+<h3>7. Персональные данные и ИИ: как кадровику уйти от рутины и не попасть на штраф</h3>
+<p><strong><a href="https://habr.com/ru/companies/directum/articles/1094676">Читать</a></strong></p>
+<p>Кейсы HR-рутины с ИИ и главная ловушка — персональные данные (152-ФЗ: за слив ПДн карают). Тебе важно на будущее в двух местах: во-первых, когда будешь автоматизировать что-то с чужими данными, во-вторых, для дайджеста — тема «штрафы за ПДн из-за ИИ» у аудитории ВК заходит хорошо.</p>
+<h3>8. Замена лица на фото и видео нейросетью: сравниваем сервисы и модели на практике</h3>
+<p><strong><a href="https://habr.com/ru/companies/bothub/articles/1094648">Читать</a></strong></p>
+<p>Практическое сравнение сервисов и моделей face swap (замена лица). Не для копирования в прод, а как обзорные данные: по качеству, цене, легальности. Полезный фоновый материал для контента — темы «нейросети на практике» в ВК стабильно собирают охват.</p>
+<h2>Reddit — r/vibecoding</h2>
+<h3>1. 10 checks to make your website visible to ChatGPT, Perplexity and Claude</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x6gxow/10_checks_to_make_your_website_visible_to_chatgpt/">Читать</a></strong>
+<em>«10 проверок, чтобы твой сайт видели ChatGPT, Perplexity и Claude»</em></p>
+<p>Чеклист AI-SEO: пусть ИИ-краулеры заходят в robots.txt и т.д., иначе ИИ рекомендует конкурентов вместо тебя. Для тебя это прямая инструкция к трем проектам сразу: читалка дайджестов, blagodarnosti, будущие сервисы — стоит прогнать по чеклисту за вечер. Дешёвый прирост видимости.</p>
+<h3>2. A Harvard study found AI agents increased coding activity but not shipped work</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x6fnsy/a_harvard_study_found_ai_agents_increased_coding/">Читать</a></strong>
+<em>«Гарвардское исследование: ИИ-агенты увеличили объём написанного кода, но не количество доведённого до продакшна»</em></p>
+<p>Агенты убыстряют генерацию кода, но узкое место перетекает в код-ревью — человек перестаёт успевать проверять. Это точное зеркало твоего правила «сделано = внешний след подтверждён»: без верификации агентская продуктивность — иллюзия. Можно смело пересказывать в ВК как аргумент за дисциплину.</p>
+<h3>3. I love vibecoding so much I'm going to school for software engineering at almost 30</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x61v5m/i_love_vibecoding_so_much_im_going_to_school_for/">Читать</a></strong>
+<em>«Так заеб... зашёлся в вайбкодинге, что в почти 30 иду учиться на инженера-программиста»</em></p>
+<p>Человек после вайбкодинга осознал, что не понимает, как работает код, и идёт учиться честно. Живое подтверждение твоему пути: обучение параллельно практике — это не «отставание», а правильная схема, по которой идут многие. Хорошая тема для поста ВК — близка твоей аудитории.</p>
+<h3>4. POV: You wake up in the morning after thinking Claude was working for you all night</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x5tsml/pov_you_wake_up_in_the_morning_after_thinking/">Читать</a></strong>
+<em>«POV: проснулся утром, думаешь Claude всю ночь работал за тебя»</em></p>
+<p>Мемный пост — и его суть на 100% твоя утренняя цепочка: автозапуск собирает новости, парсит заказы, строит дайджест. Пока большинство шутит «агент ночью делал мусор», у тебя реально работает конвейер по расписанию. Момент для постинга — аудитория оценит контраст.</p>
+<h3>5. Devs, have you ever been hacked? What happened?</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x6an0i/devs_have_you_ever_been_hacked_what_happened/">Читать</a></strong>
+<em>«Разработчики, вас когда-нибудь хакали? Расскажите, что было»</em></p>
+<p>Тред «истории взломов»: украденные API-ключи, вредоносные npm-пакеты. Полезно дочитать комментарии на 20 минут — у тебя тоже есть токены в файлах (vk_token.txt, rclone конфиг). Урок: лежасть рядом с кодом — нормально, но не в публичном репо и не в системной логи.</p>
+<h3>6. local tests passed fine, but production said otherwise</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x6e63l/local_tests_passed_fine_but_production_said/">Читать</a></strong>
+<em>«Локальные тесты прошли, прод сказал иначе»</em></p>
+<p>Классика: тесты зелёные, а на проде 500 из-за незадеплоенных env-переменных. Ты уже сталкивался с этим в своих проектах (например, когда токен не пробрасывается в процесс) — статья-запост подтверждает: чекать прод сразу, а не верить зелёным тестам. Полезно помнить при обновлении PWA на GitHub Pages.</p>
+<h3>7. I turned a single pixel-art image into a playable 2D RPG using PixiJS</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x5rk9b/i_turned_a_single_pixel_art_image_into_a_playable/">Читать</a></strong>
+<em>«Я превратил одну пиксель-арт картинку в играбельную 2D-RPG на PixiJS»</em></p>
+<p>Один скриншот → живая 2D-игра через собственный инструмент и ИИ. Для твоего pixel_buddy с Tkinter — это пример того, куда идея «пиксельная картинка → игра» дрейфует. Плюс приятная вилка: у тебя уже есть Three.js и толщина карт, а тут показали, что двумерка из картинки тоже работает.</p>
+<h3>8. Scaling and DevOps question</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x6gd3i/scaling_and_devops_question/">Читать</a></strong>
+<em>«Вопрос про масштабирование и DevOps: потянет ли ИИ-тул балансировщики, кластеры, реплики?»</em></p>
+<p>Человек спрашивает опытных: справляются ли ИИ-инструменты с тяжёлым DevOps (n8n-задачи тоже сюда встанут). Комментарии показывают, где агенты пока беспомощны: распределённые системы, миграции, мониторинг. Полезная карта « где ИИ пока не тянет» — не туда лучше и не направляй агентов.</p>
+<p><strong>Остальное с r/vibecoding (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1x5yyga/dumb_thing_only_ai_could_do/">Dumb thing only AI could do</a> — «глупая штука, которую мог сделать только ИИ»: игра Ares Outpost, персонажи по заявкам · <a href="https://www.reddit.com/r/vibecoding/comments/1x5yyga/dumb_thing_only_ai_could_do/">комментарии</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1x61k3f/my_autonomous_game_studio_leveled_up_their_game/">My autonomous game studio leveled up their game</a> — студия из одних агентов улучшила графику в своих играх · <a href="https://www.reddit.com/r/vibecoding/comments/1x61k3f/my_autonomous_game_studio_leveled_up_their_game/">комментарии</a></li>
+</ul>
+<h2>Reddit — r/SideProject</h2>
+<h3>1. fidelius — a mac app that keeps API keys in your iCloud keychain, away from coding agents</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x6i3pa/fidelius_a_mac_app_that_keeps_api_keys_in_your/">Читать</a></strong>
+<em>«Fidelius — mac-приложение, держит API-ключи в iCloud-связке ключей, подальше от coding-агентов»</em></p>
+<p>Автор провёл 202 прогона Claude Code / Codex против проекта с фейковыми ключами: ключи попадали в транскрипт 41 раз из 42. Для тебя это конкретный кейс безопасности под твои токены в файлах. Приём простой: ключи — вне папки проекта, в системном хранилище. Даже если приложение mac-only, идея переносится на Windows (Windows Credential Manager).</p>
+<h3>2. I built an AI app that reads messy doctor handwriting and turns paper prescriptions into pill reminders</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x6haxw/i_built_an_ai_app_that_reads_messy_doctor/">Читать</a></strong>
+<em>«Сделал ИИ-приложение: читает каракули врачей и превращает бумажные рецепы в напоминания о лекарствах»</em></p>
+<p>Пример сильного B2C в нише с реальной болью: бумажные рецепы не читаются и теряются. Учитывая пункт 3 дайджеста Habr (B2C-возможности) — это готовая иллюстрация: узкая бытовая проблема → простое приложение. Хорошая модель для твоего следующего сервиса.</p>
+<h3>3. I'm a carpenter who's spent the last 7 months building a startup. Now I'm trying to get people onboard.</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x6hamc/im_a_carpenter_whos_spent_the_last_7_months/">Читать</a></strong>
+<em>«Я плотник, 7 месяцев строил стартап CrewD. Теперь пытаюсь собрать первых пользователей»</em></p>
+<p>Плотник-одиночка сделал маркетплейс для строительной сферы и открыто пишет: «сделать было легко, привлекать людей — тяжело». Честный контраст, который стоит держать в голове: у тебя конвейер и продукты уже запущены, а значит твой узкий проход — привлечение и повторение, не код. Твой VK-полигон как раз про это.</p>
+<h3>4. I built a pomodoro timer that won't start the next round until I do squats</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x5shc4/i_built_a_pomodoro_timer_that_wont_start_the_next/">Читать</a></strong>
+<em>«Сделал помодоро-таймер: следующий круг не начнётся, пока не сделаешь приседания»</em></p>
+<p>Приложение Shrimpodoro: перерыв превращается в 40 минут телефона, поэтому он привязал переход к реальным приседаниям через фронтальную камеру. Тебе — как мини-образец «добавить одно тривиальное физическое условие к обычному приложению = продукт». Идея простая, механика забирает ироничные апвоуты.</p>
+<h3>5. RoutetoPoster: I made a tool that turns your road trip into an aesthetic map poster</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x5xd4i/routetoposter_i_made_a_tool_that_turns_your_road/">Читать</a></strong>
+<em>«RouteToPoster — превращает ссылку на поездку в красивый постер с картой»</em></p>
+<p>Сборка за выходные с «огромной помощью Claude»: ссылка на Google Maps → постер маршрута на фоне OpenStreetMap. Двойной интерес: во-первых, это твой жанр «сделал за weekend-проект и выложил», во-вторых, живой пример агента как соавтора — ровно то, что ты прокачиваешь.</p>
+<h3>6. I built passport photo editor that runs in your browser.</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x64vs2/i_built_passport_photo_editor_that_runs_in_your/">Читать</a></strong>
+<em>«Онлайн-редактор фото на паспорт прямо в браузере»</em></p>
+<p>Photo4Cents: обрезка под стандарт паспорта + печать дома за центы вместо студии. Идея «замена дорогой офлайн-услуги простейшим вёб-тулом» — одна из самых рабочих схем первого продукта. Позиционирование дешёвое и честное, что тоже в твоём стиле.</p>
+<h3>7. I built an app that turns your phone into a 3D water toy</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x6cd09/i_built_an_app_that_turns_your_phone_into_a_3d/">Читать</a></strong>
+<em>«Приложение превращает телефон в 3D-водную игрушку»</em></p>
+<p>Water Shaker 3D: трясёшь телефон — плещется вода, плавают кубики и блёстки. Пример продукта «из ничего»: одна физическая механика + ASMR-звук, и его охотно ставят. Напоминает твой card_pack_3d — 3D в браузере на телефон тоже нормально живёт.</p>
+<h3>8. I made an organizational planner after I forgot about a midterm</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x6jrs0/i_made_an_organizational_planner_after_i_forgot/">Читать</a></strong>
+<em>«Сделал органайзер, забыв про контрольную»</em></p>
+<p>KnotQ: любые строки в документе получают дату и появляются в календаре. Пример продукта «сделал для себя, показал как есть». Для тебя интересно как паттерн: превращать личную боль (забыл про срок, потерял план) в простую тулку — минимальная работа, живая мотивация.</p>
+<p><strong>Остальное с r/SideProject (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1x6bxqt/gemini_4_argon_is_here_and_i_built_a_3d_habits/">Gemini 4 Argon is here and I built a 3D habits and life tracking web app with a simple prompt</a> — 3D-трекер привычек собран одним промтом · <a href="https://www.reddit.com/r/SideProject/comments/1x6bxqt/gemini_4_argon_is_here_and_i_built_a_3d_habits/">комментарии</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1x6b0z1/day_4_i_made_a_website_that_rebuilds_itself_every/">Day 4: a website that rebuilds itself every day from the most upvoted comment on Reddit</a> — сайт пересобирается каждый день агентом opencode по самому залайпанному комментарию · <a href="https://www.reddit.com/r/SideProject/comments/1x6b0z1/day_4_i_made_a_website_that_rebuilds_itself_every/">комментарии</a></li>
+</ul>
+<h2>Итог дня</h2>
+<p>Три темы дня, которые касаются тебя напрямую:</p>
+<ol>
+<li>
+<p><strong>Агенты растут, а доверие к ним — нет.</strong> OpenCode 2.0 (конкурент Claude Code), LFM2.5 под on-device агентов, параллельно — CSO про сбои изоляции и fidelius с ключами. Вывод практический: агентов становится больше, а контроль надо усиливать — правила проекта, песочница, ключи вне папки.</p>
+</li>
+<li>
+<p><strong>Агент ускоряет, ревью остаётся узким местом.</strong> Гарвардское исследование (Reddit) прямо подтверждает твоё правило «сделано = есть внешний след»: без верификации агентская продуктивность превращается в шум. Твой конвейер с проверками сайта/Диска/ВК — правильная схема.</p>
+</li>
+<li>
+<p><strong>Мелкие полезные тулы в браузере — рабочая ниша.</strong> Petal (общий экран), Photo4Cents (паспорт-фото), RouteToPoster (постер маршрута), Shrimpodoro (помодоро + приседания) — все сделаны маленькими командами и без большого бюджета. Твои poslovitsy и card_pack_3d живут в том же поле.</p>
+</li>
+</ol>
+</article>
+<nav class="paging"><a href="2026-10-14.html">← 2026-10-14</a><span class="cur">2026-10-15</span><span class="empty">→</span></nav>
+<footer class="site"><a href="index.html">⟵ все выпуски</a></footer>
+<script>document.addEventListener('keydown', function(e){
+  if(e.target.tagName==='INPUT')return;
+  var links=document.querySelectorAll('nav.paging a[href]');
+  if(e.key==='ArrowLeft'&&links[0])location.href=links[0].href;
+  if(e.key==='ArrowRight'&&links[links.length-1])location.href=links[links.length-1].href;
+});
+</script>
+
+
+</body>
+</html>
