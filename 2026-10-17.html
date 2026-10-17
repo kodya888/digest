@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#faf9f6">
+<title>Дайджест 2026-10-17</title>
+<link rel="icon" href="icon-192.png" />
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+<script src="theme.js" defer></script>
+<script src="sw-register.js" defer></script>
+</head>
+<body>
+
+<header class="site">
+  <a class="home" href="index.html">⟵ все выпуски</a>
+  <button class="theme" aria-label="Сменить тему">◐</button>
+</header>
+<article>
+<p>Новых постов: 46 (HN 15, Habr 11, Reddit 20; r/vibecoding 10 + r/SideProject 10).
+Сортировка по интересу к твоим темам (Claude Code, AI-агенты, вайбкодинг, парсеры, Python,
+фриланс/поиск работы). Метка 🏷 — только заголовок/выдержка.</p>
+<h2>Hacker News</h2>
+<h3>1. How the Claude Code team does code review</h3>
+<p><strong><a href="https://claude.dev/blog/solving-code-review-at-anthropic/">Оригинал</a></strong> · 388 баллов, 359 комментариев · <a href="https://news.ycombinator.com/item?id=50122951">Обсуждение</a>
+<em>«Как команда Claude Code делает code review»</em></p>
+<p>Самая близкая тебе статья выпуска: команда, делающая Claude Code, рассказывает, как сами ревьюят код — код-ревью (проверка кода другим человеком/процессом до слияния) у них перестроен под мир, где код пишет агент, а человек проверяет. Читай обязательно: это ровно твой рабочий режим «Claude пишет — я проверяю», только описанный теми, кто строит сам инструмент. 359 комментариев — живой разбор в ветке.</p>
+<h3>2. Claude reveals ECDSA curve origins</h3>
+<p><strong><a href="https://www.anthropic.com/research/ecdsa-curve-origins">Оригинал</a></strong> · 918 баллов, 339 комментариев · <a href="https://news.ycombinator.com/item?id=50122800">Обсуждение</a>
+<em>«Claude раскрывает происхождение кривых ECDSA»</em></p>
+<p>Топ-1 дня по баллам: Anthropic показала, что Claude провёл самостоятельное криптографическое расследование — искал, откуда взялись параметры эллиптических кривых ECDSA (стандарт криптографии с открытым ключом). Показатель силы модели на «долгих исследовательских» задачах, а не только на коде. Для тебя — фон: чем шире модель умеет «думать самостоятельно», тем больше типов задач можно ей делегировать в будущих проектах.</p>
+<h3>3. 90% of US working hours are spent on tasks not covered well by AI benchmarks</h3>
+<p><strong><a href="https://www.mercor.com/research/labor-index/benchmark-map/">Оригинал</a></strong> · 537 баллов, 456 комментариев · <a href="https://news.ycombinator.com/item?id=50121179">Обсуждение</a>
+<em>«90% рабочих часов в США уходят на задачи, которые плохо покрыты AI-бенчмарками»</em></p>
+<p>Исследование Mercor: бенчмарки ИИ (тесты, по которым меряют «умение» модели) покрыли только узкий срез реальных рабочих задач, а 90% часов — вещи вроде согласований, общения, нестандартных ситуаций, которые никто не метрит. Прямо о твоём поиске работы: ценность вайбкодера не в «напечатать код, который бенчмарк засчитает», а в закрытии непокрытой зоны — постановке задачи, проверке, интеграции в настоящую работу.</p>
+<h3>4. Apple ML Research: Muse Spark Open with MLX on Mac Studio</h3>
+<p><strong><a href="https://machinelearning.apple.com/research/mlx-distributed-inference">Оригинал</a></strong> · 331 балл, 167 комментариев · <a href="https://news.ycombinator.com/item?id=50118320">Обсуждение</a>
+<em>«Apple ML Research: Muse Spark Open на MLX для Mac Studio»</em></p>
+<p>Apple открыла модель и показала распределённый инференс на MLX (их фреймворк для запуска нейросетей на чипах Apple) — несколько машин делят одну большую модель. Тема «запускать большие модели локально» снова на переднем крае. На твоём ноутбуке с Windows это напрямую не запустится, но тренд тебе на руку: локальный ИИ дешевеет, и твоё «предпочтение локальным приложениям» становится всё реалистичнее для проектов.</p>
+<h3>5. You could have invented transformers from memory</h3>
+<p><strong><a href="https://alexwang.ai/posts/associative-memory/">Оригинал</a></strong> · 340 баллов, 80 комментариев · <a href="https://news.ycombinator.com/item?id=50122878">Обсуждение</a>
+<em>«Ты мог бы изобрести трансформеры по памяти»</em></p>
+<p>Длинное эссе о том, как трансформер (архитектура, на которой работают все современные LLM) можно вывести из идеи ассоциативной памяти — «таблицы, которая умеет искать по похожему содержимому». Самый доступный способ из всех, что я видел, понять, что происходит «под капотом» у твоего Claude. Не для практика, но для понимания терминов — сильный материал.</p>
+<h3>6. DeepSeek v4.1 Flash 1017</h3>
+<p><strong><a href="https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017">Оригинал</a></strong> · 307 баллов, 118 комментариев · <a href="https://news.ycombinator.com/item?id=50129121">Обсуждение</a>
+<em>«DeepSeek v4.1 Flash 1017»</em></p>
+<p>DeepSeek (китайская команда, лидер по «дёшево и сердито») выкатила свежий релиз в линейке Flash — быстрая дешёвая модель. Упомянута и карточка на Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017 . Тебе интересна как кандидат в «лестницу моделей» при заменах Replicate на прод-прокси: Flash-линейки обычно дешёвые, проверяй при выборе через VseGPT/RouterAI по текущим ценам.</p>
+<h3>7. Show HN: Gemini 4 Argon plays StarCraft</h3>
+<p><strong><a href="https://starskirmish.com/bench/v0-2/">Оригинал</a></strong> · 228 баллов, 103 комментария · <a href="https://news.ycombinator.com/item?id=50118688">Обсуждение</a>
+<em>«Gemini 4 Argon играет в StarCraft»</em></p>
+<p>Бенчмарк: модель Gemini 4 Argon играет в StarCraft (стратегию реального времени — сложную для ИИ из-за долгого планирования и постоянных решений). Ещё одна веха «агентного» движения: модель не отвечает в чате, а действует в среде с обратной связью. Тот же принцип, на котором строятся твои скиллы-конвейеры — среда → действие → проверка результата.</p>
+<h3>8. I love software rendering</h3>
+<p><strong><a href="https://www.jamesfmackenzie.com/2026/10/13/i-love-software-rendering/">Оригинал</a></strong> · 335 баллов, 209 комментариев · <a href="https://news.ycombinator.com/item?id=50117746">Обсуждение</a>
+<em>«Я люблю программный рендеринг»</em></p>
+<p>Апология software rendering — отрисовки картинки чисто процессором, без видеокарты и ускорителей. Автор описывает, почему это проще, предсказуемее и приятнее для мелких проектов. Забавная перекличка с твоим 3dtur и card_pack_3d на Three.js: для слабого железа (а ноут у тебя такой) «просто CPU» — иногда честнее, чем гонка за GPU. Для настроения и общего понимания графики.</p>
+<p><strong>Остальное с HN (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://bfl.ai/blog/flux-3-image-klein">FLUX 3 Image Klein</a> — новая модель картинок FLUX 3 Klein (твоя лестница Flux — снова в движении, следи за ценой/качеством при замене Replicate) · <a href="https://news.ycombinator.com/item?id=50123580">Обсуждение</a></li>
+<li>🏷 <a href="https://github.com/cobanov/PS5LM">Llama.cpp on a jailbroken PS5</a> — llama.cpp (движок запуска локальных LLM) на взломанной PS5 · <a href="https://news.ycombinator.com/item?id=50122431">Обсуждение</a></li>
+<li>🏷 <a href="https://jakearchibald.com/2026/jpeg-xl-vs-avif/">JPEG XL vs. AVIF for web use-cases</a> — сравнение двух новых форматов картинок для веба, полезно для оптимизации твоих Pages-проектов · <a href="https://news.ycombinator.com/item?id=50120224">Обсуждение</a></li>
+<li>🏷 <a href="https://www.paperinstruments.com/ultramarine">Ultramarine 1 Flash</a> — загадочный релиз-инструмент, обсуждение вокруг неизвестной модели · <a href="https://news.ycombinator.com/item?id=50106747">Обсуждение</a></li>
+<li>🏷 <a href="https://dune.fandom.com/wiki/Butlerian_Jihad">Butlerian Jihad</a> — статья вселенной «Дюны» про запрет мыслящих машин; HN спорят про ИИ-табу · <a href="https://news.ycombinator.com/item?id=50127274">Обсуждение</a></li>
+<li>🏷 <a href="https://www.arrl.org/arrlletterissue?issue=2026-10-15">eBay Restricts Listings of Radio Equipment, but Exempts Ham-Band-Only Gear</a> — eBay ограничивает продажу радиооборудования, любительский диапазон исключён · <a href="https://news.ycombinator.com/item?id=50122034">Обсуждение</a></li>
+</ul>
+<h2>Habr</h2>
+<h3>1. Стоит ли связывать Claude Code и Gemini Notebook?</h3>
+<p><strong><a href="https://habr.com/ru/articles/1095562">Читать</a></strong></p>
+<p>Разбор идеи связки Claude Code с Gemini NotebookLM (гугловая «записная книжка» по своим источникам). Прямо твой стек: у тебя Claude Code плюс контекст из внешних источников, и вопрос «сверять ли разные модели между собой» встаёт постоянно. Полезно как чужой опыт комбинирования инструментов — что реально работает, а что просто модное слово.</p>
+<h3>2. ccswap: переключаю Claude Code между своими подписками без прокси и перезапуска</h3>
+<p><strong><a href="https://habr.com/ru/articles/1095538">Читать</a></strong></p>
+<p>Автор сделал утилиту, переключающую Claude Code между несколькими подписками на лету. Тебе релевантно шире, чем сама утилита: ты решаешь смежную задачу с прокси-сервисами (Replicate → VseGPT/RouterAI) — там тоже вопрос «как подменять endpoint без поломки рабочей цепочки». Полезная механика «конфиг-переключателя» в копилку твоих будущих адаптеров.</p>
+<h3>3. Anthropic забанила мой Claude и отдала в экспорте только телефон. Теперь мне отвечает Grok в парике</h3>
+<p><strong><a href="https://habr.com/ru/articles/1095624">Читать</a></strong></p>
+<p>Горькая история: аккаунт Anthropic заблокировали, в экспорте данных (выгрузка своих данных по запросу) оказался только телефонный номер. Сатира, но с трезвым выводом: не держи всё у одного облачного провайдера и делай локальные копии. Твоя практика — как раз об этом: дайджесты дублируются на Диск, проекты в своей папке, токены в файлах рядом. Ещё один аргумент за «личное хранилище данных» из твоих планов.</p>
+<h3>4. Локальный ИИ-ассистент по базе знаний компании: RAG поверх вики, файлов, 1С и Битрикс24</h3>
+<p><strong><a href="https://habr.com/ru/articles/1095626">Читать</a></strong></p>
+<p>Как собрать ассистента по документам компании: RAG (поиск по своей базе + подсунуть найденное модели в контекст) поверх вики, файлов, 1С и Битрикс24 — классическая корпоративная задача, на которой сейчас много заказов. Для тебя это два в одном: образец реального ИИ-проекта, который можно продавать, и близость к твоей идее «личного хранилища данных» — только у тебя роль компании играет твоя машина.</p>
+<h3>5. Полгода в одиночку: как глупая идея превратилась в платформу для ролевых игр с ИИ</h3>
+<p><strong><a href="https://habr.com/ru/articles/1095610">Читать</a></strong></p>
+<p>История соло-разработчика, который полгода варил платформу ИИ-ролевых игр — честно, с оговорками, что «идея глупая». Ценность — в хронике превращения дурацкой идеи в продукт на своём графике. Твоя рамка «фан-проекты 1–2 ч/нед» живёт в том же режиме: маленькие шаги без гарантий. Читай как бутстрапперский кейс с Habr-привкусом.</p>
+<h3>6. Сжатие, красота и Шмидхубер: умеют ли нейросети выдумывать новое</h3>
+<p><strong><a href="https://habr.com/ru/companies/ru_mts/articles/1095280">Читать</a></strong></p>
+<p>Разбор идеи Шмидхубера (пионера глубокого обучения) о том, что «красота = сжатие», и умеют ли сети создавать новое или только пересобирают старое. Философия, но с прямым отношением к твоим ежедневным ВК-постам из дайджеста: чем хорош контент, собранный из чужих материалов, и где там место авторскому взгляду (он у тебя — в редакторском комментарии).</p>
+<h3>7. Однобитная Bonsai по весам: что видно при сравнении с Qwen</h3>
+<p><strong><a href="https://habr.com/ru/articles/1095632">Читать</a></strong></p>
+<p>Эксперимент с моделью, где каждый вес — один бит (вместо 16–32; называется «однобитные модели»). Результат: крошечные модели с экстремальным сжатием внезапно осмысленны. Тебе как человеку на слабом ноуте это прямо в тему: граница «локально возможного» каждый раз сдвигается вниз по железу. Следи за этой веткой — однажды такое реально заработает и у тебя.</p>
+<p><strong>Остальное с Habr (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://habr.com/ru/articles/1095564">Нафиг NVIDIA! Часть 2. Запустил 8 нейросетей на FPGA за $50 — и упёрся в DDR3</a> — нейросети на дешёвом FPGA-чипе вместо видеокарты · <a href="https://habr.com/ru/articles/1095564">Читать</a></li>
+<li>🏷 <a href="https://habr.com/ru/articles/1095228">Как объяснить нейросети новое лицо: Simli, Anam и проверка на iPhone</a> — добавление «лица» голосовому ассистенту · <a href="https://habr.com/ru/articles/1095228">Читать</a></li>
+<li>🏷 <a href="https://habr.com/ru/articles/1095572">Как я собрал модель для определения стадии диабетической ретинопатии на бесплатном Colab</a> — медицинская модель бесплатно на Colab (облачный ноутбук от Google) · <a href="https://habr.com/ru/articles/1095572">Читать</a></li>
+<li>🏷 <a href="https://habr.com/ru/articles/1095536">Труба, обёрнутая в трубу или почему современные ИИ это иллюзия</a> — критический пост об архитектурах ИИ + авторская альтернатива · <a href="https://habr.com/ru/articles/1095536">Читать</a></li>
+</ul>
+<h2>r/vibecoding</h2>
+<h3>1. A step-by-step guide to your first mobile app, from someone who shipped 100+ apps before AI</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x7p4xo/a_stepbystep_guide_to_your_first_mobile_app_from/">Читать</a></strong></p>
+<p><em>«Пошаговый гайд по первому мобильному приложению — от того, кто выпустил 100+ приложений до ИИ»</em></p>
+<p>Автор — бывший агентство из Украины с 100+ приложений и ~6 млн загрузок, теперь раскладывает путь для не-технических людей, строящих приложения с ИИ: «выбери идею тщательно, валидируй её, потом строй». Это буквально твой профиль (48+, без опыта, есть продукты в планах), только в гайде от человека с 15-летним стажем. Высший приоритет на прочтение из всего выпуска — по поиску работы и вайбкодингу вместе.</p>
+<h3>2. Mini Skyline - 150k Users - 3D Print Any Place! Made With Claude Over 5 Months, 250 Billion Tokens</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x7jwxs/mini_skyline_150k_users_3d_print_any_place_made/">Читать</a></strong></p>
+<p><em>«Mini Skyline — 150 тысяч пользователей — 3D-печатай любые места! Сделано с Claude за 5 месяцев, 250 миллиардов токенов»</em></p>
+<p>Проект, который делает 3D-модель любого места на планете для печати, написан «целиком на Claude Code», собрал 150k пользователей, 2000+ уникальных в день и грант от Snapmaker. Важная деталь успеха: автор запускал как хобби без ожиданий. Зеркало твоих poslovitsy и card_pack_3d — маленький проект может неожиданно вырасти, главное выложить и не бросать.</p>
+<h3>3. Photoshop charges AI credits for Relight feature, I vibe-coded it and made it free, running on-device</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x7faot/photoshop_charges_ai_credits_for_relight_feature/">Читать</a></strong></p>
+<p><em>«Photoshop берёт AI-кредиты за Relight, я вайбкодил то же самое и сделал бесплатно, работает на устройстве»</em></p>
+<p>Adobe продаёт «переосвещение фото» за кредиты, автор добавил то же самое в свой бесплатный редактор Photon, и всё считается локально на его GPU. Классический бутстрапперский ход: нашёл дорогую фичу у гиганта → сделал дешевле/бесплатно → получил аудиторию. Плюс тема «локально вместо облака» — твоя.</p>
+<h3>4. Built this for my girlfriend: local budget app, no ads, no cloud</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x83zrz/built_this_for_my_girlfriend/">Читать</a></strong></p>
+<p>*«Сделал это для девушки» — полностью локальное приложение для учёта расходов: без рекламы, логина и облака, все данные на устройстве, даже SMS-синхронизация транзакций локально»</p>
+<p>Идеальный антидот к тренду «подписка + облако + реклама»: автор сделал то, чего не было на рынке — безликое локальное приложение без единой платной фичи. Прямое попадание в твоё «предпочтение локальным приложениям» и в твои планы PWA — таких «локальных ниш» много, а конкуренты все ушли в облака.</p>
+<h3>5. Has anyone used vibecoding to do serious automation work for their company, and did it go well?</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x7hh3k/has_anyone_used_vibecoding_to_do_serious/">Читать</a></strong></p>
+<p><em>«Кто-то использовал вайбкодинг для серьёзной автоматизации в своей компании? Получилось?»</em></p>
+<p>Тред про самое прибыльное применение вайбкодинга — кастомные рабочие инструменты для своих компаний. Автор сам называет это прибыльнейшим кейсом. Тебе стоит почитать комментарии как карту заказов: это ровно то, что нанимающие ищут в профилях «автоматизация, боты, AI» — и то, что показывает в портфолио, что ты умеешь экономить людям часы.</p>
+<h3>6. Vibe coding mobile apps?</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x82az5/vibe_coding_mobile_apps/">Читать</a></strong></p>
+<p><em>«Вайбкодинг мобильных приложений?»</em></p>
+<p>Обсуждение: веб-приложения все уже вайбкодят, а мобильные — куда меньше; автор ищет, чем отлаживать и тестировать. Упоминается открытый инструмент Measure для ИИ-помощи в отладке. Если однажды пойдёшь в мобильные приложения (по гайду из пункта 1) — вот стартовый чек-лист инструментов и подводных камней.</p>
+<h3>7. Getting ready to launch 3D world for agents and humans</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x87ben/getting_ready_to_launch_3d_world_for_agents_and/">Читать</a></strong></p>
+<p><em>«Готовлюсь запустить 3D-мир для агентов и людей»</em></p>
+<p>Автор строит 3D-среду, где могут одновременно находиться и ИИ-агенты, и люди. Направление на стыке твоих интересов: 3D в браузере (как 3dtur) плюс агенты, которые действуют в среде. Пока ранняя стадия, но следи — «среды для агентов» сейчас интенсивно набивают, и твоё знание Three.js тут не случайно.</p>
+<h3>8. Free open source NullPlayer 0.33.0 for macOS supports all Winamp, WMP and Audion skins</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1x88c1i/free_open_source_nullplayer_0330_for_macos/">Читать</a></strong></p>
+<p><em>«Бесплатный опенсорс NullPlayer для macOS поддерживает все скины Winamp, Windows Media Player и Audion, плюс Plex, Sonos, Jellyfin и прочие»</em></p>
+<p>Плеер, который умеет в скины старых плееров и подключается к куче сервисов — 2300 скачиваний, 161 звезда. Забавно и полезно: старые скины Winamp снова живы. Для тебя — как проектная идея в жанре «открытая мелочь, которую приятно делать»: не всё должно зарабатывать, что-то просто коллекционирует звёзды и пользователей.</p>
+<h2>r/SideProject</h2>
+<h3>1. I've built a harness in the style of Instinct, Muse, Dots as a side project and just open sourced it</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x89diw/ive_built_a_harness_in_the_style_of_instinct_muse/">Читать</a></strong></p>
+<p><em>«Я собрал harness по образцу Instinct, Muse и Dots и только что выложил в open source»</em></p>
+<p>Автор открыл движок для ИИ-ассистентов: долгосрочная память, коннекторы (Google, Slack, Notion), песочница для команд, всё на своём сервере и со своими моделями, одна установка может обслужить семью или компанию. Harness (каркас вокруг модели: память, инструменты, песочница — то, что превращает «чат» в «агента») — это твоё направление «AI-агенты» в самом концентрированном виде. Весь код открыт под AGPL — можно изучать как образец архитектуры твоих будущих ассистентов.</p>
+<h3>2. Launched my Mac app on Product Hunt as a solo dev: #22 of the day, and licenses went from 39 to 54</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x88rlo/launched_my_mac_app_on_product_hunt_as_a_solo_dev/">Читать</a></strong></p>
+<p><em>«Запустил Mac-приложение на Product Hunt как соло-разработчик: #22 дня, лицензии от 39 до 54»</em></p>
+<p>Честный отчёт по цифрам запуска: 62 голоса, 12 комментариев, лицензии подросли с 39 до 54. Главный урок — запуск в 12:01 поPacific, стартовое время имеет значение, и первый комментарий написан как история продукта. Твоя дистрибуция пока далеко (VK как полигон — до поры), но такие посты — готовый чек-лист запуска на день, когда будет что выкатывать.</p>
+<h3>3. Built a mushroom-hunting app for myself. Somehow got 2,500+ downloads in the first week</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x7vhjv/built_a_mushroomhunting_app_for_myself_somehow/">Читать</a></strong></p>
+<p><em>«Сделал приложение для сбора грибов для себя. Каким-то образом 2500+ скачиваний за первую неделю»</em></p>
+<p>Автор из Украины сделал iPhone-приложение Lisovychok: запоминает, где нашёл грибы и где припарковал машину. Сделал «для себя», а нашёл широкую аудиторию — та же история, что у твоих «сделал под себя» проектов. Кейс хорошо иллюстрирует: личная боль — самая дешёвая проверка спроса, спрос есть именно у таких «узких ниш национального масштаба».</p>
+<h3>4. An app that instantly turns a photo into 360° view you can rotate &amp; zoom into</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x7qbw5/an_app_that_instantly_turns_a_photo_into_360_view/">Читать</a></strong></p>
+<p><em>«Приложение, которое мгновенно превращает фото в 360°-вид, который можно вращать и зумить»</em></p>
+<p>Загрузил фото человека — через секунды вращающаяся 360°-модель. Технически это близко к твоему 3dtur (панорамы, вращение). Не прямой конкурент — забавная фича, но показывает, что «сфотографировал → получил 3D» — живой рынок с открытыми нишами; в комментарии будут спрашивать подход, читай.</p>
+<h3>5. I built a car logbook app that keeps your 12-week tax logbook while you drive</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x862z7/i_built_a_car_logbook_app_that_keeps_your_12week/">Читать</a></strong></p>
+<p><em>«Я сделал приложение для водительского журнала для налогового учёта, записывающее 12-недельный журнал за рулём»</em></p>
+<p>Австралийская налоговая механика: phone в кармане, поездка сама записывается, потом свайпами разделяешь рабочие и личные. Чистый пример «долгая бюрократическая задача → простое локальное приложение → готовый продукт». У нас свои «журналы» и механики (путевые листы, ГЛОНАСС) — такие задачи в РФ тоже есть и автоматизируются за плату.</p>
+<h3>6. I built a music library app for people who still buy CDs and own their music</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x84m3o/i_built_a_music_library_app_for_people_who_still/">Читать</a></strong></p>
+<p><em>«Я сделал приложение-библиотеку музыки для тех, кто до сих пор покупает CD и владеет своей музыкой»</em></p>
+<p>Ниша «владей музыкой сам» снова растёт: автор сделал приложение для тех, кто не хочет стриминговые подписки. Прямой родственник твоего vkdl + плана «музыка на Google Диск»: локальная библиотека, своя музыка, никакой аренды. Рынок «владей контентом сам» — тихая, устойчивая ниша для маленьких продуктов.</p>
+<h3>7. I made a website that helps you find a perfect mouse/keyboard/mousepad</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x85ejs/i_made_a_website_that_helps_you_find_a_perfect/">Читать</a></strong></p>
+<p><em>«Я сделал сайт, который помогает найти идеальную мышку/клавиатуру/коврик»</em></p>
+<p>Shapefinder.cc — простой подбор по фильтрам. Меха уровня «сайт одной страницы» — но решает конкретную боль (зоопарк периферии). Забирай как пример «агрегатор = актив»: сама ценность в собранной таблице, не в коде. Твой 3dtur-фон показывает, что ты умеешь в 3D/взаимодействие, а такие простые утилиты — дешёвый способ добавить в портфолио ещё один живой продукт.</p>
+<h3>8. I'm 65, have stage IV cancer, and decided to build something that might make a difference</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1x7cjgk/im_65_have_stage_iv_cancer_and_decided_to_build/">Читать</a></strong></p>
+<p><em>«Мне 65, у меня рак IV стадии, и я решил сделать что-то полезное»</em></p>
+<p>Человек с четвёртой стадией рака собрал платформу обмена ненужными книгами/пазлами/играми для онкологических сообществ — прочитал в чате, что кто-то закончил все свои пазлы и не может купить новые. Не про вайбкодинг напрямую, но про самое важное: даже с нулевой скоростью и тяжельшим контекстом маленький проект возможен и стоит делать. Твоя точка отсчёта (48, полная мотивация, здоровый) заведомо комфортнее — вопрос только в шагах.</p>
+<p><strong>Остальное с r/SideProject (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1x887yx/i_built_and_launched_a_dating_and_friendship_app/">I built and launched a dating and friendship app for people with disabilities</a> — приложение знакомств для людей с инвалидностью на Балканах, сделанное полностью одним человеком · <a href="https://www.reddit.com/r/SideProject/comments/1x887yx/i_built_and_launched_a_dating_and_friendship_app/">Обсуждение</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1x84v84/were_reviving_a_park_map_i_built_with_my_brother/">We're reviving a park map I built with my brother years ago</a> — оживление старого проекта-карты парков, полезная история про «проект на полке» · <a href="https://www.reddit.com/r/SideProject/comments/1x84v84/were_reviving_a_park_map_i_built_with_my_brother/">Обсуждение</a></li>
+</ul>
+<h2>Итог дня</h2>
+<p>Сегодняшние ленты про <strong>одиночек и локальность</strong>: Claude Code-команда рассказала, как проверять код агента (твоя ежедневная практика, только систематизированная), Mercor показала, что бенчмарки мимо — реальные деньги в непокрытой зоне (проверка, интеграция, общение), а r/vibecoding и SideProject — поток сето-кейсов: гид по первому мобильному приложению от человека со 100+ релизами, Mini Skyline с 150k пользователей на Claude Code, открытый ассистентный движок harness. Habr — про то, что не держи всё на облачном провайдере (история забаненного Claude) и как собирать корпоративного RAG-ассистента — самый монетизируемый жанр из всего выпуска.</p>
+<p>Ни одна новость не требует пересборки твоего плана: всё снова по вектору — маленькие локальные продукты, автоматизация для реальных задач, портфолио из готовых вещей. Для поиска работы главный фон выпуска — «90% рабочих часов не покрыто бенчмарками»: продаё́тся не умение «написать код», а умение довести задачу до готового результата — ровно то, что показывает твой конвейер дайджеста и скиллы.</p>
+</article>
+<nav class="paging"><a href="2026-10-16.html">← 2026-10-16</a><span class="cur">2026-10-17</span><span class="empty">→</span></nav>
+<footer class="site"><a href="index.html">⟵ все выпуски</a></footer>
+<script>document.addEventListener('keydown', function(e){
+  if(e.target.tagName==='INPUT')return;
+  var links=document.querySelectorAll('nav.paging a[href]');
+  if(e.key==='ArrowLeft'&&links[0])location.href=links[0].href;
+  if(e.key==='ArrowRight'&&links[links.length-1])location.href=links[links.length-1].href;
+});
+</script>
+
+
+</body>
+</html>
