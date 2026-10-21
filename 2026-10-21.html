@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#faf9f6">
+<title>Дайджест 2026-10-21</title>
+<link rel="icon" href="icon-192.png" />
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+<script src="theme.js" defer></script>
+<script src="sw-register.js" defer></script>
+</head>
+<body>
+
+<header class="site">
+  <a class="home" href="index.html">⟵ все выпуски</a>
+  <button class="theme" aria-label="Сменить тему">◐</button>
+</header>
+<article>
+<p>Новых постов: 49 (HN 15, Habr 14, Reddit 20; r/vibecoding 10 + r/SideProject 10).
+Сортировка по интересу к твоим темам (Claude Code, AI-агенты, вайбкодинг, парсеры, Python,
+фриланс/поиск работы). Метка 🏷 — только заголовок/выдержка.</p>
+<h2>Hacker News</h2>
+<h3>1. SlopCodeBench 10/2026 — Opus 5.5 wins overall, xhigh considered harmful</h3>
+<p><strong><a href="https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-new-models-on-slop-code-bench.md">Оригинал</a></strong> · 246 баллов, 94 комментария · <a href="https://news.ycombinator.com/item?id=50108717">Обсуждение</a>
+<em>«SlopCodeBench за октябрь 2026: Opus 5.5 выиграл общий зачёт, уровень "xhigh" признан вредным»</em></p>
+<p>Бенчмарк (стандартизированный тест моделей на задачах кодинга) от сообщества вокруг Claude Code: Opus 5.5 взял общий зачёт среди агентов, а главный контр-интуитивный вывод — максимальный уровень усердия «xhigh» часто вредит: модель дольше думает, но делает не лучше. Тебе это прямо к ежедневной работе: не гнаться за максимальными настройками агента, держать средний уровень и экономить лимиты. Плюс сама таблица — свежий ориентир, какая модель чего стоит, если обновишь «лестницу моделей».</p>
+<h3>2. DeepInfer: High-performance inference framework for DeepSeek models</h3>
+<p><strong><a href="https://github.com/deepseek-ai/DeepInfer">Оригинал</a></strong> · 2231 балла, 853 комментария · <a href="https://news.ycombinator.com/item?id=50163277">Обсуждение</a>
+<em>«DeepInfer: высокопроизводительный фреймворк запуска моделей DeepSeek»</em></p>
+<p>DeepSeek открыли код своего движка для запуска (инференс — прогон модели по готовым весам, чтобы получить ответы) собственных моделей. Топ-1 дня по баллам. Для тебя это подтверждение стратегической линии: экосистема вокруг дешёвых open-source моделей растёт, а значит твои рублёвые прокси (VseGPT/RouterAI) со временем получат к этому движку доступ — и цена запуска моделей будет падать дальше.</p>
+<h3>3. Voxtral 3</h3>
+<p><strong><a href="https://mistral.ai/news/voxtral-3/">Оригинал</a></strong> · 637 баллов, 164 комментария · <a href="https://news.ycombinator.com/item?id=50168396">Обсуждение</a>
+<em>«Voxtral 3»</em></p>
+<p>Mistral выпустили третью версию Voxtral — аудио-модели (расшифровка и понимание речи). Конкуренция в «услышь и перепиши мне всё» накаляется: Whisper и Ко уже не единственный выбор. Сосед твоей Handy-диктовки заодно: рынок локальных транскрибаторов становится шире и дешевле — когда захочешь обновлять свой стек диктовки, выбор будет больше.</p>
+<h3>4. Tsrs: A Port of TypeScript to Rust</h3>
+<p><strong><a href="https://blog.cloudflare.com/typescript-rust-port/">Оригинал</a></strong> · 395 баллов, 194 комментария · <a href="https://news.ycombinator.com/item?id=50165953">Обсуждение</a>
+<em>«Tsrs: порт TypeScript на Rust»</em></p>
+<p>Cloudflare переписывают проверку типов TypeScript с медленного JavaScript на Rust (язык компилируемый, в разы быстрее). Практический смысл: проверки типов в больших проектах станут в разы быстрее. Тебе — косвенное, но приятное следствие: инструменты, которыми пользуется твой агент, ускоряются «без тебя». Тренд недели: «переписываем всё на Rust» (на прошлой неделе — похожие истории).</p>
+<h3>5. Show HN: SimCity, but with Permits</h3>
+<p><strong><a href="https://permit.petercai.com/">Оригинал</a></strong> · 752 балла, 359 комментариев · <a href="https://news.ycombinator.com/item?id=50170593">Обсуждение</a>
+<em>«SimCity, но с разрешениями на стройку»</em></p>
+<p>Шоу-проект: симулятор города, где нельзя ставить здания просто так — нужно оформлять разрешения (permits). Игра-сатира на бюрократию, и именно поэтому взлетела: забавная механика + понятная боль. Образец «фан-проект как успех»: одна простая и смешная идея, доведённая до рабочего состояния, — ровно твои «фан-проекты 1–2 ч/нед».</p>
+<h3>6. eMudhra intermediate CA compromise</h3>
+<p><strong><a href="https://emudhra.we-have-a-problem.com/">Оригинал</a></strong> · 883 балла, 385 комментариев · <a href="https://news.ycombinator.com/item?id=50166579">Обсуждение</a>
+<em>«Компрометация промежуточного корневого центра в eMudhra»</em></p>
+<p>Серьёзная история безопасности: у удостоверяющего центра (CA — организация, выпускающая сертификаты, по которым браузеры верят сайтам) eMudhra скомпрометировали промежуточный ключ — потенциально можно было выпускать «подпольные» сертификаты доверенных сайтов. Напоминание, что вся цепочка доверия в интернете держится на приличиях: не паникуй, но проверка ссылок перед установкой чего-либо (твоё правило) стала сегодня ещё чуть более правильной.</p>
+<h3>7. Google open-sources TorchTPU, a native PyTorch back end for TPUs</h3>
+<p><strong><a href="https://github.com/google-pytorch/torch_tpu">Оригинал</a></strong> · 328 баллов, 74 комментария · <a href="https://news.ycombinator.com/item?id=50169053">Обсуждение</a>
+<em>«Google открыл код TorchTPU — нативного бэкенда PyTorch для своих TPU»</em></p>
+<p>Google открыли код движка, чтобы PyTorch (главная библиотека обучения нейросетей) работал напрямую на их чипах TPU (собственные ИИ-ускорители Google, альтернатива GPU). Фоновое, но важное: диверсификация «железа под ИИ» — ещё один фактор, давящий на цены запуска моделей вниз. Тебе следить мимоходом, влияние долгосрочное.</p>
+<h3>8. The Future of CSS</h3>
+<p><strong><a href="https://www.joshwcomeau.com/css/interop-2027/">Оригинал</a></strong> · 293 балла, 112 комментариев · <a href="https://news.ycombinator.com/item?id=50175070">Обсуждение</a>
+<em>«Будущее CSS»</em></p>
+<p>Josh Comeau (один из лучших преподавателей CSS) разбирает, какие возможности CSS договорились развивать браузеры в 2027 (проект Interop — ежегодный сговор всех браузеров делать одни и те же фичи). Тебе полезно как вайбкодеру: современный CSS умеет многое из того, для чего раньше тянули JS-библиотеки — меньше зависимостей = легче твой сайт-читалка и PWA-проекты на слабом железе.</p>
+<p><strong>Остальное с HN (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://news-web.php.net/php.announce/509">Upcoming critical PHP security release (CVE-2026-109618 / -109619)</a> — готовится критический релиз безопасности PHP; если у тебя где-то живёт PHP-хостинг — обновиться · <a href="https://news.ycombinator.com/item?id=50172041">Обсуждение</a></li>
+<li>🏷 <a href="https://teddysvoronos.com/2026-10-19-apple-broke-an-essential-presentation-feature-of-ipads/">Apple broke an essential presentation feature of iPads</a> — Apple сломала важную фичу презентаций на iPad очередным обновлением; вечная история «обновление как откат» · <a href="https://news.ycombinator.com/item?id=50165208">Обсуждение</a></li>
+<li>🏷 <a href="https://stevekrouse.com/ends">What shall I teach my son?</a> — «Чему учить сына?» — программист составил список ценностей и навыков; 445 комментариев о воспитании · <a href="https://news.ycombinator.com/item?id=50169707">Обсуждение</a></li>
+<li>🏷 <a href="https://prestonbyrne.com/2026/10/20/ofcom-concedes-defeat/">Ofcom concedes defeat in 4chan case</a> — британский регулятор Ofcom признал поражение в деле 4chan (анонимный имиджборд, которую невозможно заставить подчиниться закону о модерации) · <a href="https://news.ycombinator.com/item?id=50167028">Обсуждение</a></li>
+<li>🏷 <a href="https://kaba.cx/posts/20261020_Tor/">How I got over 300 Tor exit nodes removed</a> — «Как я добился удаления 300 выходных узлов Tor» — рассказ о жалобах хостерам; спорный метод, интересная механика · <a href="https://news.ycombinator.com/item?id=50166257">Обсуждение</a></li>
+<li>🏷 <a href="https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/">Feds suspect ransom negotiator ran ShinyHunters extortion site</a> — фигурант дела: переговорщик по выкупам подозревается в управлении сайтом шантажистов ShinyHunters · <a href="https://news.ycombinator.com/item?id=50173487">Обсуждение</a></li>
+<li>🏷 <a href="https://e360.yale.edu/digest/deepwater-horizon-deep-sea-recovery">Sixteen years after Deepwater Horizon, deep sea life shows few signs of recovery</a> — спустя 16 лет после катастрофы Deepwater Horizon жизнь в глубине моря слабо восстановилась · <a href="https://news.ycombinator.com/item?id=50168357">Обсуждение</a></li>
+</ul>
+<h2>Habr</h2>
+<h3>1. Поселил ИИ‑агента в чёлку макбука: он слушает мой день и раздаёт задачи сессиям Claude Code</h3>
+<p><strong><a href="https://habr.com/ru/articles/1097006">Читать</a></strong></p>
+<p>Почти фантастика, но реальный проект: автор поставил агента, который постоянно слушает рабочий день через микрофон ноутбука и сам раздаёт задачи параллельным сессиям Claude Code. Твой сосед по конвейеру: у тебя утренняя цепочка по расписанию, у него — голосовой диспетчер. Тебе брать не надо (микрофон «на прослушку» — спорно по приватности), но идея «агент-диспетчер, который перекидывает работу в сессии Claude Code» — прямое будущее твоих скиллов: сегодня их запускает bat-файл, завтра может «диспетчер».</p>
+<h3>2. Слепой краш-тест 27 LLM осени 2026 (GPT-6, Opus, Алиса): кто сломал JSON, проглотил инъекцию и влетел на 152-ФЗ</h3>
+<p><strong><a href="https://habr.com/ru/articles/1096934">Читать</a></strong></p>
+<p>Большой сравнительный тест 27 моделей: кто корректно держит JSON (формат структурированных данных, без которого агенты и парсеры ломаются), кто проглатывает prompt-инъекции (скрытые вредные команды в тексте), кто нарушает закон о персональных данных (152-ФЗ). Тебе полезно в двух местах: выбор моделей через рублёвые прокси (JSON-надёжность критична для твоих конвейеров) и понимание, почему в парсерах нужно чистить сырые тексты, а не скармливать их модели как есть.</p>
+<h3>3. ReAct-агент изнутри. Модель, инструменты и управляющий цикл</h3>
+<p><strong><a href="https://habr.com/ru/articles/1096976">Читать</a></strong></p>
+<p>Учебная статья про ReAct (Reason + Act — базовая архитектура агента: модель по кругу «думает → зовёт инструмент → смотрит результат»), с разбором внутреннего управляющего цикла. Это учебник твоей темы: Claude Code внутри устроен примерно так же. Читать — если хочешь понимать, почему агент иногда «ходит по кругу» и что настраивать. Кандидат в твои учебные материалы, раз ты учишь агентов и делаешь на них проект.</p>
+<h3>4. Как изменилось программирование с появлением ИИ</h3>
+<p><strong><a href="https://habr.com/ru/articles/1097032">Читать</a></strong></p>
+<p>Разбор «что стало с профессией»: роль программиста смещается от написания кода к формулированию задач, проверке и архитектуре. Живое подтверждение твоего пути: ты ровно в этой парадигме (вайбкодинг — программирование через описание задачи, где код пишет ИИ). Полезно как язык для собеседований: в вакансиях и на откликах теперь принято говорить про «постановку задач агентам и контроль качества», а не «я не пишу код руками».</p>
+<h3>5. Я устал читать простыни текста от ИИ-агентов. Поэтому заставил их рисовать</h3>
+<p><strong><a href="https://habr.com/ru/articles/1096958">Читать</a></strong></p>
+<p>Автор замучился читать простыни логов и отчётов от агентов и заставил их визуализировать: диаграммы, схемы, графики вместо текста. Метод тебе доступен прямо сейчас: в Claude Code можно просить рисовать mermaid-диаграммы или html-схемы вместо простыней. Плюс сама боль знакома: твои дайджесты и отчёты — тоже жанр «сделай читаемым, не вываливай всё».</p>
+<h3>6. Траблшутинг ИИ-багхантинга: ошибки, которые убивают ваши репорты</h3>
+<p><strong><a href="https://habr.com/ru/articles/1097010">Читать</a></strong></p>
+<p>Практика использования ИИ для поиска багов (багхантинг — охота за ошибками, иногда даже за вознаграждение) и, главное, типичные ошибки, из-за которых находки отклоняют: непроверяемые репорты, мусорные описания. Методология твоих правил «сделано = внешний след подтверждён» в чужом пересказе: любой результат без доказуемого воспроизведения — не результат. Читается и как урок ведения отчётности по скиллам.</p>
+<h3>7. Как мы запускали агента в CI по расписанию</h3>
+<p><strong><a href="https://habr.com/ru/articles/1096674">Читать</a></strong></p>
+<p>Опыт запуска агента по расписанию в CI (continuous integration — автоматические проверки кода сервером после каждого коммита): какие тайм-ауты, лимиты, ретраи, где агент зависал. Тебе прямое зерно — у тебя план «сбор по расписанию» и живая утренняя цепочка с идемпотентностью (защитой от повторного запуска): сверить их грабли со своими, тем более что 03.10 ты уже ловил последствия «мертвой» цепочки.</p>
+<h3>8. «Сделай нормально!» Как нейросети понимают настроение пользователя, когда тот ругается на ложь ИИ</h3>
+<p><strong><a href="https://habr.com/ru/companies/speshu_ai/articles/1097090">Читать</a></strong></p>
+<p>Как модели считывают эмоциональный тон пользователя (когда ты «ругаешься на ложь ИИ») и что это меняет в ответах: злой промпт действительно часто даёт более честный и аккуратный ответ. Практический приём: жёсткий контекст («ты не должен выдумывать, каждая ссылка проверяема») в твоих конвейерах — это не ругань, а рабочее ограничение, снижающее галлюцинации (выдумывание моделью фактов).</p>
+<p><strong>Остальное с Habr (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://habr.com/ru/articles/1096978">Почему ИИ плохо писал на COBOL и что изменилось: разбираем новый бенчмарк OpenAI</a> — ИИ плохо писал на древнем языке COBOL; новый тест OpenAI показывает прогресс — следствие: старые enterprise-системы становятся досягаемы для агентов (а это большой рынок фриланса) · <a href="https://habr.com/ru/articles/1096978">Читать</a></li>
+<li>🏷 <a href="https://habr.com/ru/companies/speshu_ai/articles/1096972">[Перевод] ИИ-агенту разрешили вызывать API. Кто проверит бизнес-правила?</a> — агент дёргает внешние API (программные интерфейсы сервисов) — кто следит, что он не нарушает правила этого бизнеса? · <a href="https://habr.com/ru/companies/speshu_ai/articles/1096972">Читать</a></li>
+<li>🏷 <a href="https://habr.com/ru/articles/1096970">[Перевод] Почему доказательство квазигипотезы Римана от OpenAI удивило самих математиков</a> — OpenAI помогла продвинуть математику уровня гипотезы Римана; математики удивлены · <a href="https://habr.com/ru/articles/1096970">Читать</a></li>
+<li>🏷 <a href="https://habr.com/ru/articles/1097004">Научил ChatGPT сохранять иностранные слова прямо в мой телефон</a> — автор сделал из ChatGPT «словарь в телефон»: встретил слово — сохранил в свой список; механика похожа на твои конвейеры «собрал → сохранил → забрал» · <a href="https://habr.com/ru/articles/1097004">Читать</a></li>
+<li>🏷 <a href="https://habr.com/ru/articles/1096954">Как мы заставили Redis кэшировать POST-запросы к OpenAI/DeepSeek и выжали 4 900 RPS на Java 21</a> — кэширование запросов к LLM через Redis (быстрое хранилище в памяти) дало 4900 запросов/сек; идея не нова, но цифры наглядные · <a href="https://habr.com/ru/articles/1096954">Читать</a></li>
+<li>🏷 <a href="https://habr.com/ru/companies/otus/articles/1090656">[Перевод] PyTorch MPS против Apple MLX: как дообучать LLM на Mac с 16 ГБ и что выбрать</a> — дообучение маленьких LLM на обычном Mac: сравнение двух движков; сосед твоих «локальных приложений», пока без Mac — как чек-лист на будущее · <a href="https://habr.com/ru/companies/otus/articles/1090656">Читать</a></li>
+</ul>
+<h2>Reddit r/vibecoding</h2>
+<h3>1. i became the support guy for an app i didnt write</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xasvfc/i_became_the_support_guy_for_an_app_i_didnt_write/">Читать</a></strong>
+<em>«Я стал техподдержкой приложения, которое не писал»</em></p>
+<p>Автор собрал приложение (бронирование для грумеров собак) в Lovable за 2 уикенда, ~140 пользователей, кто-то уже платит — и теперь не понимает, почему кнопка переноса записи живёт именно там и что происходит при бронировании одного слота двумя людьми. Это не анекдот, а главный урок вайбкодинга: продукт работает, а понимания нет. Тебе зеркало: твои правила («внешний след», «не сглаживать», логи) — как раз страховка от этого сценария. И аргумент: в портфолио показывай не только «что сделал», но и «чем отвечает за сбои».</p>
+<h3>2. asked a few bots «i put my api key in the frontend... is that okay?»</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xbg41q/asked_a_few_bots_i_put_my_api_key_in_the_frontend/">Читать</a></strong>
+<em>«Спросил у нескольких ботов: "Я положил API-ключ во фронтенд, но у моего приложения только 3 пользователя. Это ок?" — вот их ответы»</em></p>
+<p>Смешной и полезный тест: автор спросил у разных ботов, можно ли положить API-ключ (секретный доступ к платному сервису) во фронтенд (то есть в открытый код сайта, который видит браузер) и прикрыться «у меня мало пользователей». Ответы ботов расходятся — кто-то действительно соглашается. Урок: один и тот же вопрос разным моделям даёт разные ответы, а про безопасность советуйся с документацией, а не с «добродушной» моделью. У тебя токены в файлах, ключи не в фронтенде — продолжай так.</p>
+<h3>3. I vibecoded the roller coaster game I couldn’t find anywhere else: thoosie</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xaqr7o/i_vibecoded_the_roller_coaster_game_i_couldnt/">Читать</a></strong>
+<em>«Я вайбкодил игру про американские горки, которую нигде не мог найти: thoosie»</em></p>
+<p>Классический вайбкодинг-сюжет: «нужной игры не существует — собрал промптами». 2D-конструктор горок: рисуешь трек от руки, добавляешь петли, мёртвые зоны, запуски. Полезно как образец формулы «свой продукт = ниша, которую никто не закрыл», та же логика в твоей проработке идей для сервисов.</p>
+<h3>4. It's been a long way to get to this level of detail</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xat6wo/its_been_a_long_way_to_get_to_this_level_of_detail/">Читать</a></strong>
+<em>«Долгий путь до такого уровня детализации»</em></p>
+<p>Автор вайбкодит 2D-гонку Pavement Pursuit и показывает приём с normal maps (карты нормалей — трюк, делающий плоские 2D-спрайты «похожими на 3D» за счёт реакции на свет) + тени, зависящие от времени суток. Для тебя прицельно: те же эффекты (освещение, нормали, тени) в Three.js, на котором стоит твой кард-пак с котиками. Чужой готовый пример «от чего картинка оживает» — глянь на выходных, вдруг пригодится для полки коллекции.</p>
+<h3>5. I vibe-coded an app where switching files is just a swipe - StackRead</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xbflpt/i_vibecoded_an_app_where_switching_files_is_just/">Читать</a></strong>
+<em>«Я вайбкодил приложение, где переключение файлов — это просто свайп: StackRead»</em></p>
+<p>Android-приложение: файлы не списком, а «стопками» — открыл листаешь вниз, свайп вправо — следующий файл той же группы. Мелкая, но честная находка UX (сценарий «читаю конспект, хочу следующий» решён жестом). Тебе как идея для digest-читалки: свайп между выпусками на телефоне — простая доработка, если захочешь полировать PWA.</p>
+<h3>6. I built a new app I’m extremely proud of... Edsger</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xbfpp3/i_built_a_new_app_im_extremely_proud_of_and_i/">Читать</a></strong>
+<em>«Собрал приложение Edsger — полноценную IDE с ИИ-агентом прямо в кармане»</em></p>
+<p>iPhone-приложение: запускает Python, C, JavaScript и Lua прямо на устройстве, локальные офлайн-ИИ-модели и агент, который помогает строить и дебажить проекты. Идея «программирую с телефона без облака» — сосед твоей отложенной схемы «диктовка с телефона → Ollama»: когда вернёшься к ней (Tailscale), посмотри, как они решают «агент на карманном железе».</p>
+<h3>7. The result of 3 months of free time - a clipboard vault... relic.space</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xatwv2/the_result_of_3_months_of_free_time_a_clipboard/">Читать</a></strong>
+<em>«3 месяца свободного времени — буфер обмена с полным поиском, синхронизацией на 5 платформ, шифрованием и 500 000+ записей»</em></p>
+<p>Один из самых внятных продуктов дня: хранилище буфера обмена (каждое скопированное — сохраняется и ищется) с сквозным шифрованием и локальным ИИ для автометки. Показательно, что «скучная» утилита + качественное исполнение = продукт. Для тебя это и есть твой «личный склад данных» из списка планов — смотреть как ориентир по набору фич, не как конкурента.</p>
+<h3>8. Using REA to Port Castle Crashers to Mobile</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xarz9e/using_rea_to_port_castle_crashers_to_mobile/">Читать</a></strong>
+<em>«Портирую Castle Crashers на мобильные с помощью ИИ»</em></p>
+<p>Автор показывает «сон наяву»: ИИ помогает переносить старые игры на другие платформы. Осторожно с этой темой: сами игры чужие, и публиковать такое нельзя (права), но механика «перенос старого кода на новую платформу» — легально применима к своему коду: например, твой pixel_buddy на Tkinter в веб-версию.</p>
+<p><strong>Остальное с Reddit r/vibecoding (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xb0vez/multiplayer_is_here_anyone_up_for_a_race/">Multiplayer is here! Anyone up for a race?</a> — вайбкоденная космическая гонка добавила мультиплеер (игру двух и больше человек по сети) · <a href="https://www.reddit.com/r/vibecoding/comments/1xb0vez/multiplayer_is_here_anyone_up_for_a_race/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xberi8/would_anyone_happen_to_have_a_referral_link_for/">Would anyone happen to have a referral link for Claude?</a> — «не поделится ли кто реферальной ссылкой на Claude Pro» — спрос на Claude есть и среди новичков · <a href="https://www.reddit.com/r/vibecoding/comments/1xberi8/would_anyone_happen_to_have_a_referral_link_for/">Читать</a></li>
+</ul>
+<h2>Reddit r/SideProject</h2>
+<h3>1. I made a pizzeria its own ordering app so regulars stop paying DoorDash 30%. First paying customer is live</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xase0i/i_made_a_pizzeria_its_own_ordering_app_so/">Читать</a></strong> — <em>«Сделал пиццерии собственное приложение для заказов, чтобы постояльцы не отдавали DoorDash 30%. Первый платящий клиент работает»</em></p>
+<p>Портфолио-сериал «где деньги» в чистом виде: автор заметил, что агрегатор DoorDash забирает 25–30% с заказов маленькой пиццерии, собрал ей собственное приложение с заказом и оплатой и продаёт по $99/мес без комиссии. Первый клиент живой. Это готовый учебник бутстраппера (основатель растёт без инвесторов, на выручку клиентов): локальная боль → простой продукт → абонентская плата. Тебе смотреть как на модель, которую можно переносить на любую нишу — в том числе на местный бизнес в своём городе.</p>
+<h3>2. I shipped a free captions app with zero servers and 0 running cost by making users bring their own API key</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xbgj25/i_shipped_a_free_captions_app_with_zero_servers/">Читать</a></strong> — <em>«Выпустил бесплатное приложение субтитров без серверов и без затрат, заставив пользователей приносить свой API-ключ»</em></p>
+<p>Solo-разработчик (работает на уборке, чтобы финансировать проект) выпустил приложение TikTok-субтитров, где транскрипция идёт через пользовательский API-ключ (BYOK — bring your own key): у автора вообще нет серверов и постоянных расходов. Это ровно твой стиль «дёшево, локально, без облака» и способ выживания для продуктов без бюджета. Запомни термин BYOK — в твоём стеке прокси-адаптеров он уже не раз пригодится.</p>
+<h3>3. Finally finished the free physics site I've been building at night</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xb6gjg/finally_finished_the_free_physics_site_ive_been/">Читать</a></strong> — <em>«Достроил бесплатный сайт по физике, который делал по ночам»</em></p>
+<p>50 интерактивных 3D-сцен по физике для школьников и учителей, собранный за «пару часов в день, после того как дети уснут». Работает офлайн, без рекламы и аккаунтов, бесплатный. Полный набор твоих ценностей: локальность, лёгкость, польза без монетизации. Пример того, что «фан-проект по 2 часа» доводится до конца, если делать маленькими партиями — как у тебя с полками и паками.</p>
+<h3>4. I Built an OnlyFans Search Engine That Got 50K Users in 30 Days</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xb8er2/i_built_an_onlyfans_search_engine_that_got_50k/">Читать</a></strong> — <em>«Я собрал поисковик по OnlyFans, получивший 50 000 пользователей за 30 дней»</em></p>
+<p>Меморный, но показательный кейс роста: у огромной платформы нет нормального поиска — автор сделал свой (со всеми этическими нюансами этой ниши) и словил 50 000 пользователей за месяц. Смотри не на тематику, а на механику: «гигант без очевидной функции → маленький сервис-закрыватель дыры». Такие дыры есть в любой большой платформе; искать их — полезный навык для твоих собственных идей. Твоя граница соблюдена: в нишах с «дурной славой» у тебя всегда есть право сказать «нет».</p>
+<h3>5. Scootch - one mouse and keyboard for all your computers (Win/Mac/Linux)</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xb5kbz/scootch_one_mouse_and_keyboard_for_all_your/">Читать</a></strong> — <em>«Scootch: одна мышь и клавиатура на все ваши компьютеры»</em></p>
+<p>Программная реализация «одного KVM» (одна мышь/клавиатура на несколько машин): перетаскиваешь файл с Windows-монитора на Mac напрямую, без облака и флешек. Полноценный сосед твоей философии «локальность и без интернета». Себе не нужен (компьютер один), но пример того, что «скучная» утилита для себя тоже становится продуктом.</p>
+<h3>6. I've spent the last few months building a smart wall display. Thoughts?</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xbd5yg/ive_spent_the_last_few_months_building_a_smart/">Читать</a></strong> — <em>«Несколько месяцев собирал умный настенный экран»</em></p>
+<p>Студентка собрала mooboard — LED-панель на стену с магазином из 20+ приложений (тексты песен по таймерам, погода, календарь). Аппаратный продукт, но идея «экран показывает твоё расписание, задачи и статусы» наталкивает на мысль о твоём дашборде: один и тот же набор данных можно показывать не только в терминале, но и на «ленивой» веб-странице.</p>
+<h3>7. I built an app to make my kids feel like Alexander von Humboldt</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xb3j0z/i_built_an_app_to_make_my_kids_feel_like_alexander_von_humboldt/">Читать</a></strong> — <em>«Я собрал приложение, чтобы мои дети почувствовали себя Александром фон Гумбольдтом»</em></p>
+<p>Приложение для детей: сфотографировал животное → ИИ определяет вид → рисует «натуралистскую» иллюстрацию в духе XIX века и открывает запись в бестиарии. Изящный урок «геймификация реальной жизни» реальное действие по прогулке превращается в награду). Тебе механика полезна для любого «счётчика» — включая статус-питомца Бегунка: реальное действие → рисованная награда.</p>
+<h3>8. I recently got into woodworking... BenchBuild</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xbdshx/i_recently_got_into_woodworking_and_hated_using/">Читать</a></strong> — <em>«Недавно занялся столяркой и ненавидел профинальные CAD для простых работ, поэтому собрал BenchBuild»</em></p>
+<p>Автор ненавидел тяжёлые промышленные CAD (системы 3D-проектирования) для простых столярных расчётов и сделал лёгкий браузерный калькулятор распилов: перетащил доски, щёлкнул — получил список длин. Формула «взять сложный профессиональный инструмент и оставить от него только 10% для массовой задачи» — готовый паттерн для твоих собственных идей (у тебя уже 3dtur — та же история: только то, что реально нужно, из сложного мира 3D-туров).</p>
+<p><strong>Остальное с Reddit r/SideProject (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xbgly8/made_by_a_sports_coach_meet_fabee_your_ai/">Made by a sports coach, meet Fabee your AI nutrition coach</a> — спортивный тренер собрал ИИ-диетолога: сфотографировал еду — получил разбор · <a href="https://www.reddit.com/r/SideProject/comments/1xbgly8/made_by_a_sports_coach_meet_fabee_your_ai/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xbe4xz/im_turning_your_websiteproduct_into_promo_videos/">I'm turning your website/product into promo videos for free</a> — автор бесплатно делает промо-видео из чужих сайтов как витрину своего Videly; сосед твоих HyperFrames-скилов · <a href="https://www.reddit.com/r/SideProject/comments/1xbe4xz/im_turning_your_websiteproduct_into_promo_videos/">Читать</a></li>
+</ul>
+<h2>Итог дня</h2>
+<p>День про цену и самостоятельность. С одной стороны — верхняя планка: Opus 5.5 выигрывает главный бенчмарк агентов (и «максимальное усердие» признано вредной привычкой), Google открывает PyTorch-движок, DeepSeek открывает свой infer. С другой — нижняя: Solo-разработчик за $0 на серверах, пиццерия без DoorDash, физика офлайн без аккаунтов. Обе стороны бьют в одну точку: дешёвые локальные решения становятся конкурентами дорогим облачным. Твоя стратегия (рублёвые прокси, локальные инструменты, PWA без серверов) сегодня буквально подтверждена двумя независимыми кейсами Reddit. Из практики на вечер: заглянуть в SlopCodeBench — там есть прямые выводы про уровни усердия, влияющие на твои лимиты Claude Code.</p>
+</article>
+<nav class="paging"><a href="2026-10-20.html">← 2026-10-20</a><span class="cur">2026-10-21</span><span class="empty">→</span></nav>
+<footer class="site"><a href="index.html">⟵ все выпуски</a></footer>
+<script>document.addEventListener('keydown', function(e){
+  if(e.target.tagName==='INPUT')return;
+  var links=document.querySelectorAll('nav.paging a[href]');
+  if(e.key==='ArrowLeft'&&links[0])location.href=links[0].href;
+  if(e.key==='ArrowRight'&&links[links.length-1])location.href=links[links.length-1].href;
+});
+</script>
+
+
+</body>
+</html>
