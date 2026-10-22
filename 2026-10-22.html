@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#faf9f6">
+<title>Дайджест 2026-10-22</title>
+<link rel="icon" href="icon-192.png" />
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+<script src="theme.js" defer></script>
+<script src="sw-register.js" defer></script>
+</head>
+<body>
+
+<header class="site">
+  <a class="home" href="index.html">⟵ все выпуски</a>
+  <button class="theme" aria-label="Сменить тему">◐</button>
+</header>
+<article>
+<p>Новых постов: 31 (HN 16, Habr 5, Reddit 20; r/vibecoding 10 + r/SideProject 10).
+Сортировка по интересу к твоим темам (Claude Code, AI-агенты, вайбкодинг, парсеры, Python,
+фриланс/поиск работы). Метка 🏷 — только заголовок/выдержка.</p>
+<h2>Hacker News</h2>
+<h3>1. Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor</h3>
+<p><strong><a href="https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/">Оригинал</a></strong> · 466 баллов, 158 комментариев · <a href="https://news.ycombinator.com/item?id=50181114">Обсуждение</a>
+<em>«Скомпрометированный LiteLLM 1.107.0 в PyPI устанавливает крадунок ключей и бэкдор»</em></p>
+<p>В популярную библиотеку LiteLLM (прокси к LLM-API — ровно твой класс инструментов!) залезли через PyPI (репозиторий Python-пакетов): версия 1.107.0 воровала API-ключи и ставила бэкдор. Это прямое попадание в твою архитектуру через адаптер: правило «не ставить свежие версии пакетов сразу, подождать сутки-двое и читать релизные заметки» — теперь не паранойя, а гигиена. У тебя curl/urllib-скрипты без тяжёлых зависимостей — так и держи.</p>
+<h3>2. OpenAI models are coming to Google Cloud</h3>
+<p><strong><a href="https://openai.com/index/openai-models-google-cloud/">Оригинал</a></strong> · 263 балла, 110 комментариев · <a href="https://news.ycombinator.com/item?id=50180079">Обсуждение</a>
+<em>«Модели OpenAI появятся в Google Cloud»</em></p>
+<p>OpenAI — теперь и у конкурента: модели OpenAI доступны в Google Cloud (облако Google). Монополии на «один вход к моделям» не получается ни у кого, рынок фрагментируется дальше. Для тебя тренд благоприятный: чем больше «входов» к моделям, тем ниже цены и тем полезнее твой слой-адаптер, который умеет переключать провайдеров.</p>
+<h3>3. DuckDB 2.0.0 LTS “Cinnamon Teal”</h3>
+<p><strong><a href="https://duckdb.org/2026/10/21/announcing-duckdb-200">Оригинал</a></strong> · 386 баллов, 49 комментариев · <a href="https://news.ycombinator.com/item?id=50181136">Обсуждение</a>
+<em>«DuckDB 2.0.0 LTS "Cinnamon Teal"»</em></p>
+<p>DuckDB (аналог SQLite, только для аналитики по датасётам) вышел в версии 2.0 с долгой поддержкой (LTS — версия, которую долго не меняют). Тебе как «личное хранилище данных» из планов: если хранилище перерастёт JSON-файлы, DuckDB умеет SQL по файлам на диске без сервера. Полезно держать в списке инструментов, пока не потянут руки.</p>
+<h3>4. Eight Bits of Trust: eMudhra's CA keys cracked in milliseconds</h3>
+<p><strong><a href="https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/">Оригинал</a></strong> · 861 балл, 411 комментариев · <a href="https://news.ycombinator.com/item?id=50177916">Обсуждение</a>
+<em>«Восемь бит доверия: ключи CA eMudhra взломаны за миллисекунды»</em></p>
+<p>Развитие вчерашней истории про удостоверяющий центр eMudhra: у части их ключей оказалось всего 8 бит случайности (энтропия — мера непредсказуемости), такие ключи подбираются за миллисекунды. Продолжение урока «доверие в интернете держится на дисциплине»: твой принцип проверять источники перед скачиванием — снова подтверждён сверху.</p>
+<h3>5. Today's PHP security release, and how we're strengthening security</h3>
+<p><strong><a href="https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/">Оригинал</a></strong> · 702 балла, 346 комментариев · <a href="https://news.ycombinator.com/item?id=50182987">Обсуждение</a>
+<em>«Сегодняшний релиз безопасности PHP и как мы усиливаем безопасность»</em></p>
+<p>PHP-фонд объясняет вчерашний экстренный релиз (закрытые уязвимости в ядре PHP) и что меняется в процессе выпуска патчей. Ты без PHP, но сюжет полезен как образец открытого разбора инцидента — именно так пишут посты, не сглаживая проблему. Напоминание общего порядка: где-то на серверах крутится PHP-хостинг у миллиона людей, и все они сегодня обновлялись.</p>
+<h3>6. Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case</h3>
+<p><strong><a href="https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html">Оригинал</a></strong> · 452 балла, 283 комментария · <a href="https://news.ycombinator.com/item?id=50184820">Обсуждение</a>
+<em>«Meta обложили штрафом $25 млрд по делу Cambridge Analytica в Нью-Мексико»</em></p>
+<p>Штат Нью-Мексико выбил с Meta огромный штраф по старому делу о сборе данных (Cambridge Analytica — скандал 2018 года о утечке данных пользователей). Тема «чьи данные и что с ними можно» снова дорожает. Побочный урок для твоих парсеров: собирать можно только публичное и аккуратно, «аккуратный скрейпинг» — не только антибот, но и право.</p>
+<h3>7. Patch the Planet: global response coordination as agents uncover vulnerabilities</h3>
+<p><strong><a href="https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/">Оригинал</a></strong> · 245 баллов, 165 комментариев · <a href="https://news.ycombinator.com/item?id=50181175">Обсуждение</a>
+<em>«Patch the Planet: глобальная координация исправлений, пока агенты находят уязвимости»</em></p>
+<p>OpenAI рассказывает, как их агенты массово находят уязвимости в开源-коде и координируют раскрытие (disclosure — ответственное уведомление разработчиков до публикации). Мир, где агенты «патрулируют» код всех репозиториев — уже сейчас. Для тебя значит: баги в твоих пет-проектах могут найти раньше тебя, и это не оскорбление, а бесплатный аудит — только не игнорируй такие репорты.</p>
+<h3>8. Rust Style Guide</h3>
+<p><strong><a href="https://google.github.io/styleguide/rustguide.html">Оригинал</a></strong> · 255 баллов, 138 комментариев · <a href="https://news.ycombinator.com/item?id=50186010">Обсуждение</a>
+<em>«Гайд по стилю Rust от Google»</em></p>
+<p>Google опубликовал гайд по стилю кода Rust (правила, как оформлять код единообразно). Тебе мимоходом: гайды по стилю — это то, что ИИ-агенты читают из проекта (CLAUDE.md, styleguide) и по каким правилам пишут твой код. Правило твой метафоры: чем лучше в проекте описан стиль, тем меньше агент «импровизирует».</p>
+<p><strong>Остальное с HN (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/">GitLab critical patch release</a> — критический патч-релиз GitLab (система хранения репозиториев, где живут многие компании) · <a href="https://news.ycombinator.com/item?id=50185869">Обсуждение</a></li>
+<li>🏷 <a href="https://blog.railway.com/p/security-disclosure-wednesday-october-21st">Security Disclosure</a> — Railway (хостинг для деплоя, любимый у вайбкодеров) рассказывает о раскрытым инциденте безопасности; у reddit-треда ниже есть связь · <a href="https://news.ycombinator.com/item?id=50188228">Обсуждение</a></li>
+<li>🏷 <a href="https://github.com/mitmproxy/mitmproxy/commit/169234499088fc2c414644a67efaed3d64ae2e3b">mitmproxy adds --emudhra option</a> — mitmproxy (инструмент перехвата трафика, через который изучают HTTPS) добавил проверку на уязвимые ключи eMudhra · <a href="https://news.ycombinator.com/item?id=50189232">Обсуждение</a></li>
+<li>🏷 <a href="https://eliastaylor.com/noexploit/">There isn't an easy exploit for this PHP vulnerability</a> — «Легкого эксплойта для уязвимости PHP нет» — разбор, почему паника вокруг вчерашних CVE ( номера уязвимостей ) преждевременна · <a href="https://news.ycombinator.com/item?id=50188948">Обсуждение</a></li>
+<li>🏷 <a href="https://fulcrumsec.vg/pingcap/">PingCap TiDB Leaks</a> — «утечка в PingCap TiDB» (TiDB — открытый китайский движок баз данных); детали раскрытия · <a href="https://news.ycombinator.com/item?id=50173716">Обсуждение</a></li>
+<li>🏷 <a href="https://www.theverge.com/games/1015647/ea-is-shutting-down-bioware">EA is shutting down BioWare</a> — EA закрывает BioWare (студия Mass Effect / Dragon Age); конец эпохи · <a href="https://news.ycombinator.com/item?id=50184586">Обсуждение</a></li>
+</ul>
+<h2>Habr</h2>
+<h3>1. Где заканчивается самостоятельность ИИ-агента? Я дала ему банковскую карту, телефон, браузер и 200+ MCP: итоги теста</h3>
+<p><strong><a href="https://habr.com/ru/articles/1097430">Читать</a></strong></p>
+<p>Живой эксперимент: агент получил реальную банковскую карту, телефон, браузер и 200+ MCP-коннекторов (MCP — протокол, которым агенты цепляются к внешним инструментам). Ровно то, что называется «агент с руками». Тебе читать как ориентир границ: чем больше autonomy, тем сложнее контролировать — а у тебя в CLAUDE.md границы («не удалять, не отправлять, не выходить за папку») — правильная практика, теперь с чьим-то подтверждением на практике.</p>
+<h3>2. Claude помог оживить гаджет мертвой компании — и чуть его не добил. История воскрешения трекера сна Sense</h3>
+<p><strong><a href="https://habr.com/ru/articles/1097526">Читать</a></strong></p>
+<p>Автор с помощью Claude Code оживил трекер сна Sense (компания умерла, сервера офлайн): реверс-инженеринг (разбор закрытого протокола устройства) через агента — включая опасные шаги, где чуть не сломал добивку окончательно. Хорошая история про то, как агенты справляются с редкими нестандартными задачами и про ценность логов и ограничений при рискованных операциях. По духу — сосед твоих «границ» и правила «не выполнить молча опасные цепочки».</p>
+<h3>3. Обучать нельзя фильтровать: убираем тени с дороги без нейросетей</h3>
+<p><strong><a href="https://habr.com/ru/articles/1097026">Читать</a></strong></p>
+<p>Классика инженерного подхода: задача «убрать тени с дороги», которую все тянутся решать нейросетью, автор решает классической обработкой (обработка пикселей, без ML). Полезный противовес «нейросеть на всё»: сначала проверить, возможно ли решение простыми средствами — дешевле, быстрее, работает офлайн. Это буквально твой принцип «локальное и лёгкое, если есть простое решение».</p>
+<h3>4. Почему нейросеть ломает перспективу: FLUX 2 024 года обошёл Nano Banana 2.1 и GPT Image 2.5</h3>
+<p><strong><a href="https://habr.com/ru/companies/syntx_ai/articles/1097366">Читать</a></strong></p>
+<p>Тест генераторов картинок на геометрию/перспективу: FLUX 2 (годом старше) обошёл Nano Banana 2.1 и GPT Image 2.5 именно в построении правильной перспективы. Тебе прицельно: лестница генераторов для Replicate/прокси — живая тема, «новее» не значит «лучше» — стоит выбирать по задаче, а не по дате релиза.</p>
+<h3>5. [Перевод] ИИ для HR: что показали тесты Deel</h3>
+<p><strong><a href="https://habr.com/ru/companies/speshu_ai/articles/1097530">Читать</a></strong></p>
+<p>Deel (сервис для найма удалённых сотрудников по миру) публично тестирует ИИ-агентов на HR-задачи: скрининг кандидатов, ответы откликам. Тебе полезно по следу «ИИ забирает офисные рутинные задачи» — HR-автоматизация становится рабочим жанром ИИ-разработки, а значит появляется ниша «агентов для найма» и в заказном фрилансе.</p>
+<h2>Reddit r/vibecoding</h2>
+<h3>1. Alright, this is serious now. If it's true, railway users are basically cooked. It's been 14+ hours already.</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xc0inu/alright_this_is_serious_now_if_its_true_railway/">Читать</a></strong> — <em>«Всё, это уже серьёзно. Если правда — юзеры Railway "готовы". Прошло 14+ часов»</em></p>
+<p>Автор обнаружил, что кто-то гоняет дорогие модели (Opus 5.5, Fable) через его ключ OpenRouter (агрегатор моделей с биллингом). Связка с новостью выше про Railway: где-то утёкли данные, а платят пользователи. Урок в твой вектор: у тебя токены ВК и OpenRouter лежат в файлах вне git — держи так и дальше, и периодически смотри расход по ключам, «тихая» утечка бьёт по биллингу молча.</p>
+<h3>2. One image → a fully editable 3D bedroom using MiniMax M3.1 Flash</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xbow1e/one_image_a_fully_editable_3d_bedroom_using/">Читать</a></strong> — <em>«Одна картинка → полноценная редактируемая 3D-спальня на MiniMax M3.1 Flash»</em></p>
+<p>Автор прогоняет фото комнаты через MiniMax M3.1 Flash и получает настоящую 3D-сцену Three.js с редактируемыми материалами и светом — не видео, а живой 3D-тур. Это прям твой сосед из 3dtur: у тебя конвейер маска → kontext → nano-banana, у него — img2interior через иную модель. Для сравнения подходов при возвращении к «реальному плану» — сохранить в закладки.</p>
+<h3>3. This sub needs to internalize this: less skill != more better.</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xc2flf/this_sub_needs_to_internalize_this_less_skill/">Читать</a></strong> — <em>«Сабреддиту стоит усвоить: меньше скилла != лучше»</em></p>
+<p>Кто-то из сообщества прямо проговаривает: «вайбкодинг имеет смысл, но дизайн большого кода — это человеческий труд, а "коды у LLM идеальны" — эго из невежества». Приятная встречная точка твоему пути: ты учишься программировать в теории, пока пишешь практикой, а не «нажимаю кнопку и верю». Полезно как прививка от «все теперь вайбкодят без голов».</p>
+<h3>4. I have to wait for about 4800 tests to pass. I wonder how many tests y'all have to go through.</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xbqf8o/i_have_to_wait_for_about_4800_tests_to_pass_i/">Читать</a></strong> — <em>«Я жду пока пройдут около 4800 тестов. Интересно, сколько тестов у вас»</em></p>
+<p>Автор похвастался рабочим процессом: агент пишет код, а огромный набор тестов (автоматические проверки) стережёт от поломок, и человек вообще не смотрит на тесты руками. Рабочий стиль «делегируй проверки» у тебя уже частично есть (правило внешнего следа), но у тебя тестов пока нет вовсе — если проекты начнут расти, 10 минут на пару «тест на самое больное место» окупаются.</p>
+<h3>5. Apparently the find command is "pretty shocking" AI behavior now</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xc6w5r/apparently_the_find_command_is_pretty_shocking_ai/">Читать</a></strong> — <em>«Оказывается, команда find — "шокирующее" поведение ИИ»</em></p>
+<p>Сатирический тред: кто-то с «ex-OpenAI» в био возмутился, что Claude осмелилась запустить поиск файла. Комментарии пользуются моментом, чтобы поиронизировать над «шокированными экспертами». Мягкая терапия для твоего пути: страх «агент лезет всюду» в чём-то преувеличен, но границы в CLAUDE.md у тебя как раз выставлены разумно — не параноик, а осмысленно.</p>
+<h3>6. I created a skill that lets you understand understand your codebase using visualizations without reading the code</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xbramx/i_created_a_skill_that_lets_you_understand/">Читать</a></strong> — <em>«Я сделал скилл, позволяющий понимать кодовую базу через визуализации, не читая код»</em></p>
+<p>Кастомный скилл Claude Code, который рисует схемы больших систем вместо простыней текста. Прямая параллель с твоим ростом в скиллах (news, orders, вк-пост): скиллы умеют не только «собрать», но и «объяснить». Если когда-нибудь захочешь скилл «схема проекта» — вот образец подхода.</p>
+<h3>7. Built a bunch of quizzes for learning about AI and Open Weights featuring my cat</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xbz6aq/built_a_bunch_of_quizzes_for_learning_about_ai/">Читать</a></strong> — <em>«Сделал пачку квизов про ИИ и open-weights, герои — мои коты»</em></p>
+<p>Бесплатные квизы про ИИ и открытые веса (модели, у которых веса/внутренности открыты) с главными героями-к/Maine Coon. Без рекламы, без логина, только ссылки на свой курс. По формату — сосед твоих «Пословицы» и паки с котиками: маленький фан-проект + личный персонаж (коты) = рабочая формула.</p>
+<h3>8. Rooms - App in development</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xc4l9m/rooms_app_in_development/">Читать</a></strong> — <em>«Rooms — приложение в разработке»</em></p>
+<p>Стартап в духе «MySpace 2.0»: твой профиль = 3D-комната, которую можно оформить, соцсети висят «живыми панелями». Идея «обчеловек вернул кастомизацию профилей» и «обычный человек собирает пространство ИИ-инструментами» — хорошая иллюстрация, куда тянет вайбкодинг на стороне пользовательских продуктов.</p>
+<p><strong>Остальное с Reddit r/vibecoding (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xc6t60/built_a_daily_nba_game_with_codex_curious_if/">Built a daily NBA game with Codex. Curious if anyone here would play it</a> — собрал ежедневную игру в NBA через Codex (агент OpenAI); урок от него: убирать лишние объяснения с экрана · <a href="https://www.reddit.com/r/vibecoding/comments/1xc6t60/built_a_daily_nba_game_with_codex_curious_if/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xbhamu/i_made_a_free_toy_that_turns_any_image_or_meme/">I made a free toy that turns any image or meme into a universe</a> — бесплатная игрушка «превращает мем во вселенную»: каждая точка картинки становится частицей и под гравитацией сворачивается в галактики — локально, без сервера · <a href="https://www.reddit.com/r/vibecoding/comments/1xbhamu/i_made_a_free_toy_that_turns_any_image_or_meme/">Читать</a></li>
+</ul>
+<h2>Reddit r/SideProject</h2>
+<h3>1. My parents' TV showed an ad before Netflix, so I fixed it with an AI agent. 4 days later it has 16k GitHub stars</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xbp1be/my_parents_tv_showed_an_ad_before_netflix_so_i/">Читать</a></strong> — <em>«Родительский телевизор показал рекламу перед Netflix, я починил это ИИ-агентом, 4 дня спустя — 16k звёзд на GitHub»</em></p>
+<p>Автор дал Claude Code модель своего телевизора — агент нашёл ТВ в Wi-Fi, отключил 25 рекламных приложений и собрал родителям простой home screen. Выложил на GitHub — 16 000 звёзд за 4 дня, 200+ людей прислали свои модели ТВ. Идеальный кейс «маленькая реальная боль у родных → ИИ-агент → продукт, который застрелился». Формула твой «сервисы-помощники» в чистом виде.</p>
+<h3>2. The US healthcare system is designed to hide prices from you. I built a tool to expose them and got 10k users in 15 days</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xc59jz/the_us_healthcare_system_is_designed_to_hide/">Читать</a></strong> — <em>«Система здравоохранения США спроектирована так, чтобы прятать цены. Я сделал инструмент, который их вытащил, и слал 10 000 пользователей за 15 дней»</em></p>
+<p>Автор разобрал 100+ терабайт открытых данных страховых ставок (данные публичны по закону, но спрятаны в громоздких файлах) и сделал AI-чат по ценам процедур. Большие открытые датасеты + простая надстройка = продукт. Тебе пример «парсер + красивый поиск» на большом открытом источнике — то же, что ты делаешь на малых, только с масштабом.</p>
+<h3>3. I built a free ADHD focus timer that measures how long your focus lasts, not how many hours you sit at a desk</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xc5vig/i_built_a_free_adhd_focus_timer_that_measures_how/">Читать</a></strong> — <em>«Я сделал бесплатный ADHD-таймер фокуса, который отмеряет, сколько ты держишь фокус, а не сколько часов сидишь за столом»</em></p>
+<p>Небольшой продукт с хорошей идеей: таймер для людей с ADHD (расстройство внимания), где отвлечение — не провал, а измеряемое событие: «отрезки фокуса» вместо «часов работы». Хорошая инженерная находка UX: переписать смысл метрики (что меряем), а не просто сделать ещё один Pomodoro-таймер.</p>
+<h3>4. Made a free Windows 11 app that hides in the top edge of the screen</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xc7zj7/made_a_free_windows_11_app_that_hides_in_the_top/">Читать</a></strong> — <em>«Сделал бесплатное приложение для Windows 11, которое прячется в верхний край экрана»</em></p>
+<p>Tomte — «dynamic island» (плавающая полоса поверх экрана, как у iPhone) для Windows: file shelf (полка для перетаскиваемых файлов), история буфера обмена, блокнот, поиск. БЕЗ аккаунта и телеметрии, ИИ — по желанию и через свой ключ или локальный Ollama. Напрямую сосед твой pixel_buddy (Tkinter-окно поверх терминала, pywin32) — посмотреть, как у них решено «окно, которое прячется и выезжает».</p>
+<h3>5. I built an app that shows a car's fuel costs and insurance risk before you buy it</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xc4dk6/i_built_an_app_that_shows_a_cars_fuel_costs_and/">Читать</a></strong> — <em>«Я собрал приложение, показывающее расходы на топливо и риск по страховке до покупки авто»</em></p>
+<p>Простое приложение для сравнения 4 машин по расходу, эффективности и статистике страховых случаев (данные Канады и США). Не революция, но пример «сложные данные, простая витрина» — та же формула, что у твой «смиты дома» (dom_smeta): объёмы по чертежам → понятная таблица.</p>
+<h3>6. How far are we from "Done by humans" companies?</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xbxcjt/how_far_are_we_from_done_by_humans_companies/">Читать</a></strong> — <em>«Как далеко мы от компаний "сделано людьми"?»</em></p>
+<p>Дискуссионный тред: автор считает, что скоро появятся компании, продающие «мы написали код руками, без ИИ» — как «organic food» в софте, с наценкой. Живое зерно для тебя: навык «человек, который реально проверяет код», может снова подорожать, когда все вокруг доверят всё агентам. Твоё обучение «понимать, а не только просить» — как раз про это.</p>
+<h3>7. I'm making a magical library that turns your journal, or other readable files, into a magical library you can walk through</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xbrqfl/im_making_a_magical_library_that_turns_your/">Читать</a></strong> — <em>«Делаю волшебную библиотеку, которая превращает твой дневник или файлы в магическую библиотеку, по которой можно идти»</em></p>
+<p>Merlin's Library: markdown/txt/word файлы → проходимая 3D-библиотека с 3000 «книг». По духу — сосед твоих Obsidian-заметок и дайджестов: тот же контент, но «тело» вокруг него. Иллюстрация того, что интерфейс к личным данным (твоё «личное хранилище») — это тоже жанр продукта.</p>
+<h3>8. Would you book a table like this?</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xbxpyn/would_you_book_a_table_like_this/">Читать</a></strong> — <em>«Ты бы забронировал столик вот так?»</em></p>
+<p>Автор показывает UI бронирования столика — тред про UX (пользовательский опыт) малого бизнеса. Мелкое, но полезное: рестораны остаются нишей, где простые формы бронирования конкурируют с тяжёлыми агрегаторами — та же логика, что у пиццерии-без-DoorDash из вчерашнего дайджеста.</p>
+<p><strong>Остальное с Reddit r/SideProject (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xbomz5/thought/">Thought!</a> — мемный пост-заголовок без контента · <a href="https://www.reddit.com/r/SideProject/comments/1xbomz5/thought/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xc6r4p/im_building_a_sun_tracker_for_android_drop_an/">I'm building a sun tracker for Android — drop an object anywhere in AR, then drag the timeline and watch its shadow cross the day</a> — трекер солнца на Android: ставишь объект в AR, крутишь время, смотришь тень; работает офлайн · <a href="https://www.reddit.com/r/SideProject/comments/1xc6r4p/im_building_a_sun_tracker_for_android_drop_an/">Читать</a></li>
+</ul>
+<h2>Итог дня</h2>
+<p>День про доверием и ключи. Сверху — шум безопасности: LiteLLM в PyPI украл ключи, CA-центр eMudhra вылетел с 8-битными ключами, GitLab и PHP патчатсят, Railway в переполохе. Для вайбкодера это не фоновый шум, а гигиена: свежие версии пакетов не ставить сразу, ключи хранить вне кода, расход по ключам иногда смотреть. Снизу — обратная сторона: истории успеха опять про маленькую реальную боль (реклама у родителей → 16k звёзд; спрятанные цены → 10k юзеров), и обе сделаны агентом с локальным решением. Твой стек (локальные инструменты, PWA, границы в CLAUDE.md) сегодня звучит актуально: мир переходит на агентов, а доверие и «руки» остаются человеческой работой.</p>
+</article>
+<nav class="paging"><a href="2026-10-21.html">← 2026-10-21</a><span class="cur">2026-10-22</span><span class="empty">→</span></nav>
+<footer class="site"><a href="index.html">⟵ все выпуски</a></footer>
+<script>document.addEventListener('keydown', function(e){
+  if(e.target.tagName==='INPUT')return;
+  var links=document.querySelectorAll('nav.paging a[href]');
+  if(e.key==='ArrowLeft'&&links[0])location.href=links[0].href;
+  if(e.key==='ArrowRight'&&links[links.length-1])location.href=links[links.length-1].href;
+});
+</script>
+
+
+</body>
+</html>
