@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#faf9f6">
+<title>Дайджест 2026-10-23</title>
+<link rel="icon" href="icon-192.png" />
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+<script src="theme.js" defer></script>
+<script src="sw-register.js" defer></script>
+</head>
+<body>
+
+<header class="site">
+  <a class="home" href="index.html">⟵ все выпуски</a>
+  <button class="theme" aria-label="Сменить тему">◐</button>
+</header>
+<article>
+<p>Новых постов: 46 (HN 15, Habr 11, Reddit 20; r/vibecoding 10 + r/SideProject 10).
+Сортировка по интересу к твоим темам (Claude Code, AI-агенты, вайбкодинг, парсеры, Python,
+фриланс/поиск работы). Метка 🏷 — только заголовок/выдержка.</p>
+<h2>Hacker News</h2>
+<h3>1. OpenShell – A safe, private runtime for fleets of autonomous AI agents</h3>
+<p><strong><a href="https://github.com/NVIDIA/OpenShell">Оригинал</a></strong> · 342 балла, 181 комментарий · <a href="https://news.ycombinator.com/item?id=50198675">Обсуждение</a>
+<em>«OpenShell — безопасная приватная среда выполнения для стай автономных ИИ-агентов»</em></p>
+<p>NVIDIA выложила в открытый доступ OpenShell — «песочницу» (изолированная среда, где агент может работать, не ломая остальную систему) для отрядов автономных агентов. Тренд недели продолжается: большие компании всерьёз строят инфраструктуру «агентам нужен свой закрытый мир с правами». Твой подход — границы в CLAUDE.md и запреты в папке проекта — это то же самое, только руками и на своем уровне.</p>
+<h3>2. eMudhra to exit global SSL/TLS certificate business</h3>
+<p><strong><a href="https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business">Оригинал</a></strong> · 986 баллов, 658 комментариев · <a href="https://news.ycombinator.com/item?id=50195110">Обсуждение</a>
+<em>«eMudhra уходит из глобального бизнеса SSL/TLS-сертификатов»</em></p>
+<p>Финал истории, шедшей третьи сутки: eMudhra (удостоверяющий центр, у которого взломали ключи из-за слабой случайности) уходит из бизнеса SSL/TLS-сертификатов совсем (сертификат — это подпись, по которой браузер верит, что сайт тот, за кого себя выдаёт). Учебник на живом примере: один недосмотр — и компания уходит с рынка доверия.</p>
+<h3>3. Tell HN: I unknowingly broke the PHP RCE embargo. I am sorry.</h3>
+<p><strong><a href="https://news.ycombinator.com/item?id=50193416">Оригинал</a></strong> · 451 балл, 187 комментариев · <a href="https://news.ycombinator.com/item?id=50193416">Обсуждение</a>
+<em>«Расскажу HN: я случайно нарушил эмбарго на PHP RCE. Извините»</em></p>
+<p>Автор случайно раскрыл критическую уязвимость PHP (RCE — удалённое выполнение кода) до согласованного срока патча (embargo — запрет обсуждать уязвимость, пока все не могут обновиться). Пост-исповедь с кучей комментариев о том, как хрупок процесс ответственного раскрытия. Читается как детектив — и как напоминание, что «проверь, что публикуешь» касается и безопасников.</p>
+<h3>4. LLMs are making formal software verification feasible at a much larger scale</h3>
+<p><strong><a href="https://www.anthropic.com/research/formal-verification">Оригинал</a></strong> · 215 баллов, 119 комментариев · <a href="https://news.ycombinator.com/item?id=50202217">Обсуждение</a>
+<em>«LLM делают формальную верификацию ПО реализуемой в куда большем масштабе»</em></p>
+<p>Anthropic: LLM помогают писать формальные доказательства корректности программ (формальная верификация — математическое доказательство, что код не может работать неправильно). Занятно, как разворачивается сюжет: ИИ пишет код с ошибками — ИИ же учится доказывать его правильность. Для вайбкодера это будущая гигиена: проверками кода займутся машины, а не «вроде работает».</p>
+<h3>5. Quad9 (DNS Resolver) to Exit France</h3>
+<p><strong><a href="https://quad9.net/news/blog/au-revoir-france/">Оригинал</a></strong> · 1073 балла, 383 комментария · <a href="https://news.ycombinator.com/item?id=50195959">Обсуждение</a>
+<em>«Quad9 (DNS-резолвер) уходит из Франции»</em></p>
+<p>Quad9 (некоммерческий DNS-резолвер — сервис, который переводит имена сайтов в IP-адреса и блокирует вредоносные) закрывает французские серверы: суд постановил, что DNS-блокировка вредоносного сайта = кибератака. Комментарии — о том, как юридика может сломать инфраструктуру интернета. Тебе по следу «аккуратный скрейпинг»: правила для инфраструктурных сервисов везде ужесточаются.</p>
+<h3>6. Getting ready to operate GNU Taler in Germany</h3>
+<p><strong><a href="https://www.taler.net/en/news/2026-13.html">Оригинал</a></strong> · 243 балла, 98 комментариев · <a href="https://news.ycombinator.com/item?id=50197404">Обсуждение</a>
+<em>«К запуску GNU Taler в Германии»</em></p>
+<p>GNU Taler (свободная платёжная система с приватностью покупателя и прозрачностью продавца — проект того же Ричарда Столлмана-лагеря, что и GNU/Linux) готовится к реальной эксплуатации в Германии. Редкая история: альтернативные платежи доезжают до реального банка. Любопытно как знак, что «цифровые кошельки без Big Tech» — жанр живой.</p>
+<h3>7. Jailbreaking the Switch 2</h3>
+<p><strong><a href="https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/">Оригинал</a></strong> · 757 баллов, 265 комментариев · <a href="https://news.ycombinator.com/item?id=50192536">Обсуждение</a>
+<em>«Джейлбрейк (взлом ограничений) Nintendo Switch 2»</em></p>
+<p>Разбор свежего взлома Switch 2: как открыли дыру в новом железе и защите консоли. Технически глубокий пост о чипах, эксплойтах и «цепочке доверия». Чисто фан-чтение про реверс-инженеринг (разбор закрытых систем), жанр, который в истории дайджестов всегда собирает десятки тысяч просмотров.</p>
+<h3>8. Docker is weird</h3>
+<p><strong><a href="https://codeandcake.dev/posts/2026-10-22-docker-is-weird">Оригинал</a></strong> · 259 баллов, 132 комментария · <a href="https://news.ycombinator.com/item?id=50202681">Обсуждение</a>
+<em>«Docker — странный»</em></p>
+<p>Автор разбирает несколько контринтуитивных деталей Docker (инструмент, который упаковывает приложение вместе со всем окружением в контейнер). Лёгкий технический разбор «почему эта штука работает не так, как кажется». Полезно как фон: рано или поздно столкнёшься с Docker при деплое, и «это нормально, что он такой» — хорошая установка на будущее.</p>
+<p><strong>Остальное с HN (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://www.404media.co/amanda-smith-opened-a-cashapp-in-her-name-she-faces-years-in-prison-cashapp-fraud/">Woman charged with computer fraud due to scam CashApp account being in her name</a> — женщину судят за компьютерное мошенничество из-за того, что мошеннический CashApp-аккаунт зарегистрирован на её имя; сюжет «невиновный, но виноват по бумагам» · <a href="https://news.ycombinator.com/item?id=50194833">Обсуждение</a></li>
+<li>🏷 <a href="https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans">Every AI model has the same "controversial" take on humans</a> — «у всех ИИ-моделей одинаковый "спорный" взгляд на людей»; сравнение ответов разных моделей на чувствительные вопросы, 348 комментариев · <a href="https://news.ycombinator.com/item?id=50197313">Обсуждение</a></li>
+<li>🏷 <a href="https://arstechnica.com/gaming/2026/10/xbox-wants-you-to-pay-24-to-40-cents-per-hour-to-stream-games-you-already-bought/">Xbox wants you to pay 24 to 40 cents per hour to stream games you bought</a> — Xbox хочет брать 24–40 центов в час за стриминг купленных игр; «собственность умирает, всё в подписку» · <a href="https://news.ycombinator.com/item?id=50194009">Обсуждение</a></li>
+<li>🏷 <a href="https://github.com/oosexgang/hackios-xnu-kernel">Run full iOS 16.5 firmware on Android Devices</a> — «запуск полного iOS 16.5 на Android-устройствах»; репозиторий вызывает скепсис в комментариях — проверяй источники · <a href="https://news.ycombinator.com/item?id=50196718">Обсуждение</a></li>
+<li>🏷 <a href="https://globus.software/blog/2026/10/16/cutting-map-polygons/">Faster than earcut: triangulating 3.7M map polygons in 489 ms</a> — «быстрее earcut: триангуляция 3,7 млн картографических полигонов за 489 мс»; производительность на геоданных · <a href="https://news.ycombinator.com/item?id=50193170">Обсуждение</a></li>
+<li>🏷 <a href="https://github.com/maxilevi/project-hedra/tree/pre-ai">Hedra is a 3D open world game I wrote from scratch while in highschool</a> — «Hedra — 3D-игра с открытым миром, которую я написал с нуля в школьные годы»; ветка "pre-ai" в имени репо намеренная · <a href="https://news.ycombinator.com/item?id=50199389">Обсуждение</a></li>
+<li>🏷 <a href="https://musicalform.substack.com/p/what-is-gridifcation">What Is Gridifcation</a> — «что такое гридификация»; разбор вёрстки по сетке в веб-дизайне · <a href="https://news.ycombinator.com/item?id=50150163">Обсуждение</a></li>
+</ul>
+<h2>Habr</h2>
+<h3>1. Как я заставил ИИ-агентов собирать себе harness под конкретную задачу</h3>
+<p><strong><a href="https://habr.com/ru/articles/1098004">Читать</a></strong></p>
+<p>Автор заставил агентов самим собирать себе harness (вспомогательная оснастка: тесты, скрипты, правила, под которых агент работает над задачей). Прямо твой сосед уровня «скиллы»: вместо того чтобы каждый раз прописывать контекст руками, агент сам делает «инструкцию себе». Полезно читать как развитие идеи твоих SKILL.md — оснастка под задачу становится отдельным артефактом.</p>
+<h3>2. Как мы научили ИИ-агента не выдумывать цифры в отчётах</h3>
+<p><strong><a href="https://habr.com/ru/articles/1098124">Читать</a></strong></p>
+<p>Практическая статья про «галлюцинации цифр»: агент в отчётах придумывал значения, авторы научились это отсекать. Тебе прицельно: твой статуслайн, дайджесты и заказы — всё «агент, собирающий цифры», и правило «сделано = внешний след подтверждён» — это тот же класс задач. Чужое решение полезно сравнить со своим.</p>
+<h3>3. Чёлка MacBook как пульт для ИИ-агентов: Claude Code, Codex, Cursor и Copilot в одном месте</h3>
+<p><strong><a href="https://habr.com/ru/articles/1097994">Читать</a></strong></p>
+<p>Автор выкрутил «чёлку» MacBook (верхний вырез экрана) в пульт для четырёх ИИ-агентов сразу. Технически — маленькое окно, следящее за статусом агентов. По духу — сосед твоего pixel_buddy (окно-питомец поверх терминала): «маленький постоянный HUD поверх рабочего стола» — рабочий жанр, а не фрикас.</p>
+<h3>4. [Перевод] Терминал, которого нет: я научил модель на 360M параметров изображать bash, vim и tmux</h3>
+<p><strong><a href="https://habr.com/ru/articles/1098116">Читать</a></strong></p>
+<p>Модель в 360 млн параметров (крошечная против нынешних триллионных) обучили притворяться целым терминалом: bash, vim, tmux — генерирует экраны по действию пользователя. Это не «ИИ пишет команды», а «ИИ рисует интерфейс». Курьёз, но направление показательное: модели уже делают не логику, а интерфейсы.</p>
+<h3>5. Компьютерное зрение всего на одном ядре CPU: 8,6–15,8 мс на кадр и 4,2 МБ в локальной поставке</h3>
+<p><strong><a href="https://habr.com/ru/articles/1098062">Читать</a></strong></p>
+<p>Компьютерное зрение на одном ядерe старого CPU: 8–16 мс на кадр, 4,2 МБ локально. Прямое попадание в твой принцип «локальное и лёгкое»: тяжёлые ML-задачи часто решаются крошечными моделями без GPU и интернета. Держать в закладках на случай «хочу камеру в пет-проект».</p>
+<h2>Reddit r/vibecoding</h2>
+<h3>1. after PHP2Shell I used Opus 5.5 to convert 45 client WordPress sites to Astro in the past 36 hours</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xd0w7u/after_php2shell_i_used_opus_55_to_convert_45/">Читать</a></strong> — <em>«После PHP2Shell я прогнал Opus 5.5 по конверсии 45 клиентских WordPress-сайтов в Astro за 36 часов»</em></p>
+<p>Автор на волне скандала с PHP массово перегоняет 45 клиентов с WordPress в Astro (статический генератор сайтов — страница собирается заранее, без PHP-сервера): быстрее, безопаснее, дешевле в хостинге. Это целая бизнес-модель «миграция под ключ»: одна операция × 45 клиентов. Тебе по следу заказов: «миграция» — повторяемый тип задачи, из которого фрилансеры строят конвейеры.</p>
+<h3>2. The end of the non-technical engineering manager</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xcdrwd/the_end_of_the_nontechnical_engineering_manager/">Читать</a></strong> — <em>«Конец нетехнического инженерного менеджера»</em></p>
+<p>Дискуссия: руководителя разработки, не понимающего код, больше не удержат — когда весь код пишут агенты, именно технический смысл становится ценностью руководителя. Тебе как мотивация: план «перейти в разработку» в мире агентов упирается не в скорость набора, а в способность оценить, что агент сделал. Именно это ты и учишь.</p>
+<h3>3. Finally, vibe coder personas I agree with</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xcqi28/finally_vibe_coder_personas_i_agree_with/">Читать</a></strong> — <em>«Наконец, типажи вайбкодеров, с которыми я согласен»</em></p>
+<p>Видео-типажи вайбкодеров: «нетехнический», «дегенерат от промпт-казино» (кормит агенту подряд и надеется), «Сварлорд» (управляет роем агентов). Сам себя узнал как «UX-дизайнер днём, промпт-казино ночью». Забавно и полезно для самоопределения: твой путь скорее — «учусь понимать, не жду, что скилл за меня всё».</p>
+<h3>4. How many unfinished projects do you have?</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xcdknv/how_many_unfinished_projects_do_you_have/">Читать</a></strong> — <em>«Сколько у вас незапершённых проектов?»</em></p>
+<p>Тред-признание: у вайбкодеров десятки недоделанных проектов, и это норма субкультуры. По следу твоего notes.md: у тебя проекты доводятся до «продукт или в стоп» — это выделение на фоне.</p>
+<h3>5. Corporate AI adoption, perfectly balanced.</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xd1l9s/corporate_ai_adoption_perfectly_balanced/">Читать</a></strong> — <em>«Корпоративное внедрение ИИ, идеально сбалансированное»</em></p>
+<p>Мемный тред о том, как компании внедряют ИИ: сверху пафос, на практике хаос. Легкое, но иллюстрирует разницу между маркетингом и практикой — то же, что в твоих «заманухах» в вакансиях.</p>
+<p><strong>Остальное с Reddit r/vibecoding (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xckkby/my_vibecoded_spooky_skeleton_dancer_is_ready_for/">My vibecoded spooky skeleton dancer is ready for Halloween</a> — фан-проект к Хэллоуину: скелет-танцор на экран, реагирует на движение мыши; маленькая игрушка, а не продукт · <a href="https://www.reddit.com/r/vibecoding/comments/1xckkby/my_vibecoded_spooky_skeleton_dancer_is_ready_for/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xd2e57/gpt_6_series_in_a_nuthshell_the_most/">GPT 6 series in a nuthshell</a> — резкое сравнение GPT 6: «самые прозрачнo некомпетентные модели»; в комментариях спорят · <a href="https://www.reddit.com/r/vibecoding/comments/1xd2e57/gpt_6_series_in_a_nuthshell_the_most/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xco7gy/agi/">AGI</a> — однострочный мемный тред с пустым содержанием · <a href="https://www.reddit.com/r/vibecoding/comments/1xco7gy/agi/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xcwz7m/of_course_i_know_him_hes_me/">Of course I know him, he's me</a> — мемный тред · <a href="https://www.reddit.com/r/vibecoding/comments/1xcwz7m/of_course_i_know_him_hes_me/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xcd8xc/_/">😶</a> — тред-мем без контента · <a href="https://www.reddit.com/r/vibecoding/comments/1xcd8xc/_/">Читать</a></li>
+</ul>
+<h2>Reddit r/SideProject</h2>
+<h3>1. Stop asking Claude if your startup idea is good</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xcibbd/stop_asking_claude_if_your_startup_idea_is_good/">Читать</a></strong> — <em>«Хватит спрашивать у Claude, хороша ли идея твоего стартапа»</em></p>
+<p>Гневный, но точный пост: спрашивать у чатбога «валиден ли мой стартап» — не валидация; настоящую проверку делает рынок, а не языковая модель, которая подберёт добрые слова под твой же аргумент. Тебе прямо в цель: у нас это правило уже заведено («сначала где деньги, потом механика», «не поддакиваю»). Сохранить как аргумент против всех «ИИ сказал, что ниша свободна».</p>
+<h3>2. Naqsh - a small fast terminal for Mac that I built for my Claude Code days</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xd2n73/naqsh_a_small_fast_terminal_for_mac_that_i_built/">Читать</a></strong> — <em>«Naqsh — маленький быстрый терминал для Mac, который я сделал под свои дни с Claude Code»</em></p>
+<p>Автор построил собственный терминал (Tauri, 10 МБ) вокруг своих Claude Code-секций: вставка скриншота в панель — путь готов для агента, вывод после выхода из Claude Code не сваливается, сплиты в той же папке. Прямо сосед твоего pixel_buddy и Handy-диктовки: инструмент, заточенный под конкретный ежедневный сценарий работы с агентом.</p>
+<h3>3. I built a game-night app where the TV is the card table and every phone is a private hand</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xd26rn/i_built_a_gamenight_app_where_the_tv_is_the/">Читать</a></strong> — <em>«Я сделал приложение для игровых вечеров: ТВ — игровой стол, каждый телефон — своя рука карт»</em></p>
+<p>Домашний продукт: на ТВ — общий стол (карты, счёт), у каждого игрока на телефоне — только своя рука; вход по QR-коду с экрана, без аккаунтов и скачивания. Прямой сосед твоих «Пословиц» и паков с котиками: маленькая локальная игра-механика, где ценность — не в маркетинге, а в том, что она просто работает в компании.</p>
+<h3>4. I built a free library of 900+ motion design examples because I never know exactly what I want</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xclfea/i_built_a_free_library_of_900_motion_design/">Читать</a></strong> — <em>«Я сделал бесплатную библиотеку из 900+ примеров моушн-дизайна, потому что не всегда знаю, чего хочу»</em></p>
+<p>Би­блиотека визуальных примеров эффектов и переходов с промпт-генератором. Тебе прицельно по HyperFrames: «назови эффект», «что мне сделать, чтобы выглядело как это» — ровно твоя боль, когда описываешь фавикон или анимацию словами. Сохранить как референс при сборке видео.</p>
+<h3>5. HushedEchoes: talk about your day, it keeps the tasks and the feelings apart</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xd22cr/hushedechoes_talk_about_your_day_it_keeps_the/">Читать</a></strong> — <em>«HushedEchoes: расскажи о дне — приложение разводит задачи и чувства по разным спискам»</em></p>
+<p>«Говоришь» голосом — фраза раскладывается: «позвонить в банк завтра» → задача с напоминанием, «я выжат» → приватная заметка настроения. Интересный UX-приём: один вход, два списка. Тебе по проектам «личное хранилище данных» — пример продукта, который делает из болтовни структуру.</p>
+<h3>6. I turned an old laptop into a complete offline survival server</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xcjogb/i_turned_an_old_laptop_into_a_complete_offline/">Читать</a></strong> — <em>«Я превратил старый ноутбук в полноценный оффлайн-сервер выживания»</em></p>
+<p>Prepperpoint: старый ноутбук → загрузочная флешка с локальной Википедией, картами, локальным ИИ — весь набор знаний офлайн. Прямой сосед твоего принципа «локальные приложения»: тот же жанр «домашнее хранилище», только в экстремальной упаковке. Для тебя полезен как вдохновение для «личного хранилища» из планов.</p>
+<h3>7. I built a free app that teaches Python &amp; JavaScript with Parsons problems</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xd0j2r/i_built_a_free_app_that_teaches_python_javascript/">Читать</a></strong> — <em>«Я сделал бесплатное приложение, которое учит Python и JS с парсоновскими задачами»</em></p>
+<p>CodeShuffle: 200 задач, где строки кода перетасованы, и их нужно расставить в порядок (Parsons problems — учебный формат: собери правильный код из перемешанных строк). Формат, идеально зайдущий твоему уровню: нет паники «напиши с нуля», есть сборка структуры. Подойти к учёбе Python с этой стороны — хороший вариант.</p>
+<h3>8. I built a free "Tinder for movies" so my girlfriend and I stop arguing over what to watch</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xcoztd/i_built_a_free_tinder_for_movies_so_my_girlfriend/">Читать</a></strong> — <em>«Я сделал бесплатный "Тиндер для фильмов", чтобы с девушкой перестать спорить, что посмотреть»</em></p>
+<p>FilmsMatch: сессия → второй человек по QR-коду → оба свайпают фильмы → совпадение. Автор показывает, как 10 дней обратной связи с одного сообщества (66 комментариев) перекроили продукт. Урок мелкий, но важный: «выложи недоделанное в живое сообщество» — это часть разработки, а не поражение.</p>
+<p><strong>Остальное с Reddit r/SideProject (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xcur56/we_built_a_sports_betting_app_whose_proudest/">We built a sports betting app whose proudest feature is telling you "don't bet today"</a> — приложение для ставок, чья гордость — «сегодня не ставь»; длинная личная история за идеей · <a href="https://www.reddit.com/r/SideProject/comments/1xcur56/we_built_a_sports_betting_app_whose_proudest/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xcji65/vibe_built_an_opensource_torrent_player_that_lets/">Vibe built an open-source torrent player that lets you skip ahead</a> — открытый торрент-плеер с перемоткой в середину файла без ожидания · <a href="https://www.reddit.com/r/SideProject/comments/1xcji65/vibe_built_an_opensource_torrent_player_that_lets/">Читать</a></li>
+</ul>
+<h2>Итог дня</h2>
+<p>День про «агентов, которых уже строит индустрия». Сверху — инфраструктура: NVIDIA выложила OpenShell (песочницы для автономных агентов), Anthropic показала, что LLM тянут формальную верификацию кода, а на Habr в это же время — «агенты собирают себе harness» и «не выдумывают цифры в отчётах». Всё сходится в одну ленту: агент без ограничений никому не нужен, вокруг него строят стены и проверки — ровно то, что у тебя уже есть в CLAUDE.md, только теперь это делается целыми командами. Успех на Reddit — по классике: маленькая боль (аргумент «что посмотреть») → простая механика (свайпы+QR) → продукт. Из прикладного: CodeShuffle с Parsons-задачами — попробуй для учёбы Python; библиотека моушн-примеров — референс для HyperFrames; PHP2Shell-миграции — повторяемый тип заказа.</p>
+</article>
+<nav class="paging"><a href="2026-10-22.html">← 2026-10-22</a><span class="cur">2026-10-23</span><span class="empty">→</span></nav>
+<footer class="site"><a href="index.html">⟵ все выпуски</a></footer>
+<script>document.addEventListener('keydown', function(e){
+  if(e.target.tagName==='INPUT')return;
+  var links=document.querySelectorAll('nav.paging a[href]');
+  if(e.key==='ArrowLeft'&&links[0])location.href=links[0].href;
+  if(e.key==='ArrowRight'&&links[links.length-1])location.href=links[links.length-1].href;
+});
+</script>
+
+
+</body>
+</html>
