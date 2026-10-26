@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#faf9f6">
+<title>Дайджест 2026-10-26</title>
+<link rel="icon" href="icon-192.png" />
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+<script src="theme.js" defer></script>
+<script src="sw-register.js" defer></script>
+</head>
+<body>
+
+<header class="site">
+  <a class="home" href="index.html">⟵ все выпуски</a>
+  <button class="theme" aria-label="Сменить тему">◐</button>
+</header>
+<article>
+<p>Новых постов: 45 (HN 15, Habr 10, Reddit 20; r/vibecoding 10 + r/SideProject 10).
+Сортировка по интересу к твоим темам (Claude Code, AI-агенты, вайбкодинг, парсеры, Python,
+фриланс/поиск работы). Метка 🏷 — только заголовок/выдержка.</p>
+<h2>Hacker News</h2>
+<h3>1. Anthropic S-1</h3>
+<p><strong><a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm">Оригинал</a></strong> · 1153 балла, 1067 комментариев · <a href="https://news.ycombinator.com/item?id=50242939">Обсуждение</a>
+<em>«Сводка Anthropic S-1 (документация к выходу на биржу)»</em></p>
+<p>Anthropic опубликовала S-1 — основной документ для выхода на биржу IPO (первичное публичное размещение акций): там обычно финансовая отчётность, число пользователей, юнит-экономика. Тысяча с лишним комментариев — весь HN копается в цифрах: выручка, расходы на вычисления, динамика роста. Для тебя это фон, но фон громкий: компания, чей Claude Code ты используешь каждый день, показала свои внутренние цифры — по дискуссии хорошо видно, каково жить ИИ-компании в 2026.</p>
+<h3>2. Microsoft offers mass buyouts for roughly a quarter of its workforce</h3>
+<p><strong><a href="https://www.seattletimes.com/business/microsoft/microsoft-offers-mass-buyouts-for-roughly-a-quarter-of-its-workforce/">Оригинал</a></strong> · 402 балла, 360 комментариев · <a href="https://news.ycombinator.com/item?id=50245524">Обсуждение</a>
+<em>«Microsoft предлагает массовые выкупы (добровольные увольнения с компенсацией) примерно четверти персонала»</em></p>
+<p>Microsoft в один момент предложила выход с компенсацией четверти своих сотрудников — крупнейшая волна «сокращений через buyout» у софтверного гиганта в истории. Комментарии грызутся, сколько тут роли ИИ, сколько — перераздутого штата. Для тебя это вторая половина фона недели (вчера — 200 тыс. мест в творческих профессиях): рынок труда сдвигается, и твой план «удалёнка/IT без корней в одном офисе» выглядит правильно, но конкурентным.</p>
+<h3>3. Sebastian Raschka's from-scratch video course on building reasoning models</h3>
+<p><strong><a href="https://magazine.sebastianraschka.com/p/building-reasoning-models">Оригинал</a></strong> · 321 балл, 46 комментариев · <a href="https://news.ycombinator.com/item?id=50245138">Обсуждение</a>
+<em>«Видеокурс Себастьяна Рашки «с нуля» о построении reasoning-моделей (моделей, которые рассуждают)»</em></p>
+<p>Sebastian Raschka (автор культовой книжки «Build a LLM from scratch») выпустил курс, где reasoning-модель собирается с нуля: RL-тюнинг, цепочки рассуждений, без магии. Бесплатная/открытая часть есть. Тебе сейчас рано по практике, но по стратегии — самое то: понимание «как рассуждение внутри собирается» отличает того, кто дёргает API, от того, кто понимает, что он вообще покупает. Отложить в список «когда дойдёт до теории».</p>
+<h3>4. Fixing Tool-Call Accuracy in vLLM</h3>
+<p><strong><a href="https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm">Оригинал</a></strong> · 123 балла, 63 комментария · <a href="https://news.ycombinator.com/item?id=50242870">Обсуждение</a>
+<em>«Чиним точность tool-call (вызов инструментов моделью) в vLLM»</em></p>
+<p>Разбор тонкой баги: vLLM (популярный сервер для запуска моделей самохостингом) портил вызовы инструментов — а именно на tool-call держатся все ИИ-агенты, включая Claude Code. Статья показывает, как «маленький сдвиг в форматировании ответа ломает агента». Прицельно тебе: ты строишь агентные конвейеры на чужих API — понимание слоя tool-call поможет, когда пойдёшь глубже (свой хостинг через адаптер, как в плане замены Replicate).</p>
+<h3>5. Websites Should Be Printable</h3>
+<p><strong><a href="https://brennenputh.me/blog/printable-websites/">Оригинал</a></strong> · 218 баллов, 155 комментариев · <a href="https://news.ycombinator.com/item?id=50241664">Обсуждение</a>
+<em>«Сайты должны быть пригодны для печати»</em></p>
+<p>Эссе о забытом умении: <code>@media print</code> в CSS (стили, применяемые при печати страницы) — и как почти никто не чистит меню/рекламу из распечатки. Дискуссия всплыла живая — про «сайт, который работает без батареи и интернета». Тебе по духу совпадает с твоей любовью к локальным приложениям: печатная версия страницы — то же «работает без сети и без браузера».</p>
+<h3>6. Websites: CSS-Tricks has a new owner</h3>
+<p><strong><a href="https://css-tricks.com/css-tricks-has-a-new-owner/">Оригинал</a></strong> · 195 баллов, 49 комментариев · <a href="https://news.ycombinator.com/item?id=50245831">Обсуждение</a>
+<em>«CSS-Tricks обрёл нового владельца»</em></p>
+<p>CSS-Tricks — один из старейших и самых уважаемых сайтов про CSS и фронтенд — сменяет хозяина. Дискуссия о том, выживут ли контентные сайты, которые 20 лет кормились рекламой. Фоловить за фронтенд не обязательно, но как сигнал эпохи: классические техносайты либо поглощаются, либо умирают, а контент уходит в личные рассылки и Discord. Справка на будущее: когда будешь вести свой VK-канал — «личный голос» сейчас продаётся лучше «портала».</p>
+<h3>7. Show HN: TitleArt – Make text like it's 1997</h3>
+<p><strong><a href="https://titleart.dvy.io/">Оригинал</a></strong> · 371 балл, 69 комментариев · <a href="https://news.ycombinator.com/item?id=50238708">Обсуждение</a>
+<em>«Show HN: TitleArt — делай текстовые заставки, как в 1997-м»</em></p>
+<p>Один из самых высоких Show HN дня: генератор текстовых заставок в эстетике «1997» (тени, градиенты, WordArt-минор). Жанр ровно тот же, что у твоих «Чудиков» и «Пословиц» — узкая эстетика, один экран, максимальная виралка. Смотри на метрики не глазами разработчика, а глазами маркетолога: что это идею сделало хитом — и почему у тебя не сработало «пословицы-паки».</p>
+<h3>8. Switzerland. Block by block. At 1:1 scale</h3>
+<p><strong><a href="https://blocks.manifold3d.ch/">Оригинал</a></strong> · 407 баллов, 197 комментариев · <a href="https://news.ycombinator.com/item?id=50240922">Обсуждение</a>
+<em>«Швейцария. Блок за блоком. В масштабе 1:1»</em></p>
+<p>Техно-шоу: вся Швейцария, построенная вокселями (объёмными «блоками» как в Minecraft) прямо в браузере, через Three.js/WebGPU. Смотрится красиво на любом железе, включая старое. Для тебя двойной интерес: это Three.js из браузера (твой card_pack_3d растёт из этой же библиотеки) — и кейс «грандиозно выглядит, но по сути один трюк».</p>
+<p><strong>Остальное с HN (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://imaginationlibrary.com/">Dolly Parton's Imagination Library</a> — книжная программа Долли Партон, раздавшая детям сотни миллионов книг (тёплый хит дня) · <a href="https://news.ycombinator.com/item?id=50234474">Обсуждение</a></li>
+<li>🏷 <a href="https://www.bbc.com/future/article/20261019-birdwatching-rewires-the-brain-and-slows-cognitive-decline">Birdwatching rewires the brain and slows cognitive decline</a> — «наблюдение за птицами перестраивает мозг и замедляет когнитивный спад»; антистресс-читалка · <a href="https://news.ycombinator.com/item?id=50215997">Обсуждение</a></li>
+<li>🏷 <a href="https://exhibits.stanford.edu/menuez/browse/next-computer-inc">Behind the scenes at the NeXT Computer office</a> — архив фото из офиса NeXT (компания Стива Джобса до Apple), 1980-е · <a href="https://news.ycombinator.com/item?id=50238763">Обсуждение</a></li>
+<li>🏷 <a href="https://humantransit.org/2024/12/one-of-the-greatest-inventions-in-the-history-of-human-transport.html">Blaise Pascal invented fixed route public transport (2024)</a> — «Паскаль придумал общественный транспорт с фиксированным маршрутом» · <a href="https://news.ycombinator.com/item?id=50200152">Обсуждение</a></li>
+<li>🏷 <a href="https://pharo.org/news/2026-10-26-Pharo14Release.html">Pharo 14</a> — релиз Pharo 14 (современный Smalltalk — язык-легенда, на котором учились объектному программированию) · <a href="https://news.ycombinator.com/item?id=50241925">Обсуждение</a></li>
+<li>🏷 <a href="https://www.panamericandispatch.org/p/meta-employees-denounce-interference">Meta Employees Denounce Interference in Brazilian Elections</a> — сотрудники Meta публично заявили о вмешательстве в бразильские выборы · <a href="https://news.ycombinator.com/item?id=50248061">Обсуждение</a></li>
+<li>🏷 <a href="https://www.brown.edu/news/2026-10-26/ai-data-workers">Brown student maps the hidden global labor powering AI</a> — студент Брауна картировал скрытую глобальную рабочую силу, размечающую данные для ИИ · <a href="https://news.ycombinator.com/item?id=50242843">Обсуждение</a></li>
+</ul>
+<h2>Habr</h2>
+<h3>1. Пятнадцать сессий Claude Code съели 11 ГБ памяти. Я написал мод, который показывает, кто именно</h3>
+<p><strong><a href="https://habr.com/ru/articles/1099622">Читать</a></strong></p>
+<p>Автор написал мод-диагностику для Claude Code, которая показывает, какая из параллельных сессий жрёт память — у него 15 одновременных сессий съели 11 ГБ. Тебе прицельно вдвойне: ноутбук у тебя слабый, и одна-две сессии Claude Code — уже заметная нагрузка; статья подсказывает, чем замерять (и что параллельные агенты умножают расход памяти, не только токенов).</p>
+<h3>2. Hutter Prize 2026: трансформер на 6 млн параметров, Claude Code и самый большой скачок за 20 лет</h3>
+<p><strong><a href="https://habr.com/ru/articles/1099624">Читать</a></strong></p>
+<p>Hutter Prize — многолетний конкурс по сжатию текста (чем лучше сжимаешь корпус, тем «умнее» модель — старая гипотеза). Результат 2026: крошечный трансформер на 6 млн параметров дал самый большой скачок за 20 лет, а помогал в этом — Claude Code. Тему разворачивают интересно: «агент как участник научной гонки». Чисто обзорное, но полезное для интуиции: модель ≠ количество параметров.</p>
+<h3>3. Pydantic AI: типизированные агенты на своих моделях</h3>
+<p><strong><a href="https://habr.com/ru/companies/bothub/articles/1099642">Читать</a></strong></p>
+<p>Обзор Pydantic AI — фреймворк для агентов на Python, где структура ответов и вызовов инструментов задана типами (типизация = жёсткая проверка форм данных на компиляции, а не на бегу). Именно «данные как контракт, а не фантазия агента» — принцип, который ты уже практикуешь в дайджестах. Когда решешь строить своего бота-агента на Python, фреймворки типа Pydantic AI — первый кандидат почитать.</p>
+<h3>4. Сколько стоит ИИ-бот для бизнеса в 2026 году: считаем на ценах GigaChat и YandexGPT</h3>
+<p><strong><a href="https://habr.com/ru/articles/1099084">Читать</a></strong></p>
+<p>Прямо твоя тема «деньги»: автор считает реальную стоимость обслуживания ИИ-бота для бизнеса на российских ценах (GigaChat, YandexGPT) — токены, трафик, поддержка. Для тебя это готовая методичка, если однажды продадишь «бот для заказов/консультаций» малому бизнесу: полезно видеть, как считают себестоимость и маржу, а не только как пишут промты.</p>
+<h3>5. Сказ от Anthropic о том, как рой ИИ-агентов может превратиться в сборище бюрократов</h3>
+<p><strong><a href="https://habr.com/ru/articles/1099290">Читать</a></strong></p>
+<p>Перевод свежей инженерной записки Anthropic: когда много ИИ-агентов работают в одной системе, они плодят бюрократию — координируют друг друга больше, чем делают дело. Очень по теме твоих амбиций «многоагентные конвейеры»: урок — меньше сносок-согласований между агентами, больше прямой руки. Твоя утренняя цепочка из двух скиллов — как раз удачный минимум.</p>
+<p><strong>Остальное с Habr (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://habr.com/ru/articles/1099714">Как мы оценивали соответствие предсказаний LLM нормам профессиональных кодексов</a> — как мерить, соблюдает ли модель этические кодексы профессии · <a href="https://habr.com/ru/articles/1099714">Читать</a></li>
+<li>🏷 <a href="https://habr.com/ru/articles/1099710">Ищем нишу для продукта с нейросетями на примере Excalidraw</a> — поиск ниш для ИИ-продуктов на примере доск Excalidraw; методология, полезная при проработке твоих идей · <a href="https://habr.com/ru/articles/1099710">Читать</a></li>
+<li>🏷 <a href="https://habr.com/ru/companies/speshu_ai/articles/1099696">Nano Banana 2.1 или ChatGPT Image 2.5: сравниваем нейросети для генерации изображений</a> — сравнение генераторов картинок на 5 промтах; полезно к твоему конвейеру маска→kontext→nano-banana · <a href="https://habr.com/ru/companies/speshu_ai/articles/1099696">Читать</a></li>
+<li>🏷 <a href="https://habr.com/ru/companies/okdesk/articles/1099694">Как реализовать трехмерную сервисную модель для корпоративных заказчиков</a> — опыт продаж сервисной модели в B2B-поддержке; фон, скорее не твёё · <a href="https://habr.com/ru/companies/okdesk/articles/1099694">Читать</a></li>
+<li>🏷 <a href="https://habr.com/ru/articles/1099640">ИИ-спам и обновление Google: как найти у себя почти одинаковые страницы</a> — как Google душит ИИ-спам и как искать почти-дубли у себя; полезно для SEO-страниц твоих сайтов · <a href="https://habr.com/ru/articles/1099640">Читать</a></li>
+</ul>
+<h2>Reddit r/vibecoding</h2>
+<h3>1. I recreate GOT opening with Opus 5.5</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xg03jg/i_recreate_got_opening_with_opus_55/">Читать</a></strong> — <em>«Я пересоздал заставку «Игры престолов» с Opus 5.5»</em></p>
+<p>Шот-в-шот фан-копия главной заставки 1-го сезона: всё сгенерировано из кода — Three.js в браузере, покадрово снято Playwright (инструмент управления браузером — тот же, что у тебя в MCP) и собрано ffmpeg. Без Blender, вся геометрия процедурная, писал Claude Code Opus 5.5. Тебе прицельно: у тебя тот же стек (Three.js + рептилия браузера) уже живёт в card_pack_3d и HyperFrames — это живое подтверждение, что «видео из кода» на клиентском стеке реально и без навыка 3D.</p>
+<h3>2. 30 days with ChatGPT Dot: I want AI to build tools I can run without it</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xg2blm/30_days_with_chatgpt_dot_i_want_ai_to_build_tools/">Читать</a></strong> — <em>«30 дней с ChatGPT Dot: я хочу, чтобы ИИ строил инструменты, работающие без него»</em></p>
+<p>Месяц опыта с агентом ChatGPT «Dot»: рабочий вывод — ИИ часто делает «зависимость от себя» (каждый следующий шаг требует его же участия), а настоящая цель вайбкодинга — инструменты, которые живут после разговора. Автор переписывает workflows так, чтобы шаги были автоматизацией, а не ручной дёрганой. Это ровно фольософия твоего утреннего конвейера (скиллы, скрипты, расписания) — читать как подтверждение выбранного пути.</p>
+<h3>3. 18 months ago this was...</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xg4kz4/18_months_ago_this_was/">Читать</a></strong> — <em>«18 месяцев назад это было...»</em></p>
+<p>Кейс-дуги: веб-игра на Three.js, занявшая 3-е место на Vibe Jam (виртуальный хакатон по вайбкодингу от LevelsIO), за полтора года выросла в полноценную AR/VR-игру, всё вайбкодлено. Автор активно раздаёт советы по workflow в комментариях. Мотивационное, но полезное: масштабируемость фан-проекта — реальна, если ядро качественное (твоя «планка качества» как раз про это).</p>
+<h3>4. My AI Dungeon Master app hit the Play Store! Open Dungeon Master</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xg32i6/my_ai_dungeon_master_app_hit_the_play_store_open/">Читать</a></strong> — <em>«Моё ИИ-приложение "Данmaster" добралось до Google Play»</em></p>
+<p>7 месяцев работы: РПГ-чат с ИИ-мастером, который не теряется и не зацикливается, работает на локальной GPU 16 ГБ или облаке, с мастерской контента. Обрати внимание на его решение главной боли ИИ-РПГ — «мир не должен рассыпаться»: персонажи и квесты хранятся как данные, а не в памяти модели. Это тот же принцип «данные — источник правды», что и у вчерашнего D&amp;D-кейса — два таких кейса за два дня = тренд.</p>
+<h3>5. Week 13 of making fishing and exploration game - demo almost finished</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xfv6vr/week_13_of_making_fishing_and_exploration_game/">Читать</a></strong> — <em>«13 неделя разработки рыболовно-исследовательской игры — демо почти готово»</em></p>
+<p>Девлог: автор раз в неделю пишет апдейт по одной игре, демо выложено бесплатно. Классический пример публичной разработки (build in public — делать публично, делясь прогрессом). Способ держать себя в тонусе и собирать малую, но живую аудиторию. Твой VK-полигон решает другую задачу, но техника «недельный девлог» пригодится, когда пойдешь к портфолио.</p>
+<p><strong>Остальное с Reddit r/vibecoding (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xfwhk6/apache_arcade_ah64e_helicopter_shooter_in_the/">Apache Arcade: AH-64E helicopter shooter in the browser (Three.js)</a> — браузерный вертолётный шутер на Three.js + TypeScript + Vite, играбельно · <a href="https://www.reddit.com/r/vibecoding/comments/1xfwhk6/apache_arcade_ah64e_helicopter_shooter_in_the/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xfy5ct/axefall_a_roguelite_with_elden_ring_style_boss/">Axefall - A roguelite with Elden Ring style boss fights</a> — роглайт с босс-файтами в стилё Elden Ring; амбиции жанра вайбкодинга растут · <a href="https://www.reddit.com/r/vibecoding/comments/1xfy5ct/axefall_a_roguelite_with_elden_ring_style_boss/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xfnrd7/doom_on_the_clockin_machine_at_work_fuck_it/">Doom on the clockin machine at work fuck it</a> — классика жанра «запустил Doom на рабочем устройстве» — теперь на терминале учёта времени 2007 года в ликёро-водочном · <a href="https://www.reddit.com/r/vibecoding/comments/1xfnrd7/doom_on_the_clockin_machine_at_work_fuck_it/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xfw81e/vibe_questions_week_of_monday_october_26_2026/">Vibe Questions - Week of Monday, October 26, 2026</a> — еженедельный тред вопросов новичков по вайбкодингу; тред — точка входа в сообщество · <a href="https://www.reddit.com/r/vibecoding/comments/1xfw81e/vibe_questions_week_of_monday_october_26_2026/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xg1o3l/i_built_a_motorcycle_rideweather_checker_in_may/">I built a motorcycle ride-weather checker in May, forgot it for 5 months, came back this week — and people were actually using it</a> — «забыл на 5 месяцев, вернулся — а сайтом пользуются 21 человек в неделю»; тихие посещения без маркетинга — норма, а не фейл; SEO-доработка дала рост · <a href="https://www.reddit.com/r/vibecoding/comments/1xg1o3l/i_built_a_motorcycle_rideweather_checker_in_may/">Читать</a></li>
+</ul>
+<h2>Reddit r/SideProject</h2>
+<h3>1. I checked 45 AI startups with "verified" revenue. The biggest one just disappeared from the site that verifies it.</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xfygox/i_checked_45_ai_startups_with_verified_revenue/">Читать</a></strong> — <em>«Проверил 45 ИИ-стартапов с "подтверждённой" выручкой. Самый крупный просто исчез с сайта, который её подтверждал»</em></p>
+<p>Автор отслеживает стартапы, чья выручка берётся прямо из процессора платежей (Stripe/RevenueCat — агрегатор подписок), а не из твитов основателей: 45 компаний проверено. Самый крупный (Chatbase, $864k/мес) перестал синхронизироваться и стянул страницу верификации. Для тебя это методология «верь цифрам из платёжки, а не поста» — тот же скепсис, что у тебя правило «сделано = внешний след подтверждён».</p>
+<h3>2. Launched my iOS app 2 weeks ago, 100+ downloads per day without ads. Here's the recipe</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xfoyl9/launched_my_ios_app_2_weeks_ago_100_downloads_per/">Читать</a></strong> — <em>«Запустил iOS-приложение 2 недели назад — 100+ скачиваний в день без рекламы. Вот рецепт»</em></p>
+<p>Соло-разработчик разобрал свой рецепт: выбор рынка, где люди уже ищут альтернативу «дорогому/раздражающему лидеру» — тогда маркетинг наполовину сделан за тебя. Полезный кадр для твоих идей сервисов: сначала спроси «кого здесь раздражает существующее», а потом уже «чем я могу быть альтернативой» — та же логика, что у правила «сначала деньги, потом механика».</p>
+<h3>3. My side project becoming my main project: #3 in Mac App Store</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xfyj2g/my_side_project_becoming_my_main_project_3_in_mac/">Читать</a></strong> — <em>«Сайд-проект становится моим основным делом: #3 в Mac App Store»</em></p>
+<p>Weatherling — маленькое погодное приложение — через месяц после релиза поднялось на #3 в Mac App Store вообще без рекламы, только Reddit и отзывы. Автор уже планирует платное продвижение. Классическая история пути «сайд-проект → собственное дело», с живыми цифрами и открытым планированием.</p>
+<h3>4. "If we wanted a vibe coded website, we could 'make' one ourselves, thanks." - was this rude or normal in today's world?</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xfukwa/if_we_wanted_a_vibe_coded_website_we_could_make/">Читать</a></strong> — <em>«"Если бы нам нужен был сайт от вайбкодера, мы бы и сами сделали", спасибо. Это грубость или норма в 2026?»</em></p>
+<p>Автор ходил по настольным игровым кафе, предлагая сервис оцифровки их каталогов, и поймал в ответ «мы и сами вайбкодим». Тред живой: как продавать в мире, где клиент сам умеет генерировать сайт. Тебе это важно как будущему фрилансеру: ценность сдвигается от «могу собрать» к «могу собрать + понимаю инфраструктуру + поддерживаю». Ниша «заказы на вайбкодинг» — уже конкурентная.</p>
+<h3>5. StreamSurf - I missed channel surfing, so I built a TV guide for live streams</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xg097z/streamsurf_i_missed_channel_surfing_so_i_built_a/">Читать</a></strong> — <em>«Мне не хватало зева-каналов, поэтому я сделал ТВ-гайд для прямых эфиров»</em></p>
+<p>Автор скучал по «зеву каналов» из детства и собрал сетку живых трансляций Twitch/YouTube/Kick в одном экране, с переходом прямо в поток по клику. Пример того, как «ностальгия + удобство» превращаются в продукт, который нравится. Полезно как паттерн «одна боль + одна механика = сайд-проект» — самый дешёвый тип идеи для твоей папки проектов.</p>
+<h3>6. Side project: a little notch teleprompter for Windows, so I stop looking down at my notes on calls</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xftrlk/side_project_a_little_notch_teleprompter_for/">Читать</a></strong> — <em>«Сайд-проект: маленький телепромптер в вырезе экрана Windows, чтобы не глядеть на записи на созвонах»</em></p>
+<p>Lenslines: текст сценария вставляется в чёрный вырез камеры (notch) сверху экрана — глаза остаются на камере, скроллит по мере речи, в шере экрана не виден. Кейс хорош тем, как он решает узкую проблему именно своего дня. Тебе полезно как пример «инструмент одной боли» и как «Windows-инструмент в маленьком формате» — ровно в духе твоего Pixel Buddy.</p>
+<p><strong>Остальное с Reddit r/SideProject (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xg2h4y/my_website_looks_like_it_was_made_in_2014_how_do/">My website looks like it was made in 2014. How do people fix this without hiring a designer?</a> — «мой сайт выглядит как из 2014-го — как обновить без дизайнера?»; живой тред с советами по дизайну · <a href="https://www.reddit.com/r/SideProject/comments/1xg2h4y/my_website_looks_like_it_was_made_in_2014_how_do/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xg34lx/i_restarted_my_abandoned_server_dashboard_project/">I restarted my abandoned server dashboard project and shipped v0.3.0: VPS Pilot</a> — перезапуск заброшенного проекта: дашборд для VPS (Go + Rust-агент, без внешней БД) · <a href="https://www.reddit.com/r/SideProject/comments/1xg34lx/i_restarted_my_abandoned_server_dashboard_project/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xfjng2/i_made_an_infinite_world_driving_simulator_called/">I made an infinite world driving simulator called Rivers &amp; Roads</a> — симулятор бесконечного мира в браузере с 24/7 стримом на YouTube · <a href="https://www.reddit.com/r/SideProject/comments/1xfjng2/i_made_an_infinite_world_driving_simulator_called/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xg2juz/i_added_a_mode_to_my_opensource_voice_assistant/">I added a mode to my open-source voice assistant that draws the explanation on your screen in handwriting</a> — голосовой помощник OpenClicky умеет «объяснять рисунком на экране» — рисует подписаную схему рукой · <a href="https://www.reddit.com/r/SideProject/comments/1xg2juz/i_added_a_mode_to_my_opensource_voice_assistant/">Читать</a></li>
+</ul>
+<h2>Итог дня</h2>
+<p>День прошёл под знаком «большая индустрия раскрыла карты»: Anthropic выложила S-1 (первичное размещение — с цифрами), Microsoft предложила выкупы четверти штата, а Habr параллельно показывает, что малые инструменты вокруг Claude Code (моды памяти, агентные фреймворки, экономика ботов) уже превращаются в самостоятельную индустрию. Из прикладного тебе три: пост «инструменты, которые живут без ИИ» — это ровно архитектура твоих скиллов и утренней цепочки, не меняй подход; кейс «продажа вайбкоденных сайтов кафе» — прямой сигнал, что ниша уже конкурентная, продавать надо «поддержку и инфраструктуру», не «умение собрать сайт»; и «ИИ-продукт для дёшево проверяемой боли» (телепромптер в вырезе камеры) — шаблон для твоей следующей идеи «простой сервис с ясной ценностью».</p>
+</article>
+<nav class="paging"><a href="2026-10-25.html">← 2026-10-25</a><span class="cur">2026-10-26</span><span class="empty">→</span></nav>
+<footer class="site"><a href="index.html">⟵ все выпуски</a></footer>
+<script>document.addEventListener('keydown', function(e){
+  if(e.target.tagName==='INPUT')return;
+  var links=document.querySelectorAll('nav.paging a[href]');
+  if(e.key==='ArrowLeft'&&links[0])location.href=links[0].href;
+  if(e.key==='ArrowRight'&&links[links.length-1])location.href=links[links.length-1].href;
+});
+</script>
+
+
+</body>
+</html>
