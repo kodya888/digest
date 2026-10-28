@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#faf9f6">
+<title>Дайджест 2026-10-28</title>
+<link rel="icon" href="icon-192.png" />
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+<script src="theme.js" defer></script>
+<script src="sw-register.js" defer></script>
+</head>
+<body>
+
+<header class="site">
+  <a class="home" href="index.html">⟵ все выпуски</a>
+  <button class="theme" aria-label="Сменить тему">◐</button>
+</header>
+<article>
+<p>Новых постов: 46 (HN 13, Habr 12, Reddit 21; r/vibecoding 10 + r/SideProject 11).
+Сортировка по интересу к твоим темам (Claude Code, AI-агенты, вайбкодинг, парсеры, Python,
+фриланс/поиск работы). Метка 🏷 — только заголовок/выдержка.</p>
+<h2>Hacker News</h2>
+<h3>1. Early progress on accelerating drug development with Claude</h3>
+<p><strong><a href="https://www.anthropic.com/research/early-progress-drug-development">Оригинал</a></strong> · 186 баллов, 166 комментариев · <a href="https://news.ycombinator.com/item?id=50265609">Обсуждение</a>
+<em>«Ранние успехи в ускорении разработки лекарств с помощью Claude»</em></p>
+<p>Anthropic рассказала про совместные работы с фармкомпаниями: Claude помогает сокращать самые дорогие этапы поиска лекарств. Интереснее даже не медицина, а дискуссия: 166 комментариев спорят, реален ли прогресс или это демо для инвесторов. Для тебя это второй звонок подряд (после S-1 на прошлой неделе): Anthropic активно ищет бизнес-рынки кроме программирования — влияет на то, куда будет развиваться Claude Code и сколько будет стоить подписка.</p>
+<h3>2. Python's experimental JIT to be removed</h3>
+<p><strong><a href="https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/">Оригинал</a></strong> · 471 балл, 253 комментария · <a href="https://news.ycombinator.com/item?id=50257419">Обсуждение</a>
+<em>«Экспериментальный JIT-компилятор Python будет удалён»</em></p>
+<p>JIT (just-in-time — компиляция кода прямо во время выполнения для ускорения) в Python долго был экспериментальной фичей — и его решили убрать. Твоим скриптам (it_digest.py, fl_orders.py) это ничего не сделает: они работают на обычном интерпретаторе, который никуда не девается. Полезно скорее как наблюдение за процессом: даже в ядре Python большие фичи спокойно откатывают, если тянут больше сложности, чем пользы — тот же принцип «простое решение прежде усовершенствованного», который ты применяешь к своим проектам.</p>
+<h3>3. Genie 4</h3>
+<p><strong><a href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/">Оригинал</a></strong> · 807 баллов, 490 комментариев · <a href="https://news.ycombinator.com/item?id=50261319">Обсуждение</a>
+<em>«Genie 4 — новое поколение симуляции миров»</em> (DeepMind)</p>
+<p>DeepMind выкатил Genie 4 — модель, которая генерирует интерактивные «миры» из картинки или текста: не видео, а среда, в которой можно действовать. Самая обсуждаемая тема дня на HN. Двойной интерес: это ещё и потенциальная технология для обучения роботов и ИИ-агентов в симуляции. Пока чисто наблюдение, но именно такие модели через пару лет могут стать «игровыми движками для вайбкодеров» — стоит знать, что жанр существует.</p>
+<h3>4. Ghostty 1.4</h3>
+<p><strong><a href="https://ghostty.org/docs/install/release-notes/1-4-0">Оригинал</a></strong> · 874 балла, 275 комментариев · <a href="https://news.ycombinator.com/item?id=50261998">Обсуждение</a>
+<em>«Ghostty 1.4»</em></p>
+<p>Релиз Ghostty — быстрого терминала (программа, в которой ты вводишь команды), написанный Митчеллом Хашимото (автор Vagrant и Terraform). В 1.4 — вкладки, splits, ускорение рендера. Ты работаешь в консоли больше, чем в любых «окнах», так что жанр твой: если когда-нибудь надоест текущий терминал, Ghostty — из лёгких и современных. На Windows порт пока сыроват, но проект развивается очень быстро.</p>
+<h3>5. Survival LLM: AI assistant and emergency library that runs on your own computer</h3>
+<p><strong><a href="https://www.brangus.io/survival-llm">Оригинал</a></strong> · 261 балл, 120 комментариев · <a href="https://news.ycombinator.com/item?id=50264853">Обсуждение</a>
+<em>«Survival LLM: ИИ-ассистент и экстренная библиотека, работающие на твоём компьютере»</em></p>
+<p>Проект ровно в твоей идеологии: локально запущенная маленькая LLM плюс оффлайн-библиотека знаний (медицина, выживание, справочники) — «на случай, когда нет ни интернета, ни облака». Твой принцип «предпочтение локальным приложениям» здесь доведён до предела. Практической пользы на слабом ноутбуке мало (локальные модели требуют памяти), но пример того, как продавать простую ценность «работает всегда», — готовый шаблон для твоих идей сервисов.</p>
+<h3>6. Tailscale SSH: Investigation and remediation update</h3>
+<p><strong><a href="https://tailscale.com/ssh-investigation-update">Оригинал</a></strong> · 245 баллов, 124 комментария · <a href="https://news.ycombinator.com/item?id=50264857">Обсуждение</a>
+<em>«Tailscale SSH: расследование и исправление — обновление»</em></p>
+<p>Tailscale (сервис приватной сети между твоими устройствами — тот самый, через который ты когда-то планировал подключаться к ноутбуку с телефона) отчитался об инциденте в их SSH-функции: что случилось, как нашли, как чинят. Ценно не происшествием, а прозрачностью отчёта — редкость в индустрии. Для тебя: если вернёшься к плану «с телефона к Ollama» через Tailscale, читай их changelog перед настройкой SSH-доступа.</p>
+<h3>7. Git for US Legislation</h3>
+<p><strong><a href="https://lexifina.com/blog/git-for-the-us-code">Оригинал</a></strong> · 138 баллов, 68 комментариев · <a href="https://news.ycombinator.com/item?id=50268380">Обсуждение</a>
+<em>«Git для законодательства США»</em></p>
+<p>Автор завёрнул весь свод законов США в Git — систему контроля версий (та самая, что хранит историю правок в GitHub). Каждый закон — файл, каждая поправка — коммит, история изменений — как у кода. Идея «не-программного Git» — старый и очень плодородный жанр: версии договоров, смет, регламентов. Для тебя — пример того, как «скучные данные + чужая проверенная механика» дают продукт, достойный обсуждения на HN; к твоей смете дома и структурированным дайджестам это применяется напрямую.</p>
+<h3>8. Introducing LFM3: Every Modality for Specialized Intelligence</h3>
+<p><strong><a href="https://www.liquid.ai/blog/lfm3">Оригинал</a></strong> · 133 балла, 51 комментарий · <a href="https://news.ycombinator.com/item?id=50262229">Обсуждение</a>
+<em>«Представляем LFM3: все модальности для специализированного интеллекта»</em> (Liquid AI)</p>
+<p>Liquid AI выпустил серию компактных моделей LFM3: текст, картинки, аудио — с расчётом на дешёвый инференс (запуск модели) даже на встроенном железе. Это не «одна огромная модель для всего», а семейство маленьких под задачи — тренд, идущий навстречу твоему слабому ноутбуку. Если через год захочешь локального ассистента без облака, смотреть стоит именно на такие семейства, а не на гигантов.</p>
+<p><strong>Остальное с HN (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://www.wired.com/story/the-us-government-is-hiding-a-secret-court-ruling-about-how-it-spies-on-americans/">US Government is hiding a secret court ruling about how it spies on Americans</a> — «правительство США скрывает секретное решение суда о слежке за американцами»; хит дня по баллам · <a href="https://news.ycombinator.com/item?id=50259604">Обсуждение</a></li>
+<li>🏷 <a href="https://www.apple.com/imac/">New iMac with M6</a> — новые iMac на чипе M6 · <a href="https://news.ycombinator.com/item?id=50258538">Обсуждение</a></li>
+<li>🏷 <a href="https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/">New 14-inch MacBook Pro with M6</a> — MacBook Pro 14" на M6; «яблочный» день у купистов · <a href="https://news.ycombinator.com/item?id=50261352">Обсуждение</a></li>
+<li>🏷 <a href="https://cfsg.axiommath.ai/">Classification of Finite Simple Groups Formalized in Lean</a> — классификация конечных простых групп официально формализована в proves-ассистенте Lean; монументальная математическая работа · <a href="https://news.ycombinator.com/item?id=50261647">Обсуждение</a></li>
+<li>🏷 <a href="https://hothardware.com/news/why-micron-is-suddenly-ditching-4f-dram">Why Micron Is Suddenly Ditching 4F² DRAM as Rivals Double Down</a> — почему Micron резко меняет технологию памяти DRAM · <a href="https://news.ycombinator.com/item?id=50245014">Обсуждение</a></li>
+<li>🏷 <a href="https://arstechnica.com/science/2026/10/meet-the-2026-winner-of-nikons-small-world-photomicrography-contest/">Ink droplets in motion snag top prize in Nikon Small World contest</a> — капли чернил под микроскопом выиграли конкурс фото Nikon · <a href="https://news.ycombinator.com/item?id=50234796">Обсуждение</a></li>
+<li>🏷 <a href="https://www.wsj.com/finance/stocks/the-earnings-boom-is-heavily-reliant-on-just-a-handful-of-stocks-21decb53">Nvidia and Micron Make Up 34% of America's Earnings Boom</a> — рост прибыли американского рынка на треть держится на двух ИИ-компаниях; фон про хрупкость ИИ-пузыря · <a href="https://news.ycombinator.com/item?id=50236073">Обсуждение</a></li>
+</ul>
+<h2>Habr</h2>
+<h3>1. Куда девать идеи из сессий с coding-агентом: пять мест, и доска, которая за шесть недель стала свалкой</h3>
+<p><strong><a href="https://habr.com/ru/articles/1100310">Читать</a></strong></p>
+<p>Автор честно разобрал пять способов хранения идей, всплывающих во время работы с Claude Code, и показал, как его доска за полтора месяца превратилась в свалку, куда никто не смотрит. Тема ровно твоя: у тебя notes.md + память + планы, и это тоже рискует разбухнуть. Урок из статьи: идеи без «следующего шага» и даты — мёртвый груз; лучше меньше мест хранения и регулярный разбор, чем идеальная система.</p>
+<h3>2. Как я поселил Claude в Яндекс Станцию Мини</h3>
+<p><strong><a href="https://habr.com/ru/articles/1100268">Читать</a></strong></p>
+<p>Автор подключил Claude к умной колонке — получилось «личного ассистента с нормальным интеллектом» на домашнем девайсе. По механике это API-прокладка между колонкой и моделью — как раз класс «склейка чужих сервисов», на котором ты и хочешь зарабатывать. Читается быстро, даёт понимание, как устроены такие интеграции: триггер → текст → API модели → ответ.</p>
+<h3>3. [Перевод] Фаззер против ИИ-агента на V8: 37 и 45 уязвимостей за полгода, общих — четверть</h3>
+<p><strong><a href="https://habr.com/ru/articles/1100292">Читать</a></strong></p>
+<p>Сравнение того, как автоматически ищут дыры в движке браузера V8: классический фаззер (программа, которая миллионами случайных входов ломает софт) нашёл 37 уязвимостей, ИИ-агент — 45, пересечение всего четверть. Главный вывод: ИИ-агент находит то, чего не находит автоматика, и наоборот — то есть агентный подход пока дополняет старые методы, а не заменяет. Полезно для трезвой оценки «ИИ всё сделает сам» в любых задачах, включая твои парсеры.</p>
+<h3>4. ИИ не только пишет тесты: как ручной QA использовал агента для аудита автотестов</h3>
+<p><strong><a href="https://habr.com/ru/articles/1099782">Читать</a></strong></p>
+<p>Кейс из практики: ручной тестировщик без сильного кода заставил ИИ-агента проверить свою коллекцию автотестов — найти дубли, мёртвые проверки, пропуски. Хорош тем, что показывает реальный способ применения агента «рядом с работой», а не «вместо работы» — и это прямая аналогия с твоим сценарием «автоматизирую свои процессы через Claude Code, постепенно нарабатывая опыт».</p>
+<h3>5. С AI проще форкнуть, чем договориться?</h3>
+<p><strong><a href="https://habr.com/ru/articles/1100356">Читать</a></strong></p>
+<p>Эссе на тему социальной стороны ИИ-разработки: когда копия проекта делается ИИ за вечер, становится «проще разветвить, чем договориться» — и это грозит размыванием опенсорс-проектов. Философское, но с практическим следом: в мире дешёвых копий ценность смещается к сообществу, данным и поддержке, а не к коду как таковому. Для тебя как будущего фрилансера — ещё один аргумент продавать «сервис вокруг», а не «файлы».</p>
+<p><strong>Остальное с Habr (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://habr.com/ru/articles/1100360">LLM после работы: делаю дочке интерактивную книгу с 16 концовками на ESP32-P4</a> — папа с LLM делает интерактивную книгу-игрушку на микроконтроллере; тёплый хит · <a href="https://habr.com/ru/articles/1100360">Читать</a></li>
+<li>🏷 <a href="https://habr.com/ru/articles/1100358">Сомнительность сознания в искусственной системе</a> — скептический разбор темы «сознания» у ИИ · <a href="https://habr.com/ru/articles/1100358">Читать</a></li>
+<li>🏷 <a href="https://habr.com/ru/articles/1100302">Условия, в которых рождаются системы. Средовой подход для ИИ-агентов</a> — про то, что поведение агентов сильно зависит от того, как устроена среда вокруг них · <a href="https://habr.com/ru/articles/1100302">Читать</a></li>
+<li>🏷 <a href="https://habr.com/ru/articles/1100300">«Искусственный» Луки Гуаданьино: сюжет, сроки и проблемы проката</a> — разбор фильма про ИИ: сюжет, сроки производства, прокат · <a href="https://habr.com/ru/articles/1100300">Читать</a></li>
+<li>🏷 <a href="https://habr.com/ru/articles/1100232">AI-инструменты для пентеста: насколько они эффективны на самом деле?</a> — трезвая оценка ИИ-инструментов проверки безопасности · <a href="https://habr.com/ru/articles/1100232">Читать</a></li>
+<li>🏷 <a href="https://habr.com/ru/articles/1100200">Как я закрыл от ИИ-агента часть кода и проверил это кодом, а не промптом</a> — автор ограничил агента технически (правами доступа), а не просьбами в промте; правильная практика защиты · <a href="https://habr.com/ru/articles/1100200">Читать</a></li>
+<li>🏷 <a href="https://habr.com/ru/specials/1100100">ИИ на всех этапах создания продукта и не только. О чём говорили на ГигаКонфе для инженеров — 2026</a> — итоги отраслевой конфы про ИИ в продакшене · <a href="https://habr.com/ru/specials/1100100">Читать</a></li>
+</ul>
+<h2>Reddit r/vibecoding</h2>
+<h3>1. My vibe coded app made its first $100. The customer told me ChatGPT recommended it and I didn't believe her</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xh7ruj/my_vibe_coded_app_made_its_first_100_the_customer/">Читать</a></strong> — <em>«Моё вайбкоденное приложение заработало первые $100. Клиентка сказала, что её привёл ChatGPT — я не поверила»</em></p>
+<p>Учительница английского за несколько выходных собрала с Claude и Cursor маленький сервис: учителя отмечают уроки, родители получают счёт с кнопкой оплаты. $10/мес, десять платящих, из них семеро — незнакомые люди. Главная деталь: новых клиентов привёл ChatGPT, то есть ИИ-ассистенты уже работают как поисковик и приводят в нишевые сервисы. Для тебя это двойной урок: узкая боль («считать уроки, дёргать родителей за деньги») + минимальный продукт = деньги; и что твои сервисы стоит оформлять так, чтобы их находили ИИ-помощники (ясные описания, структурированные страницы).</p>
+<h3>2. I Vibe coded a free NDVI movie app for farmers where you tap any field on Earth for instant satellite movies</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xh6nyg/i_vibe_coded_a_free_ndvi_movie_app_for_farmers/">Читать</a></strong> — <em>«Я вайбкодил бесплатное NDVI-приложение для фермеров: тапнул по любому полю на Земле — получил спутниковое видео»</em></p>
+<p>Серьёзный, взрослый кейс: автор вайбкодил приложение для фермеров (NDVI — спутниковый индекс «живости» растительности), с автоматической разметкой полей через компьютерное зрение и Rust-бэкендом для производительности. Ключевая механика для тебя: он построил регрессионный пайплайн (автопроверку: улучшилось ли распознавание после изменений) и итерировал алгоритм через него — то есть вайбкодинг с замером качества, а не «на глаз». Точно тот же принцип, что в твоём правиле «сделано = внешний след подтверждён», только в ML.</p>
+<h3>3. I vibecoded every metro line in Singapore in 3D (three.js)</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xheavc/i_vibecoded_every_metro_line_in_singapore_in_3d/">Читать</a></strong> — <em>«Я вайбкодил все линии метро Сингапура в 3D (three.js)»</em></p>
+<p>Автор год назад сделал 2D-симуляцию пассажиропотоков метро, в этом году превратил её в 3D через Opus 5.5. Честное описание процесса: «особого workflow не было, дал Opus волю», и это сработало, потому что данные (станции, перегоны) уже были оцифрованы ранее. Тебе близко всё: three.js — твой стек в card_pack_3d, а главный вывод подтверждает твою практику — сначала данные в порядке, потом ИИ свободно достраивает.</p>
+<h3>4. Total beginner here, feeling like I'm drifting in an ocean. How did you start? Any advice?</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xh3s7z/total_beginner_here_feeling_like_im_drifting_in/">Читать</a></strong> — <em>«Полный новичок, ощущение, что дрейфую в океане. Как вы начинали? Есть советы?»</em></p>
+<p>Тред человека, который чувствует ровно то же, что ты осенью: много инструментов, много мнений, непонятно, правильное ли учишь. Полезно почитать ответы — там повторяется одна мысль в разных формах: те, кто выбрался, перестали «изучать всё» и сделали один маленький законченный продукт, потом второй. Ты уже на этом пути (пословицы → 3dtur → дайджесты) — тред как чужое подтверждение.</p>
+<h3>5. I love Claude</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xh5h1z/i_love_claude/">Читать</a></strong> — <em>«Я люблю Claude»</em></p>
+<p>Автор взял открытый инструмент coop-anything и вайбкодил мультиплеер в старую консольную игру Crash Twinsanity — сам не верил, что сработает, а работает. Чисто фан-история, но с полезным сигналом: проекты «оживить старое» продолжают быть самым дешёвым способом сделать виральный продукт. Полка твоих фан-проектов (пословицы, котики, Чудики) — из этого же жанра.</p>
+<p><strong>Остальное с Reddit r/vibecoding (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xg8jub/when_you_just_copy_and_paste_the_prompt_and_have/">When you just copy and paste the prompt and have no idea what is happening 💀</a> — мем про «копирую промт, понятия не имею, что происходит»; юмор дня · <a href="https://www.reddit.com/r/vibecoding/comments/1xg8jub/when_you_just_copy_and_paste_the_prompt_and_have/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xgw68v/claude_usage_limit_reached_your_limit_will_reset/">claude usage limit reached. Your limit will reset at 3:30 PM</a> — скрин «лимит Claude исчерпан, сброс в 15:30» — вечная боль, отдельный сервис под неё ниже в SideProject · <a href="https://www.reddit.com/r/vibecoding/comments/1xgw68v/claude_usage_limit_reached_your_limit_will_reset/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xh9jir/my_first_opensource_vibecoded_app_sdrive/">My first OpenSource Vibecoded app - SDrive</a> — вайбкоденное десктоп-приложение: подключает облачные хранилища (Google Drive, OneDrive) как обычные диски в системе; в духе твоей любви к локальным приложениям · <a href="https://www.reddit.com/r/vibecoding/comments/1xh9jir/my_first_opensource_vibecoded_app_sdrive/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xgry8w/rvibecoding_qa_daily_thread_tuesday_october_27/">r/VibeCoding Q&amp;A Daily Thread - Tuesday, October 27, 2026</a> — ежедневный тред вопросов новичков · <a href="https://www.reddit.com/r/vibecoding/comments/1xgry8w/rvibecoding_qa_daily_thread_tuesday_october_27/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xhcog7/this_is_how_its_supposed_to_go_right/">This is how its supposed to go... right?</a> — мем про «ожидание vs реальность» вайбкодинга · <a href="https://www.reddit.com/r/vibecoding/comments/1xhcog7/this_is_how_its_supposed_to_go_right/">Читать</a></li>
+</ul>
+<h2>Reddit r/SideProject</h2>
+<h3>1. I accidentally became a dog grooming software company</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xh8cvq/i_accidentally_became_a_dog_grooming_software/">Читать</a></strong> — <em>«Я случайно стал компанией по софту для груминга собак»</em></p>
+<p>Классическая дуга «случайной ниши»: сделал за два выходных в Lovable замену бумажному календарю для кузины-грумера, она показала трём знакомым, те — дальше, и теперь 140 грумеров платят, а автор «случайно стал компанией». Никакого маркетинга: узкое сообщество само растаскивает по сарафану. Для тебя это лучший шаблон заработка из всех за неделю: маленький инструмент для узкой профессиональной тусовки, где есть чаты и тусовки, стоит больше, чем «сайт для всех».</p>
+<h3>2. [30 day update] My Codex reset alerts service passed 500 subscribers</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xhbkkd/30_day_update_my_codex_reset_alerts_service/">Читать</a></strong> — <em>«Апдейт через 30 дней: сервис оповещений о сбросе лимитов Codex прошёл 500 подписчиков»</em></p>
+<p>Человек построил сервис на смехотворной боли: присылает SMS, когда разработчикам OpenAI сбрасываются лимиты использования, чтобы они успели «дожечь» остаток. 500 подписчиков за месяц. Тот самый жанр «инструмент одной боли, которого стыдятся, но за который платят»; заметь — боль у него ровно из твоего мира, лимиты Claude Code у тебя тоже есть.</p>
+<h3>3. I turned my Claude Code token usage into a cozy village builder</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xgqt03/i_turned_my_claude_code_token_usage_into_a_cozy/">Читать</a></strong> — <em>«Я превратил расход токенов Claude Code в уютную деревню-строилку»</em></p>
+<p>Плагин для Claude Code: каждый ответ расходует токены, токены превращаются в золото/дерево/камень, за которые строится 3D-деревня в браузере; монстры нападают, башни отстреливаются. Полный бред с точки зрения пользы — и при этом красивый фанатский проект с метрикой «дофамин вместо тревоги». По формату это почти близнец твоего Pixel Buddy и «Чудиков»: маленькая игрушка-сателлит вокруг рабочего процесса. Подтверждение, что жанр жив и радует публику.</p>
+<h3>4. Weekend project: Full Mario 64 in Mixed Reality!</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xgq10s/weekend_project_full_mario_64_in_mixed_reality/">Читать</a></strong> — <em>«Проект на выходные: полный Mario 64 в смешанной реальности!»</em></p>
+<p>Автор запустил оригинальный Mario 64 в VR-шлеме на 90 FPS, собрав это за выходные связкой Opus 5.5 + CLI шлема + CLI Unity. Дискуссия в комментариях, как обычно, наполовину «вау», наполовину «а это легально» — но технический паттерн важный: ИИ-агентам уже можно отдавать управление настоящими CLI-инструментами, и то же самое ты делаешь в Claude Code с git и Playwright.</p>
+<h3>5. Did you ever cut your side project down to one feature?</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xhbtb9/did_you_ever_cut_your_side_project_down_to_one/">Читать</a></strong> — <em>«Резали ли вы свой сайд-проект до одной функции?»</em></p>
+<p>Тред-дискуссия: автор месяцами наращивал проект функциями (синк, шаринг, чат…), а пользуется одной, и хочет выбросить остальное. Ответы в основном «резал, стало лучше». Это буквально история твоих «пословиц-паков», которые вы родили в 3dtur и откатили — и правило «простое решение прежде усовершенствованного». Читается как чужой опыт подтверждения того же решения.</p>
+<h3>6. I know I saved it somewhere, I just can't find it. So I built a map for my notes.</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xgrxgp/i_know_i_saved_it_somewhere_i_just_cant_find_it/">Читать</a></strong> — <em>«Я знаю, что сохранял, но не могу найти. И я сделал карту для своих заметок»</em></p>
+<p>Qoyra — «ландшафт заметок»: каждая тема — гора, высота горы = детализация, поиск заменяет пространственная память («помню, что оставил это на восточном склоне»). Забавная альтернатива спискам и папкам; идея «помню через окружение» — реально рабочая когнитивная механика. Для тебя — пример того, как «недовольство своим инструментом заметок» само по себе становится продуктом.</p>
+<p><strong>Остальное с Reddit r/SideProject (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xhf7ze/anyone_else_building_a_boring_nonai_project_right/">Anyone else building a boring, non-AI project right now?</a> — «кто-нибудь ещё строит скучный не-ИИ проект?»; тред в защиту обычных ниш без ИИ · <a href="https://www.reddit.com/r/SideProject/comments/1xhf7ze/anyone_else_building_a_boring_nonai_project_right/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xhdlrk/after_my_paid_clipboard_manager_went_subscription/">After my paid clipboard manager went subscription, I built a free, open-source one for the Mac</a> — автор встроил менеджер буфера обмена после того, как любимый софт перешёл на подписку; паттерн «возмущённый пользователь делает свой» · <a href="https://www.reddit.com/r/SideProject/comments/1xhdlrk/after_my_paid_clipboard_manager_went_subscription/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xheiem/xblizzard_artist_i_built_a_3d_color_picker_for/">X-blizzard artist. I built a 3D Color Picker for photoshop</a> — художник Blizzard сделал 3D-пикер цветов для Photoshop · <a href="https://www.reddit.com/r/SideProject/comments/1xheiem/xblizzard_artist_i_built_a_3d_color_picker_for/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xh1qrd/i_made_a_painted_world_that_flies_behind_your/">I made a painted world that flies behind your desktop!</a> — рисованный мир, летящий за иконками рабочего стола; чисто эстетический дроп · <a href="https://www.reddit.com/r/SideProject/comments/1xh1qrd/i_made_a_painted_world_that_flies_behind_your/">Читать</a></li>
+</ul>
+<h2>Итог дня</h2>
+<p>Три темы дня складываются в одну картинку. Первая: маленькие деньги идут из узких ниш — учительница с сервисом учёта уроков ($100/мес и растёт), 140 грумеров на софте «сделанном за выходные», 500 подписчиков на SMS о сбросе лимитов. Все три — инструменты одной боли для живой профессиональной тусовки; твой vkdl/дайджест-стек — та же механика. Вторая: ИИ-помощники уже приводят клиентов (ChatGPT «порекомендовал» приложение) — значит, твоим сервисам нужны внятные описания, страницы-визитки и структура, которую ассистенты умеют находить. Третья: работы вокруг Claude Code разрастаются во все стороны — от модов до деревенских строилок на токенах, — и Habr в этом же дне показывает, что правильная практика (закрывать агента правами доступа, аудировать агентом тесты, складывать идеи с датой и следующим шагом) важнее, чем «давать ИИ полную волю». Из прикладного на неделю: перечитай тред «как вы начинали» — он про тебя; и присмотрись к формулам «программа для узкой профессии + SaaS $10/мес» как к главному кандидату в твою папку «первые сервисы».</p>
+</article>
+<nav class="paging"><a href="2026-10-26.html">← 2026-10-26</a><span class="cur">2026-10-28</span><span class="empty">→</span></nav>
+<footer class="site"><a href="index.html">⟵ все выпуски</a></footer>
+<script>document.addEventListener('keydown', function(e){
+  if(e.target.tagName==='INPUT')return;
+  var links=document.querySelectorAll('nav.paging a[href]');
+  if(e.key==='ArrowLeft'&&links[0])location.href=links[0].href;
+  if(e.key==='ArrowRight'&&links[links.length-1])location.href=links[links.length-1].href;
+});
+</script>
+
+
+</body>
+</html>
