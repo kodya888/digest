@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#faf9f6">
+<title>Дайджест 2026-10-29</title>
+<link rel="icon" href="icon-192.png" />
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+<script src="theme.js" defer></script>
+<script src="sw-register.js" defer></script>
+</head>
+<body>
+
+<header class="site">
+  <a class="home" href="index.html">⟵ все выпуски</a>
+  <button class="theme" aria-label="Сменить тему">◐</button>
+</header>
+<article>
+<p>Новых постов: 48 (HN 15, Habr 13, Reddit 20; r/vibecoding 10 + r/SideProject 10).
+Сортировка по интересу к твоим темам (Claude Code, AI-агенты, вайбкодинг, парсеры, Python,
+фриланс/поиск работы). Метка 🏷 — только заголовок/выдержка.</p>
+<h2>Hacker News</h2>
+<h3>1. The Agent SDK</h3>
+<p><strong><a href="https://cursor.com/blog/agent-sdk">Оригинал</a></strong> · 96 баллов, 111 комментариев · <a href="https://news.ycombinator.com/item?id=50273731">Обсуждение</a>
+<em>«Agent SDK — набор для building своих агентов»</em> (Cursor)</p>
+<p>Cursor (редактор-конкурент Claude Code) выпустил SDK — набор инструментов, чтобы сторонние разработчики встраивали их агентную технологию в свои продукты. Слежу за этим потому, что рынок агентных SDK — прямая развилка твоих интересов: «склейка чужих сервисов» всё больше выглядит как «взять SDK агента и обернуть узкую задачу». В обсуждении — сравнение с Claude Agent SDK от Anthropic, полезно прочитать, чтобы понимать, какие стены уже построены вокруг того, что ты делаешь руками.</p>
+<h3>2. Dayjob: Tax – evaluating AI agents on 50 professional tax assignments</h3>
+<p><strong><a href="https://surgehq.ai/blog/dayjob-tax">Оригинал</a></strong> · 202 балла, 126 комментариев · <a href="https://news.ycombinator.com/item?id=50275626">Обсуждение</a>
+<em>«Dayjob: Налоги — оценка ИИ-агентов на 50 реальных профессиональных налоговых заданий»</em></p>
+<p>Исследователи дали агентам 50 настоящих рабочих заданий из налоговой практики (не головоломки, а то, что реально делает бухгалтер) и измерили результат. Трезвый вывод жанра: агенты сильны в рутине, но на «взрослых» профессиональных задачах пока далеки от человека. Ценно тем, что это честный замер, а не маркетинг: прикладной метод «даём агенту 50 реальных задач и считаем» — тот же подход, что ты можешь применить к своим парсерам и скриптам, только в масштабе кухни, а не статьи.</p>
+<h3>3. StackOverflow now gets fewer than 1000 questions a month</h3>
+<p><strong><a href="https://data.stackexchange.com/stackoverflow/query/1926661#graph?t=1">Оригинал</a></strong> · 89 баллов, 94 комментария · <a href="https://news.ycombinator.com/item?id=50282454">Обсуждение</a>
+<em>«StackOverflow теперь получает меньше 1000 вопросов в месяц»</em></p>
+<p>График из живой базы StackExchange: некогда главный сайт вопросов программистов стал почти пустым. Для тебя это двойной сигнал. Хороший: ты теперь берёшь решения у Claude Code напрямую, минуя SO — и это уже мейнстрим, а не «читерство». Плохой: корпус живых ответов с реальными людьми высыхает, а значит часть знаний, на которых обучали модели, больше не пополняется. В комментариях спорят, что придёт на смену: приватные данные, форумы или ИИ-агенты, задающие вопросы друг другу.</p>
+<h3>4. Gemini 4 Carbon</h3>
+<p><strong><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/">Оригинал</a></strong> · 804 балла, 661 комментарий · <a href="https://news.ycombinator.com/item?id=50276792">Обсуждение</a>
+<em>«Gemini 4 Carbon»</em> (Google)</p>
+<p>Новая большая модель Google — 661 комментарий, одно из самых горячих обсуждений недели вокруг ИИ. Не «твой» инструмент (ты работаешь на Claude Code), но фоновый факт, который стоит знать: конкуренция моделей напрямую влияет на цены и лимиты, которые тебе показывают Claude, Cursor и российские агрегаторы. В дискуссии сравнивают с Opus и Codex — полезно прочитать хотя бы топ-комментарии, чтобы быть в курсе, куда движется рынок, на котором ты собираешься брать заказы.</p>
+<h3>5. Apple's git still trusts the compromised eMudhra certificates</h3>
+<p><strong><a href="https://emudhra.we-have-a-problem.com/apple.html">Оригинал</a></strong> · 1037 баллов, 378 комментариев · <a href="https://news.ycombinator.com/item?id=50271640">Обсуждение</a>
+<em>«Git в macOS до сих пор доверяет скомпрометированным сертификатам eMudhra»</em></p>
+<p>Хит дня по баллам: безопасность в действии. Сертификатный центр eMudhra когда-то был пойман на выпуске фальшивых сертификатов, его доверие должны были отозвать, но в поставке Apple (и в системном git) он до сих пор числится надёжным. Реплика с твоим правилом «сделано = внешний след подтверждён»: даже у Apple «отозвали» не значит «реально отозвали» — проверки нужны всегда, независимо от автора софта. В комментариях хорошо объясняют, как работает цепочка доверия сертификатов (то, на чём держится HTTPS твоих curl-запросов).</p>
+<h3>6. Why is this fingerprinting script creating bioweapons?</h3>
+<p><strong><a href="https://nullpt.rs/fingerprinting-bioweapons">Оригинал</a></strong> · 843 балла, 185 комментариев · <a href="https://news.ycombinator.com/item?id=50276940">Обсуждение</a>
+<em>«Почему этот скрипт фингерпринтинга создаёт биооружие?»</em></p>
+<p>Странно звучащий заголовок, но суть практическая: автор разбирает, как сайты «фингерпринтят» браузеры (собирают уникальный след — разрешённые шрифты, расширения, железо), и где это пересекается с безопасностью данных. Второе место по баллам — в основном за счёт провокационного названия. Для тебя полезно как напоминание: твои Playwright-скрипты и парсеры оставляют ровно такой след, и антиботы вроде Ozon читают его первыми. Написано интересно, читается как детектив.</p>
+<h3>7. Emacs Turns 50</h3>
+<p><strong><a href="https://www.technologyreview.com/2026/10/20/1145399/emacs-turns-50/">Оригинал</a></strong> · 412 баллов, 175 комментариев · <a href="https://news.ycombinator.com/item?id=50273171">Обсуждение</a>
+<em>«Emacs исполняется 50 лет»</em></p>
+<p>Текстуальному редактору Emacs полвека, и он всё ещё жив — Technology Review объясняет почему: это не редактор, а «среда, которую пользователь настраивает под себя десятилетиями». Обсуждение в комментариях — живая история «как мы работали до ИИ». Тебе полезно как ориентир: те самые «вечные инструменты», которые ты ценишь в виде локальных приложений и простых решений, — это не анахронизм, а жанр с 50-летним стажем. К твоему набору (Obsidian, обычные скрипты, rclone) это применимо напрямую.</p>
+<h3>8. The Grid, a factory-scale robot in Massachusetts that builds PCBs on demand</h3>
+<p><strong><a href="https://www.circuithub.com/post/unveiling-the-grid">Оригинал</a></strong> · 414 баллов, 200 комментариев · <a href="https://news.ycombinator.com/item?id=50243060">Обсуждение</a>
+<em>«The Grid — фабричный робот в Массачусетсе, который печатает печатные платы по запросу»</em></p>
+<p>CircuitHub построил автоматическую линию, которая собирает электронные платы малыми партиями без ручного труда — «заказал макет платы через API, робот её спаял». Из далёкого от тебя железа, но паттерн знакомый: то же, что печать «пословиц» или 3D-паков по кнопке, только физически. Полезно как пример того, куда смещается рынок: не в массовое производство, а в «маленькие заказы для маленьких команд» — жанр, куда вайбкодеры с нишевыми сервисами заходят свободнее, чем в большой рынок.</p>
+<p><strong>Остальное с HN (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://vertex.degree/">Start Doing Graph Theory</a> — «начни изучать теорию графов»: интерактивный учебник, который заходит даже тем, кто боится математики · <a href="https://news.ycombinator.com/item?id=50208960">Обсуждение</a></li>
+<li>🏷 <a href="https://www.apple.com/macbook-pro/proled-xdr-display/">MacBook Pro with PROLED XDR Display and Touch</a> — новые MacBook Pro с сенсорным экраном; «яблочный» день, 849 комментариев · <a href="https://news.ycombinator.com/item?id=50276940">Обсуждение</a></li>
+<li>🏷 <a href="https://carmelitegothic.com/cnc-stone-carving/">CNC Stone Carving</a> — резьба по камню на ЧПУ-станке: автор превратил готические узоры в программу · <a href="https://news.ycombinator.com/item?id=50274409">Обсуждение</a></li>
+<li>🏷 <a href="https://wiki.alpinebsd.org">AlpineBSD</a> — новая минимальная BSD-подобная система в духе Alpine Linux · <a href="https://news.ycombinator.com/item?id=50274251">Обсуждение</a></li>
+<li>🏷 <a href="https://formlabs.com/products/form-studio-1-basic-founders-edition/">Formlabs Studio 1 $699 Resin Printer</a> — фотополимерный 3D-принтер за $699: дешевле, чем год назад, жанр «личная фабрика» · <a href="https://news.ycombinator.com/item?id=50281044">Обсуждение</a></li>
+<li>🏷 <a href="https://www.magnopus.com/blog/gaussiansplats-part-3-theres-always-a-bigger-scene">Gaussian Splats part 3: There's always a bigger scene</a> — третья часть про гауссовы сплэты (технология фотореалистичных 3D-сцен из фото); продолжение темы 3dtur, только в индустриальном масштабе · <a href="https://news.ycombinator.com/item?id=50209269">Обсуждение</a></li>
+<li>🏷 <a href="https://furbo.org/2026/10/28/a-health-update/">A Health Update</a> — личная история известного iOS-разработчика о здоровье; человеческое на техническом сайте · <a href="https://news.ycombinator.com/item?id=50280974">Обсуждение</a></li>
+</ul>
+<h2>Habr</h2>
+<h3>1. ymcp, или как подружить агентов с YouTrack, если ты не админ</h3>
+<p><strong><a href="https://habr.com/ru/articles/1100844">Читать</a></strong></p>
+<p>Автор написал MCP-сервер (то самое «облако инструментов», через которое Claude Code достаёт данные из внешних систем) для трекера задач YouTrack — и подключил его без прав администратора. Это ровно твой жанр «склейка чужих сервисов»: нашёл боль (агент не видит таски в корпоративном трекере), сделал тонкую прокладку, выложил openly. Полезно и практически: схема «агент + MCP к любому REST API» работает и к российским сервисам — от твоих парсеров до hh.</p>
+<h3>2. Дядя Боб написал правила для ИИ-агентов: разбираем ub-mode</h3>
+<p><strong><a href="https://habr.com/ru/companies/hexlet/articles/1100762">Читать</a></strong></p>
+<p>Разбор свежей инициативы Роберта Мартина («Дядя Боб», автор книг по чистому коду): набор правил, которые можно положить агенту в конфиг, чтобы тот писал код в его стиле и не «разгулялся». Полезно по двум причинам: во-первых, сам формат «правила агенту в файл» — то, что ты делаешь с CLAUDE.md и памятью; во-вторых, статья даёт понимание, что индустрия сходится к одному: агент без чётких правил в конфиге работает хуже, чем с ними. Твои чек-листы и форматы — это оно и есть.</p>
+<h3>3. Восемь ИИ-агентов и пять способов узнать, что они делают: как мы подключали OpenCode, Kilo и Pi к чёлке Mac</h3>
+<p><strong><a href="https://habr.com/ru/articles/1100704">Читать</a></strong></p>
+<p>Большую статью-практикум: инженеры подключили восемь разных ИИ-агентов к одному рабочему месту и описали пять способов следить за тем, что агент делает (логи, хуки, снапшоты, перехват консоли, аудит файлов). Для тебя это почти методичка: у тебя тоже несколько агентов (Claude Code в терминале, Playwright, скиллы), и «понимать, что агент натворил» — прямой вопрос к твоему правилу проверок. Читается как сравнение инструментов, а не реклама.</p>
+<h3>4. Web search/fetch API нейросетей для бизнеса: что это, какие ошибки возникают и как подключить с оплатой в рублях</h3>
+<p><strong><a href="https://habr.com/ru/companies/speshu_ai/articles/1100710">Читать</a></strong></p>
+<p>Практический разбор: как подключить к своим скриптам готовые «поиск/чтение страниц» API от LLM-агрегаторов и платить в рублях без VPN. Это прямо в твою копилку знаний: у тебя в планах замена Replicate (VseGPT/RouterAI/AITunnel — рубли без VPN), и то, что такие же API есть для веб-поиска, значит, что ты можешь собрать «агента-исследователя» на российских деньгах вместо самопального парсинга. Статья подробно про подводные ошибки (лимиты, блокировки, кавычки URL) — как раз то, с чем ты сам мучился на hh.</p>
+<h3>5. Попросил Claude починить прокрутку в Linux под UTM — получил демон, окно настроек и находку в libinput</h3>
+<p><strong><a href="https://habr.com/ru/articles/1100706">Читать</a></strong></p>
+<p>Живой кейс вайбкодинга «не по учебнику»: автор попросил Claude починить одну мелочь (не работала прокрутка мыши в виртуалке), а получил в итоге демона-сервис, отдельное окно настроек и неожиданную находку в системной библиотеке libinput. Хорош тем, что показывает настоящую форму работы с агентом: начинаешь с мелочи, агент уводит в системную глубину, из чего рождается продукт, который ты не планировал. Твой 3dtur начинался примерно так же.</p>
+<h3>6. Что стоит проверить перед внедрением ИИ-агента в корпоративную среду</h3>
+<p><strong><a href="https://habr.com/ru/companies/domate/articles/1100550">Читать</a></strong></p>
+<p>Чек-лист внедрения ИИ-агента в компании: доступы, данные, аудит, границы полномочий, цена ошибки. Утилитарно и без пафоса. Для тебя это карта будущего фриланс-рынка: малые и средние компании скоро начнут заказывать именно «подключение агента безопасно» — и заказчикам нужен исполнитель, который умеет говорить про права доступа и логи, а не только про «сделаю бота». В заметки: чек-лист из статьи — готовый список вопросов, которые задавать заказчику при первом звонке.</p>
+<h3>7. «6 − 2 = 3»: как мы проверяем кодом задания, которые пишет языковая модель</h3>
+<p><strong><a href="https://habr.com/ru/articles/1100788">Читать</a></strong></p>
+<p>Автор описал конвейер: модель пишет учебные задания, затем отдельный код проверяет их на адекватность (в заголовке — пример фактической ошибки, которую код поймал). Идея простая и красивая: «ИИ пишет, обычный код проверяет», без второй нейросети. Это ровно твой принцип «сделано = внешний след подтверждён»: у дайджеста есть сайт с 200, у поста — ссылка ВК; у заданий — проверка кодом. Хорошая иллюстрация того, как строить такие проверки в проектах, где автоматика работает без человека.</p>
+<h3>8. Карьерный рост аналитика: что сделать, чтобы перейти на следующую ступень и что изменится с приходом ИИ</h3>
+<p><strong><a href="https://habr.com/ru/companies/rtlabs/articles/1100622">Читать</a></strong></p>
+<p>Как аналитику данных вырасти дальше и что с этой карьерой будет в эпоху ИИ. Ты сейчас в моменте «ухода с основной работы», а это та же точка, только со стороны аналитиков: статья по сути про то, какие роли переживают автоматизацию, а какие — нет. Главный вывод, совпадающий с твоей стратегией: ценность смещается к тем, кто умеет автоматизировать сам свою работу, а не к тем, кто быстрее собирает отчёты руками. Полезно для фона при откликах на вакансии «аналитик/автоматизатор».</p>
+<p><strong>Остальное с Habr (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://habr.com/ru/companies/otus/articles/1095784">От языка к действию: как устроены агентные ИИ-системы</a> — фундаментальный разбор архитектуры агентных систем; полезен как учебник, если захочешь систематизировать то, что ты интуитивно делаешь в Claude Code · <a href="https://habr.com/ru/companies/otus/articles/1095784">Читать</a></li>
+<li>🏷 <a href="https://habr.com/ru/companies/bothub/articles/1100786">О мышах и людях: проверяем нейросеть на ложных предпосылках</a> — тест на ложную предпосылку в вопросе: как LLM проверяет сама себя · <a href="https://habr.com/ru/companies/bothub/articles/1100786">Читать</a></li>
+<li>🏷 <a href="https://habr.com/ru/articles/1100598">Периодические функции как функции активации в нейросетях</a> — математический разбор: синус и косинус как внутренности нейросетей · <a href="https://habr.com/ru/articles/1100598">Читать</a></li>
+<li>🏷 <a href="https://habr.com/ru/articles/1094190">Кибермарксизм, или почему ИИ несовместим с капитализмом, и почему нас ждёт слом социально-экономической формации</a> — философское эссе о будущем экономики с ИИ; хит дискуссий · <a href="https://habr.com/ru/articles/1094190">Читать</a></li>
+<li>🏷 <a href="https://habr.com/ru/articles/1090420">Маршрутизатор языковых моделей изнутри. От вектора задачи до судьи и обучения на отзывах</a> — как устроен роутер, который решает, какой модели отдать твой запрос (механика того, что происходит внутри VseGPT и похожих агрегаторов) · <a href="https://habr.com/ru/articles/1090420">Читать</a></li>
+</ul>
+<h2>Reddit r/vibecoding</h2>
+<h3>1. 3 months of vibecoding an MMO and I'm throwing in the towel</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xhxmu8/3_months_of_vibecoding_an_mmo_and_im_throwing_in/">Читать</a></strong> — <em>«3 месяца вайбкодил MMO и сдаюсь»</em></p>
+<p>Честный пост-разбор: автор три месяца через Claude делал многопользовательскую игру, она работает и выглядит прилично, но конкурировать с живыми MMO-играми и кормить семью не может — второй ребёнок на подходе, деньги на подписку Claude нужны более срочные. Внутри графики расходов по неделям и трезвый вывод по монетизации. Полезно именно честностью: вайбкодинг делает продукт, но не делает рынок. Подтверждает твоё правило «сначала где деньги, потом механика» и что фан-проекты держать в пределах 1–2 ч/нед.</p>
+<h3>2. Opus 5.5 3D capabilities are amazing, built the portfolio of my dreams I imagined years ago</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xhtxzd/opus_55_3d_capabilities_are_amazing_built_the/">Читать</a></strong> — <em>«3D-возможности Opus 5.5 великолепны: собрал портфолио мечты, которое представлял себе годы назад»</em></p>
+<p>Человек вайбкодил себе 3D-сайта-портфолио на Opus 5.5 (ссылка живая, можно покликать). Для тебя это прямо методичка на ближайшие недели: ты собираешь портфолио в ai_moi\portfolio с флагманом 3dtur, и вот чужой референс «3D-портфолио полностью через агента» — посмотри, как у него устроена навигация и подача работ, что перенять, а что нет. Плюс пример того, что 3D в браузере (твой стек card_pack_3d) сегодня уже норма для портфолио, а не экзотика.</p>
+<h3>3. I built a little tram driving game called Tramlijn 2 with Claude generating everything</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xi0yhs/i_built_a_little_tram_driving_game_called/">Читать</a></strong> — <em>«Сделал маленькую игру про трамвай Tramlijn 2, где Claude сгенерил вообще всё»</em></p>
+<p>Автор написал один дизайн-документ, а дальше Claude Code сам: кодинг, генерация пиксельных картинок, поиск в интернете реальных данных о трамвайных маршрутах Амстердама (остановки, расстояния, ограничения скорости). Для тебя это интересный пример «агент как полный конвейер» на реальном проекте — и полезный контраст с твоим подходом: где агенту дать волю (трамвайная игра — можно), а где держать на ручном контроле (3dtur под реального заказчика — нельзя). В комментах делятся промтами рабочего процесса.</p>
+<h3>4. What's the point of Codex doing usage resets every two days? Is it prep for them cutting usage by 50% at the end of this week?</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xhvxoj/whats_the_point_of_codex_doing_usage_resets_every/">Читать</a></strong> — <em>«Зачем Codex сбрасывает лимиты каждые два дня? Это подготовка к срезанию лимитов вдвое в конце недели?»</em></p>
+<p>Сигнал для бюджета: с 1 ноября OpenAI режет лимиты использования Codex вдвое, и в сообществе предполагают, что «частые сбросы» перед этим — маркетинговый ход. Практическая ценность для тебя: цена агентных подписок и лимитов — нестабильная штука, и у тебя уже есть привычка строить запасные пути (Replicate как тестовая среда, VseGPT/RouterAI как прод). Подтверждение этой стратегии прямо из первой полосы сообщества.</p>
+<h3>5. new fear unlocked</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xhgcai/new_fear_unlocked/">Читать</a></strong> — <em>«Открыл для себя новый страх»</em></p>
+<p>Весёлый и полезный кейс: автор попросил Claude Code потестировать свой процесс регистрации (signup flow) — и агент нашёл столько проблем, что пользователи, по факту, получили повод покинуть сервис. «Просил найти баги, а не причины уйти». Практический вывод: агент-тестировщик реально работает, но его надо ставить ДО выката на пользователей, а не после. У тебя это перекликается с чеком «признаки самоделки» перед показом портфолио — то же самое, только в виде агента, а не глаз.</p>
+<p><strong>Остальное с Reddit r/vibecoding (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xho1mp/googles_xr_language_teacher_runs_fully_offline_on/">Google's XR Language Teacher runs fully offline on your phone. Is it a Duolingo killer?</a> — оффлайн-учитель языка от Google на телефоне: 3 ГБ моделей, работает без интернета, «вкусно» для фанатов локальных приложений · <a href="https://www.reddit.com/r/vibecoding/comments/1xho1mp/googles_xr_language_teacher_runs_fully_offline_on/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xi5kks/day_1_vs_day_52_of_building_my_game/">Day 1 vs Day 52 of building my game</a> — «день 1 vs день 52»: визуальный прогресс игры за 52 дня · <a href="https://www.reddit.com/r/vibecoding/comments/1xi5kks/day_1_vs_day_52_of_building_my_game/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xhzttk/im_making_a_game_called_horn_dice_a_roguelike/">I'm making a game called Horn &amp; Dice. A roguelike dicebuilder set in a dark world drawn from Slavic mythology</a> — роглайк с кубиками на славянской мифологии: дизайн-разбор механики · <a href="https://www.reddit.com/r/vibecoding/comments/1xhzttk/im_making_a_game_called_horn_dice_a_roguelike/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xi6ir8/what_was_the_first_thing_you_ever_vibe_coded/">What was the first thing you ever vibe coded?</a> — тред «что ты впервые завайбкодил» — тёплый чат новичков · <a href="https://www.reddit.com/r/vibecoding/comments/1xi6ir8/what_was_the_first_thing_you_ever_vibe_coded/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xhnh38/rvibecoding_qa_daily_thread_wednesday_october_28/">r/VibeCoding Q&amp;A Daily Thread - Wednesday, October 28, 2026</a> — ежедневный тред вопросов-ответов новичков · <a href="https://www.reddit.com/r/vibecoding/comments/1xhnh38/rvibecoding_qa_daily_thread_wednesday_october_28/">Читать</a></li>
+</ul>
+<h2>Reddit r/SideProject</h2>
+<h3>1. I built free browser games where phones pushed together become one big game board</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xi2k1m/i_built_free_browser_games_where_phones_pushed/">Читать</a></strong> — <em>«Сделал бесплатные браузерные игры, где телефоны, сдвинутые вместе, становятся одним игровым полем»</em></p>
+<p>Идея простая и сильная: кладёшь 2–4 телефона рядом на стол, они находят друг друга по Wi-Fi и становятся одним большим экраном — aire Hockey, где шайба реально скользит с одного экрана на другой. Без регистрации, устанавливается на главный экран как PWA (сайт, который работает как приложение). Тебе это полезно по двум линиям: во-первых, это PWA, твой стек; во-вторых, «физика рядом с телефоном» — жанр, куда ещё почти никто не зашёл, а тебе нужен именно такой «фишки, которой нет». В деталях — как устроена синхронизация устройств.</p>
+<h3>2. I'm a dev. I built a site where you do stuff for bananas. Am I dumb?</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xhwyk8/im_a_dev_i_built_a_site_where_you_do_stuff_for/">Читать</a></strong> — <em>«Я разработчик. Сделал сайт, где делают что-то за бананы. Я дурак?»</em></p>
+<p>Автор построил биржу человеческого тестирования: пользователи «зарабатывают бананы», делая мелкие задания для других (протестировать форму регистрации, оценить лендинг, оставить отзыв), и тратят бананы, чтобы получить тесты для своего продукта. Прямо противопоставление ИИ: «ИИ не может сломать ваш сервис так, как это сделает живой человек». Полезно как сигнал: пока вайбкодеры автоматизируют всё, ниша «живой человек глазами» вдруг стала дефицитом — и на этом строится сервис.</p>
+<h3>3. EvoForge: a desktop AI agent with your own models. Where should the approval boundary be?</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xhxmas/evoforge_a_desktop_ai_agent_with_your_own_models/">Читать</a></strong> — <em>«EvoForge: десктопный ИИ-агент с твоими собственными моделями. Где должна быть граница подтверждений?»</em></p>
+<p>Команда делает десктоп-агента (Windows/macOS), который работает по файлам, браузеру, приложениям и терминалу, а модель подключай свою ключом или локальную. Вопрос авторов живой: где пользователь должен подтверждать действия агента (каждый клик? только удаление? ничего?). Это ровно те же дебаты, что у тебя с правами доступа в Claude Code, только на уровне продукта. Для тебя полезно и как монитор рынка десктопных агентов (куда могут уйти твои скиллы), и как готовый чек-лист «на что подписываться/на что нет».</p>
+<h3>4. We're building an API so AI agents can update digital signs. What would you want it to do?</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xi5m7r/were_building_an_api_so_ai_agents_can_update/">Читать</a></strong> — <em>«Мы делаем API, чтобы ИИ-агенты умели обновлять цифровые вывески. Что бы вы хотели от него?»</em></p>
+<p>Компания цифровой рекламы и вывесок строит API специально под ИИ-агентов: чтобы боту можно было скриптом или прямым запросом менять картинку на экране в кафе — без человека с дашбордом. Малый рынок (вывески), но паттерн важный: продукты начали делать API «сначала для агентов, потом для людей». Для тебя это направление, куда твои скиллы и склейки могут продаваться: «автоматизирую твою вывеску/сервис через агентное API» — заказ, который ещё два года назад никто не умел формулировать.</p>
+<h3>5. There's probably a map of hidden places in your city that someone spent years on. You just can't find it</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xhqthd/theres_probably_a_map_of_hidden_places_in_your/">Читать</a></strong> — <em>«В твоём городе почти наверняка есть карта тайных мест, на которую кто-то потратил годы. Ты просто не можешь её найти»</em></p>
+<p>Автор заметил, что тысячи людей строят карты интересных мест в Google My Maps (брошенные города, бесплатные туалеты, viewpoints), но на этих картах нет поиска — без точной ссылки их не найти. Продукт: каталог таких карт с поиском. Классический способ «найди чужую заброшенную инфраструктуру и сделай вход в неё» — тот же жанр, что твой digest-сайт: у кого-то есть контент (дайджесты на Диске), тебе нужен вход (сайт). Хорошая модель, как из «данных без поиска» делать продукт.</p>
+<p><strong>Остальное с Reddit r/SideProject (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xhx5ou/i_built_a_website_for_me_and_my_friends_to_help/">I built a website for me and my friends to help mark and feed stray animals in our city</a> — карта бродячих животных по фото + GPS, чтобы соседи могли найти и покормить · <a href="https://www.reddit.com/r/SideProject/comments/1xhx5ou/i_built_a_website_for_me_and_my_friends_to_help/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xhzdrr/launching_preorders_my_hardware_product_in_india/">Launching Pre-orders my hardware product in India Soon! Wish me luck !</a> — предзаказ гарнитуры Dokidek для геймеров и стримеров: 6 месяцев после ухода с работы, 2M+ просмотров видео · <a href="https://www.reddit.com/r/SideProject/comments/1xhzdrr/launching_preorders_my_hardware_product_in_india/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xi5g3g/my_cousin_died_two_weeks_ago_i_built_a_quiet/">My cousin died two weeks ago. I built a quiet place to light a candle for someone you miss.</a> — «зажги свечу»: карта мира, где на сутки появляется свеча памяти; без регистрации, без трекинга · <a href="https://www.reddit.com/r/SideProject/comments/1xi5g3g/my_cousin_died_two_weeks_ago_i_built_a_quiet/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xhoy41/i_built_a_chrome_extension_to_deal_with_all_the/">I built a Chrome extension to deal with all the articles I kept saving but never had time to go back and read. Free to use!</a> — расширение SiftHive: сжимает отложенные статьи, видео, письма в короткие буллетины · <a href="https://www.reddit.com/r/SideProject/comments/1xhoy41/i_built_a_chrome_extension_to_deal_with_all_the/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xi497o/built_a_daily_history_storytelling_platform_using/">Built a daily history storytelling platform using AI coding tools</a> — платформа Neugil: ежедневные иллюстрированные исторические рассказы, построенная целиком на ИИ-агентах с spec-driven подходом и CI/CD · <a href="https://www.reddit.com/r/SideProject/comments/1xi497o/built_a_daily_history_storytelling_platform_using/">Читать</a></li>
+</ul>
+<h2>Итог дня</h2>
+<p>Три нити дня сходятся в одну. Первая: рынок агентных SDK открылся всем желающим — Cursor выкатил свой Agent SDK на HN, Habr разбирает MCP-серверы к трекерам и «правила агенту в конфиг», EvoForge строит десктоп-агента со своими моделями. Следствие для тебя простое: то, что ты сейчас нарабатываешь руками в Claude Code (правила, скиллы, хуки, границы полномочий), превращается в навык, который завтра будут продавать как услугу «настроить агент под вашу компанию». Вторая: деньги всё ещё не у вайбкодеров, а у тех, кто нашёл нишу — MMO за 3 месяца оказался « playable, polished и всё равно без рынка», и тот же автор прямо говорит, что Claude нужен семье больше, чем игра. Твоё правило «сначала где деньги» снова подтвердилось чужой кровью. Третья нить — прикладная: Habr дал тебе конспект «Web search/fetch API с оплатой в рублях» и историю «Claude починил прокрутку и по пути родил продукт» — обе вещи к твоим планам замены Replicate и к идее «агент как конвейер». Что реально сделать на неделе из этого дня: пройти по ссылке 3D-портфолио с Opus 5.5 (референс для твоего portfolio) и сохранить себе чек-лист из статьи про внедрение ИИ-агента — он станет списком вопросов первому клиенту.</p>
+</article>
+<nav class="paging"><a href="2026-10-28.html">← 2026-10-28</a><span class="cur">2026-10-29</span><span class="empty">→</span></nav>
+<footer class="site"><a href="index.html">⟵ все выпуски</a></footer>
+<script>document.addEventListener('keydown', function(e){
+  if(e.target.tagName==='INPUT')return;
+  var links=document.querySelectorAll('nav.paging a[href]');
+  if(e.key==='ArrowLeft'&&links[0])location.href=links[0].href;
+  if(e.key==='ArrowRight'&&links[links.length-1])location.href=links[links.length-1].href;
+});
+</script>
+
+
+</body>
+</html>
