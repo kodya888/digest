@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#faf9f6">
+<title>Дайджест 2026-10-31</title>
+<link rel="icon" href="icon-192.png" />
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+<script src="theme.js" defer></script>
+<script src="sw-register.js" defer></script>
+</head>
+<body>
+
+<header class="site">
+  <a class="home" href="index.html">⟵ все выпуски</a>
+  <button class="theme" aria-label="Сменить тему">◐</button>
+</header>
+<article>
+<p>Новых постов: 43 (HN 15, Habr 8, Reddit 20; r/vibecoding 10 + r/SideProject 10).
+Сортировка по интересу к твоим темам (Claude Code, AI-агенты, вайбкодинг, парсеры, Python,
+фриланс/поиск работы). Метка 🏷 — только заголовок/выдержка.</p>
+<h2>Hacker News</h2>
+<h3>1. Backdoor in Claude Code for VS Code extension on the Cursor Marketplace</h3>
+<p><strong><a href="https://phorion.io/blog/offical-claude-code-vsx-compromise/">Оригинал</a></strong> · 873 балла, 514 комментариев · <a href="https://news.ycombinator.com/item?id=50300683">Обсуждение</a>
+<em>«Бэкдор в расширении Claude Code для VS Code, выложенном на Marketplace Cursor»</em></p>
+<p>Тема дня номер один: в официальном расширении Claude Code для VS Code (опубликованном на маркетплейсе Cursor) нашли бэкдор — автор расширения разбирать, как оно было скомпрометировано, что именно делал вредоносный код и как это заметили. Для тебя это не абстрактная новость безопасности, а прямое касание твоего ежедневного инструмента. Выводы прикладные: расширения ставить точечно и проверять, что именно открываешь; «официальное» на чужом маркетплейсе не равно проверенному — это та же логика, что твоё правило «сделано = внешний след подтверждён». В комментариях 500+ человек обсуждают, кто виноват в проверке безопасности расширений — маркетплейс, автор или сам Anthropic.</p>
+<h3>2. AI isn't replacing SREs, it's deskilling them</h3>
+<p><strong><a href="https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling">Оригинал</a></strong> · 569 баллов, 419 комментариев · <a href="https://news.ycombinator.com/item?id=50300831">Обсуждение</a>
+<em>«ИИ не заменяет инженеров надёжности (SRE) — он их деквалифицирует»</em></p>
+<p>Разбор про смещение жанра: ИИ пока не забирает работу у инженеров поддержки инфраструктуры, но забирает возможность уметь — люди перестают понимать систему, которую держит агент. Второй по горячности тред дня. Это ровно про твою ситуацию: ты учишься через вайбкодинг, и риск зеркальный — не «ИИ всё сделает за тебя», а «ты перестанешь читать то, что агент написал». Твоя защита уже на месте: формат обучения «объясняй термины простыми словами» и разбор готового кода, а не только приёмка результата. В комментариях живой спор — хорошо для понимания, как рынок будет формулировать оплату «агентного» кода против «понимающего» инженера.</p>
+<h3>3. Cisco gives engineer unlimited AI tokens to rewrite legacy code</h3>
+<p><strong><a href="https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/">Оригинал</a></strong> · 166 баллов, 195 комментариев · <a href="https://news.ycombinator.com/item?id=50303906">Обсуждение</a>
+<em>«Cisco выдала инженеру безлимит AI-токенов на переписывание старого кода»</em></p>
+<p>Cisco взяла 27-летнего инженера и дала ему неограниченные токены, чтобы он с агентами переписывал легаси (устаревший код) — и прямо говорит, что entry-level разработчиков брать больше не будет. Для твоей линии «уход с основной работы → ИТ-заказы» это сигнал с двух сторон: с одной стороны, классические джун-вакансии высыхают; с другой — появляется новый тип заказа «переписать старое с помощью агентов», где ценится умение вести агента по большому чужому коду. В комментариях спорят, реально ли это или PR-ход — читать полезно для трезвой картины.</p>
+<h3>4. Cloudflare Turnstile solver library (no headless browser required)</h3>
+<p><strong><a href="https://github.com/chris124567/cfsolve">Оригинал</a></strong> · 168 баллов, 49 комментариев · <a href="https://news.ycombinator.com/item?id=50303343">Обсуждение</a>
+<em>«Библиотека для разгадки Cloudflare Turnstile — без headless-браузера»</em></p>
+<p>Show HN из твоей прямой профессии: библиотека, которая решает капчу Turnstile (антибот-проверку Cloudflare) без запуска headless-браузера — то есть быстро и дёшево, как обычный API-запрос. Тебе это перекликается с твоими парсерами hh и гос-площадок, где антибот — главный противник, и с правилом «аккуратный скрейпинг»: такие инструменты существуют и дешевеют. Важно и в обратную сторону: любое твоё будущее PWA с формой может быть скрейпнуто чужим скриптом за копейки. В комментариях — детали механики и споры об этике.</p>
+<h3>5. The $6.3B Binance hack was pulled off in just 20 minutes</h3>
+<p><strong><a href="https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/">Оригинал</a></strong> · 420 баллов, 285 комментариев · <a href="https://news.ycombinator.com/item?id=50302310">Обсуждение</a>
+<em>«Взлом Binance на 6,3 млрд долларов провернули всего за 20 минут»</em></p>
+<p>Wired разобрал ограбление криптобиржи на 6,3 миллиарда: не сложная уязвимость, а цепочка социальных и организационных промахов, отработанная за 20 минут. День огромной биржи — но читается как учебник «почему нельзя доверять одному каналу проверки». Твоё правило проверок и ретраев — про то же самое в миниатюре: подтверждение через второй независимый канал (Диск, 200 от сайта, ссылка ВК) — это как раз защита от «одна точка промаха».</p>
+<h3>6. Northflank Breached</h3>
+<p><strong><a href="https://status.northflank.com">Оригинал</a></strong> · 413 баллов, 305 комментариев · <a href="https://news.ycombinator.com/item?id=50302555">Обсуждение</a>
+<em>«Northflank взломан»</em></p>
+<p>Northflank — платформа для развёртывания приложений (PaaS), через которую работает много стартапов — подтвердила взлом и завела статус-страницу. Третий серьёзный инцидент безопасности в топе дня (бэкдор в Claude Code, Binance, Northflank) — день вообще прошёл под знаком «доверяй, но проверяй». Практическая точка: у тебя на таких платформах висит GitHub Pages, netlify-демо и Supabase — читать, как это вскрывается и что приносит жертве, стоит хотя бы верхушкой обсуждений.</p>
+<h3>7. Show HN: A working Nintendo in ~1GB of Qwen weights</h3>
+<p><strong><a href="https://github.com/dbreunig/nesformer">Оригинал</a></strong> · 236 баллов, 119 комментариев · <a href="https://news.ycombinator.com/item?id=50302177">Обсуждение</a>
+<em>«Работающая Nintendo в примерно 1 ГБ весов Qwen»</em></p>
+<p>Забавная и полезная штука: автор обучил маленькую модель на записях игры Nintendo — и модель способна «проигрывать» игру, ведя себя как симулятор консоли. Не практический инструмент, но отличная иллюстрация того, как сжимается «простая» динамическая система в нейросетевые веса. Тебе показательно как жанр «Show HN с GitHub-репозиторием»: демо + readme + одна яркая идея — тот же формат входа, что у твоих пет-проектов в портфолио.</p>
+<h3>8. Sleep framework: A new way for LLMs to retain knowledge in continual learning</h3>
+<p><strong><a href="https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/">Оригинал</a></strong> · 217 баллов, 24 комментария · <a href="https://news.ycombinator.com/item?id=50301880">Обсуждение</a>
+<em>«Sleep framework — новый способ для LLM удерживать знания при постоянном дообучении»</em></p>
+<p>Google исследовал способ, как модель в процессе жизни «ложится спать» (фаза offline-обработки) и пересобирает знания, не забывая старое — как фазы сна у человека. Фундаментальная тема, но перекликается с твоей механикой seen.json и накопления заметок: «дёшево удерживать накопленное при добавлении нового» — это и инженерное свойство дайджест-конвейера, просто в науке про то же говорят красивыми словами. В комментариях — хорошие объяснения, почему «дообучать на ходу» такое дорогое.</p>
+<p><strong>Остальное с HN (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://www.binarysecurity.no/posts/2026/10/one-root-case">Azure's Weakest Link – Five Full Cross-Tenant Compromises</a> — пять реальных сценариев полного взлома клиента Microsoft Azure через одну общую корневую уязвимость · <a href="https://news.ycombinator.com/item?id=50302065">Обсуждение</a></li>
+<li>🏷 <a href="https://tangled.org/blog/forge/">The federated code forge</a> — tangled.org: децентрализованная альтернатива GitHub («федеративная кузница кода»), код-хостинг по модели федерации, как у Mastodon · <a href="https://news.ycombinator.com/item?id=50301922">Обсуждение</a></li>
+<li>🏷 <a href="https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/">My favourite PowerMac is a Nintendo Wii</a> — автор запустил PowerPC-софт на Nintendo Wii: тёплая ламповая история про эмуляцию · <a href="https://news.ycombinator.com/item?id=50301105">Обсуждение</a></li>
+<li>🏷 <a href="https://www.bostonglobe.com/2026/10/29/metro/patrick-stewart-picard-star-trek-the-next-generation/">Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man</a> — о Патрике Стюарте и капитане Пикаре не по звёздам: «мера человека», очень человеческий текст не о коде · <a href="https://news.ycombinator.com/item?id=50300980">Обсуждение</a></li>
+<li>🏷 <a href="https://github.com/kevinraymond/florilegium">Florilegium: Procedural Flowers in LaTeX</a> — процедурные цветы, нарисованные кодом LaTeX: красота через математические формулы · <a href="https://news.ycombinator.com/item?id=50301556">Обсуждение</a></li>
+<li>🏷 <a href="https://www.techpolicy.press/breaking-the-open-web-wont-stop-the-bad-bots/">Breaking the open web won't stop the bad bots</a> — политика про «ломать открытый веб бессмысленно»: почему антибот и закрытие сайтов не остановят плохих ботов (твои парсеры — с обратной, «хорошей» стороны этой войны) · <a href="https://news.ycombinator.com/item?id=50302380">Обсуждение</a></li>
+<li>🏷 <a href="https://tng.episodle.com/">To Honor Sir Patrick Stewart, Enjoy the TNG Episode Guessing Game</a> — викторина «угадай эпизод Star Trek TNG по описанию», сделано одним человеком за вечер · <a href="https://news.ycombinator.com/item?id=50302610">Обсуждение</a></li>
+</ul>
+<h2>Habr</h2>
+<h3>1. Я попросил локальные нейросети помочь бабушке — и они помогли перевести деньги мошеннику</h3>
+<p><strong><a href="https://habr.com/ru/articles/1101972">Читать</a></strong></p>
+<p>Автор помогал бабушке с локальными нейросетями (оффлайн-моделями на своём компьютере), а в итоге цепочка действий привела к переводу денег мошенникам — честный разбор, где именно сработал человеческий фактор, а где подвели «умные» подсказки. Ценно не истерией, а разбором: даже локальные, казалось бы, «безопасные» модели участвуют в социальных атаках. Для тебя — двойная польза: во-первых, ты тоже ставишь локальные модели (Ollama), во-вторых, твой блог-стоп («вайбкодинг = негатив») тут снова подтверждается живым примером — тема ИИ и доверия на Habr горячая.</p>
+<h3>2. Черепашка, Дракон и вайбкодинг. 70 лет попыток обойтись без программиста</h3>
+<p><strong><a href="https://habr.com/ru/companies/lukit_ru/articles/1100404">Читать</a></strong></p>
+<p>Исторический разбор от Logo-черепашки (язык программирования для детей 1960-х) и «дракона» Дрейфуса до сегодняшнего вайбкодинга: 70 лет индустрия пытается «обойтись без программиста», и каждый раз получалось новое, но не то. Самая полезная статья дня именно для тебя: она ставит твою ситуацию («начинающий вайбкодер без опыта») в контекст семи десятилетий попыток, включая ту же логику «теперь всё будет по-другому». Читать обязательно — это интеллектуальная рамка, которой у тебя пока нет, и она защищает от завышенных ожиданий и от лишнего страха одновременно.</p>
+<h3>3. Gemini или DeepSeek для разбора SDK: считаем 20 запросов и цену промахов кэша</h3>
+<p><strong><a href="https://habr.com/ru/companies/raketa_pay/articles/1101936">Читать</a></strong></p>
+<p>Инженеры посчитали в деньгах: что дороже — Gemini или DeepSeek для разбора большой SDK-документации, если учитывать промахи кэша (когда при одинаковых повторных запросах модель читает документ заново). Прямо методика твоего плана замены Replicate: у тебя в голове VseGPT/RouterAI/AITunnel как прод-путь, и главный вопрос — «а сколько реально стоит один типовой цикл запросов». Статья показывает на цифрах, как считать такие деньги (цена за токен — не финальная цена, промахи кэша умножают). Забирай методику подсчёта, не сами цифры.</p>
+<h3>4. Внедряем ИИ. Между увольнением и ненавистью</h3>
+<p><strong><a href="https://habr.com/ru/articles/1101946">Читать</a></strong></p>
+<p>Как в команду приходят «мы теперь будем работать с ИИ-агентами»: от восторга до тихого саботажа, кто и почему теряет в этом процессе, и что делает менеджмент неправильно. Это рынок, на который ты собираешься: ты как «внешний автоматизатор» заходишь ровно в этот конфликт — часть команды за, часть против, и от умения говорить об этом зависит судьба заказа. Статья даёт словарь и понимание чужой боли: пригодится при первом же разговоре с заказчиком про автоматизацию.</p>
+<h3>5. Когда пользователь медсервиса — ИИ-агент</h3>
+<p><strong><a href="https://habr.com/ru/articles/1101590">Читать</a></strong></p>
+<p>Медицинский сервис задумывался для людей, но к нему стали ходить ИИ-агенты — разбора, что меняется: логи, ошибки, интерфейс, ответственность. Тот самый сдвиг «API сначала для агентов, потом для людей», что ты видел на Reddit с вывесками, здесь в самой чувствительной области — медицине. Для тебя это понимание, куда рынок двигается: твои скиллы и склейки — это «агенты как пользователи чужих сервисов», и у этого жанра начинается своя инженерия. Читается как предсказание будущего твоей работы.</p>
+<h3>6. Мы удалили AI-менеджера для маркетплейсов и написали заново</h3>
+<p><strong><a href="https://habr.com/ru/articles/1101428">Читать</a></strong></p>
+<p>Команда сделала ИИ-менеджера для маркетплейсов (продавцы должны были через агента управлять товарами), продукт не взлетел, они его удалили и переписали — разбор, почему первая версия была не угадана: агенты там, где нужна предсказуемость, мешают. Честная история провала с выводами — редкий жанр, обычно пишут только про успехи. Для тебя главная мысль: ИИ-фича в продукте — не автоматический выигрыш, у тебя в планах PWA и боты есть похожая развилка («куда агента добавлять не нужно»).</p>
+<h3>7. Прототипируем игровые 3D-локации для уровней с помощью ИИ</h3>
+<p><strong><a href="https://habr.com/ru/companies/studyai/articles/1101390">Читать</a></strong></p>
+<p>Учебный разбор: как с помощью ИИ быстро собрать черновой 3D-уровень игры (блокинг — грубая геометрия вместо финальной графики). Механика та же, что у твоего 3dtur: маска → генерация → сборка, только про игровые локации. Забирай как референс «быстрого прототипа»: конвейер «грубая версия → показ → итерация» работает одинаково и в играх, и в турах по квартирам, и в 3D-паках с котиками.</p>
+<h3>8. 1С:MDM 3.1.10.1: что завезли — ИИ в нормализации, отложенный запуск и отборы по ТЧ</h3>
+<p><strong><a href="https://habr.com/ru/companies/sofros/articles/1101872">Читать</a></strong></p>
+<p>Вышла новая версия 1С:MDM (система управления справочными данными): внутри ИИ в нормализации (автосопоставление дублей позиций), отложенный запуск задач и отборы по табличным частям. Для тебя это фон по «российскому корпоративному» рынку: 1С — большой работодатель, и «ИИ внутри 1С» — то, где ты как автоматизатор 1С-смежных задач можешь найти заказы (ты уже смотришь мост «ТП 1С АГАТ РФ»). Полезно знать, что там появилось, хотя бы заголовочно.</p>
+<h2>Reddit r/vibecoding</h2>
+<h3>1. I coded terminal manager for ADHD brains. 100% Opensource.</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xjck52/i_coded_terminal_manager_for_adhd_brains_100/">Читать</a></strong> — <em>«Я написал терминальный менеджер для мозгов с СДВГ. 100% опенсорс»</em></p>
+<p>Человек через Claude Code сделал терминальный менеджер задач (текстовый список дел в консоли) для людей с СДВГ — и выложил исходники. Внутри история про то, что он собрал на r/ClaudeCode 300 тысяч просмотров на прошлой неделе: то есть «маленький нишевый инструмент, выложенный openly» — реально работающий способ заметности. Это ровно ты в ближайшие месяцы: не «сделай стартап», а «сделай мелочь, которая решает одну конкретную боль, опубликуй, дай ссылку». В комментариях живой фидбек и идеи доработки.</p>
+<h3>2. I missed how easy VB6 made small programs, so I built a clone that runs on Mac, Windows and Linux</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xjm1vy/i_missed_how_easy_vb6_made_small_programs_so_i/">Читать</a></strong> — <em>«Тосковал по тому, как легко VB6 делал маленькие программы, поэтому сделал клон для Mac, Windows и Linux»</em></p>
+<p>Автор сделал VibeBasic: перетащил кнопку на форму, двойной клик, две строки кода, F5 — тот самый стиль Visual Basic 6 из 90-х, но кроссплатформенно и с видом Windows 98. Для тебя это прямо в копилку твоей философии «простое решение прежде усовершенствованного»: даже в эпоху агентов существует голод на «самые простые способы сделать маленькую вещь». И хороший пример нишевого продукта, где «фишки, которой нет» — не фича, а чувство («просто»).</p>
+<h3>3. Thoughts on testing vibe coded work?</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xjpluf/thoughts_on_testing_vibe_coded_work/">Читать</a></strong> — <em>«Как вы тестируете то, что вайбкодите?»</em></p>
+<p>Тред о практиках проверки: автор описывает свой конвейер — сначала часами планирует с ChatGPT архитектуру, фичи, требования, раскладывает на вехи (milestones) с критериями приёмки и тестами, потом скармливает Codex по одной вехе. Это почти дословно твоё правило «сделано = внешний след подтверждён», только на уровне процесса разработки целиком. Забирай как подтверждение, что твой инстинкт «план → подтверждение → шаг» — не перестраховка, а мейнстрим лучших практик сообщества.</p>
+<h3>4. Made a new character selection screen for my RPG with Claude Code</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xjcw5t/made_a_new_character_selection_screen_for_my_rpg/">Читать</a></strong> — <em>«Сделал новый экран выбора персонажа для своей RPG через Claude Code»</em></p>
+<p>Автор вайбкодит сольную RPG (игру, где один игрок ведёт сессии D&amp;D) и разбирает конкретную UX-задачу: как дать каждому персонажу достаточно характеристик на экране выбора, не перегрузив его. Полезно не игрой, а форматом: «одна задача → Claude Code → скриншот → разбор решения» — это же формат твоей карусели для Volgman и 3dtur. В комментариях — сравнение подходов к разложению информации на экране.</p>
+<h3>5. A friend asked me to make this: Stephen Hawking's Pro Skater</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xjh8a3/a_friend_asked_me_to_make_this_stephen_hawkings/">Читать</a></strong> — <em>«Друг попросил сделать это: Стивен Хокинг — Pro Skater (игра в стиле Tony Hawk)»</em></p>
+<p>За два часа через Claude Code, ComfyUI и Meshy (сервисы генерации картинок и 3D-моделей) собран игровой фанатский мем «Стивен Хокинг на скейте» — около 40 минут сфокусированной работы. Для тебя показателен стек и скорость: «картинка → 3D-модель → игра» — сегодня это два часа и примерно 5 долларов. Твои 3dtur и 3d-паки в этой же логике: чем дешевле стало собирать подобное, тем ценнее не сборка, а идея и вкус — то правило, что у тебя в памяти как «фишка, которой нет».</p>
+<p><strong>Остальное с Reddit r/vibecoding (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xja01a/ignore_the_hate_vibe_coding_or_not_if_you_can_get/">Ignore the hate. Vibe coding or not if you can get clients thats what matters</a> — «не читай хейтеров, главный вопрос — есть ли клиент»: спор о том, что важно в вайбкодинге на практике · <a href="https://www.reddit.com/r/vibecoding/comments/1xja01a/ignore_the_hate_vibe_coding_or_not_if_you_can_get/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xjzsx0/built_my_own_social_media_without_logins/">Built my own social media without logins</a> — соцсеть без регистрации по мотивам neocities: профили, чаты, звонки через mirotalk; «зашёл, поделился, вышел» · <a href="https://www.reddit.com/r/vibecoding/comments/1xjzsx0/built_my_own_social_media_without_logins/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xjc7s5/i_found_a_way_to_save_on_my_electric_bill/">I found a way to save on my electric bill.</a> — «лампочка из чистого кода»: WebGL-шейдер вместо света + MediaPipe-трекинг рук; кросспост из r/SideProject, забавно · <a href="https://www.reddit.com/r/vibecoding/comments/1xjc7s5/i_found_a_way_to_save_on_my_electric_bill/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xjh65y/i_made_a_small_horror_game_in_52_hours_all_150_3d/">I made a small horror game in 52 hours. All 150 3D models cost about $27 in Tripo credits.</a> — хоррор за 52 часа и $27 на генерацию 150 3D-моделей через Tripo (сервис текст→3D) · <a href="https://www.reddit.com/r/vibecoding/comments/1xjh65y/i_made_a_small_horror_game_in_52_hours_all_150_3d/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/vibecoding/comments/1xjeurv/rvibecoding_qa_daily_thread_friday_october_30_2026/">r/VibeCoding Q&amp;A Daily Thread - Friday, October 30, 2026</a> — ежедневный тред вопросов-ответов новичков · <a href="https://www.reddit.com/r/vibecoding/comments/1xjeurv/rvibecoding_qa_daily_thread_friday_october_30_2026/">Читать</a></li>
+</ul>
+<h2>Reddit r/SideProject</h2>
+<h3>1. I made a site that turns a GitHub repo into a little galaxy of its source files</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xjy7vk/i_made_a_site_that_turns_a_github_repo_into_a/">Читать</a></strong> — <em>«Я сделал сайт, который превращает GitHub-репозиторий в маленькую галактику его исходных файлов»</em></p>
+<p>Каждый файл публичного репозитория становится звездой, папки — звёздными системами; можно таскать, приближать, кликать и смотреть файл. Без регистрации, просто вставь owner/repo. Идея в стиле «фишки, которой нет»: вход через один URL, никакого онбординга, wow-эффект сразу. Для тебя — приём для портфолио: у тебя же репозитории (digest, blagodarnosti), их можно показать как галактику — это визуальный клин, который запоминается сильнее списка файлов. Внутри ссылка на живое демо и примеры красивых репозиториев.</p>
+<h3>2. I made a free, open-source phone app that debloats your TV over Wi-Fi: no PC, no root. Just hit 5,000 downloads</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xjrvhe/i_made_a_free_opensource_phone_app_that_debloats/">Читать</a></strong> — <em>«Сделал бесплатное open-source приложение для телефона, которое чистит телевизор от мусора по Wi-Fi: без ПК, без root. Только что перевалило за 5000 скачиваний»</em></p>
+<p>Tellyscope — телефон чистит Android TV от рекламы и мусора без компьютера. Кейс «нашёл конкретную боль (реклама на проекторе), сделал узкий инструмент, набрал 5000 человек без маркетинга». Для тебя это шаблон нишевого продукта: болячка + простое решение + опенсорс + пост на Reddit = органический рост. И технически полезно: ADB по Wi-Fi (механика управления Android-устройством из сети) — то, что ты можешь использовать в своих скриптах.</p>
+<h3>3. i made a free image resizer for those annoying kb limits</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xk1wb3/i_made_a_free_image_resizer_for_those_annoying_kb/">Читать</a></strong> — <em>«Я сделал бесплатный ресайзер картинок под неприятные лимиты в килобайтах»</em></p>
+<p>exactimageresizer.com: задай ширину, высоту и максимальный размер в килобайтах, картинка сжата прямо в браузере, без регистрации. Мелочь, но именно такие мелочи собирают SEO-трафик из «надо фото до 50 КБ для заявления». Паттерн для тебя: однозадачный сайт без бэкенда — это чистый PWA-стек, который у тебя уже есть. Хороший кандидат жанра «сервис на неделю» между большими проектами.</p>
+<h3>4. Video chats, but with a "talking stick"</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xjywds/video_chats_but_with_a_talking_stick/">Читать</a></strong> — <em>«Видеозвонки, но с "посохом оратора"»</em></p>
+<p>stikchat.com: видео-созвоны, где одновременно говорит один — по очереди передаётся «посох» (как в древнем ритуале переговоров). Гиперузкая фича против «все говорят вперебой». Для тебя это пример того, как продуктовая идея может быть одной механикой — не «новый Zoom», а «Zoom минус перебивания». И технически полезно: mirotalk/Jitsi-стек на стыке с твоими планами по PWA и голосу.</p>
+<h3>5. My cousin died two weeks ago. I built a quiet place to light a candle for someone you miss.</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xi5g3g/my_cousin_died_two_weeks_ago_i_built_a_quiet/">Читать</a></strong> — <em>«Умерла моя двоюродная сестра. Я сделал тихое место, где можно зажечь свечу по человеку, которого не хватает» — на карте мира на сутки появляется свеча памяти; без регистрации, без трекинга</em></p>
+<p>Не ИТ-история, а человеческая: карта мира, на которой ты можешь «зажечь свечу» памяти на сутки, сделанная в честь умершего родственника. Трогательная механика в духе neocities: минимум фич, максимум смысла. Для тебя это то, что стоит помнить, строя какие-то сервисы: иногда «фишка, которой нет» — это не технология, а эмоциональный момент, который другим сервисам просто не пришёл в голову.</p>
+<p><strong>Остальное с Reddit r/SideProject (только заголовки):</strong></p>
+<ul>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xjvg1m/got_bored_during_a_lecture_ended_up_testing_my/">Got bored during a lecture, ended up testing my head-tracking wallpaper</a> — Holoscape: живые обои со сдвигом перспективы от слежения за головой через веб-камеру (около 2% CPU) · <a href="https://www.reddit.com/r/SideProject/comments/1xjvg1m/got_bored_during_a_lecture_ended_up_testing_my/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xjzpo1/i_got_tired_of_scrolling_down_to_read_comments_so/">I got tired of scrolling down to read comments, so I built a Chrome extension that puts YouTube comments right next to the video</a> — расширение, которое показывает комментарии YouTube рядом с видео, не прокручивая вниз · <a href="https://www.reddit.com/r/SideProject/comments/1xjzpo1/i_got_tired_of_scrolling_down_to_read_comments_so/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xk3w9d/im_building_an_iphone_podcast_player_that_merges/">I'm building an iPhone podcast player that merges YouTube Music podcasts with RSS feeds. Would anyone else use it?</a> — сбор плеера, который соединяет подкасты из YouTube Music и RSS-лент в одном месте · <a href="https://www.reddit.com/r/SideProject/comments/1xk3w9d/im_building_an_iphone_podcast_player_that_merges/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xjx5py/side_project_rewrite_a_better_version_of_quicken/">Side Project: Rewrite a better version of Quicken.</a> — «надоело, что Quicken тормозит и зависает, хочу переписать лучше»: дискуссия о реалистичности переписывания больших продуктов в одиночку · <a href="https://www.reddit.com/r/SideProject/comments/1xjx5py/side_project_rewrite_a_better_version_of_quicken/">Читать</a></li>
+<li>🏷 <a href="https://www.reddit.com/r/SideProject/comments/1xk24mp/my_svg_editor_is_live/">My SVG editor is live!</a> — редактор SVG в браузере, без регистрации, с фильтрами и кистями; тема, близкая твоим «Чудикам» (там SVG вручную) · <a href="https://www.reddit.com/r/SideProject/comments/1xk24mp/my_svg_editor_is_live/">Читать</a></li>
+</ul>
+<h2>Итог дня</h2>
+<p>День прошёл под знаком доверия и проверок. Первая нить — безопасность: бэкдор в официальном расширении Claude Code на Cursor Marketplace (тема №1 дня, 873 балла), взлом Binance за 20 минут, взлом Northflank — и всё это в один день. Практический вывод тебе: «официальное» не равно «проверенному», подтверждение через второй независимый канал — не паранойя, а норма, и твой собственный конвейер с внешними чеками (200 от сайта, rclone lsf, ссылка ВК) — правильная привычка. Вторая нить — рынок труда: Cisco открыто говорит «entry-level разработчиков больше не берём, вместо этого — один инженер с безлимитными токенами», плюс Habr пишет «ИИ деквалифицирует SRE, а не заменяет их». Оба сигнала складываются в одну картину для твоего ухода с основной работы: вход через классические джун-позиции сужается, вход через «человек, который ведёт агентов по большому коду» — расширяется. Третья нить — прикладная: cfsolve (Turnstile без браузера) для твоих парсеров, методика подсчёта цены Gemini vs DeepSeek с учётом промахов кэша для замены Replicate, и Habr-статья «Черепашка, Дракон и вайбкодинг» как историческая рамка всей твоей ситуации. Что реально сделать на неделе из этого дня: проверить свои расширения VS Code (что установлено и откуда), прочитать пост про деквалификацию целиком (это твоя защита от «ИИ всё сделает») и пройти по ссылке «галактики репозиториев» — приём для показа твоего portfolio.</p>
+</article>
+<nav class="paging"><a href="2026-10-29.html">← 2026-10-29</a><span class="cur">2026-10-31</span><span class="empty">→</span></nav>
+<footer class="site"><a href="index.html">⟵ все выпуски</a></footer>
+<script>document.addEventListener('keydown', function(e){
+  if(e.target.tagName==='INPUT')return;
+  var links=document.querySelectorAll('nav.paging a[href]');
+  if(e.key==='ArrowLeft'&&links[0])location.href=links[0].href;
+  if(e.key==='ArrowRight'&&links[links.length-1])location.href=links[links.length-1].href;
+});
+</script>
+
+
+</body>
+</html>
