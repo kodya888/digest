@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#faf9f6">
+<title>Дайджест 2026-11-03</title>
+<link rel="icon" href="icon-192.png" />
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+<script src="theme.js" defer></script>
+<script src="sw-register.js" defer></script>
+</head>
+<body>
+
+<header class="site">
+  <a class="home" href="index.html">⟵ все выпуски</a>
+  <button class="theme" aria-label="Сменить тему">◐</button>
+</header>
+<article>
+<p>Новых постов: 50 (HN 15, Habr 15, Reddit 20; r/vibecoding 10 + r/SideProject 10).
+Сортировка по интересу к твоим темам (Claude Code, AI-агенты, вайбкодинг, парсеры, Python,
+фриланс/поиск работы). Метка 🏷 — только заголовок/выдержка.</p>
+<h2>Hacker News</h2>
+<h3>1. Astra can read and write weights to improve Qwen</h3>
+<p><strong><a href="https://rikiyat.github.io/blog/weight-space-programming/">Оригинал</a></strong> · 2410 баллов, 755 комментариев · <a href="https://news.ycombinator.com/item?id=50341174">Обсуждение</a>
+<em>«Astra умеет читать и записывать веса модели, чтобы улучшать Qwen»</em></p>
+<p>Эксперимент на самой горячей волне дня: агент-ИИ подключён не к коду, а прямо к весам открытой модели (Qwen) — читает их, правит и записывает обратно, «программирование в пространстве весов». Это шаг дальше вайбкодинга: ИИ улучшает не программу, а саму нейросеть. Для тебя это фон, но важный: открытые модели (Qwen — как раз та, что у тебя локально через Ollama) — основная лаборатория таких экспериментов, и именно они дают тебе независимость от облачных API.</p>
+<h3>2. WTF Ubuntu?</h3>
+<p><strong><a href="https://chalmovsky.com/posts/wtf-ubuntu">Оригинал</a></strong> · 1446 баллов, 613 комментариев · <a href="https://news.ycombinator.com/item?id=50337608">Обсуждение</a>
+<em>«Что за дела, Ubuntu?»</em></p>
+<p>Большой разбор раздражающих нововведений свежих Ubuntu (навязчивые опросы, телеметрия, сомнительные дефолты). Полезно тебе дважды: во-первых, Linux-сервер для своих сервисов рано или поздно встанет в твой путь — и выбирать дистрибутив стоит с этими претензиями в голове; во-вторых, это живой пример того, как сообщество голосует против «удобств» платформы — тебе то же самое делают закрытые соцсети, с которых ты собираешь данные.</p>
+<h3>3. Show HN: Subvocal – Talk to your computer without making noise</h3>
+<p><strong><a href="https://news.ycombinator.com/item?id=50340088">Оригинал</a></strong> · 653 балла, 327 комментариев · <a href="https://news.ycombinator.com/item?id=50340088">Обсуждение</a>
+<em>«Subvocal: говори компьютеру без звука — тихо, без произнесения вслух»</em></p>
+<p>Система, которая распознаёт речь по сигналам мышц горла (или шёпоту) — можно диктовать команды компьютеру в открытой комнате, не мешая никому. Прямо твой сосед по цеху: у тебя Handy для диктовки уже стоит, а это следующий класс таких устройств. Ниша «тихий ввод для ИИ-агентов» — хорошая иллюстрация, как обычный интерфейс (голос) доводят до продукта узкой доработкой.</p>
+<h3>4. If you love a website, back it up</h3>
+<p><strong><a href="https://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up/">Оригинал</a></strong> · 500 баллов, 110 комментариев · <a href="https://news.ycombinator.com/item?id=50336518">Обсуждение</a>
+<em>«Если любишь сайт — сделай его резервную копию»</em></p>
+<p>Эссе про то, что сайты умирают молча: хостинг закрылся, домен не продлили, база «засыпает» — и текст исчезает навсегда. Автор призывает сохранять любимые ресурсы локально. Ты уже столкнулся с этим лично: Supabase у blagodarnosti засыпает без активности, а Reddit RSS умирает 13.11. Правило «внешний след подтверждён» из твоих правил проверки — это ровно та же дисциплина с другой стороны: не только фиксируй свой результат, но и копируй чужие данные, пока источник жив.</p>
+<h3>5. Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks</h3>
+<p><strong><a href="https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432">Оригинал</a></strong> · 440 баллов, 128 комментариев · <a href="https://news.ycombinator.com/item?id=50341462">Обсуждение</a>
+<em>«Ubuntu почти 3 недели не выпускает патч для критической уязвимости 0day (удалённое исполнение кода)»</em></p>
+<p>Логи повторяют вчерашний тред «WTF Ubuntu?»: в LTS-ядрах Ubuntu почти три недели не закрыта критическая дыра, позволяющая выполнить чужой код удалённо. Урок не «Ubuntu — отстой», а то, что даже крупные мейнтейнеры не успевают за уязвимостями так быстро, как хотелось бы. Если будешь поднимать свой сервер — правило простое: минимальный набор открытых портов и включённые автообновления безопасности, потому что «кто-то заметит» обычно первым оказывается бот-сканер.</p>
+<h3>6. The SEC Should Block Anthropic's IPO to Protect the Public</h3>
+<p><strong><a href="https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/">Оригинал</a></strong> · 304 балла, 232 комментария · <a href="https://news.ycombinator.com/item?id=50344919">Обсуждение</a>
+<em>«SEC должна заблокировать IPO Anthropic, чтобы защитить публику»</em></p>
+<p>Мнение-колонка: автор считает, что Anthropic нельзя выпускать на биржу, пока неясны её финансовая модель и обещания по безопасности. Комиссии взрываются спором про то, честно ли «мы горим желанием делать безопасный ИИ» сочетается с гонкой выручки. Для тебя это фоновый маркер индустрии: даже «наши» компании (Claude Code работает именно на их модели) живут в состоянии, где их будущее могут обсуждать на уровне регулятора — значит, держать свои цепочки гибкими (репликейт как тест, VseGPT/RouterAI как прод) — правильная стратегия.</p>
+<h3>7. Scaling Git at OpenAI</h3>
+<p><strong><a href="https://openai.com/index/scaling-git-at-openai/">Оригинал</a></strong> · 175 баллов, 89 комментариев · <a href="https://news.ycombinator.com/item?id=50345924">Обсуждение</a>
+<em>«Масштабирование Git в OpenAI»</em></p>
+<p>Разбор изнутри: как OpenAI держит Git-инфраструктуру, когда агенты генерируют коммиты с нечеловеческой скоростью. Полезно тебе как ориентир «кухни», на которой сделан твой собственный инструмент: Claude Code ровно про этот мир — тысячи агентов, каждый пишет код, и вся система версионирования должна пережить такой поток. Мелкий практический вывод: твои мелкие репозитории (digest_repo) можно не бояться «засорять» коммитами — Git спроектирован для масштаба сильно больше твоего.</p>
+<h3>8. Egoless Mathematics in the AI Era</h3>
+<p><strong><a href="https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/">Оригинал</a></strong> · 148 баллов, 99 комментариев · <a href="https://news.ycombinator.com/item?id=50341736">Обсуждение</a>
+<em>«Математика без эго в эпоху ИИ»</em></p>
+<p>Терри Тао продолжает вчерашнюю мысль: раз ИИ меняет математику, меняется и психология профессии — надо учиться работе без «моей идеи, моя заслуга». Это практически учебник для вайбкодера: твой путь — «я придумал, агент написал» — ровно та же профессия без эго, только в коде. Читать стоит и ради формулировок: он объясняет, почему «безопасно делиться черновиками с машиной» стало нормой, а не стыдом.</p>
+<h2>Habr</h2>
+<h3>1. Claude Opus 5.5 у пяти зарубежных API-роутеров: пеликан на велосипеде и фламинго на моноцикле</h3>
+<p><strong><a href="https://habr.com/ru/articles/1102976">Оригинал</a></strong>
+Практическое сравнение пяти брокеров API (включая OpenRouter-подобные) на одной сложной задаче генерации картинок. Это ровно твоя тема «замена Replicate»: автор проверяет не рекламные обещания, а реальную скорость и качество у каждого роутера. Сравни его таблицу со своей схемой VseGPT/RouterAI/AITunnel — особенно по цене за токен и по стабильности ответа, а не по «есть ли вообще модель».</p>
+<h3>2. Как посчитать реальную цену секунды AI-видео: оплаченная и принятая секунда, лог дублей на Python</h3>
+<p><strong><a href="https://habr.com/ru/articles/1102006">Оригинал</a></strong>
+Практика учёта себестоимости AI-видео: не «сколько стоит генерация», а «сколько стоит принятый дубль» — с Python-логом брака. Это прямой рабочий инструмент для твоего detali_clip: у тебя бюджет на Kling 2,5–4,5 т.р. и наверняка будут дубли-брак, который тоже платный. Лог дублей — готовый приём, чтобы не потерять деньги на третьем перегене.</p>
+<h3>3. Локальный ИИ на Windows в один клик: установщик Ollama с подбором модели под железо на Python и pywebview</h3>
+<p><strong><a href="https://habr.com/ru/articles/1102980">Оригинал</a></strong>
+Автор сделал установщик, который сам подбирает модель Ollama под слабое железо и ставит её одним кликом. Ты с Ollama живёшь каждый день — и на слабом ноуте. Идея «обёртка над подбирающей логикой» — типичный маленький сервис с ясной аудиторией: люди с твоими же ограничениями (старое железо, без интернета, локально). Проверь, что там уже покрыто, прежде чем делать своё — возможно, есть готовое решение, которое стоит просто рекомендовать.</p>
+<h3>4. Топ-10 бесплатных (в основном) ресурсов для перехода QA → AI/ML</h3>
+<p><strong><a href="https://habr.com/ru/articles/1102544">Оригинал</a></strong>
+Подборка бесплатных курсов и материалов для смены профессии на AI/ML из смежной сферы. Тебе полезна не как программа обучения (твоя линия — вайбкодинг, не ML-инженерия), а как карта рынка «куда сейчас идёт народ»: QA массово переучивается на ИИ-специальности. Это ровно тот поток конкуренции, с которым ты столкнёшься при поиске работы — знать его структуру стоит хотя бы по верхам.</p>
+<h3>5. Не ждите обновлений от 1С. У вас есть DeepSeek</h3>
+<p><strong><a href="https://habr.com/ru/articles/1102948">Оригинал</a></strong>
+Автор показывает, как решать задачи 1С (стандартный корпоративный учёт в РФ) не через официальные обновления, а через подключённую LLM. Комбинация «скучная enterprise-ниша + готовая LLM» — типовой паттерн для фриланса: людей, готовых автоматизировать 1С руками, мало, а спрос стабильный. Если вернёшься к теме «мост = ТП 1С» для трудоустройства — это ещё один аргумент, что связка «1С + ИИ» живёт отдельно от 1С-разработчиков.</p>
+<h3>6. Как дать AI-менеджеру маркетплейсов писать код и не пустить его к серверу</h3>
+<p><strong><a href="https://habr.com/ru/articles/1102932">Оригинал</a></strong>
+Практический разбор архитектуры: как разрешить AI-агенту писать код, но технически не дать ему доступ к продакшен-серверу. Твоя тема напрямую: у тебя тоже агент (Claude Code) пишет код и ты стоишь рядом. Автор, похоже, описывает тот же паттерн, что ты сам используешь ручными правками — «сначала изолированная зона, потом человек решает, что выкатывать». Полезно сверить его механику со своей текущей ручной.</p>
+<h3>7. Озвучил всю GTA V по-русски нейросетью: как сгенерировать 220 часов речи и не привлечь внимание санитаров</h3>
+<p><strong><a href="https://habr.com/ru/articles/1102978">Оригинал</a></strong>
+Толстая история о том, как озвучить огромный корпус диалогов ИИ-голосом: пайплайн, подводные камни, качество. Тебе полезно как карта рисков для любого проекта с TTS: у тебя в планах была озвучка контента для VK, и «220 часов» показывает, где такие проекты ломаются — на проверке ударений, на паузах, на единообразии голоса. Читать перед тем, как браться за свою озвучку.</p>
+<h3>8. Доказано ≠ безопасно: как каскады ИИ-агентов заставили меня усилить модель угроз</h3>
+<p><strong><a href="https://habr.com/ru/articles/1102822">Оригинал</a></strong>
+Автор про безопасность связки из нескольких ИИ-агентов: «каждый шаг по отдельности прошёл проверку» не значит «весь каскад безопасен» — ошибки, пропущенные на первом шаге, накапливаются к последнему. Это прямое расширение твоего правила «команда прошла без ошибок — НЕ подтверждение»: у тебя в конвейере тоже каскад (сбор → дайджест → сайт → Диск → пост), и именно поэтому ты проверяешь каждый шаг внешним следом, а не только кодом возврата скрипта.</p>
+<h2>Reddit</h2>
+<h3>1. One Person Built This in Four Days With Opus 5.5 + Godot. And It Was So Much Fun</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xm9vfm/one_person_built_this_in_four_days_with_opus_55/">Оригинал</a></strong> · r/vibecoding
+<em>«Один человек сделал это за четыре дня с Opus 5.5 + Godot. И это было очень весело»</em></p>
+<p>Разбор чужой сборки: играбельный хоррор-уровень в духе Silent Hill, сделанный одним человеком за 4 дня через Claude Opus 5.5 + Godot + AI-3D-модели (Meshy, Nano Banana). Полезно тебе как свежий чек-лист инструментария: именно эта связка (Claude Code + Godot + nano-banana на текстуры) — рабочий стандарт жанра «игра за неделю». И второе: автор пишет «ручных правок кода — ноль», но с опытом 3D — то есть ИИ берёт на себя код, человек держит вкус.</p>
+<h3>2. Follow-up to my 52-hour horror game: the step-by-step workflow behind 150 AI 3D models</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xlze2z/followup_to_my_52hour_horror_game_the_stepbystep/">Оригинал</a></strong> · r/vibecoding
+<em>«Продолжение истории про хоррор за 52 часа: пошаговый конвейер, который примирил 150 AI-3D-моделей»</em></p>
+<p>Пошаговая методика, как из 150 сгенерированных по отдельности 3D-моделей получить «один дом», а не мусорку: сначала выбрать стиль, писать оду строку стиля в конце каждого промта, сделать референс-картинку и в 3D отправлять только лучшие. Это конвейерная дисциплина, которую ты уже знаешь по 3dtur (маска → kontext → nano-banana) — здесь она описана на 3D, и её можно переиспользовать в любых генеративных потоках. Хорошая иллюстрация: «сначала стиль, потом всё остальное» — универсальное правило.</p>
+<h3>3. I turned 100 old science fiction books into a database of 6,222 startup ideas</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xly9r8/i_turned_100_old_science_fiction_books_into_a/">Оригинал</a></strong> · r/SideProject
+<em>«Я превратил 100 старых научных фантастических книг в базу из 6222 идей для стартапов»</em></p>
+<p>Человек через ИИ вытащил из старых фантастических книг 6222 «изобретения, которых никто не построил», и сделал из этого интерактивный архив. Это ровно тот же приём, что ты сам любишь: взять непопулярный источник и превратить его в структурированные данные парсером. Для тебя практическое: идея «вынуть идеи из корпуса текстов и перевернуть их в продукт» — твой жанр; а ещё это готовое напоминание, что идеи для твоих сервисов можно добывать не только на Reddit, но и из книг.</p>
+<h3>4. My last post got 75 comments asking how a free Chrome extension makes money. Here are the straight answers.</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xme911/my_last_post_got_75_comments_asking_how_a_free/">Оригинал</a></strong> · r/SideProject
+<em>«Под прошлым постом было 75 комментариев на тему „как монетизируется бесплатное расширение“. Вот честные ответы»</em></p>
+<p>Автор бесплатного Chrome-расширения с цифрами отвечает на вопрос «как зарабатываете»: базовая функция бесплатно, Pro — то, чем люди пользуются каждый день. Это ровно тот разбор, который тебе нужен по твоему правилу «сначала где деньги»: маленький продукт с freemium-стенкой на ежедневной функции — самый рабочий шаблон монетизации для первого сервиса. Обрати внимание на формулировку Pro-функции: не «больше кнопок», а «то, что используешь каждый день».</p>
+<h3>5. I'm not buying the "built it in 2 days, now at XYZ MRR" stories</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xmeadb/im_not_buying_the_built_it_in_2_days_now_at_xyz/">Оригинал</a></strong> · r/SideProject
+<em>«Я не верю историям "сделал за 2 дня, теперь XYZ MRR"»</em></p>
+<p>Человек разобрал «истории успеха» с Reddit и обнаружил, что половина из них — фикция: продукта нет, цифры со скриншотов Stripe подделаны. Это полезная прививка ровно в духе твоего правила «не сглаживать» и «внешний след подтверждён»: чужие истории успеха — тоже claims, требующие проверки. И вывод в оба конца: не верить чужим «X за 2 дня», и не создавать своих — твой блог/сообщество выигрывает от честности, потому что «историй про 4К MRR» уже больше, чем читателей.</p>
+<h3>6. Built a supply chain security tool you can see</h3>
+<p><strong><a href="https://www.reddit.com/r/vibecoding/comments/1xmeyh6/built_a_supply_chain_security_tool_you_can_see/">Оригинал</a></strong> · r/vibecoding
+<em>«Сделал инструмент безопасности цепочки поставок, который можно увидеть»</em></p>
+<p>Автор построил инструмент, который визуализирует зависимости приложения в 3D (Three.js через React Three Fiber) и ранжирует, что чинить сначала. С точки зрения вайбкодинга это полезный пример: «взять сухие данные (уязвимости) и сделать их осязаемыми (3D-граф)» — типовой рецепт визуального продукта, который стоит держать в голове. Технически стек Next.js + Supabase + Vercel — тот же стандарт, что у тебя на digest-сайте.</p>
+<h3>7. My side project just passed 100 GitHub stars: system design diagrams that tell you if the design would hold up</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xm1be2/my_side_project_just_passed_100_github_stars/">Оригинал</a></strong> · r/SideProject
+<em>«Проект прошёл 100 звёзд на GitHub: диаграммы архитектуры, которые показывают, выдержит ли она нагрузку»</em></p>
+<p>Инструмент, где ты описываешь систему текстом (например, «у меня одна реплика БД»), а он рисует диаграмму и проигрывает нагрузку с latency и стоимостью — и требования могут «заваливаться как тесты». Полезно тебе не как инструмент (твои сервисы ещё не доходят до таких нагрузок), а как пример «спецификация кодом» — очень похожий приём на то, что делает Claude Code с твоими задачами: описание в виде, который машина может проверить.</p>
+<h3>8. I built a café where solo builders can work side by side</h3>
+<p><strong><a href="https://www.reddit.com/r/SideProject/comments/1xmkh1r/i_built_a_café_where_solo_builders_can_work_side/">Оригинал</a></strong> · r/SideProject
+<em>«Я сделал кафе, где соло-разработчики могут работать бок о бок» — маленькая 3D-кофейня в браузере для тех, кто строит проекты в одиночку.</em></p>
+<p>Автор собрал ровно то же место, что ты задумал в «форуме пет-проектов»: пространственное место, где видно, что люди реально работают, что выкатили, сколько часов. Механика взаимности у тебя спроектирована раньше и с более чётким условием «ядро 10 человек»; этот чужой пример — полезный ориентир, что такие места выживают не за счёт механики, а за счёт того, что людям не стыдно прийти с незаконченным проектом. Держи в запасе как референс, если форум оживёт.</p>
+<h3>Остальное (коротко, 🏷)</h3>
+<p><strong>Hacker News:</strong>
+- <a href="https://p.migdal.pl/warsaw-vibe-voxel/">Show HN: Warsaw in voxels</a> — 250 баллов. <em>Интерактивная 3D-карта Варшавы в вокселях.</em>
+- <a href="https://news.ycombinator.com/item?id=50338728">Ask HN: Who is hiring? (November 2026)</a> — 210 баллов, 165 комментариев. <em>Ежемесячный тред найма — прямо твой раздел для мониторинга рынка.</em>
+- <a href="https://hackertimes.ca/">Show HN: Hacker Times</a> — 185 баллов. <em>Интерфейс для Hacker News «как в New York Times».</em>
+- <a href="https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you">Self-Employed? NIST Has a Cybersecurity Guide Just for You</a> — 184 балла. <em>Гайд по кибербезопасности для самозанятых — актуально тебе как предпринимателю-одиночке.</em>
+- <a href="https://namedaisy.com/blog/boy-names-that-became-girl-names">US boy names that became girl names and vice versa</a> — 357 баллов. <em>Данные + любопытный разбор без ИИ.</em>
+- <a href="https://blog.cloudflare.com/dns-targeted-zone-builds/">We halved DNS build delay and cut memory use by 85%</a> — 175 баллов. <em>Cloudflare про инженерную оптимизацию.</em>
+- <a href="https://finance.yahoo.com/markets/article/the-intel-stock-collapse-is-getting-worse--and-the-37-trillion-chip-rout-is-spreading-212154947.html">Intel stock collapse worsens as $3.5T chip rout spreads</a> — 186 баллов. <em>Обвал акций чипмейкеров.</em>
+- <a href="https://openai.com/index/scaling-git-at-openai/">Scaling Git at OpenAI</a> — 175 баллов. <em>Как OpenAI держит Git при тысяче агентов.</em></p>
+<p><strong>Habr:</strong>
+- <a href="https://habr.com/ru/articles/1102928">Как предыстория диалога меняет рекомендации ChatGPT, Perplexity и Алисы AI</a> — «ИИ подстраивается под историю чата: что это значит на практике».
+- <a href="https://habr.com/ru/articles/1102400">Автомат направляет, а LLM объясняет: диалог с агентом за 3 рубля</a> — «дешёвая связка бот + LLM».
+- <a href="https://habr.com/ru/articles/1102972">Три нейрона — и Qwen называет себя кофейным зерном</a> — «как ломается модель простым вводом».
+- <a href="https://habr.com/ru/articles/1102876">LLM после работы: интерактивная книга на ESP32-P4</a> — «локальный ИИ в самодельном железе».
+- <a href="https://habr.com/ru/articles/1102946">GateRook: Как я дал ИИ доступ к базам и логам, сохранив контроль над изменениями</a> — «агент читает, но не ломает: разграничение прав».
+- <a href="https://habr.com/ru/articles/1102922">Бэкдор с паролем 123456 и ключи в коде: как ИИ вскрывал «шифрованные» USB-накопители</a> — «перевод: ИИ нашёл бэкдоры в „защищённых“ флешках».
+- <a href="https://habr.com/ru/articles/1102896">Два ролика для игры на Unreal Engine 5: как я ставил сцены с помощью ИИ</a> — «сценки UE5 через ИИ».</p>
+<p><strong>Reddit:</strong>
+- <a href="https://www.reddit.com/r/vibecoding/comments/1xmcbm6/adopting_this/">Adopting this</a> — «мем о том, что чужой инструмент стоит внедрить».
+- <a href="https://www.reddit.com/r/vibecoding/comments/1xlxfxe/before_vs_now_my_railshooter_game_after_several/">Before vs. Now | My Rail-Shooter Game after several months — Devlog</a> — «до/после в многодневном проекте».
+- <a href="https://www.reddit.com/r/vibecoding/comments/1xmhx3y/hit_my_github_usage_amount_and_not_sure_what_to_do/">Hit my GitHub usage amount and not sure what to do</a> — «упёрся в лимиты GitHub, что дальше».
+- <a href="https://www.reddit.com/r/vibecoding/comments/1xmfev7/i_think_my_ai_needs_to_rethink_his_wording_a/">I think my AI needs to rethink his wording a little bit 😂</a> — «ИИ сказал смешное — мем».
+- <a href="https://www.reddit.com/r/vibecoding/comments/1xmkxqy/some_one_create_stay_free_app_opensource/">Some one create Stay Free app opensource</a> — «запрос на open-source клон известного приложения».
+- <a href="https://www.reddit.com/r/vibecoding/comments/1xm9v2c/casino_empire_build_a_1962_las_vegas_casino_in/">Casino Empire: build a 1962 Las Vegas casino in your browser</a> — «браузерная tycoon-игра без установки».
+- <a href="https://www.reddit.com/r/SideProject/comments/1xmhavi/i_made_a_gun_simulator_for_phones/">I made a gun simulator for phones</a> — «симулятор оружия с рекламой в сторах».
+- <a href="https://www.reddit.com/r/SideProject/comments/1xm3gky/1_3_million_people_visited_my_virtual_buddhist/">1.3 million people visited my virtual Buddhist temple in 4 days</a> — «виртуальный храм собрал толпу за 4 дня».
+- <a href="https://www.reddit.com/r/SideProject/comments/1xmllnd/getting_frustrated/">getting frustrated...</a> — «сделал полезные приложения, но ими никто не пользуется».
+- <a href="https://www.reddit.com/r/SideProject/comments/1xmlh7u/i_spent_months_building_an_ai_desktop_voice/">I spent months building an AI desktop voice assistant, it can draw and explain in your screen</a> — «голосовой ИИ-оверлей с Alt+V и локальным распознаванием».
+- <a href="https://www.reddit.com/r/SideProject/comments/1xmd6fn/im_building_a_directory_of_products_that_help/">I'm building a directory of products that help with ADHD</a> — «каталог приложений при ADHD — ниша, где реально платят за ориентир».</p>
+<h2>Итог дня</h2>
+<p>Главная волна дня — два «Ubuntu-треда» (1446 и 440 баллов) про то, что привычный
+дистрибутив разочаровывает и безопасность в нём буксует; это фон для будущих
+серверных решений. Вторая линия — ИИ-агенты берутся за то, что раньше было
+только у людей: правка весов модели (Astra, 2410 балл), озвучка 220 часов речи,
+автоматизация 1С. Третья — практика твоих же жанров: конвейер для 150 AI-3D
+моделей, лог себестоимости AI-видео, монетизация маленького расширения
+с freemium на ежедневной функции. И напоминание дня: «сделал за 2 дня, 4К MRR»
+— чаще выдумка, чем факт; проверяй чужие истории внешними следами, как и свои.</p>
+<p><strong>Три полезных вещи на сегодня:</strong>
+1. Лог дублей AI-видео из статьи №2 — забрать механику в detali_clip, чтобы не
+   потерять деньги на перегенах.
+2. Сравнение пяти API-роутеров для Opus 5.5 — сверить с твоей схемой
+   VseGPT/RouterAI/AITunnel по цене и стабильности.
+3. Статья про freemium-расширение с цифрами — готовый шаблон «как выглядит
+   честная монетизация маленького продукта», пригодится для первых сервисов.</p>
+</article>
+<nav class="paging"><a href="2026-11-02.html">← 2026-11-02</a><span class="cur">2026-11-03</span><span class="empty">→</span></nav>
+<footer class="site"><a href="index.html">⟵ все выпуски</a></footer>
+<script>document.addEventListener('keydown', function(e){
+  if(e.target.tagName==='INPUT')return;
+  var links=document.querySelectorAll('nav.paging a[href]');
+  if(e.key==='ArrowLeft'&&links[0])location.href=links[0].href;
+  if(e.key==='ArrowRight'&&links[links.length-1])location.href=links[links.length-1].href;
+});
+</script>
+
+
+</body>
+</html>
