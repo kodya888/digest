@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#faf9f6">
+<title>Дайджест 2026-11-10</title>
+<link rel="icon" href="icon-192.png" />
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+<script src="theme.js" defer></script>
+<script src="sw-register.js" defer></script>
+</head>
+<body>
+
+<header class="site">
+  <a class="home" href="index.html">⟵ все выпуски</a>
+  <button class="theme" aria-label="Сменить тему">◐</button>
+</header>
+<article>
+<p>Собран автоматически из Hacker News, Habr и Reddit (r/vibecoding, r/SideProject).
+Формат: топ-8 по каждой площадке с комментариями, затем «Остальное» и «Итог дня».</p>
+<h2>Hacker News</h2>
+<ol>
+<li>
+<p><strong>Claude Fable 5.2 and Mythos 5.2</strong> — 777 / 917 комм.
+   <em>Claude Fable 5.2 и Mythos 5.2</em>
+   https://www.anthropic.com/claude-fable-and-mythos-5-2
+   Обсуждение: https://news.ycombinator.com/item?id=50429068
+   Комментарий: Обновление линейки Fable/Mythos — 917 комментариев говорят, что обсуждают и изменения в характере моделей, и «сбросы» в поведении. Для вайбкодинга это рабочий инструмент, так что стоит глянуть changelog и тред, что реально поменялось.</p>
+</li>
+<li>
+<p><strong>USPS now offers official ZIP Code boundary polygons</strong> — 693 / 356 комм.
+   <em>Почта США отдаёт официальные границы ZIP-кодов (полигоны)</em>
+   https://postalpro.usps.com/zcb
+   Обсуждение: https://news.ycombinator.com/item?id=50431058
+   Комментарий: Открытые гео-данные от государственной службы. Раньше границы ZIP-кодов были платными/неофициальными, теперь официальные полигоны. Полезный сигнал: государственные геослои всё чаще выкладывают бесплатно — это сырьё для нишевых карт-сервисов.</p>
+</li>
+<li>
+<p><strong>Payments Canada announces launch of Canada's Real-Time Rail (RTR)</strong> — 563 / 325 комм.
+   <em>Канада запустила национальную систему мгновенных платежей RTR</em>
+   https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-
+   Обсуждение: https://news.ycombinator.com/item?id=50427362
+   Комментарий: Канада наконец догнала мир по мгновенным переводам 24/7. Интересно по аналогии: в РФ инфраструктура быстрых платежей уже зрелая — обсуждение даёт представление, какие бизнес-сервисы вырастают вокруг таких систем.</p>
+</li>
+<li>
+<p><strong>Amazon saves millions by replacing Sonnet 4.6 with Strands Decider</strong> — 529 / 194 комм.
+   <em>Amazon экономит миллионы, заменив Sonnet 4.6 на Strands Decider</em>
+   https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/
+   Обсуждение: https://news.ycombinator.com/item?id=50436640
+   Комментарий: Амазон заменил дорогую LLM на собственный «decider» (решающее правило) там, где модель была оверкилл. Тренд «правильная модель на правильное место» — маленькие/дешёвые компоненты вместо большой модели везде. Прямо про знакомую боль с лимитами и ценами токенов.</p>
+</li>
+<li>
+<p><strong>E-means: Outperforming k-means in one-tenth the epochs</strong> — 462 / 66 комм.
+   <em>E-means: обгоняет k-means за одну десятую эпох</em>
+   https://e-means.github.io/
+   Обсуждение: https://news.ycombinator.com/item?id=50429734
+   Комментарий: Улучшение классического алгоритма кластеризации k-means — сходится в 10 раз быстрее. Не LLM, но полезное напоминание: классика ML тоже развивается, и быстрая кластеризация пригождается в парсерах для группировки похожих записей.</p>
+</li>
+<li>
+<p><strong>AlphaProof Code</strong> — 334 / 116 комм.
+   <em>AlphaProof Code (DeepMind)</em>
+   https://deepmind.google/blog/introducing-alphaproof-code/
+   Обсуждение: https://news.ycombinator.com/item?id=50439193
+   Комментарий: DeepMind перенёс подход AlphaProof (машинное доказательство теорем) на код. Идея: код, который модель «доказует», а не просто генерирует. Пока исследовательский проект, но это вектор «верифицируемой генерации» — код с гарантиями вместо кода «наугад».</p>
+</li>
+<li>
+<p><strong>Locating the source of a mysterious beep</strong> — 268 / 136 комм.
+   <em>Вычисляем источник загадочного писка</em>
+   https://simonwillison.net/2026/Nov/9/mysterious-beeps/
+   Обсуждение: https://news.ycombinator.com/item?id=50434310
+   Комментарий: Simon Willison (автор известного блога про LLM) расследовал странный писк дома с помощью записи и анализа звука. Красивый детектив-кейс: как методично копать непонятную проблему инженерными методами — навык, который переносится на любую отладку.</p>
+</li>
+<li>
+<p><strong>Your TV can see through walls (2025)</strong> — 224 / 98 комм.
+   <em>Ваш телевизор может «видеть» сквозь стены</em>
+   https://maurycyz.com/projects/fading/
+   Обсуждение: https://news.ycombinator.com/item?id=50436410
+   Комментарий: Показ Wi-Fi CSI (sensing) — по отражениям Wi-Fi-сигнала можно улавливать движение людей в соседней комнате. Не уличный шпионаж, а техника, которая уже в потребительских устройствах. Хорошая иллюстрация «сигнал — это датчик, даже если он для видео».</p>
+</li>
+</ol>
+<h3>Остальное с HN</h3>
+<ul>
+<li><strong>Horible public key tricks</strong> — 220 / 73 комм. <em>Ужастики с публичными ключами</em> — https://maurycyz.com/projects/badcert/ — разбор забавных и страшных косяков с TLS-сертификатами «на проде». Обсуждение: https://news.ycombinator.com/item?id=50434264</li>
+<li><strong>Show HN: A 15 MB self-hosted Netflix and Spotify for your media server</strong> — 129 / 66 комм. <em>15 МБ самохостинговые Netflix и Spotify</em> — https://github.com/HolyArrs/HolyArrs — крошечный сервер для своих фильмов/музыки, в духе «локальные приложения вместо облака». Обсуждение: https://news.ycombinator.com/item?id=50439000</li>
+<li><strong>Ableton Live 13</strong> — 127 / 138 комм. <em>Ableton Live 13</em> — https://www.ableton.com/en/live/ — новая версия популярной DAW; тема «софт для творчества», у тебя уже был кейс с Suno/Mureka. Обсуждение: https://news.ycombinator.com/item?id=50439695</li>
+<li><strong>Fireworks AI security breach impacts Notion and their customers</strong> — 121 / 41 комм. <em>Утечка у Fireworks AI затронула Notion и клиентов</em> — https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor — инцидент: данные утекли через стороннего ИИ-провайдера. Напоминание проверять, куда попадают твои данные через API. Обсуждение: https://news.ycombinator.com/item?id=50437106</li>
+<li><strong>Queens Public library under ransomware attack, e-borrowing suspended</strong> — 120 / 82 комм. <em>Публичная библиотека Куинса под атакой шифровальщика</em> — https://connect.queenslibrary.org/ — ещё один кейс, что ransomware бьёт по госуслугам и книгам не меньше, чем по компаниям. Обсуждение: https://news.ycombinator.com/item?id=50437790</li>
+<li><strong>Ultorg: The User Interface for Relational Databases</strong> — 117 / 39 комм. <em>Ultorg — интерфейс к реляционным базам</em> — https://www.ultorg.com/ — GUI поверх SQL, где видишь таблицы и связи, а не абстрактные запросы. Пригодится, когда начнёшь держать данные в SQLite/Postgres, а не в файлах. Обсуждение: https://news.ycombinator.com/item?id=50435898</li>
+<li><strong>How hard is it to check for whitespace?</strong> — 90 / 22 комм. <em>Насколько сложно проверить пробельный символ?</em> — https://serce.me/posts/2026-10-30-how-hard-is-it-to-check-for-whitespace — unexpectedly глубокая история про Unicode и «а что такое пробел вообще». Напоминание, что «простая» проверка в строке таковой быть не обязана. Обсуждение: https://news.ycombinator.com/item?id=50392733</li>
+</ul>
+<h2>Habr</h2>
+<ol>
+<li>
+<p><strong>Она знает, что вы за ней следите: секрет безопасности Mythos 5.2 и разбор Claude Fable 5.2</strong> — https://habr.com/ru/companies/selectel/articles/1106104
+   Комментарий: Русскоязычный разбор тех самых новых моделей Anthropic. Компаньен к первому пункту HN — удобно читать на русском, чем самому выцарапывать детали из changelog.</p>
+</li>
+<li>
+<p><strong>Маскот для Claude Code: как узнать, что ассистент ждёт ответа, и не пропустить уведомление на Windows</strong> — https://habr.com/ru/articles/1106188
+   Комментарий: Прямо твоя тема, «Бегунок» работает по хукам той же механики — статус-питомец, который сигналит, когда Claude ждёт ввода. Можно подсмотреть идеи реализации и полировки.</p>
+</li>
+<li>
+<p><strong>Не ИИ обесценил сеньоров. Это сделали ваши собеседования</strong> — https://habr.com/ru/articles/1106156
+   Комментарий: Провокационный пост: не ИИ удешевил работу сеньоров, а нанимающие процессы, построенные на «задачках с собесов». Полезно читать как соискателю — даёт трезвую рамку, что именно рынок на самом деле оценивает.</p>
+</li>
+<li>
+<p><strong>Энтузиаст запустил DeepSeek-V4-Flash на ПК без видеокарты</strong> — https://habr.com/ru/companies/selectel/articles/1106120
+   Комментарий: Локальный запуск свежей DeepSeek на железе без GPU. В тему твоей любви к локальным приложениям: сжатие и квантизация уже делают большие модели запускаемыми на обычном железе.</p>
+</li>
+<li>
+<p><strong>Google представила Gemini Omni 1.2 Flash: видео до 15 секунд и снижение цены на 30%</strong> — https://habr.com/ru/companies/speshu_ai/articles/1106176
+   Комментарий: Gemini генерирует видео до 15 секунд дешевле на 30%. Показательно: рынок видеогенерации быстро дешевеет — влияет и на бюджет твоего detali_clip (Kling), цены конкурентов падают.</p>
+</li>
+<li>
+<p><strong>Meta* сделала свою самую маленькую модель рабочей лошадкой для агентов</strong> — https://habr.com/ru/companies/selectel/articles/1106172
+   Комментарий: Meta натянула свою малую модель на агентские задачи — ещё одно подтверждение движения «маленьких моделей для рутинных агентских работ» (см. Amazon/Strands Decider в HN). Маленькие и дешёвые побеждают, когда задачу понятно описать.</p>
+</li>
+<li>
+<p><strong>Кто такой Product Engineer? И почему эта роль набирает популярность в эпоху ИИ?</strong> — https://habr.com/ru/articles/1102694
+   Комментарий: Про новую роль — инженер, который «и код, и продукт, и интерфейс», гибрид на стыке вайбкодинга и продуктового мышления. Это фактически то, чем ты занимаешься: один человек делает сервис целиком. Хорошая рамка для позиционирования в резюме.</p>
+</li>
+<li>
+<p><strong>Как мы своими силами создали ИИ-переговорщика, который не поддается оппоненту: от промпта до деплоя</strong> — https://habr.com/ru/companies/korus_consulting/articles/1106114
+   Комментарий: Практический кейс от промптов до деплоя агента, который ведёт переговоры. Полезно как образец архитектуры реального агентного продукта — не демо, а рабочий контур с обработкой крайних случаев.</p>
+</li>
+</ol>
+<h3>Остальное с Habr</h3>
+<ul>
+<li><strong>Как сайту получить клик из ИИ-обзоров Google, если описание страницы пишет нейросеть</strong> — https://habr.com/ru/articles/1106204 — SEO в эпоху ИИ-обзоров: как попадать в ответ сгенерированный моделью. Полезно, если выкладываешь что-то публично (у тебя уже есть сайт-читалка дайджестов).</li>
+<li><strong>LLM-беседы: Эмоциональность в текстах ответов</strong> — https://habr.com/ru/articles/1106192 — исследование, насколько «эмоциональные» ответы моделей и как это воспринимается пользователями.</li>
+<li><strong>Creality выпустила mBox — детский 3D-принтер со встроенными AI-инструментами для генерации моделей</strong> — https://habr.com/ru/articles/1106184 — 3D-печать встречает ИИ: рисуешь → печатается. Тема пересекается с твоим Blender-веткой в 3dtur.</li>
+<li><strong>Сделали ИИ-бота для ежедневного анализа бизнес-метрик</strong> — https://habr.com/ru/companies/avito/articles/1101542 — Авито о внутреннем боте отчётности: каждый день сам читает метрики и пишет выводы. Хороший шаблон для «утреннего дайджеста» и в рабочих задачах.</li>
+<li><strong>Владелец Parimatch вложился в несуществующий ИИ-стартап из-за обмана дипфейком</strong> — https://habr.com/ru/articles/1106138 — инвестора повели на видео-дипфейк «основателя». Жёсткий кейс про доверие к видеозвонкам; полезно знать, что такое уже реально.</li>
+<li><strong>Disney начала испытания роботов-помощников с ИИ для поиска парковочных мест</strong> — https://habr.com/ru/articles/1106130 — небольшие роботы в парках помогают искать парковку. Пока экзотика, но хорошая иллюстрация «ИИ + физический мир».</li>
+<li><strong>Как меняется работа системного аналитика с развитием ИИ: записи докладов «Кода аналитика»</strong> — https://habr.com/ru/companies/yoomoney/articles/1106106 — записи докладов: что делает системный аналитик, когда ИИ пишет ТЗ и схемы. Полезно для понимания, какие IT-роли сильнее всего перекраиваются.</li>
+</ul>
+<h2>Reddit r/vibecoding</h2>
+<ol>
+<li>
+<p><strong>We are so screwed.</strong> — https://www.reddit.com/r/vibecoding/comments/1xs79t6/we_are_so_screwed/
+   <em>«Мы в беде»</em>
+   Комментарий: Тревожный/философский тред про то, куда всё это катится. Формат сабреддита: куча ответов — от «программистам конец» до «ничего нового». Любопытно как срез настроений сообщества, не как прогноз.</p>
+</li>
+<li>
+<p><strong>[Adult Swim] Vibecoding in 2010</strong> — https://www.reddit.com/r/vibecoding/comments/1xs4p06/adult_swim_vibecoding_in_2010/
+   <em>Adult Swim: вайбкодинг в 2010-м</em>
+   Комментарий: Юмор-ролик в стиле Adult Swim: «вайбкодинг» глазами 2010 года. Хорошая передышка между техническими постами.</p>
+</li>
+<li>
+<p><strong>been vibecoding an arcade sandbox thing in unreal</strong> — https://www.reddit.com/r/vibecoding/comments/1xsa6v7/been_vibecoding_an_arcade_sandbox_thing_in_unreal/
+   <em>Вайбкодю аркадную песочницу в Unreal</em>
+   Комментарий: Автор гоняет вайбкодинг прямо в Unreal Engine — ИИ-подсказки в 3D-геймдеве. Показывает, что подход «описал → сгенерил → поправил» уезжает за пределы веба и скриптов.</p>
+</li>
+<li>
+<p><strong>Follow-up to my AR black hole app. Now you can crash planets and watch the solar system get ripped into particles</strong> — https://www.reddit.com/r/vibecoding/comments/1xsicig/followup_to_my_ar_black_hole_app_now_you_can/
+   <em>Апдейт AR-приложения с чёрной дырой: теперь можно сталкивать планеты</em>
+   Комментарий: AR-симулятор с физикой, планеты рвутся на частицы вокруг чёрной дыры. Итеративная работа: сделал первую версию → по фидбеку добавил разрушения. Хороший кейс «покажи апдейт, а не только финал».</p>
+</li>
+<li>
+<p><strong>I built a cozy study companion app entirely with Codex. Is it too simple?</strong> — https://www.reddit.com/r/vibecoding/comments/1xsk436/i_built_a_cozy_study_companion_app_entirely_with/
+   <em>Собрал уютное приложение-компаньон для учёбы целиком на Codex. Слишком простое?</em>
+   Комментарий: Автор спрашивает, не «слишком простое» ли его приложение. В ответах обычно сходятся к одному: простое — это ок, главное что решает задачу. Твои «Пословицы» и «Гуляю-собираю» на той же логике.</p>
+</li>
+<li>
+<p><strong>What it feels like to use an LLM</strong> — https://www.reddit.com/r/vibecoding/comments/1xrup92/what_it_feels_like_to_use_an_llm/
+   <em>Каково это — пользоваться LLM</em>
+   Комментарий: Эмоциональное описание опыта работы с большой моделью. В духе «как ощущается вайбкодинг изнутри» — читается быстро, комиксично, но метко ловит цикл «вдохновение → дерьмовый код на первом прогоне → правки».</p>
+</li>
+<li>
+<p><strong>Fable reset?</strong> — https://www.reddit.com/r/vibecoding/comments/1xskyw5/fable_reset/
+   <em>Fable сбросился?</em>
+   Комментарий: Пользователи жалуются на «сброс» поведения нового Claude Fable 5.2 — опять тема «модель поменяли, промты стали вести себя иначе» (см. вчерашний пост «Opus 5.5 nerfed?»). Практический урок: правки системного промпта важнее, чем кажется.</p>
+</li>
+<li>
+<p><strong>Draw1Line Drawing Brain Game</strong> — https://www.reddit.com/r/vibecoding/comments/1xsl8wk/draw1line_drawing_brain_game/
+   <em>Draw1Line — игра-головоломка рисованием одной линией</em>
+   Комментарий: Простейшая концепция «одним штрихом нарисуй фигуру» — мини-игра, собранная вайбкодингом. Ещё один пример «игровая механика из одной фразы».</p>
+</li>
+</ol>
+<h3>Остальное с r/vibecoding</h3>
+<ul>
+<li><strong>NCAA Men's Basketball Ticker</strong> — https://www.reddit.com/r/vibecoding/comments/1xspr5y/ncaa_mens_basketball_ticker/ — бегущая строка результатов NCAA Basketball, вайбкодинговый «дайджест» спортивных событий. Идея «строка с данными» переиспользуется во много раз.</li>
+<li><strong>Quiz app AppStore deployment update - my day off!</strong> — https://www.reddit.com/r/vibecoding/comments/1xsfvgg/quiz_app_appstore_deployment_update_my_day_off/ — серия про выкладку квиз-приложения в App Store; читателю интересно следить за процессом, не только результатом. Твоя «Пословицы» на похожем пути, только PWA.</li>
+<li><strong>[см. п.2 Adult Swim]</strong>, <strong>[см. п.4 AR black hole]</strong> — уже в топ-8.</li>
+</ul>
+<h2>Reddit r/SideProject</h2>
+<ol>
+<li>
+<p><strong>I developed my architecture dream game and published it on Steam</strong> — https://www.reddit.com/r/SideProject/comments/1xrwdj9/i_developed_my_architecture_dream_game_and/
+   <em>Доработал свою «игру мечты» про архитектуру и выложил в Steam</em>
+   Комментарий: Пет-проект дошёл до продажи в Steam — много лет работы над собственной архитектурной головоломкой. Хорошая длинная история о том, как «своя тема» (у автора — архитектура) превращается в продукт.</p>
+</li>
+<li>
+<p><strong>I built Call Dibs, a wishlist app where friends secretly claim gifts</strong> — https://www.reddit.com/r/SideProject/comments/1xsllwe/i_built_call_dibs_a_wishlist_app_where_friends/
+   <em>Собрал Call Dibs: вишлист, где друзья тайно бронируют подарки</em>
+   Комментарий: Идея родилась из бытовой боли — «родители подарили хлам на Рождество». Механика простая: хочешь подарок — «столбишь» его незаметно для других. Классическая «маленькая боль → простое решение».</p>
+</li>
+<li>
+<p><strong>I built the white "Construct" room from Matrix except instead of guns it summons 8000 real-scale 3D amazon products. "We need ... lots of chairs"</strong> — https://www.reddit.com/r/SideProject/comments/1xs41op/i_built_the_white_construct_room_from_matrix/
+   <em>Белая «Конструктора»-комната из «Матрицы», но вместо оружия — 8000 3D-моделей товаров Amazon</em>
+   Комментарий: Виртуальная комната с 3D-моделями товаров Amazon в реальном масштабе — «а сколько места займёт этот диван?». Забавно, технически впечатляюще и отвечает на реальный вопрос «влезет ли в комнату». По духу близко к твоему 3dtur с виртуальной мебелью.</p>
+</li>
+<li>
+<p><strong>I built a little app because I kept forgetting things I meant to do</strong> — https://www.reddit.com/r/SideProject/comments/1xsk3w9/i_built_a_little_app_because_i_kept_forgetting/
+   <em>Собрал крошечное приложение, чтобы переставать забывать, что надо сделать</em>
+   Комментарий: «Хочешь — сделай, делаешь → записываешь, чтобы не забыть». Ещё одна вариация на тему «маленькое приложение из бытовой боли»; в этом жанре конкуренция высокая, но работать может.</p>
+</li>
+<li>
+<p><strong>Open-source alternative to Instagram Edits' new MCP — works on Windows &amp; Linux</strong> — https://www.reddit.com/r/SideProject/comments/1xsng70/opensource_alternative_to_instagram_edits_new_mcp/
+   <em>Опенсорсная альтернатива новому MCP от Instagram Edits — работает на Windows и Linux</em>
+   Комментарий: MCP (Model Context Protocol) — протокол, через который ИИ-ассистенты подключаются к внешним инструментам. Автор сделал свободную версию под Windows/Linux — забавно, что у Windows-разработчиков теперь тоже своя ветка. Ближе к твоей экосистеме, чем кажется.</p>
+</li>
+<li>
+<p><strong>I built a live 3D bass aquarium entirely in code: no models, no images, one HTML file</strong> — https://www.reddit.com/r/SideProject/comments/1xsdd0m/i_built_a_live_3d_bass_aquarium_entirely_in_code/
+   <em>Живой 3D-аквариум с окунями целиком кодом: без моделей, без картинок, один HTML-файл</em>
+   Комментарий: Аквариум на чистом коде, один HTML-файл. Знакомая тебе техника — процедурная 3D-графика в браузере (как твой card_pack_3d). Хорошее напоминание, что «один файл без зависимостей» — это валидный продукт.</p>
+</li>
+<li>
+<p><strong>I just got my first sale, still can't believe it!!!</strong> — https://www.reddit.com/r/SideProject/comments/1xsouhg/i_just_got_my_first_sale_still_cant_believe_it/
+   <em>Первая продажа, до сих пор не верю!</em>
+   Комментарий: Классический мотивационный тред: первая продажа после долгого пет-проектного марафона. В комментах обычно кто-то описывает свою механику — полезные кейсы микробизнеса.</p>
+</li>
+<li>
+<p><strong>I built a home redesign app without a subscription. The hard part was getting the AI to leave the house alone</strong> — https://www.reddit.com/r/SideProject/comments/1xsnmkz/i_built_a_home_redesign_app_without_a/
+   <em>Приложение для редизайна дома без подписки; самое сложное — заставить ИИ не трогать сам дом</em>
+   Комментарий: Автор честно описывает «главную боль»: ИИ-генерация «слишком креативит» — трогает то, что просили оставить. Полезный кейс по контролю над генерацией: чем строже промпт-контракты, тем надёжнее результат.</p>
+</li>
+</ol>
+<h3>Остальное с r/SideProject</h3>
+<ul>
+<li><strong>Could AI make keeping up with research papers much easier?</strong> — https://www.reddit.com/r/SideProject/comments/1xsnb9r/could_ai_make_keeping_up_with_research_papers/ — идея «ИИ-помощник для отслеживания научных статей»; по сути твой it_digest, только для академии. Валидирует направление «личные дайджесты».</li>
+<li><strong>Concordo - a co-parenting app where the parent who's mostly replying doesn't have to pay</strong> — https://www.reddit.com/r/SideProject/comments/1xsq30q/concordo_a_coparenting_app_where_the_parent_whos/ — приложение для разведённых родителей, где «тот, кто только отвечает, бесплатно». Любопытная модель монетизации: платит активная сторона.</li>
+</ul>
+<h2>Итог дня</h2>
+<p>Главные нити сегодня: (1) выход <strong>Claude Fable 5.2 / Mythos 5.2</strong> и сразу волна обсуждения «поведение моделей поменялось» — напоминание, что промты и привычки придётся заново калибровать; (2) сразу два сигнала «<strong>маленькая модель вместо большой там, где хватает</strong>» (Amazon Strands Decider, Meta-модель для агентов) — тренд-противовес гонке за размером; (3) на Habr сильный <strong>маскот для Claude Code</strong> — ровно твоя «Бегунок» тема, стоит сверить реализацию и почерпнуть пару приёмов; и «Product Engineer» — готовая рамка для позиционирования себя на рынке. Для тебя: разбор Fable 5.2 на русском (selectel), маскот-статья, кейс Avito про бота ежедневной отчётности (почти твой утренний конвейер) и белая «Матрица»-комната с 3D-товарами Amazon (интерес по духу ближе всего к 3dtur).</p>
+</article>
+<nav class="paging"><a href="2026-11-09.html">← 2026-11-09</a><span class="cur">2026-11-10</span><span class="empty">→</span></nav>
+<footer class="site"><a href="index.html">⟵ все выпуски</a></footer>
+<script>document.addEventListener('keydown', function(e){
+  if(e.target.tagName==='INPUT')return;
+  var links=document.querySelectorAll('nav.paging a[href]');
+  if(e.key==='ArrowLeft'&&links[0])location.href=links[0].href;
+  if(e.key==='ArrowRight'&&links[links.length-1])location.href=links[links.length-1].href;
+});
+</script>
+
+
+</body>
+</html>
