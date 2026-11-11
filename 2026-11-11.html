@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#faf9f6">
+<title>Дайджест 2026-11-11</title>
+<link rel="icon" href="icon-192.png" />
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+<script src="theme.js" defer></script>
+<script src="sw-register.js" defer></script>
+</head>
+<body>
+
+<header class="site">
+  <a class="home" href="index.html">⟵ все выпуски</a>
+  <button class="theme" aria-label="Сменить тему">◐</button>
+</header>
+<article>
+<p>Собран автоматически из Hacker News, Habr и Reddit (r/vibecoding, r/SideProject).
+Формат: топ-8 по каждой площадке с комментариями, затем «Остальное» и «Итог дня».</p>
+<h2>Hacker News</h2>
+<ol>
+<li>
+<p><strong>Smart home devices should work without the internet</strong> — 874 / 313 комм.
+   <em>Умному дому не нужен интернет: локальная автоматизация как овернайт-успех</em>
+   https://docodethatmatters.com/home-automation-overnight-success/
+   Обсуждение: https://news.ycombinator.com/item?id=50441707
+   Комментарий: Автор строил умный дом годами, а «успех пришёл за одну ночь», когда всё начало работать локально — без облака и интернета. Прямое подтверждение твоего принципа «локальные приложения ценнее»: автономность = надёжность, и это то, за что люди реально голосуют деньгами.</p>
+</li>
+<li>
+<p><strong>.name Grandfathered</strong> — 793 / 171 комм.
+   <em>Зона .name спасена: история о том, как её чуть не прихлопнули</em>
+   https://neil.fraser.name/news/2026/11/10/
+   Обсуждение: https://news.ycombinator.com/item?id=50442736
+   Комментарий: Neil Fraser (автор Google Blockly) рассказывает, как доменную зону .name едва не закрыли — регуляторные игры с ICANN. Полезная иллюстрация, насколько хрупка «вечная» инфраструктура интернета: даже твой домен может зависеть от решений, о которых ты не знаешь.</p>
+</li>
+<li>
+<p><strong>AI usage generates a fragile codebase</strong> — 510 / 484 комм.
+   <em>Код, порождённый ИИ, получается хрупким</em>
+   https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/
+   Обсуждение: https://news.ycombinator.com/item?id=50438318
+   Комментарий: Тезис в заголовке говорит сам за себя: без понимания архитектуры ИИ-код быстро превращается в болото, которое боится любого изменения. 484 комментария — тема животрепещущая. Прямо про вайбкодинг: выход тот же, что мы практикуем — маленькие шаги, проверка, понимание каждого файла.</p>
+</li>
+<li>
+<p><strong>Tracking Anthropic-discovered vulnerabilities</strong> — 391 / 180 комм.
+   <em>Каталог уязвимостей, найденных моделями Anthropic</em>
+   https://www.vulncheck.com/blog/anthropic-glasswing-november-update
+   Обсуждение: https://news.ycombinator.com/item?id=50447074
+   Комментарий: VulnCheck отслеживает уязвимости, которые Anthropic нашла в реальных проектах (проект Glasswing). Сигнал: ИИ-агенты уже находят настоящие дыры в безопасности на проде. Для твоих парсеров и сайтов — повод держать зависимости обновлёнными.</p>
+</li>
+<li>
+<p><strong>Starlink Mini 2</strong> — 379 / 393 комм.
+   <em>Starlink Mini 2 — второе поколение карманного спутникового интернета</em>
+   https://starlink.com/mini-2
+   Обсуждение: https://news.ycombinator.com/item?id=50444129
+   Комментарий: Apple-подход к спутниковому интернету: меньше, дешевле, вилка питания от USB-C. 393 комментария — народ меряет его против мобильных роутеров. Не твоя тема напрямую, но глобальный тренд «интернет везде» влияет на любые онлайн-сервисы, включая твои парсеры и PWA.</p>
+</li>
+<li>
+<p><strong>Synaptics patent claims stop work on DisplayLink drivers</strong> — 378 / 218 комм.
+   <em>Патентная претензия Synaptics притормозила драйверы DisplayLink в Linux</em>
+   https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/
+   Обсуждение: https://news.ycombinator.com/item?id=50443824
+   Комментарий: Открытые драйверы DisplayLink (адаптеры «USB → монитор») остановили из-за патентного письма. Кейс о том, как один юрист способен вырубить кусок открытой инфраструктуры. Фоновая новость, но полезная для понимания рисков открытой экосистемы, на которой стоит тулчейн.</p>
+</li>
+<li>
+<p><strong>Val Town is winding down</strong> — 369 / 93 комм.
+   <em>Val Town закрывается</em>
+   https://blog.val.town/winding-down
+   Обсуждение: https://news.ycombinator.com/item?id=50443427
+   Комментарий: Ещё один неплохой сервис (облачные скрипты-«валы») не вытянул бизнес и уходит. Для бутстраппера урок двойной: (1) подписочные микросервисы — жестокий рынок, (2) никогда не привязывай критичные данные к чужому хостиingу без плана экспорта.</p>
+</li>
+<li>
+<p><strong>Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives</strong> — 347 / 104 комм.
+   <em>Вытащи свой кодинг-агент из JavaScript 2019 года на современные веб-примитивы</em>
+   https://github.com/GoogleChrome/modern-web-guidance
+   Обсуждение: https://news.ycombinator.com/item?id=50443812
+   Комментарий: GoogleChrome выложил гайд, как учить кодинг-агенты (Claude Code и ко) современным API браузера вместо устаревших паттернов 2019 года. Готовые подсказки для CLAUDE.md — можно прямо взять себе, чтобы PWA и вьюеры писались на актуальных примитивах.</p>
+</li>
+</ol>
+<h3>Остальное с HN</h3>
+<ul>
+<li><strong>AMD's Zen 6 Family: Feeding the Beast</strong> — 223 / 88 комм. <em>Семейство AMD Zen 6: накормить зверя</em> — https://chipsandcheese.com/p/amds-zen-6-family-feeding-the-beast — глубокий технический разбор архитектуры Zen 6 от Chips and Cheese; фон для понимания, куда движутся CPU, на которых крутится всё. Обсуждение: https://news.ycombinator.com/item?id=50443090</li>
+<li><strong>Scion is back and is going to sell a kei truck in America</strong> — 450 / 305 комм. <em>Scion возвращается и повезёт в США кей-траки</em> — https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/ — не-IT, но популярнейшая новость дня: крохотные японские грузовички на американском рынке. Обсуждение: https://news.ycombinator.com/item?id=50445401</li>
+<li><strong>Six Math Essentials</strong> — 222 / 39 комм. <em>Шесть математических основ (Terence Tao)</em> — https://teorth.github.io/tao-web/six-math-essentials.html — Теренс Тао выкладывает сводку базовой математики; хороший ориентир, что подтягивать, если захочется глубже понять ML. Обсуждение: https://news.ycombinator.com/item?id=50446246</li>
+<li><strong>Claude Whiteboards, Claude Sheets, and Claude Data</strong> — 194 / 146 комм. <em>Claude Whiteboards, Sheets и Data</em> — https://claude.com/resources/articles/sheets-whiteboards-data — у Claude появились встроенные таблицы, вайтборды и работа с данными; экосистема быстро растёт вокруг кодинга. Обсуждение: https://news.ycombinator.com/item?id=50443716</li>
+<li><strong>Process Explorer for macOS</strong> — 190 / 59 комм. <em>Process Explorer для macOS</em> — https://github.com/microsoft/Procexp-Mac — микрософт портировал легендарный диспетчер процессов на Mac. Windows-версией ты пользуешься, когда ноут тормозит — теперь аналог есть и у маководов. Обсуждение: https://news.ycombinator.com/item?id=50433216</li>
+<li><strong>Apple has new Mac app coming to make running local AI models easy</strong> — 183 / 142 комм. <em>Apple готовит приложение для простого запуска локальных ИИ-моделей</em> — https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/ — мейнстрим-тренд «локальные модели для всех» дошёл до Apple; параллель твоим интересам вокруг Ollama. Обсуждение: https://news.ycombinator.com/item?id=50446520</li>
+<li><strong>Announcing .NET 11</strong> — 165 / 219 комм. <em>Анонс .NET 11</em> — https://devblogs.microsoft.com/dotnet/announcing-dotnet-11/ — новый LTS-релиз .NET; горячее обсуждение про то, что Microsoft снова ломает привычки разработчиков. Обсуждение: https://news.ycombinator.com/item?id=50442225</li>
+</ul>
+<h2>Habr</h2>
+<ol>
+<li>
+<p><strong>Локальные нейросети: своей видеокарты хватает на офис — если знать, зачем она</strong> — https://habr.com/ru/articles/1106386
+   Комментарий: Практический разбор, на что реально хватает домашней видеокарты для локальных моделей. Твоя тема: ты уже живёшь с Ollama, статья помогает трезво понимать границы «локального» без иллюзий.</p>
+</li>
+<li>
+<p><strong>Во время собеседования в Burger King с ИИ-аватаром по имени Карен нейросеть переходит границы гнева</strong> — https://habr.com/ru/articles/1106334
+   Комментарий: Кейс, как ИИ-интервьюер на реальном собеседовании повёл себя агрессивно, потому что его так настроили. Отсюда два вывода: (1) на рынке собеседований с ИИ надо уметь держать удар, (2) настройка модели = продукт, недонастроил — получишь «Карен».</p>
+</li>
+<li>
+<p><strong>Claude Fable 5.2: подробный обзор новой модели</strong> — https://habr.com/ru/companies/gptunnel/articles/1106358
+   Комментарий: Русскоязычный подробный обзор Fable 5.2 (той самой, что обновилась вчера). Удобно читать на русском вместо выцарапывания деталей из changelog.</p>
+</li>
+<li>
+<p><strong>ИИ оставит человечество без работы. Или мы снова чего-то не учли? Часть 2</strong> — https://habr.com/ru/articles/1104924
+   Комментарий: Продолжение большого разбора про автоматизацию труда. Трезвая рамка для твоего же перехода: что реально автоматизируется, а что нет — полезно читать как соискателю, идущему в IT.</p>
+</li>
+</ol>
+<h2>Reddit (r/vibecoding)</h2>
+<ol>
+<li>
+<p><strong>Is it even possible to make money selling software now?</strong> —
+   <em>Можно ли ещё продавать софт, если рынок завален вайбкодом?</em>
+   https://www.reddit.com/r/vibecoding/comments/1xss2c4/is_it_even_possible_to_make_money_selling/
+   Коротко: автор всерьёз спрашивает — если ИИ умножил выпуск софта на порядки, а половина уходит в open source, как вообще зарабатывать продажей? Живой разговор про выживание сапожника без гвоздей.</p>
+</li>
+<li>
+<p><strong>I had zero Blender/Godot experience. Claude Opus 5 built me a full medieval Prague action RPG in ~4 hours</strong> —
+   <em>Без опыта в Blender/Godot: Opus 5 собрал полное средневековое Prague-RPG за ~4 часа</em>
+   https://www.reddit.com/r/vibecoding/comments/1xtanqd/i_had_zero_blendergodot_experience_claude_opus_5/
+   Коротко: человек без опыта в 3D получил рабочую игру за полдня. Пример границ вайбкодинга 2026 года — сложные домены теперь тоже проходимы.</p>
+</li>
+<li>
+<p><strong>I checked 30 "discounted" products before Black Friday. None showed the price the EU requires.</strong> —
+   <em>Проверил 30 «скидочных» товаров перед Чёрной пятницей: ни один не показал цену, которую требует ЕС</em>
+   https://www.reddit.com/r/vibecoding/comments/1xswhw4/i_checked_30_discounted_products_before_black/
+   Коротко: человек собрал парсер на Apify, который проверяет честность скидок по правилу ЕС «от минимальной цены за 30 дней». Пример: парсер + конкретное правило = готовый контент и, возможно, сервис.</p>
+</li>
+<li>
+<p><strong>ASCII art experiment with Fable 5.2</strong> —
+   <em>ASCII-арт эксперимент с Fable 5.2: любая картинка превращается в крутящийся 3D-объект из символов</em>
+   https://www.reddit.com/r/vibecoding/comments/1xtaqym/ascii_art_experiment_with_fable_52/
+   Коротко: Claude Code собрал инструмент «картинка → 3D из ASCII-символов» с 9 стилями, глубиной и саундтреком. Наглядный кейс «увидел видео — сделал тул за вечер».</p>
+</li>
+<li>
+<p><strong>Claude 98: No subscription. No internet. Just vibes.</strong> —
+   <em>«Claude 98»: без подписки, без интернета — просто вайбы (концепт в стиле Windows 98)</em>
+   https://www.reddit.com/r/vibecoding/comments/1xssaf8/claude_98_no_subscription_no_internet_just_vibes/
+   Коротко: эстетический концепт локального ИИ-ассистента в духе Windows 98. Идея «ретро-оболочка над локальными моделями» — интересный ход для пет-проекта.</p>
+</li>
+<li>
+<p><strong>Fog, cliffs, water, boat - vibe coded with threejs, blender opus 5.5, gpt 6 Astra</strong> —
+   <em>Туман, скалы, вода, лодка — вайбкод на Three.js, Blender, Opus 5.5 и GPT 6 Astra</em>
+   https://www.reddit.com/r/vibecoding/comments/1xt55w3/fog_cliffs_water_boat_vibe_coded_with_threejs/
+   Коротко: атмосферная 3D-сцена в браузере — тот же стек Three.js, что у тебя в card_pack_3d и 3dtur-вьюере.</p>
+</li>
+<li>
+<p><strong>Carbon 4 Just dropped</strong> —
+   <em>Gemini выпустили Carbon 4 — ответ на Fable 5.2?</em>
+   https://www.reddit.com/r/vibecoding/comments/1xt8rig/carbon_4_just_dropped/
+   Коротко: Google завез новую модель в Gemini на следующий день после обновления Anthropic. Гонка флагманов продолжается — хороший фон, чтобы не запоминать модели по хайпу, а мерить их своей рутиной.</p>
+</li>
+<li>
+<p><strong>Does anyone ask a second Ai questions you don't want your main Ai to know?</strong> —
+   <em>Кто-нибудь задаёт вопросы второй ИИ-модели, которые не хочет светить перед основной?</em>
+   https://www.reddit.com/r/vibecoding/comments/1xt5rak/does_anyone_ask_a_second_ai_questions_you_dont/
+   Коротко: тред про «второй мозг» — люди держат отдельную модель для черновых/личных вопросов. Забавно и практично: приватность в эпоху ИИ становится привычкой.</p>
+</li>
+</ol>
+<h3>Остальное с r/vibecoding</h3>
+<ul>
+<li><strong>Tinder, if Salesforce designed it</strong> — <em>Tinder, если бы его спроектировал Salesforce</em> — https://www.reddit.com/r/vibecoding/comments/1xsvscz/tinder_if_salesforce_designed_it/ — корпоративная сатира в виде рабочей демки: https://pipeline-of-love.vercel.app/</li>
+<li><strong>What do you all think?</strong> — <em>Олдскульный разработчик собрал два тула по навигации в кодовых базах и просит фидбек</em> — https://www.reddit.com/r/vibecoding/comments/1xt1tc6/what_do_you_all_think/</li>
+</ul>
+<h2>Reddit (r/SideProject)</h2>
+<ol>
+<li>
+<p><strong>I open sourced a 15 MB, Netflix-inspired app for my home server. 600 stars and 4,4K+ Docker pulls in 1 day</strong> —
+   <em>15 МБ приложение «Netflix для своего домашнего сервера»: 600 звёзд и 4400 Docker-загрузок за сутки</em>
+   https://www.reddit.com/r/SideProject/comments/1xt6oss/i_open_sourced_a_15_mb_netflixinspired_app_for_my/
+   Коротко: HolyArrs — крошечный интерфейс к своим фильмам в стиле Netflix: топ-10, новые и популярные, заявки на сериалы, скачивание через qBittorrent, воспроизведение остаётся в Plex/Jellyfin. Ещё одно доказательство, что ниша «самохостинг по-человечески» стреляет.</p>
+</li>
+<li>
+<p><strong>My skill was featured on XDA devs! Claudemy is a Claude skill that lets you research any topic and turn it into a set of 2 minute audio classes - 700 stars so far on GH</strong> —
+   <em>Claudemy — Claude-скилл: любая тема → набор 2-минутных аудиоуроков; 700 звёзд и статья на XDA</em>
+   https://www.reddit.com/r/SideProject/comments/1xt8z8a/my_skill_was_featured_on_xda_devs_claudemy_is_a/
+   Коротко: один человек сделал скилл для Claude, который изучает тему и делает из неё микро-курс в аудио. 700 звёзд на GitHub — доказательство, что скиллы теперь сами по себе продукт.</p>
+</li>
+<li>
+<p><strong>Someone bought my mac app 40 seconds after opening the site</strong> —
+   <em>Купили мой mac-приложение 40 секунд спустя открытия сайта (после короткого видео)</em>
+   https://www.reddit.com/r/SideProject/comments/1xstbbp/someone_bought_my_mac_app_40_seconds_after/
+   Коротко: короткое видео в Instagram → 4K просмотров → покупка за 40 секунд на сайте без бесплатных пробных. Отличный кейс, что продают видео-демки, а не фичи.</p>
+</li>
+<li>
+<p><strong>I have successfully made measuring things worse</strong> —
+   <em>Jelly Ruler: линейка, которая гнётся, дрожит и вообще отказывается работать</em>
+   https://www.reddit.com/r/SideProject/comments/1xt6aki/i_have_successfully_made_measuring_things_worse/
+   Коротко: автор сделал «желейную линейку» и вокруг неё целый векторный редактор. Сатира + рабочий тул = отличный пример, как пет-проект с юмором собирает внимание.</p>
+</li>
+<li>
+<p><strong>I built a collection of 15 calming browser toys – no ads, no accounts, no goals</strong> —
+   <em>15 успокаивающих браузерных игрушек: без рекламы, аккаунтов и целей</em>
+   https://www.reddit.com/r/SideProject/comments/1xt0jpl/i_built_a_collection_of_15_calming_browser_toys/
+   Коротко: антистресс-набор в браузере: желе, пузырьки, котик, зен-сад, лава-лампа. Пример маленького проекта с ясной идеей, который люди реально открывают в обеденный перерыв.</p>
+</li>
+<li>
+<p><strong>Nightjar - Write down what's keeping you up and then fall asleep to a story picked for it</strong> —
+   <em>Nightjar: запиши, что не даёт спать — и засыпай под историю, подобранную под неё</em>
+   https://www.reddit.com/r/SideProject/comments/1xt1uaq/nightjar_write_down_whats_keeping_you_up_and_then/
+   Коротко: один разработчик выкатил v0.1 в App Store: мысли «запираешь в банку до утра», дальше тихая история под настроение. Без аккаунтов, синхронизация через iCloud — компактное решение одной боли.</p>
+</li>
+<li>
+<p><strong>I made my injury-aware workout tracker 100% free and put the one thing it does on a web page you can try</strong> —
+   <em>Трекер тренировок, знающий про твои травмы: стал полностью бесплатным + веб-демо</em>
+   https://www.reddit.com/r/SideProject/comments/1xt80g6/i_made_my_injuryaware_workout_tracker_100_free/
+   Коротко: рассказываешь приложению, что болит — оно подменяет упражнения на безопасные. Кейс смены модели: подписка → 100% бесплатно с одной публично-проверяемой фишкой.</p>
+</li>
+<li>
+<p><strong>I built Tsuki, an open-source website to track your anime and manga</strong> —
+   <em>Tsuki: опенсорсный трекер аниме и манги с приличным UI</em>
+   https://www.reddit.com/r/SideProject/comments/1xtab9n/i_built_tsuki_an_opensource_website_to_track_your/
+   Коротко: очередной «сам для себя + в open source» проект; полезно смотреть, как люди оформляют анонс и собирают первых пользователей.</p>
+</li>
+</ol>
+<h3>Остальное с r/SideProject</h3>
+<ul>
+<li><strong>What would be the business model of the future?</strong> — <em>Каким будет бизнес-модель будущего, если ИИ-агенты не смотрят рекламу?</em> — https://www.reddit.com/r/SideProject/comments/1xtato3/what_would_be_the_business_model_of_the_future/ — тревожный тред: агенты не видят спонсорские блоки, а значит старый монетизационный контракт интернета рушится.</li>
+<li><strong>I built an iPhone app so my 4-year-old would hand my phone back</strong> — <em>Приложение, чтобы 4-летний ребёнок вернул телефон: фенек укладывается спать</em> — https://www.reddit.com/r/SideProject/comments/1xsqfsx/i_built_an_iphone_app_so_my_4yearold_would_hand/ — TentFox делает конец экранного времени ритуалом, а не сражением с родителем.</li>
+</ul>
+<h2>Итог дня</h2>
+<p>День двух сюжетов. Первый — <strong>хрупкость, о которой мы забываем</strong>: код от ИИ без понимания становится болотом, доменная зона .name чуть не умерла из-за бюрократии, Val Town закрылся, а умный дом «стрелял» только когда отучили от облака. Общий урок для вайбкодера: локальность и понимание собственных файлов — не эстетика, а страховка. Второй — <strong>скиллы и микро-инструменты стали продуктом</strong>: Claudemy собирает 700 звёзд, парсер честности скидок на Apify превращается в контент, «желейная линейка» с векторным редактором собирает фидбек. Меняется не только то, что пишут ИИ-ассистенты, но и то, что теперь можно продавать: скилл, демо-видео, одну фишку в вебе.</p>
+</article>
+<nav class="paging"><a href="2026-11-10.html">← 2026-11-10</a><span class="cur">2026-11-11</span><span class="empty">→</span></nav>
+<footer class="site"><a href="index.html">⟵ все выпуски</a></footer>
+<script>document.addEventListener('keydown', function(e){
+  if(e.target.tagName==='INPUT')return;
+  var links=document.querySelectorAll('nav.paging a[href]');
+  if(e.key==='ArrowLeft'&&links[0])location.href=links[0].href;
+  if(e.key==='ArrowRight'&&links[links.length-1])location.href=links[links.length-1].href;
+});
+</script>
+
+
+</body>
+</html>
