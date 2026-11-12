@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#faf9f6">
+<title>Дайджест 2026-11-12</title>
+<link rel="icon" href="icon-192.png" />
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+<script src="theme.js" defer></script>
+<script src="sw-register.js" defer></script>
+</head>
+<body>
+
+<header class="site">
+  <a class="home" href="index.html">⟵ все выпуски</a>
+  <button class="theme" aria-label="Сменить тему">◐</button>
+</header>
+<article>
+<p>Собран автоматически из Hacker News, Habr и Reddit (r/vibecoding, r/SideProject).
+Формат: топ-8 по каждой площадке с комментариями, затем «Остальное» и «Итог дня».</p>
+<h2>Hacker News</h2>
+<ol>
+<li>
+<p><strong>Tim Peters has died</strong> — 1025 / 111 комм.
+   <em>Умер Тим Питерс — легендарный разработчик ядра Python</em>
+   https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028
+   Обсуждение: https://news.ycombinator.com/item?id=50450488
+   Комментарий: Ушёл автор «Дзена Python» (тот самый <code>import this</code>) и алгоритма сортировки Timsort — кода, который десятилетиями работал в каждом питоновском проекте, включая твои парсеры. Странная отсылка из дайджеста №1: человек, чья философия «читаемость важнее хитрости», буквально описал стиль, в котором вайбкодеру безопаснее жить.</p>
+</li>
+<li>
+<p><strong>My AI agents found an unmapped Maya site?</strong> — 957 / 350 комм.
+   <em>Мои ИИ-агенты, кажется, нашли неотмеченную на картах площадку майя</em>
+   https://pietromiotti.com/latest/maya-site
+   Обсуждение: https://news.ycombinator.com/item?id=50452455
+   Комментарий: Автор скрестил LIDAR-данные и агентов — и вышел на объект, которого нет в археологических каталогах. Показательный кейс: агенты как «процессор над данными», а не чат. По сути — очень продвинутый аналог твоих парсеров: те же данные, другой масштаб.</p>
+</li>
+<li>
+<p><strong>Nvidia is preparing to oust Jensen Huang</strong> — 779 / 1114 комм.
+   <em>Nvidia готовится сместить гендиректора Дженсена Хуанга (WSJ)</em>
+   https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad
+   Обсуждение: https://news.ycombinator.com/item?id=50459703
+   Комментарий: Крупнейшая ИИ-история дня: совет директоров Nvidia, по данным WSJ, готовит смену CEO компании, на которой стоит весь ИИ-бум. 1114 комментариев — весь рынок нервничает, потому что от Nvidia зависит, кому и сколько будет стоить инфраструктура для моделей. Фон, на котором можно трезво смотреть на планы «а вдруг завтра всё подорожает».</p>
+</li>
+<li>
+<p><strong>AWS emulator</strong> — 765 / 227 комм.
+   <em>Официальный эмулятор AWS от самой Amazon</em>
+   https://github.com/aws/aws-emulator
+   Обсуждение: https://news.ycombinator.com/item?id=50456631
+   Комментарий: Amazon сама выложила эмулятор своих облачных сервисов — можно гонять S3/Lambda-подобные штуки локально, без облака и без интернета. Ровно в твою философию «локальное ценнее»: если когда-нибудь захочешь потрогать облачные паттерны, делать это можно не платя и не выходя в сеть.</p>
+</li>
+<li>
+<p><strong>United Airlines bans AI agents from booking flights on behalf of travelers</strong> — 493 / 474 комм.
+   <em>United Airlines запретила ИИ-агентам бронировать перелёты за пассажиров</em>
+   https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/
+   Обсуждение: https://news.ycombinator.com/item?id=50458900
+   Комментарий: Первая ласточка обратного хода: агенты уже настолько живые, что авиакомпания вводит формальный запрет на их использование. Сигнал шире авиации: сервисы, чьи данные раньше «читал только человек», начинают огораживаться от машин. Будет влиять на то, какие парсеры вообще смогут существовать.</p>
+</li>
+<li>
+<p><strong>A false smoke alarm almost drowned Jane Street's only NYC datacenter</strong> — 453 / 227 комм.
+   <em>Ложная пожарная сигнализация едва не утопила единственный дата-центр Jane Street в Нью-Йорке</em>
+   https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/
+   Обсуждение: https://news.ycombinator.com/item?id=50455394
+   Комментарий: Рассказ изнутри: газ тушения сработал ложью, вода пошла по залу, дата-центр торгового гиганта спасли буквально ведрами и тряпками. Классическая история про единую точку отказа — читается как триллер и как аргумент за бэкапы и дублирование в своих проектах.</p>
+</li>
+<li>
+<p><strong>Gemini Decisions API</strong> — 350 / 109 комм.
+   <em>Gemini Decisions API — новый API от Google</em>
+   https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/
+   Обсуждение: https://news.ycombinator.com/item?id=50456791
+   Комментарий: Google выкатывает API, позиционируемый вокруг «принятия решений» моделью, а не просто генерации текста. Ещё один шаг гонки флагманов: модели упаковывают в бизнес-сценарии. Фон для понимания, куда движутся интерфейсы к ИИ — сейчас это важно для твоего плана «прод через адаптер».</p>
+</li>
+<li>
+<p><strong>Hyper-Realistic Sand with WebGL2</strong> — 341 / 67 комм.
+   <em>Гиперреалистичный песок на WebGL2</em>
+   https://av.github.io/safe-sand/
+   Обсуждение: https://news.ycombinator.com/item?id=50453288
+   Комментарий: Физическая симуляция песка прямо в браузере, без единой библиотеки — чистый WebGL2. Забавное совпадение: это демо из того самого Reddit-поста про промты «без переделок» (см. r/vibecoding ниже). Техника дешёвая в браузере, но выглядит как отдельный продукт — тип пет-проекта, который собирает аудиторию сам.</p>
+</li>
+</ol>
+<h3>Остальное с HN</h3>
+<ul>
+<li><strong>Jensen Huang said to have had relationship with executive who reports to him</strong> — 321 / 379 комм. <em>У Хуанга, по данным NYT, был роман с подчинённой (NYT)</em> — https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html — вторая часть той же истории про смену CEO: в NYT пишут о личных обстоятельствах, которые обсуждает совет директоров. Обсуждение: https://news.ycombinator.com/item?id=50459321</li>
+<li><strong>93% of paint splatters are valid Perl programs (2019)</strong> — 297 / 41 комм. <em>93% клякс являются валидными программами на Perl (2019)</em> — https://www.mcmillen.dev/sigbovik/ — классика юмора SIGBOVIK снова на волне: исследование, которое шуточно доказывает, что почти любая случайная клякса компилируется как Perl. Обсуждение: https://news.ycombinator.com/item?id=50459745</li>
+<li><strong>Can a Linear Program Do Weight-Space Programming?</strong> — 267 / 38 комм. <em>Может ли линейное программирование работать на уровне весов нейросети?</em> — https://nathan.rs/posts/weight-space-lp/ — исследовательская статья о том, что «веса нейросети» можно переставлять даже без градиентного обучения. Фоновая, но любопытная для понимания, как нелинейно устроены модели. Обсуждение: https://news.ycombinator.com/item?id=50452655</li>
+<li><strong>Show HN: Yogurt – Free, private, open-source alternative to Granola</strong> — 210 / 91 комм. <em>Yogurt — бесплатная приватная открытая альтернатива Granola</em> — https://github.com/FrigadeHQ/yogurt — опенсорсный аналог платного ИИ-планировщика встреч: слушает созвоны, пишет конспекты локально. Паттерн «дорогой SaaS → локальная бесплатная копия» сработал снова. Обсуждение: https://news.ycombinator.com/item?id=50454625</li>
+<li><strong>Atuin Threads: All your agent sessions on every machine</strong> — 207 / 78 комм. <em>Atuin Threads: все сессии ИИ-агентов на всех машинах</em> — https://blog.atuin.sh/threads-agent-sessions/ — утилита Atuin (история shell) завезла синхронизацию сессий агентов между машинами. Логичное направление: история работы с агентами = данные, которые хочется носить с собой. Обсуждение: https://news.ycombinator.com/item?id=50453637</li>
+<li><strong>Show HN: I recreated Papers Please but you're deciding which YC startups to fund</strong> — 201 / 81 комм. <em>Papers, Please, только решаешь, каким стартапам Y Combinator дать деньги</em> — https://termsheetplease.com/ — браузерная игра-пародия: сидишь как инспектор на границе, но штампуешь стартапы. Пример узнаваемого мема + рабочая демка = готовый маркетинг. Обсуждение: https://news.ycombinator.com/item?id=50457230</li>
+<li><strong>Lock Your GitHub Actions</strong> — 190 / 35 комм. <em>Закрой свои GitHub Actions</em> — https://hugovk.dev/blog/2026/lock-github-actions/ — практический гайд по ограничению прав у GitHub Actions (это автоматические скрипты на GitHub): что фиксировать по версиям и правам, чтобы чужой пакетный менеджер не стал дырой. Прямо про безопасность твоего будущего GitHub Pages-деплоя. Обсуждение: https://news.ycombinator.com/item?id=50459485</li>
+</ul>
+<h2>Habr</h2>
+<ol>
+<li>
+<p><strong>Anthropic ужесточила правила доступа к Claude для компаний из России</strong> — https://habr.com/ru/articles/1106834
+   Комментарий: Прямо твоя тема: Anthropic закручивает гайки для РФ-компаний. Урок трезвого планирования уже сделан у тебя: прод-доступ через VseGPT/RouterAI/AITunnel в рублях, а не прямые ставки на один сервис, который в любой день может сузить доступ.</p>
+</li>
+<li>
+<p><strong>Навайбкодил более 30 Open Source приложений, и вот что я понял</strong> — https://habr.com/ru/articles/1106348
+   Комментарий: Автор делит выведенное после 30 приложений на вайбкоде. Твой случай дословно: ценность не в количестве приложений, а в выработанных паттернах (архитектура, проверки, границы). Стоит прочесть как чек-лист своего подхода.</p>
+</li>
+<li>
+<p><strong>Безопасность ИИ в продакшене: на что смотреть, прежде чем станет поздно</strong> — https://habr.com/ru/articles/1106884
+   Комментарий: Системный разбор того, что ломается, когда ИИ-фичи выкатывают наружу: утечки промтов, инъекции, неверные действия агентов. Если когда-нибудь выставишь свои сервисы с ИИ наружу — это обязательное чтение до релиза, а не после.</p>
+</li>
+<li>
+<p><strong>Разработчик подключил AI-агента к 32-летнему Jeep Cherokee для диагностики</strong> — https://habr.com/ru/articles/1106830
+   Комментарий: ИИ-агент против железки без документации: диагностика старого авто через OBD и подсказки LLM. Показывает тип кейсов, где агенты реально сильны — узкие технические домены, где знаний много, а интерфейса нет.</p>
+</li>
+<li>
+<p><strong>Google открыл доступ к Gemini 4 Carbon: модель в 2–6 раз дешевле, чем Fable 5.2</strong> — https://habr.com/ru/companies/gptunnel/articles/1106822
+   Комментарий: Google давит по цене: Gemini 4 Carbon дешевле, чем флагман Anthropic и OpenAI, в два-шесть раз. Для бюджета твоих сервисов это прямо релевантно — через адаптер VseGPT/RouterAI модель можно попробовать за копейки и мерить своей рутиной, а не хайпом.</p>
+</li>
+<li>
+<p><strong>Потери, которых не было видно на алертах: как мы автоматизировали поиск проблем в production с AI</strong> — https://habr.com/ru/companies/moex/articles/1106818
+   Комментарий: Кейс Московской биржи: ИИ ищет проблемы, которые классические алерты не ловят. Полезный образ мышления для твоих скриптов: мониторить не только «упало/не упало», но и «стало хуже незаметно». Например, парсер, который молча перестал находить вакансии — это тоже поломка.</p>
+</li>
+<li>
+<p><strong>Пять способов ускорить локальный инференс MoE-модели: один я написал сам</strong> — https://habr.com/ru/articles/1106854
+   Комментарий: Разбор способов разогнать локальные MoE-модели (модели, где одновременно работает лишь часть «экспертов» — поэтому они дешевле). Для слабого ноутбука тема «локально и быстро» — постоянная головная боль, статья даёт карты местности, чем просто советы.</p>
+</li>
+<li>
+<p><strong>ИИ оживляет мертвых. Это хорошо или плохо?</strong> — https://habr.com/ru/articles/1106858
+   Комментарий: Рефлексия вокруг «цифровых двойников» умерших — где грань между памятью и эксплуатацией. Не техническая, но хорошая разминка для собственной позиции: вайбкодеру полезно уметь отвечать не только «как», но и «стоит ли».</p>
+</li>
+</ol>
+<h3>Остальное с Habr</h3>
+<ul>
+<li><strong>Личная медицинская история на основе ИИ-модели</strong> — https://habr.com/ru/articles/1106800 — автор собрал персональный медицинский досье-помощник на ИИ; тема чувствительная, интересна как образец «данные о себе в своих руках».</li>
+<li><strong>Оптимизация холодного старта vLLM: собираем прогретый OCI образ Deepseek и GLM и запускаем за 30 секунд</strong> — https://habr.com/ru/articles/1106794 — инженерный разбор, как поднять готовый инференс-образ за полминуты; фон для понимания, как хостят модели на проде.</li>
+</ul>
+<h2>Reddit (r/vibecoding)</h2>
+<ol>
+<li>
+<p><strong>Tell your agent to consider how to avoid follow ups and rework, and it will</strong> —
+   <em>Скажи агенту заранее подумать, как избежать переделок, — и он их избежит</em>
+   https://www.reddit.com/r/vibecoding/comments/1xti3oe/tell_your_agent_to_consider_how_to_avoid_follow/
+   Коротко: Трюк в промте: вместо «сделай X» — «сделай X и подумай, как сделать так, чтобы не было переделок». Автор показывает one-shot симуляцию песка (та самая с HN) с одного промта. Дешёвое улучшение качества — можно проверить на своей рутине, особенно в многошаговых задачах.</p>
+</li>
+<li>
+<p><strong>I asked Fable 5.2 to build me a zombies game</strong> —
+   <em>Попрошу Fable 5.2 собрать мне игру про зомби: один HTML-файл, ~55 000 строк, ~14 часов</em>
+   https://www.reddit.com/r/vibecoding/comments/1xts6te/i_asked_fable_52_to_build_me_a_zombies_game/
+   Коротко: Целая 3D-игра в одном HTML: Three.js, все модели и звуки генерируются кодом на лету, никаких ассетов. Съел ~120% недельного лимита Fable. Показывает и потолок, и цену: масштаб достижим, но лимиты сгорают быстро.</p>
+</li>
+<li>
+<p><strong>Vibe code influencer charged $99 to enter his $100k hackathon, got roasted, refunded everyone, and blamed "losing perspective"</strong> —
+   <em>Вайбкод-инфлюенсер взял $99 за вход в свой «хакатон на $100k», получил разгром, вернул всем деньги</em>
+   https://www.reddit.com/r/vibecoding/comments/1xtl7l1/vibe_code_influencer_charged_99_to_enter_his_100k/
+   Коротко: Marc Lou устроил конкурс со взносом, где приз оплачен спонсором, — и его накрыли: по правилам Stripe входные взносы в конкурс при оплате призового фонда спонсором запрещены. Урок: в инфлюенс-вайбкод-мире много «курсов за $449» и мало ответственности; читай мелкий шрифт и не плати за участие в чужих розыгрышах.</p>
+</li>
+<li>
+<p><strong>Everyone is vibe coding, even those who claim not to be.</strong> —
+   <em>Вайбкодят все, даже те, кто утверждает обратное</em>
+   https://www.reddit.com/r/vibecoding/comments/1xtbz9b/everyone_is_vibe_coding_even_those_who_claim_not/
+   Коротко: Автор гордился, что читает каждую строчку, пока на встрече сеньоров не спросили, кто мержил ИИ-код не читая — поднялись все. Ровное отношение к реальности: чтение кода — навык, который надо тренировать отдельно, но мир уже другой.</p>
+</li>
+<li>
+<p><strong>Is it still vibecoding if i work on it for 6 months? I'm a psychiatry resident with adhd and I built a study app I actually enjoy using</strong> —
+   <em>Это ещё вайбкодинг, если я пилил полгода? Психиатр с СДВГ собрал учебное приложение, которым сам пользуется</em>
+   https://www.reddit.com/r/vibecoding/comments/1xtllfl/is_it_still_vibecoding_if_i_work_on_it_for_6/
+   Коротко: Врач-ординатор собрал приложение для собственной учёбы: чат с ИИ, из которого не исчезает контекст, и ветки для смежных вопросов. Классический рецепт работающего пет-проекта: своя боль + своя ежедневная эксплуатация.</p>
+</li>
+<li>
+<p><strong>Delegating to Agents Like a CTO: Is Everyone a Software Manager Now?</strong> —
+   <em>Делегируй агентам как CTO: все ли теперь менеджеры софта?</em>
+   https://www.reddit.com/r/vibecoding/comments/1xttnpo/delegating_to_agents_like_a_cto_is_everyone_a/
+   Коротко: Скилл «делегирования» становится отдельной компетенцией: постановка задачи, критерии приёмки, контроль. У тебя это уже нарабатывается ежедневной рутиной с Claude Code — можно сознательно отслеживать, как формулируешь задачи, и собирать свои удачные формулировки.</p>
+</li>
+<li>
+<p><strong>Indie game dev on X builds an AI RPG 3x bigger than game Skyrim that's entirely without any assets. Are assets over?</strong> —
+   <em>Инди-разработчик собирает на ИИ RPG в 3 раза больше Skyrim, полностью без ассетов. Конец ассетов?</em>
+   https://www.reddit.com/r/vibecoding/comments/1xtmvar/indie_game_dev_on_x_builds_an_ai_rpg_3x_bigger/
+   Коротко: Тред-вопрос: если контент генерируется кодом и моделями на лету, нужны ли классические ассеты (картинки, модели, звуки)? Пока это эксибиция, а не продакшен, но направление видно.</p>
+</li>
+<li>
+<p><strong>Besides making video games and informative videos. What else are the latest models really good at doing?</strong> —
+   <em>Кроме игр и обучающих видео — на что последние модели реально хороши?</em>
+   https://www.reddit.com/r/vibecoding/comments/1xttuwp/besides_making_video_games_and_informative_videos/
+   Коротко: автор перечисляет: игры, видео с закадровым голосом, и главное — заменил кучу SaaS-подписок в работе своими вайбкод-решениями. Тред-база идей: смотри, какие подписки люди заменяют, — там и деньги.</p>
+</li>
+</ol>
+<h3>Остальное с r/vibecoding</h3>
+<ul>
+<li><strong>kick up the 4d3d3d3</strong> — <em>«Kick up the 4d3d3d3» — пародийный «система-агент» в стиле мема Celery Man</em> — https://www.reddit.com/r/vibecoding/comments/1xthlis/kick_up_the_4d3d3d3/ — автор собрал шуточную, но реально работающую связку: Claude как мозг, генерация танцоров на Modal, печать в PDF, синтез речи локально.</li>
+<li><strong>I built a free, Jackbox-style site for playing classic card games with friends and family, in the same room or remotely. Still in development and looking for feedback.</strong> — <em>Бесплатный сайт в духе Jackbox для карточных игр вживую и по сети</em> — https://www.reddit.com/r/vibecoding/comments/1xu0zmp/i_built_a_free_jackboxstyle_site_for_playing/ — cardsard.com: без регистрации и установки, «дилер и счётчик очков в одной машине». Близкий по духу проект к твоим «играм для своих».</li>
+</ul>
+<h2>Reddit (r/SideProject)</h2>
+<ol>
+<li>
+<p><strong>My side project is a free, open-source racing sim that runs in a browser tab</strong> —
+   <em>Опенсорсный гоночный симулятор, работающий во вкладке браузера</em>
+   https://www.reddit.com/r/SideProject/comments/1xtuacm/my_side_project_is_a_free_opensource_racing_sim/
+   Коротко: LibreCorsa — физика 500 Гц, дожди и износ шин, 16 трасс, весь код и модели на GitHub. Показательно, что «серьёзный софт в браузере без установки» перестал быть оксюмороном — тот же тренд, на котором стоят твои PWA и Three.js-паки.</p>
+</li>
+<li>
+<p><strong>I built a tool that turns a Google Maps listing into a full website in under a minute.</strong> —
+   <em>Тул, который превращает карточку из Google Maps в целый сайт за минуту</em>
+   https://www.reddit.com/r/SideProject/comments/1xtkxnu/i_built_a_tool_that_turns_a_google_maps_listing/
+   Коротко: Автор — владелец маленькой веб-студии: берёт публичную карточку бизнеса (фото, часы, меню) и собирает из неё сайт-превью. Отличный пример «парсер + генератор = продукт»: данные уже лежат в открытом виде, нужен только автоматизатор. Прямо в твои компетенции.</p>
+</li>
+<li>
+<p><strong>I'm statistically halfway through my life, so I built an app for the second half</strong> —
+   <em>Я статистически на середине жизни, поэтому собрал приложение для второй половины (недель жизни)</em>
+   https://www.reddit.com/r/SideProject/comments/1xtcjg4/im_statistically_halfway_through_my_life_so_i/
+   Коротко: iOS-разработчик 40 лет посчитал, сколько осталось летних отпусков с детьми и визитов к родителям, и построил вокруг этого приложение. Эмоциональный стартап-кейс: не «ещё один трекер», а одна цифра, которая бьёт в сердце, — и продуктец.</p>
+</li>
+<li>
+<p><strong>I built my analytics dashboard as one PHP file - no SaaS, no tracking script</strong> —
+   <em>Дашборд аналитики в одном PHP-файле: без SaaS и без трекинга</em>
+   https://www.reddit.com/r/SideProject/comments/1xty8r7/i_built_my_analytics_dashboard_as_one_php_file_no/
+   Коротко: Автор парсит сырые логи хостинга и рисует дашборд у себя: ноль зависимостей, ноль ежемесячных платежей. И честный разбор двух багов (в т.ч. «размер gz-файла ≠ размер распакованного» — ловушка, которая тихо режет данные). Твоя философия в чистом виде: локально, дёшево, самодержавно.</p>
+</li>
+<li>
+<p><strong>I made a 100% free higgsfield + Google Flow alternative</strong> —
+   <em>100% бесплатная альтернатива Higgsfield и Google Flow</em>
+   https://www.reddit.com/r/SideProject/comments/1xu35co/i_made_a_100_free_higgsfield_google_flow/
+   Коротко: Единый фронтенд к Runware API (Veo, Kling, Seedance, Nano Banana, Flux): работает в браузере, ключ только у пользователя. Тот же паттерн, что у твоего плана «прод через адаптер»: свой интерфейс над чужим API — нормальный продукт.</p>
+</li>
+<li>
+<p><strong>I built an app so I know my parents overseas started their day, without cameras</strong> —
+   <em>Приложение, показывающее, что родители за океаном начали день, — без камер</em>
+   https://www.reddit.com/r/SideProject/comments/1xtttzk/i_built_an_app_so_i_know_my_parents_overseas/
+   Коротко: Kettle: не звонки и не видеонаблюдение, а тихий сигнал «они проснулись и в порядке». Ниша «забота без вторжения» — редко занятая, эмоциональная и легко объяснимая одним предложением.</p>
+</li>
+<li>
+<p><strong>Freelancers: How do you keep track of unpaid invoices and payment follow-ups? I'm considering building a tool for this and would appreciate honest advice.</strong> —
+   <em>Фрилансеры: как вы трекаете неоплаченные счета и напоминания об оплате?</em>
+   https://www.reddit.com/r/SideProject/comments/1xu348e/freelancers_how_do_you_keep_track_of_unpaid/
+   Коротко: Автор собирает фидбек перед постройкой тулов для фрилансеров, которые забывают гонять клиентов за долгами. Тред полезно читать не как «идея», а как список реальных болей твоей аудитории — и как пример правильного порядка: сначала спросить рынок, потом писать код.</p>
+</li>
+<li>
+<p><strong>I built an app that converts any text into high-quality audio. It works with PDFs, blog posts, Substack and Medium links, and even photos of text.</strong> —
+   <em>Приложение, которое превращает любой текст в качественное аудио: PDF, статьи, даже фото текста</em>
+   https://www.reddit.com/r/SideProject/comments/1xtufk4/i_built_an_app_that_converts_any_text_into/
+   Коротко: PDF, статьи, скопированный текст → слушаешь как подкаст, работает в фоне. Рынок «слушать вместо читать» растёт.</p>
+</li>
+</ol>
+<h3>Остальное с r/SideProject</h3>
+<ul>
+<li><strong>I built Dopamine Chic - a designer outlet where checkout is always 0.00 and nothing ever ships</strong> — <em>Dopamine Chic: фейковый дизайнерский аутлет с чекаутом $0.00</em> — https://www.reddit.com/r/SideProject/comments/1xtqbj1/i_built_dopamine_chic_a_designer_outlet_where/ — сатира-игра: шопинг без денег, 50 концовок для коллекции; вся «инвентаризация» вычисляется из даты, без базы — изящный трюк.</li>
+<li><strong>I built Dopamine Chic - a designer outlet where checkout is always 0.00 and nothing ever ships</strong> — <em>Dopamine Chic: фейковый дизайнерский аутлет с чекаутом $0.00</em> — https://www.reddit.com/r/SideProject/comments/1xtqbj1/i_built_dopamine_chic_a_designer_outlet_where/ — сатира-игра: шопинг без денег, 50 концовок для коллекции; вся «инвентаризация» вычисляется из даты, без базы — изящный трюк.</li>
+<li><strong>I'm building a new European social platform from Finland — YOSLA</strong> — <em>Новая социальная платформа из Финляндии: контроль над своей лентой</em> — https://www.reddit.com/r/SideProject/comments/1xu4f90/im_building_a_new_european_social_platform_from/ — одиночка строит «соцсеть против алгоритмов» с 3D-миром; масштаб амбициозный, но принцип «Your Data, Your Choice» опять тот же.</li>
+</ul>
+<h2>Итог дня</h2>
+<p>День начался с горькой новости: умер <strong>Тим Питерс</strong> — человек, чей «Дзен Python» и алгоритм Timsort сидят в каждом питоновском проекте мира. Параллельно весь ИИ-рынок трясло новостью о возможной смене CEO в Nvidia — напоминание, что фундамент, на котором стоят модели, сам сделан из людей и их решений. Технологический день прошёл под знаком <strong>агентов, переступающих границы</strong>: агенты нашли неотмеченный объект майя, авиакомпания официально запретила агентам бронировать перелёты, а промт-трюк «подумай заранее, как избежать переделок» показывает, что качество агента — это в первую очередь качество постановки задачи. В нише продуктов опять победил паттерн «данные уже лежат в открытом виде, нужен только автоматизатор»: Google Maps → сайт, логи хостинга → дашборд, свой фронтенд → чужое API.</p>
+</article>
+<nav class="paging"><a href="2026-11-11.html">← 2026-11-11</a><span class="cur">2026-11-12</span><span class="empty">→</span></nav>
+<footer class="site"><a href="index.html">⟵ все выпуски</a></footer>
+<script>document.addEventListener('keydown', function(e){
+  if(e.target.tagName==='INPUT')return;
+  var links=document.querySelectorAll('nav.paging a[href]');
+  if(e.key==='ArrowLeft'&&links[0])location.href=links[0].href;
+  if(e.key==='ArrowRight'&&links[links.length-1])location.href=links[links.length-1].href;
+});
+</script>
+
+
+</body>
+</html>
