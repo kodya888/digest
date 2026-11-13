@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#faf9f6">
+<title>Дайджест 2026-11-13</title>
+<link rel="icon" href="icon-192.png" />
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+<script src="theme.js" defer></script>
+<script src="sw-register.js" defer></script>
+</head>
+<body>
+
+<header class="site">
+  <a class="home" href="index.html">⟵ все выпуски</a>
+  <button class="theme" aria-label="Сменить тему">◐</button>
+</header>
+<article>
+<p>Собран автоматически из Hacker News, Habr и Reddit (r/vibecoding, r/SideProject).
+Формат: топ-8 по каждой площадке с комментариями, затем «Остальное» и «Итог дня».</p>
+<h2>Hacker News</h2>
+<ol>
+<li>
+<p><strong>Jensen Huang resigns</strong> — 3258 / 2997 комм.
+   <em>Дженсен Хуанг уходит в отставку (AP)</em>
+   https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f
+   Обсуждение: https://news.ycombinator.com/item?id=50467087
+   Комментарий: Вчерашняя история «Nvidia готовится сместить Хуанга» добилась логического финала: он ушёл (по AP — на фоне истории с китайскими/сингапурскими GPU и романами с сотрудницами). 3000 комментариев: рынок понял, что эпоха одного лица при всей инфраструктуре ИИ закончилась. Для нас вывод тот же, что и вчера: не строить прод-доступ на одной компании.</p>
+</li>
+<li>
+<p><strong>Anthropic IPO</strong> — 880 / 844 комм.
+   <em>Anthropic вышла на IPO (открыла регистрацию заявки)</em>
+   https://ipo.anthropic.com/us/
+   Обсуждение: https://news.ycombinator.com/item?id=50465829
+   Комментарий: Неожиданный день сразу двух громких корпоративных новостей: создатели Claude объявили листинг на бирже. Для пользователя Claude Code это фон, но с запахом денег: IPO означает квартальные отчёты, а значит — давление на цены подписок и доступ по регионам. Ещё один аргумент за твой «адаптер» (VseGPT/RouterAI/AITunnel), а не за единственного поставщика.</p>
+</li>
+<li>
+<p><strong>Service degradation on Microsoft 365</strong> — 687 / 643 комм.
+   <em>Сбои в работе Microsoft 365</em>
+   https://status.cloud.microsoft/
+   Обсуждение: https://news.ycombinator.com/item?id=50471731
+   Комментарий: Легендарный редмонд: у Microsoft 365 крупная деградация сервиса. Полезно как аргумент за локальные инструменты — тот же Word «в браузере» падает вместе с облаком, а локальный редактор не узнаёт об этом.</p>
+</li>
+<li>
+<p><strong>Rust 1.100</strong> — 561 / 225 комм.
+   <em>Вышел Rust 1.100</em>
+   https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/
+   Обсуждение: https://news.ycombinator.com/item?id=50472038
+   Комментарий: Красивая круглая версия: сотый мажор-минор Rust (язык, где компилятор жёстко не пускает небезопасную работу с памятью). Для вайбкодера — фоновый маркер: даже «жёсткие» языки эволюционируют плавными релизами через стабильность.</p>
+</li>
+<li>
+<p><strong>Gemini 4 Hydrogen</strong> — 501 / 320 комм.
+   <em>Google представила Gemini 4 Hydrogen</em>
+   https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/
+   Обсуждение: https://news.ycombinator.com/item?id=50471431
+   Комментарий: Google обновила флагман: Gemini 4 Hydrogen (водород — их новая линейка имён). Гонка флагманов продолжается: Anthropic анонсирует IPO, Google — новую модель. Снова про то же: модели дешевеют и меняются, прод-логика должна уметь их менять в конфиге, а не переписывать код.</p>
+</li>
+<li>
+<p><strong>Show HN: My $300 embroidery machine needed a subscription, so I built my own app</strong> — 437 / 167 комм.
+   <em>Моей вышивальной машине за $300 нужна была подписка — написал своё приложение</em>
+   https://github.com/simpsoka/zigzag
+   Обсуждение: https://news.ycombinator.com/item?id=50470488
+   Комментарий: Паттерн «дорогой SaaS → локальная бесплатная копия» сработал в новой области: вышивальная техника. Купленная машинка требовала облако с подпиской, автор реверснул формат файлов и собрал свой редактор. Это буквально формула твой философии в одном посте — и потенциальный источник идей: смотри, какие бытовые подписки раздражают людей.</p>
+</li>
+<li>
+<p><strong>Gemini 4 Hydrogen and Orchestrator</strong> — 370 / 100 комм.
+   <em>Gemini 4 Hydrogen и Orchestrator в Google Antigravity</em>
+   https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/
+   Обсуждение: https://news.ycombinator.com/item?id=50472260
+   Комментарий: Новую модель сразу завезли в Antigravity (IDE-агент Google, конкурент Claude Code) плюс «Orchestrator» — распараллеливание агентов. Тренд недель: среды для многих агентов одновременно. Твоя практика «независимые задачи — параллельно субагентами» — то же самое, только руками.</p>
+</li>
+<li>
+<p><strong>Nvidia employees petition to bring back Jensen Huang</strong> — 335 / 257 комм.
+   <em>Сотрудники Nvidia петицию за возвращение Дженсена Хуанга</em>
+   https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/
+   Обсуждение: https://news.ycombinator.com/item?id=50477231
+   Комментарий: Интринзик-драма дня: персонал Nvidia шлёт петицию, чтобы вернуть только что ушедшего CEO. Внутри ИИ-гиганта всё куда живее, чем в пресс-релизах. Наблюдаем — смена власти в компании инфраструктуры может отразиться на ценах GPU, а значит и на стоимости инференса у хостеров.</p>
+</li>
+</ol>
+<h3>Остальное с HN</h3>
+<ul>
+<li><strong>I'm making LLMs work on small and old devices</strong> — 322 / 115 комм. <em>Делаю, чтобы LLM работали на слабых и старых устройствах</em> — https://github.com/hyperionaidev/smolmaxxing/ — проект про запуск языковых моделей на слабом железе; твоя территория (старенький ноутбук + локальные Ollama-модели — то же направление мысли). Обсуждение: https://news.ycombinator.com/item?id=50468888</li>
+<li><strong>Dwarf planet candidate… 280 years to orbit our sun</strong> — 256 / 110 комм. <em>Нашли кандидата в карликовые планеты с орбитой ~280 лет</em> — https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/ — не IT, приятная пауза: у Плутона появился кандидат в соседи. Обсуждение: https://news.ycombinator.com/item?id=50472490</li>
+<li><strong>Abandoned Quake 4 expansion finished by modders</strong> — 256 / 91 комм. <em>Заброшенный аддон к Quake 4 дописан моддерами</em> — https://www.moddb.com/mods/openq4/downloads/openq4-0141-windows-x64 — комьюнити доделала брошенную игру за авторов; вайб «продукт жив, пока живы те, кому он нужен». Обсуждение: https://news.ycombinator.com/item?id=50467618</li>
+<li><strong>Chinese frontier AI models carry the fingerprint of export-controlled GPUs</strong> — 242 / 64 комм. <em>Китайские флагманские модели несут «отпечаток» запрещённых к экспорту GPU</em> — https://unemploymentlabs.com/checkpoint-forensics — форензика: по весам моделей можно вычислить, на каком железе их обучали. Забавная наука про «невидимые улики в данных» — по духу очень близко к твоим правилам проверки парсеров на «тихие поломки». Обсуждение: https://news.ycombinator.com/item?id=50474883</li>
+<li><strong>Talking Zen 6 with Mike Clark at AMD In-Depth</strong> — 206 / 4 комм. <em>О Zen 6 с Майком Кларком в AMD</em> — https://chipsandcheese.com/p/talking-zen-6-with-mike-clark-at — подробное интервью про следующую архитектуру процессоров AMD; фон для планов «а не купить ли мне нормальный ноутбук». Обсуждение: https://news.ycombinator.com/item?id=50467460</li>
+<li><strong>Our software engineering interviews are changing a little</strong> — 202 / 207 комм. <em>Наши интервью с инженерами немного меняются</em> — https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/ — Jane Street описывает перемены в собеседованиях (на фоне ИИ, который пишет код за кандидата). Прямо в тему твоего поиска работы: интервью-процесс везде переворачивается. Обсуждение: https://news.ycombinator.com/item?id=50467297</li>
+<li><strong>Former Nvidia CEO Huang had a relationship with a second employee</strong> — 196 / 221 комм. <em>Бывший CEO Nvidia имел отношения со второй сотрудницей (Reuters)</em> — https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/ — третья глава драмы Nvidia; в дайджесте — один раз достаточно. Обсуждение: https://news.ycombinator.com/item?id=50473190</li>
+</ul>
+<h2>Habr</h2>
+<ol>
+<li>
+<p><strong>Новости нейронок от Google: Gemini 4, Omni 1.2 Flash и ИИ для робототехники</strong> — https://habr.com/ru/companies/bothub/articles/1107320
+   Комментарий: Русский разбор вчерашних анонсов Google: флагман Gemini 4, компактная Omni 1.2 Flash и робототехнические модели. Сводка на русском экономит время: то же самое в англоязычных источниках расползается на десяток постов.</p>
+</li>
+<li>
+<p><strong>Как работать с кодинг агентами (Claude Code, Codex, Gemini CLI, Antigravity CLI) через Telegram</strong> — https://habr.com/ru/articles/1107278
+   Комментарий: Автор гоняет Claude Code и другие агенты как ботов через Telegram: пишешь задачу с телефона, агент на ноутбуке делает работу. В твоём backlog есть «доступ к Ollama с телефона» — эта статья один из готовых паттернов решения (правда, Telegram в РФ с ограничениями, но механика переносима).</p>
+</li>
+<li>
+<p><strong>Skills + Code Mode MCP: как я научил ИИ-агента пользоваться сотнями инструментов и не раздувать контекст</strong> — https://habr.com/ru/articles/1107276
+   Комментарий: Прямо про механику, которую видишь каждый день: скиллы и отложенная загрузка инструментов (ToolSearch), чтобы контекст не съедали сотни описаний функций. Полезно тем, что объясняет «почему так устроено» — теперь ты знаешь имена паттерна.</p>
+</li>
+<li>
+<p><strong>Разработчик протестировал, как разные AI-сервисы создают сайты</strong> — https://habr.com/ru/articles/1107270
+   Комментарий: Сравнительный тест AI-конструкторов сайтов на реальной задаче. Полезно перед тем, как что-то заказывать/выкатывать: видно, что «напиши сайт промтом» умеет сейчас, а где всё равно нужен человек с Claude Code и правками.</p>
+</li>
+<li>
+<p><strong>Путь к локальному LLM — модель которая я наконец-то реально использую каждый день</strong> — https://habr.com/ru/articles/1107310
+   Комментарий: Честная история поиска локальной модели, которая дожила до ежедневной эксплуатации (а не «попробовал и забыл»). Автор ищет то же, что ты: баланс качества, скорости и слабого железа. Хорошая карта местности перед следующим экспериментом с вашим Ollama.</p>
+</li>
+<li>
+<p><strong>Неделю гонял 14 локальных LLM на мини-ПК с Ryzen AI Max+ 395. Цифры, грабли и что я оставил себе</strong> — https://habr.com/ru/articles/1107260
+   Комментарий: Продолжение темы, но с цифрами: 14 моделей на компактном ПК с мощным встроенным GPU, замеры скорость/качество, ловушки. Из всего списка выжили одна-две — как и в реальности. Даже если железо у тебя слабее, методика замера переносится.</p>
+</li>
+<li>
+<p><strong>Чего не видит рекрутер: ИИ и оценка адаптивности на интервью</strong> — https://habr.com/ru/articles/1107298
+   Комментарий: Про найм и ИИ: адаптивность стала главным маркером, а рекрутеры её меряют старыми скриптами. Для твоих откликов: упоминание живых примеров «я разбирался на месте в незнакомом» весит больше списка технологий — это уже видно и по твоим результатам с WELCS.</p>
+</li>
+<li>
+<p><strong>Где публиковать статьи, чтобы нейросети вас цитировали: Алисы, ChatGPT, Perplexity и DeepSeek</strong> — https://habr.com/ru/articles/1107326
+   Комментарий: Направление «GEO» (генеративная оптимизация — попадать в ответы ИИ, как раньше SEO): где размещать тексты, чтобы их цитировали модели. Если будешь писать статьи под свои сервисы — это карта площадок.</p>
+</li>
+</ol>
+<h3>Остальное с Habr</h3>
+<ul>
+<li><strong>Пять футурологических сценариев сосуществования человека и искусственного разума</strong> — https://habr.com/ru/articles/1107256 — рефлексия-разминка про пять вариантов будущего с ИИ; не техническое, но хорошо для калибровки «зачем я это учу».</li>
+<li><strong>ASR для AI-разработки: как я замерял качество распознавания технических терминов</strong> — https://habr.com/ru/articles/1107308 — сравнение движков распознавания речи на технических терминах; рядом с твоей диктовкой Handy — можно проверить свои термины по его списку.</li>
+<li><strong>LLM после работы: интерактивная книга на ESP32-P4. Часть 3: сценарий, графика и сюжетный движок</strong> — https://habr.com/ru/articles/1107324 — локальная LLM + микроэлектроника: интерактивная книга на плате за пару тысяч рублей. Пример того, как далеко уходит «локально и без интернета».</li>
+<li><strong>Как я разрабатываю систему, которая не верит ИИ-агенту на слово</strong> — https://habr.com/ru/articles/1107022 — архитектура с проверками «агент сказал» против «агент сделал» — дословно твоё правило «сделано = внешний след подтверждён», только в виде инженерного подхода.</li>
+<li><strong>Профили критических сбоев ИИ-агентов с функцией вызова с реальным эффектом: DeepSeek V4 Pro и Gemini 3.8 Flash</strong> — https://habr.com/ru/articles/1107288 — сравнение того, как разные модели срывают действия с реальными последствиями; для прод-сервисов с агентами — обязательная таблица.</li>
+</ul>
+<h2>Reddit (r/vibecoding)</h2>
+<ol>
+<li>
+<p><strong>I made several agents implement the same fluid simulation</strong> —
+   <em>Семь ИИ-агентов писали одну и ту же симуляцию жидкости: сравнение по стоимости токенов, скорости и качеству</em>
+   https://www.reddit.com/r/vibecoding/comments/1xupn1s/i_made_several_agents_implement_the_same_fluid/
+   Коротко: Кросс-пост из HN-мира: одному «чистому» агенту дали одну белую статью про симуляцию 900k частиц и попросили построить в Rust — потом один и тот же код гоняли в семи средах, рендер в Blender. Методология честная: одинаковый вход, одинаковая задача, разные агенты. Именно так стоит мерить модели — не хайпом, а рутиной.</p>
+</li>
+<li>
+<p><strong>I run 8 AI coding agents in parallel on my company's internal app. The building is fine. Keeping track of everything is breaking me.</strong> —
+   <em>Запускаю 8 ИИ-агентов параллельно на внутреннем приложении: сборка ок, но контроль над всем разваливается</em>
+   https://www.reddit.com/r/vibecoding/comments/1xux3j8/i_run_8_ai_coding_agents_in_parallel_on_my/
+   Коротко: Консультант без инженерного бэкграунда собрал CRM, трекинг времени и финансы на 8 параллельных агентах (каждый в своём git worktree, каждый PR проверяет отдельный ИИ). Боль — не писать код, а координировать. Опыт ровно того масштаба, в который ты вырастаешь: сначала один агент с проверками, потом делегирование.</p>
+</li>
+<li>
+<p><strong>3DA - First playable version in your own city</strong> —
+   <em>3DA — играбельная версия твоего города: гонки по улицам на реальной карте OpenStreetMap</em>
+   https://www.reddit.com/r/vibecoding/comments/1xujdg5/3da_first_playable_version_in_your_own_city/
+   Коротко: Вайбкод-игра: вводишь свой город — получаешь top-down гонку по его настоящим улицам, домам и воде из OSM (у тебя в walk_cards тот же стек Leaflet/OSM). Прямо родственный проект: смотри не механику гона, а как они превратили карту в играбельную сцену.</p>
+</li>
+<li>
+<p><strong>Former Apple engineer here. I built a tool for the “I shipped my app, now what?” part</strong> —
+   <em>Экс-энг Apple собрал тул для части «приложение выложено — что дальше?»</em>
+   https://www.reddit.com/r/vibecoding/comments/1xug8e0/former_apple_engineer_here_i_built_a_tool_for_the/
+   Коротко: Человек с 18 годами опыта вышел на рынок ровно там, где его создал вайбкодинг: тысячи людей теперь умеют ship'ить, но не умеют продвигать. Урок по выбору ниши: заходи в шаг, который у всех остальных ломается. Для твоих сервисов — «после публикации» такая же пустая зона.</p>
+</li>
+<li>
+<p><strong>I made an engine simulator for phones</strong> —
+   <em>Симулятор двигателей для телефона (F1 V10 по Нюрбургрингу)</em>
+   https://www.reddit.com/r/SideProject/comments/1xuxgvq/i_made_an_engine_simulator_for_phones/
+   Коротко: Звук/физика виртуального мотора, симуляция круга по известной трассе — ниша, где аудитория маленькая, но преданно безумная. Отдельно показательно: технически «игрушка», а работает как продукт.</p>
+</li>
+<li>
+<p><strong>Why do gamedevs hate on AI? It makes game dev so much more fun</strong> —
+   <em>Почему геймдевы ненавидят ИИ? Он делает разработку игр настолько веселее</em>
+   https://www.reddit.com/r/vibecoding/comments/1xubxih/why_do_gamedevs_hate_on_ai_it_makes_game_dev_so/
+   Коротко: Автор добавляет в игру морского змея промтами: «нарисовать змея», «пусть пасть щёлкает», «пусть атакуется из воды» — всё за минуты. Хороший кейс про итеративность: не «скажи один волшебный промт», а серия коротких уточнений. Тот же стиль работы в твоих проектах — двигаешь по кирпичику, а не одним рывком.</p>
+</li>
+<li>
+<p><strong>Where are the real builders? Fuck a $99 to join hackathon. I'm starting a free, open-source hackathon...</strong> —
+   <em>Хакатон за $99 — плохо: создаю бесплатный опенсорс-хакатон с пулом $2500, победителей выбирают сами участники</em>
+   https://www.reddit.com/r/vibecoding/comments/1xuh2mq/where_are_the_real_builders_fuck_a_99_to_join/
+   Коротко: Двое суток спустя разгрома хакатона Marc Lou кто-то собрал анти-версию: без вступительных взносов, победителей голосуют участники, призовой фонд открыт. Идея «если продукт/событие возмущает комьюнити — его лучше сделать» работает и в вайбкоде: увидев плохую версию чужой идеи, ты можешь выкатить хорошую быстрее, чем жаловаться.</p>
+</li>
+<li>
+<p><strong>A Backwater experience made in threejs - runs in browser super smooth - thanks to WebGPU (again ported from WebGL to WebGPU)</strong> —
+   <em>Спокойная сцена «заросли/заводей» в Three.js, работает в браузере плавно на WebGPU</em>
+   https://www.reddit.com/r/vibecoding/comments/1xu6p19/a_backwater_experience_made_in_threejs_runs_in/
+   Коротко: Живописный шейдер-кейс переехал с WebGL на WebGPU и «просто летает» — тот же Three.js, что у тебя в card_pack_3d (там r128/WebGL). Полезный фон: когда решишь обновлять графику, WebGPU — это направление, а не экзотика.</p>
+</li>
+</ol>
+<h3>Остальное с r/vibecoding</h3>
+<ul>
+<li><strong>Snippet of my Diablo-inspired vibecoded game</strong> — <em>Отрывок вайбкод-игры в духе Diablo</em> — https://www.reddit.com/r/vibecoding/comments/1xui6n5/snippet_of_my_diabloinspired_vibecoded_game/ — видео-показ; «занятная игрушка» не даёт урока, но фиксирует: жанрово-узнаваемые проекты собираются вайбкодом уже повседневно.</li>
+<li><strong>r/vibecoding weekly showcase</strong> — <em>Еженедельная витрина r/vibecoding</em> — https://www.reddit.com/r/vibecoding/comments/1xudinu/rvibecoding_weekly_showcase_thursday_november_12/ — тред со свежими проектами; полезно сканировать не ради каждой карточки, а ради общего фона «что вообще делают».</li>
+<li><strong>r/VibeCoding Q&amp;A Thread</strong> — <em>Тред вопросов-ответов по вайбкодингу</em> — https://www.reddit.com/r/vibecoding/comments/1xudilp/rvibecoding_qa_thread_thursday_november_12_2026/ — в модерам AutoModerator и список смежных сабреддитов (там же лежат r/ClaudeCode, r/ClaudeGameDev, r/aigamedev — твоё направление).</li>
+</ul>
+<h2>Reddit (r/SideProject)</h2>
+<ol>
+<li>
+<p><strong>Saw an ad for an expensive teleprompter that just scrolls, so I built a free one that follows your voice</strong> —
+   <em>Увидел рекламу дорогого теле-суфлёра «просто скроллится» — собрал бесплатный, текст в котором следит за голосом</em>
+   https://www.reddit.com/r/SideProject/comments/1xujcv6/saw_an_ad_for_an_expensive_teleprompter_that_just/
+   Коротко: Классика «SaaS за $40/мес → вечера с Claude Code»: суфлёр, который не крутит текст по таймеру, а слушает твою речь и жуёт строчки в ровном темпе. Сделано на распознавании Apple. Ближе всего к твоему Handy: та же идея «локальная транскрипция = интерфейс». Готовый паттерн: любое «прокрутить для меня» приложение, реагирующее на голос.</p>
+</li>
+<li>
+<p><strong>My side project: a fusion between CAD and Paint</strong> —
+   <em>Мой сайд-проект: смесь CAD и Paint — рисуй быстро, но точно по размерам</em>
+   https://www.reddit.com/r/SideProject/comments/1xupkis/my_side_project_a_fusion_between_cad_and_paint/
+   Коротко: OnSketch — рисование с точными пропорциями и размерами, между «простым Paint» и «тяжёлым CAD». Идея, которая «сидела в воздухе»: ниша между двумя инструментами на двух краях сложности — часто самое богатое место для продукта.</p>
+</li>
+<li>
+<p><strong>I built a running app that rewrites your training plan when real life gets in the way. Roast it.</strong> —
+   <em>Приложение, которое переписывает твой беговой план, когда врывается реальная жизнь (Android, «облейте меня критикой»)</em>
+   https://www.reddit.com/r/SideProject/comments/1xuulnx/i_built_a_running_app_that_rewrites_your_training/
+   Коротко: Long Splice: план на цель, но с живой подстройкой под пропущенную неделю, сон и пульс (Garmin HRV); каждое правило плана — отдельная строка в таблице, которую видно и правишь. Технически интересный принцип «правила как данные, а не как код» — применимо где угодно, вплоть до твоих фильтров вакансий.</p>
+</li>
+<li>
+<p><strong>I built an iPhone weather app with pixel-art cities you can turn into postcards</strong> —
+   <em>Погодное приложение с пиксель-арт городами, которые можно сохранить открыткой</em>
+   https://www.reddit.com/r/SideProject/comments/1xu75qn/i_built_an_iphone_weather_app_with_pixelart/
+   Коротко: Skybits: дождь в Лондоне и ночной Токио как живой пиксельный окошко — погода как эстетика, не как прогноз. Механика «собери сцену и поделись открыткой» — тот же вирусный ход, что в «коллекция карт» у твоих паков.</p>
+</li>
+<li>
+<p><strong>Built a tool that turns one sentence into a week of social posts.</strong> —
+   <em>Тул, который превращает одну фразу в неделю постов для соцсетей</em>
+   https://www.reddit.com/r/SideProject/comments/1xuy63n/built_a_tool_that_turns_one_sentence_into_a_week/
+   Коротко: Confe: одна фраза → 5 черновиков с картинками → календарь → публикация сразу в 8 сетей. Это буквально обощение того, что у тебя уже делается вручную (дайджест → ВК-пост). Чужой продукт подтверждает жизнеспособность твоего контент-конвейера — разница лишь в масштабе аудитории.</p>
+</li>
+<li>
+<p><strong>Tired of guessing Chinese characters, so I built my own keyboard</strong> —
+   <em>Надоело угадывать китайские иероглифы — собрал собственную клавиатуру</em>
+   https://www.reddit.com/r/SideProject/comments/1xuvcfu/tired_of_guessing_chinese_characters_so_i_built/
+   Коротко: Своя iOS-клавиатура для пиньиня, где видно значение/перевод каждого варианта до отправки. Достойный кейс «реши свою личную фрустрацию» — ниша, которая не выглядит бизнесом, а становится им.</p>
+</li>
+<li>
+<p><strong>Ever had an ID, visa or passport expire without noticing? I built a free app to stop that</strong> —
+   <em>Пропустили срок действия паспорта/визы? Собрал бесплатное приложение, чтобы не пропустить</em>
+   https://www.reddit.com/r/SideProject/comments/1xuw4t7/ever_had_an_id_visa_or_passport_expire_without/
+   Коротко: Awraqi: 27 шаблонов документов, напоминания за 180/90/60/30/7 дней, «семья в одном месте», проверка паспорта против поездки. Чистая utility-ниша без блокбастер-идеи, но с сильной «болью в одну фразу». Хорошая модель для «маленьких локальных сервисов» из твоих планов.</p>
+</li>
+<li>
+<p><strong>I'm building technology that could help save millions of stray animals... animal facial recognition</strong> —
+   <em>Распознавание бродячих животных по морде лица (Rwanda, стерилизация)</em>
+   https://www.reddit.com/r/SideProject/comments/1xustdx/im_building_technology_that_could_help_save/
+   Коротко: Kyshik: фреймворк распознавания конкретных собак по морде, чтобы вести их «личное дело» — вакцинация, стерилизация, заметки. Ниша, где ИИ уже полезен и без хайпа: реальная проблема, реальный заказчик (гос./НГО-программы). Из этого же паттерна рождаются B2B-сервисы на распознавании.</p>
+</li>
+</ol>
+<h3>Остальное с r/SideProject</h3>
+<ul>
+<li><strong>Black Horse Stories - Personalised bedtime stories and a public Fairy Tale Atlas</strong> — <em>Персонализированные сказки на ночь + открытый атлас сказок</em> — https://www.reddit.com/r/SideProject/comments/1xuwdwr/black_horse_stories_personalised_bedtime_stories/ — отец начал с «дочь просит сказку про чёрную лошадь», довёл до приложения с подпиской на 3 языках; пример, где «пет-проект для семьи» честно становится продуктом без маркетинговых выкрутасов.</li>
+</ul>
+<h2>Итог дня</h2>
+<p>День прошёл под знаком больших корпоративных перестановок: <strong>Anthropic объявил IPO</strong>, а в <strong>Nvidia смена CEO добилась логического финала — Дженсен Хуанг ушёл</strong>, сотрудники уже собрали петицию за его возвращение, и это на фоне мегадеградации Microsoft 365. Технологическая линия — <strong>обновление флагманов</strong>: Google выкатил Gemini 4 Hydrogen и сразу завёз его в агентскую IDE Antigravity с Orchestrator'ом, Rust допилился до красивой версии 1.100. В нише продуктов снова доминирует паттерн <strong>«дешёвый SaaS → свой вечерний тул»</strong>: суфлёр, следящий за голосом, редактор для вышивальной машинки, клавиатура под пиньинь. Одновременно отчётливо прошёл тренд на <strong>параллельных агентов</strong>: 8 агентов в git worktree на одном приложении, семь агентов на одной задаче для сравнения — координация агентов становится отдельным навыком, который стоит тренировать заранее.</p>
+</article>
+<nav class="paging"><a href="2026-11-12.html">← 2026-11-12</a><span class="cur">2026-11-13</span><span class="empty">→</span></nav>
+<footer class="site"><a href="index.html">⟵ все выпуски</a></footer>
+<script>document.addEventListener('keydown', function(e){
+  if(e.target.tagName==='INPUT')return;
+  var links=document.querySelectorAll('nav.paging a[href]');
+  if(e.key==='ArrowLeft'&&links[0])location.href=links[0].href;
+  if(e.key==='ArrowRight'&&links[links.length-1])location.href=links[links.length-1].href;
+});
+</script>
+
+
+</body>
+</html>
