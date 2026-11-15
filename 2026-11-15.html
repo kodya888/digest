@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#faf9f6">
+<title>Дайджест 2026-11-15</title>
+<link rel="icon" href="icon-192.png" />
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+<script src="theme.js" defer></script>
+<script src="sw-register.js" defer></script>
+</head>
+<body>
+
+<header class="site">
+  <a class="home" href="index.html">⟵ все выпуски</a>
+  <button class="theme" aria-label="Сменить тему">◐</button>
+</header>
+<article>
+<p>Собран автоматически из Hacker News, Habr и Reddit (r/vibecoding, r/SideProject).
+Формат: топ-8 по каждой площадке с комментариями, затем «Остальное» и «Итог дня».</p>
+<h2>Hacker News</h2>
+<ol>
+<li>
+<p><strong>SpaceX catches the Starship to end Flight 15</strong> — 1150 / 755 комм.
+   <em>SpaceX поймала Starship в финале 15-го полёта</em>
+   https://www.spacex.com/launches/starship-flight-15
+   Обсуждение: https://news.ycombinator.com/item?id=50500963
+   Комментарий: Инженерное событие дня: снова поймали многоразовую ступень «руками» башни — 15-й испытательный полёт закрыт успешно. Для софт-человека тут важен метод, а не ракета: быстрые итерации с честным разбором каждого падения — та же культура, что и хороший цикл «сделал → проверил → поправил» в разработке.</p>
+</li>
+<li>
+<p><strong>Lovable apps expose passport details and more than 200K private messages</strong> — 795 / 309 комм.
+   <em>Приложения на Lovable раскрывают паспортные данные и более 200 тысяч личных сообщений</em>
+   https://www.crissyfield.de/research/lovable-en/
+   Обсуждение: https://news.ycombinator.com/item?id=50499017
+   Комментарий: Исследователь просканировал тысячи приложений, собранных «вайбом» на конструкторе Lovable: у огромной части открытая база данных с чужими паспортами и перепиской. Прямое напоминание всем вайбкодерам: «сделалось за вечер» не означает «безопасно». Твоя blagodarnosti с Supabase — ровно тот же стек, поэтому проверь, что RLS-правила (строки доступа на уровне таблиц) настроены везде, а не только там, где ты их настраивал сознательно.</p>
+</li>
+<li>
+<p><strong>KDE: The documentary [video]</strong> — 453 / 100 комм.
+   <em>KDE: документальный фильм</em>
+   https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c
+   Обсуждение: https://news.ycombinator.com/item?id=50496976
+   Комментарий: Документалка про 30 лет KDE (одно из главных свободных графических окружений Linux). Полезно как портрет долгоживущего open-source проекта, который пережил несколько «модных» волн и остался. Хорошее фоновое видео на вечер.</p>
+</li>
+<li>
+<p><strong>A family tree of software job titles</strong> — 297 / 147 комм.
+   <em>Генеалогическое дерево должностей в софт-индустрии</em>
+   https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/
+   Обсуждение: https://news.ycombinator.com/item?id=50499038
+   Комментарий: Автор развёл по ветвям, что значит «разработчик», «инженер», «архитектор», «девопс» и прочие слова с джоб-бордов; показывает, сколько из них — маркетинг вокруг одного и того же. Тебе полезно как компас при чтении вакансий: за красивым титулом почти всегда обычный набор обязанностей, оценивай по списку задач, а не по шапке.</p>
+</li>
+<li>
+<p><strong>Project Zero will disclose vulnerabilities 90 days after reporting</strong> — 241 / 103 комм.
+   <em>Project Zero будет раскрывать уязвимости через 90 дней после сообщения</em>
+   https://projectzero.google/2026/11/disclosure-policy.html
+   Обсуждение: https://news.ycombinator.com/item?id=50496051
+   Комментарий: Google-команда, которая занимается дырами в чужом софте, продлила срок « disclosure» (публичного раскрытия) с 90 до... оставила 90, но с уточнениями: после 90 дней всё уязвимое становится публичным, чинили вы или нет. Это дисциплинирует индустрию: у вендора нет вечного «мы ещё работаем». Для твоих приложений вывод прежний — обновляй зависимости не по настроению, а по расписанию.</p>
+</li>
+<li>
+<p><strong>PyPI's redesigned project pages with clearer security signals are now live</strong> — 236 / 99 комм.
+   <em>На PyPI переработали страницы проектов — теперь там явные признаки безопасности</em>
+   https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/
+   Обсуждение: https://news.ycombinator.com/item?id=50497892
+   Комментарий: На каталоге Python-пакетов страницы теперь показывают, когда пакет последний раз обновлялся, кто владельцы, есть ли подозрительные публикации. Приятно и практически: перед тем как поставить пакет, поищи его страницу на pypi.org и взгляни на эти сигналы — дешевая привычка против скрытых вредоносных заливок, о которых HN писал не раз.</p>
+</li>
+<li>
+<p><strong>Show HN: DeepSeek V3 in ~200 lines of pure Jax</strong> — 228 / 21 комм.
+   <em>DeepSeek V3 в ~200 строках чистого Jax</em>
+   https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax
+   Обсуждение: https://news.ycombinator.com/item?id=50497589
+   Комментарий: Автор собрал учебную копию архитектуры DeepSeek V3 (большая открытая китайская модель) в паре сотен строк — чтобы понять устройство на пальцах, а не через мега-репозиторий. Отличное чтение для понимания «как устроены модели», если дойдёшь до изучения внутренностей; пока что — просто знай, что архитектуры уже разбирают на «школьные» примеры.</p>
+</li>
+<li>
+<p><strong>We're Asking an Appeals Court to Require a Warrant for ALPR Searches</strong> — 214 / 56 комм.
+   <em>EFF просит апелляционный суд требовать ордер на поиск по данным автоматических камер номеров</em>
+   https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches
+   Обсуждение: https://news.ycombinator.com/item?id=50503255
+   Комментарий: EFF (правозащитная организация) борется с базами «читалок» номеров, по которым полиция вытаскивает всю траекторию вашей машины без суда. Не разработчикская тема, но постоянный фон эпохи: чем больше систем записывают, тем интереснее их чужие данные. Для тебя — просто осведомлённость.</p>
+</li>
+</ol>
+<h3>Остальное с HN</h3>
+<ul>
+<li><strong>Generative AI uses more energy on non-English text</strong> — 205 / 106 комм. <em>Генеративный ИИ тратит больше энергии на текст, не английский</em> — https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/ — исследование: токенизация (нарезка текста на кусочки) для неанглийских языков «дороже» по токенам и энергии; русский текст в модели реально дороже в буквальном смысле. Полезное знание, когда выбираешь, что куда гонять моделью. Обсуждение: https://news.ycombinator.com/item?id=50441444</li>
+<li><strong>How did Woz write the Apple 1 BASIC before building the computer?</strong> — 201 / 98 комм. <em>Как Воз написал BASIC для Apple 1 ещё до сборки компьютера?</em> — https://retrocomputing.stackexchange.com/questions/17957 — история «программирование в голове» тех лет: код писался на бумаге и вручную «компилировался» в машинные коды. Ретро-вдохновение в тон классике. Обсуждение: https://news.ycombinator.com/item?id=50501594</li>
+<li><strong>Advancing science and engineering with Antigravity's /teamwork</strong> — 194 / 41 комм. <em>Как продвигать науку и инженерию с /teamwork от Antigravity</em> — https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/ — Google показывает командные агенты в своей Antigravity-среде: несколько агентов работают по ролям. Тренд «агентские команды» доехал и до Google. Обсуждение: https://news.ycombinator.com/item?id=50496811</li>
+<li><strong>Memory Safety Bugs in Rust Standard Library</strong> — 112 / 45 комм. <em>Ошибки безопасности памяти в стандартной библиотеке Rust</em> — https://forge-blog.github.io/posts/rust-std-memory-safety/ — даже язык со «гарантированной памятью» ловит баги (в unsafe-кодах, которые внутри стандартной библиотеки есть). Мягкая ложка реализма в споры «Rust безопасен». Обсуждение: https://news.ycombinator.com/item?id=50478701</li>
+<li><strong>Court denies motion to dismiss DRAM price fixing case</strong> — 102 / 23 комм. <em>Суд отказался прекращать дело о сговоре цен на память DRAM</em> — https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal — иск против Samsung/SK Hynix/Micron о ценовом сговоре живёт; фон для желающих понять, куда пойдут цены на память в следующем году. Обсуждение: https://news.ycombinator.com/item?id=50502988</li>
+<li><strong>Seagate's new hybrid drive raises some old questions</strong> — 95 / 43 комм. <em>Новый гибридный диск Seagate поднимает старые вопросы</em> — https://arstechnica.com/gadgets/2026/11/seagate-resurrects-the-ssd-hdd-hybrid-drive/ — Seagate снова выпускает «SSD+HDD в одном флаконе»; идея стара как мир — часть данных на флеш-накопителе для скорости, остальное на механике для объёма. Обсуждение: https://news.ycombinator.com/item?id=50453901</li>
+</ul>
+<h2>Habr</h2>
+<ol>
+<li>
+<p><strong>Цена локального саботажа: системный аудит «точки невозврата» в фильме «Дурак» и механика цифровой приемки</strong> — https://habr.com/ru/articles/1107986
+   Комментарий: Автор берёт фильм «Дурак» (сантехник спасает дом от обрушения) и делает из него разбор о том, как игнорируемые проверки доезжают до катастрофы, — и переводит на «цифровую приемку» в разработке. Свежая упаковка вечного принципа «проверки дешевле катастроф» — в тон твоему правилу «сделано = внешний след подтверждён».</p>
+</li>
+<li>
+<p><strong>Монтируем LLM как жесткий диск. Бесконечная файловая система на Python + FUSE</strong> — https://habr.com/ru/companies/selectel/articles/1107570
+   Комментарий: Как смонтировать языковую модель в папку: читаешь файлы — модель их генерирует, то есть «бесконечный диск» из текстов через FUSE (техника, которая позволяет сделать свою файловую систему в обычной папке на Python). Красивый пример «ИИ как обычный инструмент файловой системы» — и хорошая иллюстрация, что интерфейсы вокруг модели ценнее самой модели.</p>
+</li>
+<li>
+<p><strong>Вышел открытый проект OpenSubs для автоматического создания субтитров с помощью ИИ — аналог VEED и Kapwing</strong> — https://habr.com/ru/articles/1107496
+   Комментарий: Открытый аналог облачных редакторов субтитров: транскрибация речи, генерация стилей, экспорт. Для detali_clip и HyperFrames-видео это потенциальный бесплатный локальный способ получить субтитры, не отдавая видео в облака и не платя подписку.</p>
+</li>
+<li>
+<p><strong>Почему с ИИ мы всё ещё пишем плохой софт</strong> — https://habr.com/ru/articles/1107946
+   Комментарий: Разбор на тему «ИИ ускорил написание, но не улучшил проектирование»: основной брак по-прежнему в решениях «до кода» — что строить, как разделить, что не строить вообще. Хороший трезвый комментарий к хайпу, в одном ряду с сегодняшним топом HN про Lovable и с вчерашним Блоу.</p>
+</li>
+<li>
+<p><strong>Научить AI понимать строительный объект</strong> — https://habr.com/ru/articles/1107928
+   Комментарий: Кейс о том, как научить модель понимать данные по строительному объекту (документы, модели, сметы). Ты рядом жил этим в dom_smeta: смета «до крыши» посчитана скриптом. Идея «ИИ читает стройку» реально витает — возможно, потом пригодится как ниша, с которой ты знаком не понаслышке.</p>
+</li>
+<li>
+<p><strong>Семь способов обмануть себя метриками: как я измерял точность ИИ-проверки ЕГЭ</strong> — https://habr.com/ru/articles/1107926
+   Комментарий: Автор, проверявший ИИ-системой эссе ЕГЭ, описывает 7 ловушек самообмана в метриках: от «точность на простых примерах» до «выборка не та». Практический чек-лист для всех, кто оценивает работу модели. Полезный приём: при проверке своих парсеров и дайджест-скриптов думать не «вроде работает», а «на какой выборке я это проверил».</p>
+</li>
+<li>
+<p><strong>Агентоцентричные бизнес-процессы. Да? Нет? Не знаю?</strong> — https://habr.com/ru/articles/1107910
+   Комментарий: Скан-статья о «агентоцентричных бизнес-процессах»: автор прикидывает, в каких процессах агенты реально заменяют части команды, а где это натяжка. Не фанатичный и не нигилистичный текст — скорее расстановка границ. Пример «а это вообще где применять?» — тот же вопрос, что ты задаёшь своим сервисам («сначала где деньги»).</p>
+</li>
+</ol>
+<h2>Reddit (r/vibecoding)</h2>
+<ol>
+<li>
+<p><strong>I'm a huge fan of Microsoft Flight Sim 2024, but the crash physics always disappointed me. So I had Fable 5.2 and Opus 5.5 make my own flight sim!</strong> —
+   <em>Большой фанат MS Flight Sim 2024, но меня всегда разочаровывала физика аварий — поэтому я заставил Fable 5.2 и Opus 5.5 сделать свой авиасимулятор!</em>
+   https://www.reddit.com/r/vibecoding/comments/1xwdvhf/im_a_huge_fan_of_microsoft_flight_sim_2024_but/
+   Коротко: Автор за неделю собрал полноценный 3D-авиасимулятор с исходниками на GitHub: Fable 5.2 делал рендеринг и модель самолёта, Opus 5.5 — «чтобы мир ощущался живым». Работает даже на RTX 3060. Показательно сразу в двух отношениях: модельное разделение труда («одна про железо, другая про ощущение») и вилка «неделя личного вечера = свой симулятор».</p>
+</li>
+<li>
+<p><strong>Unreal engine 5.9 - WASM - running in browser</strong> —
+   <em>Unreal Engine 5.9 компилируется в WebAssembly и запускается в браузере</em>
+   https://www.reddit.com/r/vibecoding/comments/1xwhonw/unreal_engine_59_wasm_running_in_browser/
+   Коротко: Unreal (тяжелейший игровой движок) собран в WebAssembly и рисует в браузере через WebGPU с нативной производительностью «на глаз». Поймал это через GPT 6 Astra. Ещё один кирпич в стене «весь софт уезжает в браузер» — куда медленно движется и твой digest-сайт с walk_cards.</p>
+</li>
+<li>
+<p><strong>I'm 84, not a programmer, and I just finished building a jukebox with AI</strong> —
+   <em>Мне 84, я не программист, и я только что собрал музыкальный автомат с ИИ</em>
+   https://www.reddit.com/r/vibecoding/comments/1xw9gt8/im_84_not_a_programmer_and_i_just_finished/
+   Коротко: 84-летний автор собрал эмуляцию винилового jukebox: крутящаяся пластинка, опускающаяся игла, потрескивание винила, DJ, который объявляет песни. Собирал месяцами, по кускам, с тремя ИИ-ассистентами. Милая и важная история про то, что вайбкодинг — не про возраст и не про «понимание кода», а про желание доделать.</p>
+</li>
+<li>
+<p><strong>I built a 3d visualizer to watch an LLM think!</strong> —
+   <em>Я сделал 3D-визуализатор, чтобы смотреть, как LLM думает</em>
+   https://www.reddit.com/r/vibecoding/comments/1xw9pry/i_built_a_3d_visualizer_to_watch_an_llm_think/
+   Коротко: Автор нарисовал 36 864 нейрона маленькой модели как «небо»: каждая звёзда — нейрон, яркость — насколько он сработал на текущем токене, золото — позитив, синь — негатив. Красота и учебная ценность: у моделей есть «внутренности», которые можно показать без магии. Идея-заготовка, если захочешь что-то объясняющее в портфолио.</p>
+</li>
+<li>
+<p><strong>Claude made me an Australian Accounting Practice Simulator</strong> —
+   <em>Claude сделал мне симулятор бухгалтерской практики в Австралии</em>
+   https://www.reddit.com/r/vibecoding/comments/1xwnrpa/claude_made_me_an_australian_accounting_practice/
+   Коротко: Симулятор жизни владельца бухгалтерской конторы (клиенты, команда, деньги) с механикой жанра BitLife. Автор главный труд вложил в UI — «десятки итераций, и я всё ещё не доволен». Вывод для любого не-дизайнера на ИИ: интерфейс — самая дорогая часть, планируй на него время отдельно.</p>
+</li>
+<li>
+<p><strong>Fable 5.2 cooked</strong> —
+   <em>Fable 5.2 «постаралась» (сделала крутую штуку за 30 минут)</em>
+   https://www.reddit.com/r/vibecoding/comments/1xwpygl/fable_52_cooked/
+   Коротко: Психоделический бесконечный раннер за полчаса работы модели: скорость до 98 м/с, рекорды 4500 м. Автор собирает фидбек, чтобы «взять проект на уровень выше». Обычная история «вечер — прототип», но с приятным примером быстрого теста идей: 30 минут — и понятно, хочется ли продолжать.</p>
+</li>
+<li>
+<p><strong>You should just vibe-code ERDs in 2026.</strong> —
+   <em>В 2026 стоит вайбкодить ERD (схемы баз данных)</em>
+   https://www.reddit.com/r/vibecoding/comments/1xwdta2/you_should_just_vibecode_erds_in_2026/
+   Коротко: Спорный, но симпатичный тезис от сеньора: зачем день рисовать схему БД, если модель за 5 минут построит черновик ERD с нормализацией 3NF, а всё равно при росте пользователей всё поменяется. Полезно как противовес «сначала идеальный план»: черновик — дёшево, менять решение — дорого только тогда, когда оно уже в проде.</p>
+</li>
+<li>
+<p><strong>[Showoff Saturday] I created an AI frog that the whole internet shares, and it's one of my favorite technical projects I've ever built</strong> —
+   <em>[Showoff Saturday] Я сделал ИИ-лягушку, за которой смотрит весь интернет</em>
+   https://www.reddit.com/r/vibecoding/comments/1xwkksp/showoff_saturday_i_created_an_ai_frog_that_the/
+   Коротко: Одна лягушка в террариуме, за которой наблюдает весь интернет одновременно: покормить, погладить, постучать по стеклу. Стек Next.js + Convex + Three.js + Claude; трюк в том, что жизнь лягушки — детерминированная симуляция на лог-событиях, которые только растут. Изящное решение «все видят одно и то же» — приём, который переиспользуется в любом «живом» веб-артефакте.</p>
+</li>
+</ol>
+<h3>Остальное с r/vibecoding</h3>
+<ul>
+<li><strong>I built Klad with Claude: a painting app your agent drives from the command line, now with pixel art</strong> — <em>Я собрал Klad с Claude: рисовальщик, которым агент рулит из командной строки</em> — https://www.reddit.com/r/vibecoding/comments/1xwc7dw/i_built_klad_with_claude_a_painting_app_your/ — рисование обычными файлами, CLI на Rust, агент кладёт штрихи один за одним, каждый штрих остаётся редактируемым. Идея «агент как оператор визуального инструмента» — свежая и в тему твоего pixel_buddy/«Чудиков».</li>
+<li><strong>went through 52 errors that keep breaking vibe coded apps and tested a fix for each</strong> — <em>Прошёлся по 52 ошибкам, которые постоянно ломают вайбкоденные приложения, и проверил фикс к каждой</em> — https://www.reddit.com/r/vibecoding/comments/1xwlvsz/went_through_52_errors_that_keep_breaking_vibe/ — библиотека частых ошибок (next.js use client, supabase RLS, 404 на обновлении страницы, vite env) с автоматическим воспроизведением; 20 из 52 фиксов проверены в песочнице. Готовый чек-лист, чтобы не наступать на чужие грабли.</li>
+<li><strong>I made... psychedelic endless runner</strong> — <em>продолжение бесконечного раннера из истории выше</em> — https://www.reddit.com/r/vibecoding/comments/1xwpygl/fable_52_cooked/ — тот же проект из топ-6, автор тестирует кап скорости 80 м/с.</li>
+</ul>
+<h2>Reddit (r/SideProject)</h2>
+<ol>
+<li>
+<p><strong>built a fact-checker that catches politicians lying in real-time</strong> —
+   <em>Собрал фей-чекер, который ловит политиков на лжи в реальном времени</em>
+   https://www.reddit.com/r/SideProject/comments/1xwmije/built_a_factchecker_that_catches_politicians/
+   Коротко: Chrome-расширение LogicLens: транскрибирует речь, находит проверяемые утверждения, ищет источники и выносит вердикт через Claude. Два года работы — редкость для сайд-проекта, зато тема вечнозелёная и с честной архитектурой (сначала источники, потом вердикт — защита от галлюцинаций).</p>
+</li>
+<li>
+<p><strong>Our chili crunch side project has sold over 1,500 jars in 3.5 months generating 25K in revenue</strong> —
+   <em>Наш сайд-проект с чили-маслом продал 1500 банок за 3,5 месяца, выручка 25 тысяч долларов</em>
+   https://www.reddit.com/r/SideProject/comments/1xw7b36/our_chili_crunch_side_project_has_sold_over_1500/
+   Коротко: Не софт: чета по выходным варит чили-кранч на коммерческой кухне и продаёт в SF. Тезис не «сделай продукт вайбом», а трезвый: 3,5 месяца работы на кухне — и реальный оборот. Для тебя ориентир по скорости достижения первых денег у «малого» продукта: физический товар — тоже нормальный путь, если есть доступ к потребителю.</p>
+</li>
+<li>
+<p><strong>I've been building an app that lets you learn languages while playing video games, I'd love some feedback!</strong> —
+   <em>Делаю приложение, где учишь язык, играя в видеоигры</em>
+   https://www.reddit.com/r/SideProject/comments/1xwo1ma/ive_been_building_an_app_that_lets_you_learn/
+   Коротко: Lexicart бежит рядом с эмулируемой игрой: ловит текст на экране, рисует оверлей с переводом в реальном времени. Красивая ниша «польза внутри удовольствия» — учёба там, где человек и так сидит часами. Хороший пример поиска боли там, где люди уже есть.</p>
+</li>
+<li>
+<p><strong>My first ever solo project: a free dinner planner for sharehouses that starts with what's in the fridge</strong> —
+   <em>Мой первый соло-проект: бесплатный планировщик ужинов для шерхаусов, который отталкивается от того, что в холодильнике</em>
+   https://www.reddit.com/r/SideProject/comments/1xwoyji/my_first_ever_solo_project_a_free_dinner_planner/
+   Коротко: Инженер, живущий в квартире-коммуне, сделал The Fridge Note: сначала смотрит, что есть в холодильнике, потом предлагает, чем накормить всех до истечения срока годности. Классика: боль из собственной жизни + узкая аудитория, которая понимает проблему с первого предложения.</p>
+</li>
+<li>
+<p><strong>Amazon is going to hate me for this: I checked 685 storage prices 13 days before Black Friday (74% are already cheaper!!)</strong> —
+   <em>«Amazon меня возненавидит»: я проверил 685 цен на накопители за 13 дней до Чёрной пятницы (74% уже дешевле!)</em>
+   https://www.reddit.com/r/SideProject/comments/1xw0y34/amazon_is_going_to_hate_me_for_this_i_checked_685/
+   Коротко: Трекер цен на SSD/HDD: из 686 проверенных товаров 74% были дешевле в какой-то момент последних 90 дней, медианный откат от собственного исторического минимума 11%. Урок: «скидка» в маркетинге ≠ минимум цены. Тебе это знакомо по разбору «дефицита GPU» вчерашнего выпуска — сравнение с реальными ценами всё время полезнее, чем верить бейджу.</p>
+</li>
+<li>
+<p><strong>ResumeTailor Skill</strong> —
+   <em>Скилл ResumeTailor (конструктор резюме)</em>
+   https://www.reddit.com/r/SideProject/comments/1xwoll2/resumetailor_skill/
+   Коротко: Открытый скилл для Claude Code/Cursor/Antigravity, который собирает резюме не «попросил модель», а как инженерный конвейер: подтверждённые факты, проверка на ATS-алгоритмы (системы, которые прогоняют резюме на ключевые слова), без выдуманных навыков. Твоя механика откликов на hh ровно про то же: резюме «самозанятый + разворот в IT» уже сработало у WELCS — здесь чужой аналог в открытом виде.</p>
+</li>
+<li>
+<p><strong>I built a free tool that checks whether ChatGPT, Gemini and Google AI recommend your business</strong> —
+   <em>Собрал бесплатный инструмент: проверяет, рекомендуют ли ChatGPT, Gemini и Google AI ваш бизнес</em>
+   https://www.reddit.com/r/SideProject/comments/1xwqlzs/i_built_a_free_tool_that_checks_whether_chatgpt/
+   Коротко: AINameCheck: задаёт 10 реальных вопросов клиентов в разных языках трём ИИ, показывает, кого из конкурентов те называют вместо вас. Ниша GEO (попадания в ИИ-ответы), которая уже двое суток подряд мелькает в Habr. Платный апсейл за 39$ — правильная модель «проверка бесплатно, лечение за деньги».</p>
+</li>
+<li>
+<p><strong>I wanted to actually remember the books I read, so I built an offline "Duolingo for nonfiction" (free, open source)</strong> —
+   <em>Хотел реально запоминать прочитанное, собрал офлайн «Duolingo для нонфикшна» (бесплатно, open source)</em>
+   https://www.reddit.com/r/SideProject/comments/1xwq1nr/i_wanted_to_actually_remember_the_books_i_read_so/
+   Коротко: Stash — офлайн Android-приложение: 2300 коротких идей из 230 книг, интервальное повторение, стрики и мини-уроки. Ценность не в оригинальности, а в честной механике «повторяй, иначе забудешь» и офлайне без подписки. Твой walk_cards с карточками за прогулки живёт в той же философии: маленький офлайн-инструмент, который копится со временем.</p>
+</li>
+</ol>
+<h3>Остальное с r/SideProject</h3>
+<ul>
+<li><strong>View stars, planes, planets and more.</strong> — <em>Смотрись на звёзды, самолёты, планеты</em> — https://www.reddit.com/r/SideProject/comments/1xwgk3b/view_stars_planes_planets_and_more/ — UlsterRadar добавил Sky View: наводишь телефон в небо и видишь подписи к самолётам, Солнцу и Луне c живыми координатами от той же базы данных, что рисует карту. Один источник данных, два ракурса — экономный приём.</li>
+<li><strong>Claude Code made this music video from a Suno song, no video generator, just an image model + code (open-source skill)</strong> — <em>Claude Code смонтировал музыкальное видео по песне из Suno — без генератора видео, только модель картинок + код</em> — https://www.reddit.com/r/SideProject/comments/1xwpllj/claude_code_made_this_music_video_from_a_suno/ — открытый скилл onbeat: скилл мерит биты и текст песни, рисует персонажа как спрайт-лист из 16 поз, потом код шагает по позам на каждом бите. Механика дословно знаковая: вы делаете detali_clip ровно по этой же схеме (Suno + клип). Публичный код — готовый референс, посмотрите на его сборку «по битам».</li>
+</ul>
+<h2>Итог дня</h2>
+<p>Главная линия дня — <strong>цена «сделалось само»</strong>: исследование Lovable показало, что приложения, собранные «вайбом» на конструкторе, массово открывают чужие паспортные данные и переписку; Habr в тот же день спрашивает «почему с ИИ мы всё ещё пишем плохой софт», а с Reddit прилетает приятное противовес — 84-летний не-программист собрал свою мечту (jukebox) и не сломал никого. Для тебя практическое сегодня одно: проверь RLS-правила в blagodarnosti — это тот же стек, что сгорел у людей. Вторая линия — <strong>агентный инструментальный стек растёт</strong>: Google показал командных агентов в Antigravity; ResumeTailor и onbeat — открытые сскиллы «как сборка через Claude Code» (onbeat по механике идентичен вашему detali_clip — референс, стоит посмотреть). Полезное по твоей теме: <strong>сталкивающаяся с неанглийским текстом генерация стоит дороже</strong>, так что «русскоязычный трафик в модели» реально дороже англоязычного — учитывай, когда выбираешь, что гонять через API вместо локального.</p>
+</article>
+<nav class="paging"><a href="2026-11-14.html">← 2026-11-14</a><span class="cur">2026-11-15</span><span class="empty">→</span></nav>
+<footer class="site"><a href="index.html">⟵ все выпуски</a></footer>
+<script>document.addEventListener('keydown', function(e){
+  if(e.target.tagName==='INPUT')return;
+  var links=document.querySelectorAll('nav.paging a[href]');
+  if(e.key==='ArrowLeft'&&links[0])location.href=links[0].href;
+  if(e.key==='ArrowRight'&&links[links.length-1])location.href=links[links.length-1].href;
+});
+</script>
+
+
+</body>
+</html>
